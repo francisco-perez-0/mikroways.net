@@ -1,0 +1,72 @@
+############################ Services ########################
+services:
+  enable : true
+  title : "Podemos lograrlo"
+  title_icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+  subtitle : "Porque tu progreso es el nuestro"
+  profile_tab:
+    - name : "DevSecOps"
+      icon : "fa-solid fa-gears"
+      title : "DevSecOps"
+      content : "DevSecOps permite aumentar la productividad de tus equipos IT, lograr servicios más estables y consistentes y asegurar el cumplimiento de buenas prácticas y reglas de negocio clave. Todo esto se traduce en un mejor servicio para tus clientes con todos los componentes de seguridad necesarios."
+      buttons:
+        - label : "Me interesa"
+          style : "solid-wb"
+          link : "contact"
+        - label : "Ver más"
+          style : "white-wb"
+          link : "devsecops"
+
+    - name : "Migración a la nube"
+      icon : "fa fa-cloud"
+      title : "Migración a la nube"
+      content : "La migración a la nube es una decisión estratégica. Puedes adoptar la nube pública para acceder instantáneamente a recursos de cómputo con una mínima inversión inicial, o bien la nube privada, donde encontrarás una gran versatilidad sin perder el control total sobre la infraestructura. ¡Tú decides! Nosotros nos encargamos de gestionar la migración y todas las soluciones que quieras montar sobre ella."
+      buttons:
+        - label : "Quiero saber más"
+          style : "solid-wb"
+          link : "contact"
+
+    - name : "Capacitación"
+      icon : "fa-solid fa-book-open"
+      title : "Capacitación"
+      content : "Capacitar a tus equipos tiene dos grandes ventajas: por un lado, te brindará la oportunidad de llevar adelante proyectos más complejos; y, por el otro, aumentará la satisfacción de tus colaboradores, que encontrarán un motivo más para seguir eligiéndote. Contamos con todo tipo de programas de capacitación, e incluso podemos crear uno a la medida de tu organización."
+      buttons:
+        - label : "Me interesa"
+          style : "solid-wb"
+          link : "contact"
+        - label : "Ver más"
+          style : "white-wb"
+          link : "training"
+
+    - name : "Consultoría"
+      icon : "fa-solid fa-unlock"
+      title : "Consultoría"
+      content : "¿Estás experimentando problemas de difícil solución? ¿Quieres actualizar o mejorar tus servicios de IT, pero no tienes del todo claro cómo hacerlo o por dónde empezar? Podemos ayudarte a detectar y priorizar las oportunidades de mejora y, si lo consideras necesario, a planificar, diseñar e implementar las soluciones."
+
+      buttons:
+        - label : "Quiero saber más"
+          style : "solid-wb"
+          link : "contact"
+
+############################### funfact ##################################
+funfact:
+  enable : true
+  # funfacts content comes from "data/homepage.yml" file
+
+
+############################### team ####################################
+team:
+  enable : true
+  # team content comes from "data/team.yml" file
+
+
+############################### testimonial ####################################
+testimonial:
+  enable : true
+  # testimonail content comes from "data/homepage.yml" file
+
+
+############################### pricing ####################################
+pricing:
+  enable : false
+  # pricing content comes from "data/pricing.yml" file

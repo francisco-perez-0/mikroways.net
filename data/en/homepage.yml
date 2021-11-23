@@ -1,0 +1,461 @@
+############################ Slider ##########################
+slider:
+  enable : true
+  slider_item:
+    ################# Slider item loop
+    - title : "Improve your IT team's productivity"
+      subtitle : "Discover everything DevSecOps can do for you"
+      bg_image : "images/slider/f1.jpg.webp"
+      image : ""
+      image_position : "false"
+      # slider navigator
+      navigator:
+        label : "DevSecOps"
+        icon : "fa-solid fa-gears" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      buttons:
+        - label : "Let's talk"
+          style : "solid"
+          link : "contact"
+
+        # button loop
+        - label : "See more"
+          style : "white"
+          link : "devsecops"
+
+    ############### Slider item loop
+    - title : "Do you have a software project?"
+      subtitle : "You don't need to worry about infrastructure anymore"
+      bg_image : "images/slider/software.jpg.webp"
+      image : ""
+      image_position : "false"
+      # slider navigator
+      navigator:
+        label : "SaaS"
+        icon : "fa fa-solid fa-window-maximize" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+
+      # slider buttons
+      buttons:
+        # button loop
+        - label : "Let's talk"
+          style : "solid"
+          link : "contact"
+
+    ############### Slider item loop
+    - title : "Migrating to the cloud?"
+      subtitle : "Adopt the public cloud or create your own private cloud"
+      bg_image : "images/slider/cloud.jpg.webp"
+      image : ""
+      image_position : "false"
+      # slider navigator
+      navigator:
+        label : "Cloud"
+        icon : "fa fa-cloud" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+
+      # slider buttons
+      buttons:
+        - label : "Let's talk"
+          style : "solid"
+          link : "contact"
+
+    ############### Slider item loop
+    - title : "Empower your team"
+      subtitle : "with new knowledge and skills"
+      bg_image : "images/slider/empower.jpg.webp"
+      image : ""
+      image_position : "false"
+      # slider navigator
+      navigator:
+        label : "Training"
+        icon : "fa-solid fa-book-open"
+      # slider buttons
+      buttons:
+        # button loop
+        - label : "I'm interested"
+          style : "solid"
+          link : "contact"
+
+############################### feature ##################################
+feature:
+  enable : true
+  feature_item:
+    - name : "Increase your services availability"
+      icon : "fa-solid fa-calendar-check"
+      content : "Do you experience outages or crashes in your systems or services often? We can help you put those problems behind you."
+
+    - name : "Have a reliable contingency plan"
+      icon : "fa-solid fa-helmet-safety"
+      content : "Faced with a disaster, can you restore your services quickly? And can you recover the information?"
+
+    - name : "Reduce your costs"
+      icon : "fa-solid fa-coins"
+      content : "Yes, it's possible to spend less, both on software development and maintenance and on IT infrastructure."
+
+    - name : "Easily replicate environments"
+      icon : "fa-solid fa-clone"
+      content : "Doing a test takes too long? The system works in development but not in production? It doesn't have to be that way."
+
+    - name : "Improve your collaborators' performances"
+      icon : "fa-solid fa-arrow-trend-up"
+      content : "Investing in your team is a strategic decision. With the right methodologies and tools, you will be able to improve your business performance."
+
+    - name : "Quickly diagnose problems"
+      icon : "fa-solid fa-magnifying-glass"
+      content : "Problems can always arise. The important thing is to know how to diagnose and solve them in the most effective way."
+
+
+############################### Service ####################################
+service:
+  enable : true
+  # service content comes from "data/service.yml" file
+
+
+############################### portfolio ##################################
+portfolio:
+  enable : true
+  title : "Sucess stories"
+  subtitle : "These are some of our projects"
+  title_icon : "fa-suitcase"
+  # portfolio items comes from "content/portfolio" folder
+
+  
+############################### funfact ##################################
+funfact:
+  enable : false
+  funfact_item:
+    # funfact item loop
+    - name : "Clientes"
+      icon : "fa-user" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "50"
+
+    # funfact item loop
+    - name : "Proyectos"
+      icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "150"
+
+############################### team ####################################
+team:
+  enable : true
+  # team content comes from "data/team.yml" file
+
+############################ Call to action #############################
+call_to_action:
+  enable : true
+  title : "Do you still have questions?"
+  subtitle : "It'll be our pleasure to answer them!"
+  bg_image : "images/parallax/questions.jpg.webp"
+  buttons:
+    # button loop
+    - label : "Let's talk"
+      style : "solid"
+      link : "contact"
+
+
+############################ Newsletter #############################
+newsletter:
+  enable : true
+  title : "Newsletter"
+  subtitle : "Subscribe to receive all the news in your mail"
+  bg_image : "images/newsletter.jpg.webp"
+  buttons:
+    - label : "Subscribe"
+      style : "solid"
+      link : "contact"
+
+
+############################### pricing ####################################
+pricing:
+  enable : false
+  # pricing content comes from "data/pricing.yml" file
+
+
+############################### testimonial ####################################
+testimonial:
+  enable : true
+  bg_image : "images/parallax/parallax2.jpg.webp"
+  testimonial_item:
+    - name : "Miguel Catucci"
+      image : "images/clients/testimonials/miguel-catucci.png.webp"
+      designation : "CEO of Julasoft"
+      content : "We have worked with Mikroways on several ocassions, they have always been very professionals, oriented to add value and to adapt the technical solution to our needs. I highly recommend them."
+
+    - name : "Gastón Menvielle"
+      image : "images/clients/testimonials/gaston-menvielle.png.webp"
+      designation : "CEO of DevP"
+      content : "Mikroways was of great help during the planning, development and deployment of several of our company's products. They are excellent professionals, with amazing personal treatment and outstanding technical skills. They have transformed our business and helped us double our size."
+        
+############################ Clients logo slider ##########################
+clients:
+  enable: true
+  enable_slider: true
+  title: "They have already chosen us"
+  subtitle: "Choose us too!"
+  title_icon : "fa-weixin"
+  url: "clients"
+  client:
+    - name : "AFIP"
+      logo : "images/clients/afip.png.webp"
+      link : "https://www.afip.gob.ar"
+      industry : Government
+      country : Argentina
+      homepage : true
+    - name : "Veritran"
+      logo : "images/clients/veritran.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "Provincia NET"
+      logo : "images/clients/provincia-net.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : true
+    - name : "Government de la Provincia de Buenos Aires"
+      logo : "images/clients/gba.svg"
+      link : "#"
+      industry : Government
+      country : Argentina
+      homepage : false
+    - name : "Farmavet"
+      logo : "images/clients/farmavet.png.webp"
+      link : "#"
+      industry : Software
+      country : Spain
+      homepage : false
+    - name : "easycommerce tech"
+      logo : "images/clients/easy-commerce-tech.svg"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : false
+    - name : "ITBN"
+      logo : "images/clients/itbn.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : false
+    - name : "connect by circular-lab"
+      logo : "images/clients/circular-lab.svg"
+      link : "#"
+      industry : Software
+      country : Spain
+      homepage : false
+    - name : "BCN Quark"
+      logo : "images/clients/bcn-quark.png.webp"
+      link : "#"
+      industry : Software
+      country : Spain
+      homepage : false
+    - name : "Entornos"
+      logo : "images/clients/entornos.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "Snoop"
+      logo : "images/clients/snoop.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "Senasa"
+      logo : "images/clients/senasa.png.webp"
+      link : "#"
+      industry : Government
+      country : Argentina
+      homepage : true
+    - name : "QK Studio"
+      logo : "images/clients/qk-studio.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "Retail Commerce"
+      logo : "images/clients/retail-commerce.png.webp"
+      link : "#"
+      industry : Software
+      country : Spain
+      homepage : false
+    - name : "Danaide"
+      logo : "images/clients/danaide.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : true
+    - name : "Julasoft"
+      logo : "images/clients/julasoft.jpg.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "Squad"
+      logo : "images/clients/squad.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage: false
+    - name : "Ministerio de Economía"
+      logo : "images/clients/mecon.png.webp"
+      link : "#"
+      industry : Government
+      country : Argentina
+      homepage: false
+    - name : "INTA"
+      logo : "images/clients/inta.png.webp"
+      link : "#"
+      industry : Government
+      country : Argentina
+      homepage : false
+    - name : "Fecliba"
+      logo : "images/clients/fecliba.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "CNRT"
+      logo : "images/clients/cnrt.png.webp"
+      link : "#"
+      industry : Government
+      country : Argentina
+      homepage: false
+    - name : "Ministerio de Industria"
+      logo : "images/clients/industria.png.webp"
+      link : "#"
+      industry : Government
+      country : Argentina
+      homepage : false
+    - name : "OCEBA"
+      logo : "images/clients/oceba.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "SADIO"
+      logo : "images/clients/sadio.jpg.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Artdecode"
+      logo : "images/clients/artdecode.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : false
+    - name : "El Rural"
+      logo : "images/clients/elrural.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Gloobes"
+      logo : "images/clients/gloobes.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : false
+    - name : "Bluedraft"
+      logo : "images/clients/bluedraft.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : false
+    - name : "Urgente24.com"
+      logo : "images/clients/urgente24.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "La Bioguía"
+      logo : "images/clients/bioguia.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Colegio de Escribanos"
+      logo : "images/clients/colescba.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Colegio de Ingenieros"
+      logo : "images/clients/ingenieros.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Acofar"
+      logo : "images/clients/acofar.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Fútbol Prode"
+      logo : "images/clients/futbolprode.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Laboratorio Bioquímico Iglesias Haramburu"
+      logo : "images/clients/iglesias-haramburu.png.webp"
+      link : "#"
+      industry : Health
+      country : Argentina
+      homepage : false
+    - name : "UOM"
+      logo : "images/clients/uom.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Ingeniería Global"
+      logo : "images/clients/ig.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "Ecomanía"
+      logo : "images/clients/ecomania.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "5 de Septiembre"
+      logo : "images/clients/5deseptiembre.png.webp"
+      link : "#"
+      industry : Other
+      country : Argentina
+      homepage : false
+    - name : "DevP"
+      logo : "images/clients/devp.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "DevsAr"
+      logo : "images/clients/devsar.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "Edelap"
+      logo : "images/clients/edelap.png.webp"
+      link : "#"
+      industry : Energy
+      country : Argentina
+      homepage: false
+    - name : "G & L"
+      logo : "images/clients/gylgroup.png.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+
+############################### training ##################################
+training:
+  enable : false
+  title : "Capacitaciones"
+  subtitle : "Estas son nuestras capacitaciones"
+  title_icon : "fa-solid fa-books"
+  description: ""
+  buy_url: contact

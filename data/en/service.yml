@@ -1,0 +1,69 @@
+############################ Services ########################
+services:
+  enable : true
+  title : "We can do it"
+  title_icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+  subtitle : "Because your progress is our progress"
+  profile_tab:
+    - name : "DevSecOps"
+      icon : "fa-solid fa-gears"
+      title : "DevSecOps"
+      content : "DevSecOps allows you to increase your IT teams' productivity, achieve more stable and consistent services, and ensure compliance with good practices and key business rules. All this translates into a better service for your clients with all the necessary security components."
+      buttons:
+        - label : "I'm interested"
+          style : "solid-wb"
+          link : "contact"
+        - label : "See more"
+          style : "white-wb"
+          link : "devsecops"
+
+    - name : "Cloud migration"
+      icon : "fa fa-cloud"
+      title : "Cloud migration"
+      content : "Migrating to the cloud is a strategic decision. You can adopt the public cloud to instantly access computing resources with minimal initial investment, or the private cloud, where you will find great versatility without losing total control over the infrastructure. It's up to you! We take care of managing the migration and of all the solutions you want to put on it."
+      buttons:
+        - label : "I want to know more"
+          style : "solid-wb"
+          link : "contact"
+
+    - name : "Training"
+      icon : "fa-solid fa-book-open"
+      title : "Training"
+      content : "Training your teams has two great advantages: on the one hand, it will give you the opportunity to carry out more complex projects; and, on the other, it will increase your collaborators' satisfaction, giving them another reason to continue choosing you. We have different training programs, but we can also create one tailored to your organization."
+      buttons:
+        - label : "I'm interested"
+          style : "solid-wb"
+          link : "contact"
+
+    - name : "Consulting"
+      icon : "fa-solid fa-unlock"
+      title : "Consulting"
+      content : "Are you experiencing problems that are difficult to solve? Do you want to update or improve your IT services, but you are not entirely sure how to do it or where to start? We can help you detect and prioritize opportunities for improvement and, if you consider it necessary, we can also help you plan, design and implement solutions."
+
+      buttons:
+        - label : "I want to know more"
+          style : "solid-wb"
+          link : "contact"
+
+############################### funfact ##################################
+funfact:
+  enable : true
+  # funfacts content comes from "data/homepage.yml" file
+
+
+############################### team ####################################
+team:
+  enable : true
+  # team content comes from "data/team.yml" file
+
+
+############################### testimonial ####################################
+testimonial:
+  enable : true
+  # testimonail content comes from "data/homepage.yml" file
+
+
+############################### pricing ####################################
+pricing:
+  enable : false
+  # pricing content comes from "data/pricing.yml" file

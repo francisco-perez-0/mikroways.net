@@ -1,0 +1,41 @@
+############################ Company Profile ########################
+company_profile:
+  enable : true
+  title : "The company"
+  title_icon : "fa-suitcase"
+  profile_tab:
+    - name : "Who are we?"
+      icon : "fa-info-circle"
+      title : "Who are we?"
+      content : "We specialize in productive IT services. We are passionate about challenges, and our goal is to always provide the best solution for each client.\n\nWe believe in ideas: we think they have the power to make the world a better place, and we know there are many people and organizations with great ideas. Therefore, our mission is to build bridges using the appropriate technology to help our clients conquer and materialize those ideas.\n\nTo achieve this, we have a team of committed and devoted professionals, guided by empathy, curiosity, creativity and great collaborative spirit."
+
+    - name : "Our history"
+      icon : "fa-solid fa-timeline"
+      title : "From the academy to the world"
+      content : "Initiated in network and server administration in the National University of La Plata, in Argentina, we quickly fell in love with solving problems through quality, elegant, effective and efficient solutions. In addition, our time in College instilled in us another passion: teaching.\n\nDuring the following years, we worked in IT support and infrastructure, and in software development, in addition to collaborating with multiple organizations, both private and public. We believe that all this experience has given us a broad perspective on the reality of the industry and its players.\n\nHaving experienced firsthand many of the problems organizations face, we understood that the solutions that worked for us could help others. That's how Mikroways was born, with the aim of providing solutions for organizations so that they can overcome the technological barriers that limit or prevent their growth and progress."
+
+    - name : "What do we do?"
+      icon : "fa-sold fa-suitcase"
+      title : "What do we do?"
+      content : "* We provide solutions aimed at improving the quality of software products and productive IT services.\n* We strengthen the abilities of the software development and operations teams so that they reach their highest potential.\n\nTo achieve this, we take two fundamental aspects into consideration: first, we understand that each client has a specific reality and that it's necessary to approach the solution in that particular context; and, second, we believe that innovating and improving is the only way to achieve a quality and sustainable service."
+
+    - name : "Our partnerships"
+      icon : "fa-solid fa-handshake"
+      title : "We have the necessary support"
+      content : "Thanks to two key alliances, we have the necessary support to give our clients the best possible solution."
+      images:
+        - title: Amazon Web Services
+          url: '/images/partners/aws.webp'
+        - title: Red Hat
+          url: '/images/partners/red-hat.png'
+
+############################### funfact ##################################
+funfact:
+  enable : false
+  # funfacts content comes from "data/homepage.yml" file
+
+
+############################### team ####################################
+team:
+  enable : true
+  # team content comes from "data/team.yml" file

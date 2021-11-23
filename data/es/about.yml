@@ -1,0 +1,43 @@
+############################ Company Profile ########################
+company_profile:
+  enable : true
+  title : "La empresa"
+  title_icon : "fa-suitcase"
+  profile_tab:
+    - name : "¿Quiénes somos?"
+      icon : "fa-info-circle"
+      title : "¿Quiénes somos?"
+      content : "Somos especialistas en servicios informáticos productivos. Nos apasionan los desafíos, y nuestro objetivo es brindar siempre la mejor solución para cada cliente.\n\nCreemos que las ideas tienen el potencial de hacer del mundo un mejor lugar para vivir, y sabemos que está lleno de personas y organizaciones con grandes ideas. Por eso, nuestra misión es construir puentes, usando la tecnología adecuada, que les permitan a nuestros clientes conquistar y materializar esas ideas.\n\nPara lograrlo, contamos con un equipo de profesionales responsables y dedicados, guiados por la empatía, la curiosidad, la creatividad y un gran espíritu colaborativo."
+
+    - name : "Nuestra historia"
+      icon : "fa-solid fa-timeline"
+      title : "De la academia al mundo"
+      content : "Iniciados como administradores de redes y servidores en la Universidad Nacional de La Plata, en Argentina, nos enamoramos rápidamente de resolver problemas mediante soluciones de calidad, elegantes, efectivas y eficaces. Además, nuestro paso por la universidad nos inculcó otra pasión: la docencia.\n\n
+Durante los años que siguieron, hemos trabajado en soporte de IT, infraestructura de IT y desarrollo de software, además de colaborar con múltiples organismos, tanto privados como públicos. Creemos que toda esta experiencia nos ha brindado una perspectiva amplia sobre la realidad de la industria y sus actores.\n\n
+Tras haber experimentado en primera persona muchos de los problemas que enfrentan las organizaciones, entendimos que las soluciones que nos habían servido a nosotros podrían ayudar a otras personas. Así fue como nació Mikroways, con el objetivo de brindar soluciones para que las organizaciones superen las barreras tecnológicas que limitan o impiden su crecimiento y progreso."
+
+    - name : "¿Qué hacemos?"
+      icon : "fa-sold fa-suitcase"
+      title : "¿Qué hacemos?"
+      content : "* Brindamos soluciones orientadas a mejorar la calidad de los productos de software y los servicios de IT productivos.\n* Potenciamos las capacidades de los equipos de desarrollo de software y de operaciones, buscando que alcancen su máximo potencial.\n\nPara lograrlo, consideramos dos aspectos fundamentales: primero, entendemos que cada cliente tiene una realidad específica y que es necesario abordar la solución en su contexto particular; y, segundo, que innovar y mejorar es el único camino hacia un servicio sostenible en el tiempo y de calidad."
+
+    - name : "Nuestras alianzas"
+      icon : "fa-solid fa-handshake"
+      title : "Contamos con el respaldo necesario"
+      content : "A través de dos alianzas claves, contamos con el respaldo necesario para dar a nuestros clientes la mejor solución posible."
+      images:
+        - title: Amazon Web Services
+          url: '/images/partners/aws.webp'
+        - title: Red Hat
+          url: '/images/partners/red-hat.png'
+
+############################### funfact ##################################
+funfact:
+  enable : false
+  # funfacts content comes from "data/homepage.yml" file
+
+
+############################### team ####################################
+team:
+  enable : true
+  # team content comes from "data/team.yml" file

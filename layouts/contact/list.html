@@ -1,0 +1,81 @@
+{{ define "main" }}
+
+<section id="main-container">
+  <div class="container">
+    <!-- Map start here -->
+    {{ if .Site.Params.map.enable }}
+    {{ with .Site.Params.map }}
+    <div class="map" id="map" data-latitude="{{ .map_latitude }}"
+      data-longitude="{{ .map_longitude }}" data-marker="{{ .map_marker | absURL }}"
+      data-marker-name="{{ $.Site.Title }}">
+    </div>
+
+    <div class="gap-40"></div>
+    {{ end }}
+    {{ end }}
+    <!--/ Map end here -->
+
+    <div class="row">
+      <div class="col-md-8">
+        <h3>{{i18n `contact_details`}}</h3>
+
+        <!--<form id="contact-form" method="post" action="https://0bpu3d642g.execute-api.us-east-1.amazonaws.com/prod/crm" role="form">-->
+        <form id="contact-form" method="post" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">{{i18n `name` }} *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="{{i18n `provide_name`}}" required="required" data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_email">{{i18n `email`}} *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="{{i18n `provide_email`}}" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_message">{{i18n `message`}} *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="{{i18n `provide_message`}}" rows="5" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <input type="button" id="submitbutton" class="btn btn-success btn-send" value="{{i18n `send_message`}}">
+              </div>
+            </div>
+          </div>
+
+        </form>
+        <div id="success" style="display:none" class="alert alert-success">
+          {{i18n `contact_form_message_success`}}
+        </div>
+        <div id="error" style="display:none" class="alert alert-danger">
+          {{i18n `contact_form_message_error`}}
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="contact-info">
+          <p><i class="fa fa-home info"></i> {{ .Site.Params.address | markdownify }} </p>
+          <p><i class="fa fa-phone info"></i> {{ .Site.Params.phone | markdownify }} </p>
+          <p><i class="fa fa-envelope-o info"></i> {{ .Site.Params.email | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ container end -->
+</section>
+
+
+{{ end }}
