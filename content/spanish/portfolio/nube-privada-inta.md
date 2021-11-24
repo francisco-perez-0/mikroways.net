@@ -35,7 +35,7 @@ estandarizamos y automatizamos la forma de desplegar las aplicaciones sobre la
 nube privada. Con esto, logramos desafectar un gran número de servidores
 físicos; así eliminamos la dependencia entre cada servidor y un técnico y
 agilizamos sustancialmente el despliegue de aplicaciones."
-draft: false
+draft: true
 ---
 
 Tras evaluar la situación en la que se encontraba el organismo, no solo en

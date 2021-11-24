@@ -34,7 +34,7 @@ standardized and automated the way in which applications were deployed over the
 private cloud. With this, we managed to disable a large number of physical
 servers, eliminating the dependency between each server and a technician, and
 substantially speeding up the deployment of applications."
-draft: false
+draft: true
 ---
 
 After evaluating the organization's situation, not only in relation to the
