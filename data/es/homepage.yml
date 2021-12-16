@@ -178,6 +178,10 @@ testimonial:
   enable : true
   bg_image : "images/parallax/parallax2.jpg.webp"
   testimonial_item:
+    - name: "Juan Escayola"
+      image: "images/clients/testimonials/juan-escayola.webp"
+      designation: "CTO de Circular-Lab"
+      content: "Mikroways te acompaña desde inicio en tus desarrollos y aporta ideas creativas que llevan tus aplicativos a un nivel de calidad superior."
     - name : "Miguel Catucci"
       image : "images/clients/testimonials/miguel-catucci.png.webp"
       designation : "CEO de Julasoft"

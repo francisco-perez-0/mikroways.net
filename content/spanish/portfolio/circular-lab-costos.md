@@ -27,6 +27,14 @@ implementamos una serie de mejoras que redujeron los costos en más del 50% solo
 en el primer mes de trabajo. Durante la implementación de la solución, no
 comprometimos ninguno de los requerimientos con los que la mencionada
 infraestructura fue originalmente diseñada."
+testimony:
+  text: "AWS ofrece infinitas oportunidades a empresas de desarrollo, pero para
+explotarlas es necesario asociarse a empresas como Mikroways que tienen un
+amplio conocimiento sobre los productos y servicios de AWS y de sistemas.
+Mikroways te acompaña desde inicio en tus desarrollos y aporta ideas creativas
+que llevan tus aplicativos a un nivel de calidad superior."
+  author: "Juan Escayola"
+  position: CTO
 ---
 
 Después de comprender las necesidades del cliente, se plantearon los siguientes

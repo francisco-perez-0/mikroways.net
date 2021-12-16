@@ -173,6 +173,14 @@ testimonial:
   enable : true
   bg_image : "images/parallax/parallax2.jpg.webp"
   testimonial_item:
+    - name: "Juan Escayola"
+      image: "images/clients/testimonials/juan-escayola.webp"
+      designation: "CTO of Circular-Lab"
+      content: "AWS offers infinite opportunities to software development companies,
+but to take advantage of them is necessary to rely on companies such as
+Mikroways, that have a vast knowledge about software, infrastructure and the AWS
+services. Mikroways helps you from the very beginning and provides creative
+ideas that take your applications to a higher quality level."
     - name : "Miguel Catucci"
       image : "images/clients/testimonials/miguel-catucci.png.webp"
       designation : "CEO of Julasoft"
