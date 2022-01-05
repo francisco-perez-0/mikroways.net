@@ -1,5 +1,37 @@
 stages:
+  - preview
   - deploy
+
+pages:
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  stage: preview
+  image: ubuntu:18.04
+  script:
+    - apt update && apt install -y curl
+    - curl -sL https://github.com/gohugoio/hugo/releases/download/v0.82.0/hugo_extended_0.82.0_Linux-64bit.tar.gz
+      | tar xzf - -C /usr/local/bin hugo
+    - hugo
+  artifacts:
+    paths:
+      - public
+  only:
+    - merge_requests
+
+deploy:
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  stage: preview
+  image: ubuntu:18.04
+  script:
+    - curl -sL https://github.com/gohugoio/hugo/releases/download/v0.82.0/hugo_extended_0.82.0_Linux-64bit.tar.gz
+      | tar xzf - -C /usr/local/bin hugo
+    - hugo
+  artifacts:
+    paths:
+      - public
+  only:
+    - merge_requests
 
 deploy:
   variables:
