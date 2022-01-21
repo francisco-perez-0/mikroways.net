@@ -4,9 +4,15 @@
 
 <section id="main-container">
   <div class="container">
-    {{ .Content }}
+    <div class="row">
+    <div class="col-md-8">
+      {{ .Content }}
+    </div>
+    <div class="col-md-4">
+      {{ .TableOfContents }}
+    </div>
   </div>
-
+  </div>
 </section>
 
 {{ end }}

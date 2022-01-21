@@ -1,27 +1,18 @@
 ---
-title: "Privacy policies"
+title: "Privacy policy"
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 # meta description
-description: "Politicas de privacidad aplicada para los servicios"
+description: "Privacy policy regarding our services"
 # save as draft
 draft: false
 ---
-
-- [Introduction](#introduction)
-- [Exclusive information for the services authentication](#exclusive-information-for-the-services-authentication)
-- [Integration with identity providers](#integration-with-identity-providers)
-- [How we use the information](#how-we-use-the-information)
-- [Information confidentiality](#information-confidentiality)
-- [Change / Update personal information](#change--update-personal-information)
-- [Personal information security](#personal-information-security)
-- [Acceptance of the terms](#acceptance-of-the-terms)
 
 ### Introduction
 
 One of the main objectives of Mikroways is to guarantee the satisfaction of our clients,
 always promoting the continuous improvement of the quality of our services.
-In addition to this, the main focus of the tasks we develop is to provide DevSecOps-oriented services.
+In addition to this, the main focus of the tasks we develop is to provide DevSecOps services.
 As a fundamental axis within our commitment to clients, we position confidentiality,
 privacy and clarity about the way in which we work with your information.
 
@@ -102,4 +93,3 @@ thereby constituting a legal agreement between the user and Mikroways.
 If the user uses Mikroways services, it means that they have read, understood and agreed to the terms set forth above.
 If you do not agree with them, the user should not provide any personal information,
 or use the service because they are not authorized to do so.
-

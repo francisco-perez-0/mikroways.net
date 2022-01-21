@@ -1,5 +1,5 @@
 ---
-title: "Politicas de privacidad"
+title: "Política de privacidad"
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 # meta description
@@ -7,16 +7,6 @@ description: "Politicas de privacidad aplicada para los servicios"
 # save as draft
 draft: false
 ---
-
-- [Introducción](#introducción)
-- [Información exclusivamente para la autenticación de servicios](#información-exclusivamente-para-la-autenticación-de-servicios)
-- [Integración con proveedores de identidad](#integración-con-proveedores-de-identidad)
-- [Finalidad que se le dará a la información](#finalidad-que-se-le-dará-a-la-información)
-- [Confidencialidad de la Información](#confidencialidad-de-la-información)
-- [Modificación / actualización de la información personal](#modificación--actualización-de-la-información-personal)
-- [Protección de la Información Personal](#protección-de-la-información-personal)
-- [Aceptación de los términos](#aceptación-de-los-términos)
-
 
 ### Introducción
 
@@ -35,7 +25,7 @@ y de qué manera la misma se protege.
 ### Información exclusivamente para la autenticación de servicios
 
 Mikroways brinda información relacionada a los servicios que presta a sus clientes protegiendo la misma a través
-de credenciales de acceso únicas . Para ello es necesario que cada cliente cuente con credenciales (usuario/contraseña)
+de credenciales de acceso únicas. Para ello es necesario que cada cliente cuente con credenciales (usuario/contraseña)
 únicas y propias. Para que dichas credenciales puedan ser generadas, es necesario que el cliente cumpla con un
 proceso de registración sobre una plataforma de Mikroways dispuesta a tal fin, en la cual cada cliente deberá ingresar
 los siguiente datos:
@@ -44,21 +34,21 @@ los siguiente datos:
 - Apellido
 - Cuenta de correo electrónico
 
-En base  a estos datos, se generará una cuenta que permitirá al cliente acceder a información propia de los servicios que
+Con estos datos, se generará una cuenta que permitirá al cliente acceder a información propia de los servicios que
 Mikroways le presta. Estos datos son los ÚNICOS que Mikroways podría requerir al usuario para realizar el proceso de autenticación.
 
 ### Integración con proveedores de identidad
 
 Con el objetivo de facilitar el proceso de autenticación, Mikroways ofrece a sus clientes la posibilidad de integrar dicho proceso
-empleando proveedores de identidad conocidos tales como Google (en el futuro se prevé emplear otros tales como GitLab u otros). 
+empleando proveedores de identidad como Google, GitLab y otros. 
 
 Para que este proceso funcione, es necesario que el cliente que elija emplear alguno de esos proveedores de identidad,
-indique con qué cuenta lo llevará a cabo. Por ejemplo para el caso de Google deberá indicar una cuenta de correo electrónico
+indique con qué cuenta lo llevará a cabo. Por ejemplo, para el caso de Google deberá indicar una cuenta de correo electrónico
 con la cual el usuario será identificado. 
 
 Bajo ningún concepto Mikroways solicitará la contraseñas de dichas cuentas, ni tampoco tendrá acceso a las mismas,
 pues el proceso de autenticación se realizará de manera íntegra entre el usuario y el proveedor de identidad
-(Google, GitLab o el que fuera) empleando para ellos protocolos aprobados por la industria.
+empleando para ellos protocolos estándares de la industria.
 
 ### Finalidad que se le dará a la información
 
@@ -81,15 +71,15 @@ dueños desde el [portal de gestión de perfiles](https://idp.mikroways.net/auth
 
 ### Protección de la Información Personal
 
-La información proporcionada por el usuario, está asegurada por una clave de acceso a la cual sólo el usuario podrá acceder y
+La información proporcionada por el usuario, está asegurada por una clave a la cual sólo el usuario podrá acceder y
 de la cual sólo él tiene conocimiento. Mikroways no intentará por ningún medio obtener esa clave personal.
 
 La integridad de la información transmitida a través de internet tal como la contraseña de acceso a los servicios,
 está protegida por los estándares de seguridad provistos para el cifrado de comunicaciones entre equipos informáticos.
 Para el caso del empleo de la integración con un proveedor de identidad, el proceso de autenticación es realizado por dicho
-proveedor de identidad, y la seguridad de dicho proceso es provista por dicho proveedor (Google, GitLab o el que fuere). 
+proveedor de identidad, y la seguridad de dicho proceso es provista por dicho proveedor. 
 
-El usuario es el único responsable de mantener en secreto su clave y la información de su cuenta. Para disminuir los riesgos
+El usuario es el único responsable de mantener en secreto su clave y la información de su cuenta. Para disminuir los riesgos,
 Mikroways recomienda al usuario salir de su cuenta y cerrar la ventana de su navegador cuando finalice su actividad,
 más aún si comparte su computadora con alguien o utiliza una computadora en un lugar público como por ejemplo una biblioteca,
 o un equipo común dentro de una oficina.

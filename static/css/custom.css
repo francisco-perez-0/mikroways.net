@@ -654,3 +654,7 @@ figcaption h3 {
 figure.effect-oscar:hover figcaption::before {
   opacity: 0;
 }
+
+nav#TableOfContents ul li {
+  list-style: none;
+}
