@@ -43,7 +43,7 @@ To learn more about the predefined tasks, `cap -T -A` can be executed to get a c
 
 As you may notice, there is a subtask for each stage of the deployment process. We can use this to define specific tasks before or after each one of these stages by using hooks.
 
-For example, let's assume the case where we need to copy a file from one directory to another just before the deployment finishes. As mentioned above, we know that the _"finishing"_ stage exists within the namespace of the deploy task and that we can define our own tasks after that stage passes. That's why our task could be something like:
+For example, let's assume the case where we need to copy a file from one directory to another just before the deployment finishes. As mentioned above, we know that the _"finishing"_ stage exists within the namespace of the deploy task and that we can define our own tasks after that stage passes. That's why our task may look as it follows:
 
 ```ruby
  namespace :deploy do
