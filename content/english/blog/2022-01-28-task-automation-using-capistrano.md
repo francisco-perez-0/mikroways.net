@@ -1,10 +1,10 @@
 ---
 title: "Task automation using Capistrano"
-date: 2022-01-24T12:06:24-03:00
+date: 2022-01-28T11:06:24-03:00
 # page header background image
 page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
-image: ""
+image: "images/blog/ruby.webp"
 # post author
 author: "Macarena Poisson"
 # taxonomies
@@ -13,7 +13,7 @@ tags: ["capistrano", "automation"]
 # meta description
 description: "Capistrano as a tool for task automation"
 # save as draft
-draft: true
+draft: false
 ---
 
 Capistrano is a tool to automate tasks on remote servers, such as automate audits of any number of machines, the definition of workflows over SSH, among others.

@@ -1,10 +1,10 @@
 ---
 title: "Automatización de tareas con Capistrano"
-date: 2022-01-24T12:06:24-03:00
+date: 2022-01-28T11:06:24-03:00
 # page header background image
 page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
-image: ""
+image: "images/blog/ruby.webp"
 # post author
 author: "Macarena Poisson"
 # taxonomies
@@ -13,7 +13,7 @@ tags: ["capistrano", "automatización"]
 # meta description
 description: "Capistrano como herramienta para la automatización de tareas"
 # save as draft
-draft: true
+draft: false
 ---
 
 Capistrano es una herramienta para automatizar tareas en servidores remotos, tales como la automatización de tareas de auditoría, la definición de workflows mediante ssh, entre otras.
