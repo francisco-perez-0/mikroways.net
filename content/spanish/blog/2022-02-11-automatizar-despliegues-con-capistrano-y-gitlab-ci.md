@@ -1,6 +1,6 @@
 ---
 title: "Automatizar despliegues con Capistrano Y GitLab CI/CD"
-date: 2022-01-31T11:56:58-03:00
+date: 2022-02-11T09:52:58-03:00
 # page header background image
 page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
@@ -12,11 +12,9 @@ categories: ["DevSecOps"]
 tags: ["capistrano", "automatización", "gitlab-ci"]
 # meta description
 description: "Integración de Capistrano con GitLab CI"
-# save as draft
-draft: true
 ---
 
-En el post anterior vimos cómo podemos [automatizar un despliegue utilizando Capistrano]({{<ref "/blog/2022-01-28-automatización-de-tareas-con-capistrano.">}}). En este post veremos cómo integrar Capistrano con GitLab CI.
+En el post anterior vimos cómo podemos [automatizar un despliegue utilizando Capistrano]({{<ref "/blog/2022-01-28-automatizacion-de-tareas-con-capistrano.">}}). En este post veremos cómo integrar Capistrano con GitLab CI.
 
 ### Integrando Capistrano a GitLab CI
 

@@ -1,6 +1,6 @@
 ---
 title: GitLab Continuous Integration with Capistrano
-date: 2022-01-31T11:56:58-03:00
+date: 2022-02-11T09:52:58-03:00
 # page header background image
 page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
@@ -13,7 +13,7 @@ tags: ["capistrano", "automation", "gitlab-ci"]
 # meta description
 description: "Deployment using Capistrano and GitLab CI"
 # save as draft
-draft: true
+draft: false
 ---
 
 In the previous post we saw how to [automate a deployment using Capistrano]({{<ref "/blog/2022-01-28-task-automation-using-capistrano">}}). In this post we will see how to integrate Capistrano with GitLab CI.
