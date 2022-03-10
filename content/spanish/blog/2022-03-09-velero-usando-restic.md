@@ -1,6 +1,6 @@
 ---
 title: "Backups en velero utilizando restic"
-date: 2022-03-06T11:56:58-03:00
+date: 2022-03-09T11:56:58-03:00
 # page header background image
 page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
@@ -11,13 +11,11 @@ author: "Matias Gudin"
 categories: ["DevSecOps"]
 tags: ["velero", "vsphere", "vmware", "kubernetes", "restic"]
 # meta description
-description: "Resguardando volumenes utilizando restic"
-# save as draft
-draft: true
+description: "Resguardando volúmenes utilizando restic"
 ---
 
-En el [post anterior]({{<ref "/blog/2022-02-19-flujo-de-trabajo-con-velero">}}). 
-simulamos la perdida de datos en nuestro cluster y
+En el [post anterior]({{<ref "/blog/2022-02-23-flujo-de-trabajo-con-velero">}}). 
+simulamos la pérdida de datos en nuestro cluster y
 procedimos a restaurarlo a partir de un backup utilizando el
 `velero-plugin-for-vsphere`.
 
@@ -57,7 +55,7 @@ tan sencillo como agregar la anotación correspondiente.
 ## Preparación del ambiente
 
 Continuando con el ejemplo del
-[post anterior]({{<ref "/blog/2022-02-19-flujo-de-trabajo-con-velero">}}), vamos
+[post anterior]({{<ref "/blog/2022-02-23-flujo-de-trabajo-con-velero">}}), vamos
 a agregar un nuevo volumen de tipo `emptyDir` para utilizar restic. Modificamos 
 el pod `nginx-pod` para agregar este volumen:
 
@@ -160,7 +158,7 @@ corriendo y que los volúmenes contienen los datos que creamos:
 Hasta aquí hemos 
 [instalado velero en un cluster sobre vSphere]({{<ref "/blog/2022-02-04-instalando-velero-en-cluster-k8s">}}),
 ,
-[creado y restaurado backups con snapshots de vSphere]({{<ref "/blog/2022-02-19-flujo-de-trabajo-con-velero">}}),
+[creado y restaurado backups con snapshots de vSphere]({{<ref "/blog/2022-02-23-flujo-de-trabajo-con-velero">}}),
 y utilizado restic en conjunto para resguardar otros tipo de volúmenes.
 
 Velero resulta una herramienta muy versátil para migrar ambientes de trabajo, o 

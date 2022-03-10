@@ -1,6 +1,6 @@
 ---
 title: "Backups y Restores con velero"
-date: 2022-02-19T11:56:58-03:00
+date: 2022-02-23T11:56:58-03:00
 # page header background image
 page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
@@ -12,8 +12,6 @@ categories: ["DevSecOps"]
 tags: ["velero", "vsphere", "backup", "restore", "vmware"]
 # meta description
 description: "Trabajando con velero en k8s"
-# save as draft
-draft: true
 ---
 
 En el post anterior instalamos
