@@ -9,9 +9,9 @@ image: "images/blog/velero-01.webp"
 author: "Matias Gudin"
 # taxonomies
 categories: ["DevSecOps"]
-tags: ["velero", "vsphere","vmware","kubernetes"]
+tags: ["velero", "vsphere","vmware","kubernetes", "backups"]
 # meta description
-description: "Como desplegar velero en un cluster kubernetes sobre VMware/vSphere"
+description: "Cómo desplegar velero en un cluster kubernetes sobre VMware/vSphere"
 # save as draft
 draft: false
 ---
@@ -28,7 +28,7 @@ funcionamiento para luego instalarlo en un cluster kubernetes desplegado sobre
 
 Comencemos...
 
-# Como funciona velero?
+# ¿Cómo funciona velero?
 
 Velero consiste en un servidor instalado en el cluster y un cliente que se
 ejecuta en forma local mediante la linea de comandos.
