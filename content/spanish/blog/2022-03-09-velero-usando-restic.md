@@ -12,6 +12,7 @@ categories: ["DevSecOps"]
 tags: ["velero", "vsphere", "vmware", "kubernetes", "restic"]
 # meta description
 description: "Resguardando volúmenes utilizando restic"
+draft: true
 ---
 
 En el [post anterior]({{<ref "/blog/2022-02-23-flujo-de-trabajo-con-velero">}}). 
@@ -19,8 +20,8 @@ simulamos la pérdida de datos en nuestro cluster y
 procedimos a restaurarlo a partir de un backup utilizando el
 `velero-plugin-for-vsphere`.
 
-Pero que sucede cuando los volúmenes no son persistentes o bien no son manejados
-por el hipervisor como dispositivos de bloques?
+¿Pero qué sucede cuando los volúmenes no son persistentes o bien no son
+manejados por el hipervisor como dispositivos de bloques?
 
 ## Restic
 
@@ -29,7 +30,7 @@ Hasta ahora hemos utilizado velero junto con el plugin
 nuestro cluster. Estos objetos contenían volúmenes persistentes que representaban
 un disco en el hipervisor.
 
-Entonces, podemos resguardar un volumen que no es persistente, como un
+Entonces, ¿podemos resguardar un volumen que no es persistente, como un
 `emptyDir`?
 
 Tal vez haya pasado desapercibido, pero a la hora de instalar velero 
