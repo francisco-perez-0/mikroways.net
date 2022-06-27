@@ -48,7 +48,7 @@ VSPhere](https://www.vmware.com/products/vsphere.html), incluso con [openstack
 glance](https://docs.openstack.org/glance/latest/), puede que no tengamos
 imágenes existentes que cumplan con nuestros requerimientos.
 
-[Hasicorp](https://www.hashicorp.com/) ofrece [packer](https://www.packer.io/),
+[Hashicorp](https://www.hashicorp.com/) ofrece [packer](https://www.packer.io/),
 una herramienta que nos permite crear imágenes idénticas, e incluso prepararlas
 con determinadas características antes de proceder con su aprovisionamiento.
 Podemos crear incluso, vagrant boxes y AMIs con este producto.
@@ -86,7 +86,7 @@ como la siguiente:
 
 Mientras packer está trabajando, es posible conectar por vnc a localhost puerto
 59xx. El puerto, es posible verlo en la salida de packer. En el ejemplo grabado,
-puede visualizarse serca del segundo 13, que se abre el puerto 5977.
+puede visualizarse cerca del segundo 13, que se abre el puerto 5977.
 
 Ya con la imagen generada, procedemos a trabajar con terraform.
 
@@ -96,8 +96,8 @@ Ya con la imagen creada en la sección anterior, para poder crear tantas
 virtuales como queramos, tenemos que:
 
 * Crear una imagen base que llamaremos template y desde donde se clonarán los
-  discos de las nuevas virtuales
-* Crear las virtuales que querramos
+  discos de las nuevas virtuales.
+* Crear las virtuales que querramos.
 
 ### Creamos el template
 
@@ -125,10 +125,10 @@ directorio a otro, trabaja de una forma más compleja:
 
 * El archivo
   [`variables.tf`](https://github.com/Mikroways/windows-packer-terraform-libvirt/blob/main/terraform/00-template/variables.tf)
-  define qué pool y volumen creará
-* Un pool en libvirt es un storage que en este caso es de tipo directorio
+  define qué pool y volumen creará.
+* Un pool en libvirt es un storage que en este caso es de tipo directorio.
 * Un volumen es un dispositivo dentro del pool que será un disco de una virtual.
-  Un disco virtual, que debe particionarse para poder usarse
+  Un disco virtual, que debe particionarse para poder usarse.
 
 El siguiente paso, será entonces crear una virtual a partir del volumen antes
 creado. Para ello, nos movemos al directorio **`../01-vm/`**:
@@ -147,8 +147,8 @@ Podemos conectar a esta máquina usando diferentes estrategias:
 
 
 * **Gráficamente:** usando rdesktop y la IP que devuelve terraform, o
-  usando spice a través de virt-viewer o virt-manager
-* **Por consola:** usando winrm o ssh
+  usando spice a través de virt-viewer o virt-manager.
+* **Por consola:** usando winrm o ssh.
 
 ## Aprovisionando la vm con ansible
 
@@ -179,7 +179,7 @@ puede verse que se realizan varias tareas:
 * Instala y habilita Windows Subsystem for Linux (WSL), esto es una capa que
   permite correr nativamente binarios de Linux en windows.
 
-Es interesante ver como se procede en este playbook de ejemplo para entender el
+Es interesante ver cómo se procede en este playbook de ejemplo para entender el
 potencial que tenemos a través de ansible, pero en realidad el poder real es a
 través de [powershell](https://docs.microsoft.com/en-us/powershell/). Esta
 herramienta de Microsoft es vital para automatizar en estas plataformas, y es
