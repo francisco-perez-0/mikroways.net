@@ -189,7 +189,7 @@ Además, powershell es la base de [DSC](https://docs.microsoft.com/en-us/powersh
 Por último, mostramos una conexión al flamante windows, y abrimos las
 aplicaciones instaladas:
 
-{{< video src="/videos/windows-iac.webm" type="video/webm" >}}
+{{< youtube id="DAStbviE2Uc" >}}
 
 ## Conclusiones
 
