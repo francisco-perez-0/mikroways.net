@@ -16,7 +16,7 @@ infraesrtuctura como código"
 draft: false
 ---
 
-Casi siempre que hablamos de infraesrtuctura como código (IaC), lo asociamos al
+Casi siempre que hablamos de infraestructura como código (IaC), lo asociamos al
 aprovisionamiento de máquinas con sistema operativo Linux. Son numerosos los
 ejemplos que podemos encontrar sobre el uso de herramientas como Puppet, Chef,
 ansible, packer, etc, en sistemas operativos Linux. Sin embargo, también hay
