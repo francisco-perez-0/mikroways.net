@@ -11,28 +11,22 @@ author: "Christian Rodriguez"
 categories: ["Devsecops"]
 tags: ["windows", "iac", "ansible", "terraform", "automatizacion"]
 # meta description
-description: "Aprovisionamiento de máquinas Microsoft windows utilizando
-infraesrtuctura como código"
+description: "Cómo aprovisionar máquinas con Microsoft Windows utilizando
+infraestructura como código"
 draft: false
 ---
 
-Casi siempre que hablamos de infraestructura como código (IaC), lo asociamos al
-aprovisionamiento de máquinas con sistema operativo Linux. Son numerosos los
-ejemplos que podemos encontrar sobre el uso de herramientas como Puppet, Chef,
-ansible, packer, etc, en sistemas operativos Linux. Sin embargo, también hay
-información de cómo aprovisionar sistemas Microsoft Windows, aunque no es tan
-frecuente como uno esperaría.
+La automatización nos permite ser más eficientes pero también nos evita que
+cometamos varios errores comunes, mejorando la calidad del software y de los
+servicios. En este sentido, es muy habitual que al hablar de infraestructura
+como código (IaC) lo asociemos al aprovisionamiento de máquinas con sistema
+operativo Linux. Son numerosos los ejemplos que podemos encontrar sobre el uso
+de herramientas tales como Puppet, Chef, Ansible y Packer en Linux. Sin embargo,
+también es posible aprovisionar sistemas operativos Microsoft Windows. En este
+post veremos, a través de ejemplos, cómo hacerlo.
 
-Es que el problema de automatizar, no es un problema que atañe a un tipo de
-sistema operativo, sino que por el contrario, es una solución para nosotros, las
-personas que trabajamos gestionando infraestructura y queremos evitar cometer
-errores simples.
-
-Por esta razón, nos pareció oportuno escribir en este post una serie de ejemplos
-completos de cómo proceder de cero en el uso de varias herramientas de IaC. En
-Mikroways las utilizamos diariamente, pero mayormente con sistemas Linux. Todos
-los ejemplos empleados en este post, están a disposición en el siguiente
-repositorio en [GitHub](https://github.com/Mikroways/windows-packer-terraform-libvirt).
+Todos los ejemplos mostrados están a disposición en en el siguiente repositorio
+en [GitHub](https://github.com/Mikroways/windows-packer-terraform-libvirt).
 
 ## ¿Qué vamos a mostrar?
 
@@ -44,11 +38,11 @@ deseamos. Si trabajamos con AWS, lo mismo haremos con la
 [AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.html).
 Pero si trabajamos con [libvirt](https://libvirt.org/),
 [ovirt](https://www.ovirt.org/), [VMWare
-VSPhere](https://www.vmware.com/products/vsphere.html), incluso con [openstack
-glance](https://docs.openstack.org/glance/latest/), puede que no tengamos
+VSPhere](https://www.vmware.com/products/vsphere.html), incluso con [Openstack
+Glance](https://docs.openstack.org/glance/latest/), puede que no tengamos
 imágenes existentes que cumplan con nuestros requerimientos.
 
-[Hashicorp](https://www.hashicorp.com/) ofrece [packer](https://www.packer.io/),
+[Hashicorp](https://www.hashicorp.com/) ofrece [Packer](https://www.packer.io/),
 una herramienta que nos permite crear imágenes idénticas, e incluso prepararlas
 con determinadas características antes de proceder con su aprovisionamiento.
 Podemos crear incluso, vagrant boxes y AMIs con este producto.
@@ -61,20 +55,21 @@ libvirt: [virsh](https://www.libvirt.org/manpages/virsh.html),
 [virt-manager](https://virt-manager.org/) o
 [virt-viewer](https://gitlab.com/virt-viewer/virt-viewer). Sin embargo, **el
 problema de todas estas herramientas, es que son de gestión manual**. Con
-**packer**, crearemos un template que luego usaremos con
-[**terraform**](https://www.terraform.io/) para iniciar una virtual
-que tomará IP por dhcp. Al ser un windows, la configuración remota de la
+**Packer**, crearemos un template que luego usaremos con
+[**Terraform**](https://www.terraform.io/) para iniciar una virtual
+que tomará IP por DHCP. Al ser un windows, la configuración remota de la
 instancia se realizará vía
 **[winrm](https://docs.microsoft.com/en-us/windows/win32/winrm/portal)** o
-**ssh**, que debe instalarse porque no es algo nativo en windows. Este último
-aprovisionamiento lo realizaremos con [**ansible**](https://www.ansible.com/).
+**SSH**, que debe instalarse porque no es algo nativo en windows. Este último
+aprovisionamiento lo realizaremos con [**Ansible**](https://www.ansible.com/).
 
 
-## Creamos la imagen con packer
+## Creamos la imagen con Packer
 
-Siguiendo las indicaciones en [nuestro repositorio](https://github.com/Mikroways/windows-packer-terraform-libvirt),
-procedemos a clonar otro repositorio que simplifica la  configuración de packer.
-Finalmente, al correr packer usando la documentación, obtendremos una salida
+Siguiendo las indicaciones en [nuestro
+repositorio](https://github.com/Mikroways/windows-packer-terraform-libvirt),
+procedemos a clonar otro repositorio que simplifica la  configuración de Packer.
+Finalmente, al correr Packer usando la documentación, obtendremos una salida
 como la siguiente:
 
 {{< asciinema key="windows-iac/packer" rows="30" cols="800" preload="1" speed="150" >}}
@@ -88,9 +83,9 @@ Mientras packer está trabajando, es posible conectar por vnc a localhost puerto
 59xx. El puerto, es posible verlo en la salida de packer. En el ejemplo grabado,
 puede visualizarse cerca del segundo 13, que se abre el puerto 5977.
 
-Ya con la imagen generada, procedemos a trabajar con terraform.
+Ya con la imagen generada, procedemos a trabajar con Terraform.
 
-## Creamos una vm con terraform
+## Creamos una VM con Terraform
 
 Ya con la imagen creada en la sección anterior, para poder crear tantas
 virtuales como queramos, tenemos que:
@@ -103,7 +98,7 @@ virtuales como queramos, tenemos que:
 
 Ya con el [repositorio](https://github.com/Mikroways/windows-packer-terraform-libvirt),
 clonado, ingresamos al directorio **`terraform/00-template`** y corremos
-terraform:
+Terraform:
 
 ```bash
 cd terraform/00-template
@@ -146,13 +141,13 @@ esta máquina desde la PC anfitriona.
 Podemos conectar a esta máquina usando diferentes estrategias:
 
 
-* **Gráficamente:** usando rdesktop y la IP que devuelve terraform, o
-  usando spice a través de virt-viewer o virt-manager.
+* **Gráficamente:** usando rdesktop y la IP que devuelve Terraform, o usando
+  spice a través de virt-viewer o virt-manager.
 * **Por consola:** usando winrm o ssh.
 
-## Aprovisionando la vm con ansible
+## Aprovisionando la VM con Ansible
 
-Y ahora es momento de configurar la máquina recientemente creada con ansible. La
+Y ahora es momento de configurar la máquina recientemente creada con Ansible. La
 idea es mostrar cómo personalizar esta instancia. En nuestro repositorio,
 documentamos qué [requerimientos deben
 cumplirse](https://github.com/Mikroways/windows-packer-terraform-libvirt#ansible)
@@ -168,25 +163,26 @@ La salida del comando puede verse en el siguiente video:
 {{< asciinema key="windows-iac/ansible" rows="30" cols="800" preload="1"
 speed="50" >}}
 
-Si se analiza el [playbook](https://github.com/Mikroways/windows-packer-terraform-libvirt/blob/main/ansible/playbook.yml)
+Si se analiza el
+[playbook](https://github.com/Mikroways/windows-packer-terraform-libvirt/blob/main/ansible/playbook.yml)
 puede verse que se realizan varias tareas:
 
 * Aplica actualizaciones (windows updates), considerando únicamente aquellas
   actualizaciones críticas.
-* Instala aplicaciones usando [chocolatey](https://chocolatey.org/), como por
-  ejemplo firefox, google chrome, vlc, terraform, git, kubectl, entre otras más.
+* Instala aplicaciones usando [Chocolatey](https://chocolatey.org/), como por
+  ejemplo Firefox, Google Chrome, VLC, Terraform, GIT, Kubectl, entre otras más.
 * Remueve componentes de windows que no se utilizan.
 * Instala y habilita Windows Subsystem for Linux (WSL), esto es una capa que
   permite correr nativamente binarios de Linux en windows.
 
 Es interesante ver cómo se procede en este playbook de ejemplo para entender el
-potencial que tenemos a través de ansible, pero en realidad el poder real es a
-través de [powershell](https://docs.microsoft.com/en-us/powershell/). Esta
+potencial que tenemos a través de Ansible, pero en realidad el poder real es a
+través de [Powershell](https://docs.microsoft.com/en-us/powershell/). Esta
 herramienta de Microsoft es vital para automatizar en estas plataformas, y es
-usado por ansible, packer y [cloud-init](https://cloudinit.readthedocs.io/en/latest/).
-Además, powershell es la base de [DSC](https://docs.microsoft.com/en-us/powershell/dsc/overview).
+usado por Ansible, Packer y [cloud-init](https://cloudinit.readthedocs.io/en/latest/).
+Además, Powershell es la base de [DSC](https://docs.microsoft.com/en-us/powershell/dsc/overview).
 
-Por último, mostramos una conexión al flamante windows, y abrimos las
+Por último, mostramos una conexión al flamante Windows, y abrimos las
 aplicaciones instaladas:
 
 {{< youtube id="DAStbviE2Uc" >}}
