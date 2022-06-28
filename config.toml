@@ -43,6 +43,8 @@ link = "plugins/cd-hero/cd-hero.css"
 link = "css/timeline.css"
 [[params.override_css]]
 link = "css/custom.css"
+[[params.override_css]]
+link = "css/asciinema-player.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -79,6 +81,8 @@ link = "js/contactformlambda.js"
 link = "js/newsletter.js"
 [[params.plugins.js]]
 link = "https://kit.fontawesome.com/4e9fd50276.js"
+[[params.plugins.js]]
+link = "js/asciinema-player.js"
 
 
 ############################## English navigation ###############################

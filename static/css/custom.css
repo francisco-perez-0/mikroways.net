@@ -658,3 +658,11 @@ figure.effect-oscar:hover figcaption::before {
 nav#TableOfContents ul li {
   list-style: none;
 }
+
+.post-content img {
+  width: 100%;
+}
+
+.video-shortcode {
+  width: 100%;
+}
