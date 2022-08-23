@@ -33,6 +33,6 @@ El ciclo de charlas se llevará a cabo en tres miércoles consecutivos, el 31 de
 agosto, el 7 y el 14 de septiembre, y se podrá asistir de manera presencial en
 la Facultad de Informática, o bien verlas por streaming.
 
-Encontrá más información e inscribite en la [página de la Secretaría de
+El evento es libre y gratuito, aunque [requiere inscripción](https://www.eventbrite.com/e/ciclo-de-charlas-a-la-nube-con-escalas-tickets-400647967857). Encontrá más información en la [página de la Secretaría de
 Extensión de la Facultad de
 Informática](https://www.extension.info.unlp.edu.ar/ciclo-de-charlas-a-la-nube-con-escalas-destinado-a-la-difusion-de-la-tecnologia-de-la-nube/).
