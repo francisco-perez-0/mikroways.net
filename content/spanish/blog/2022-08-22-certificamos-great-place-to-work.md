@@ -19,8 +19,7 @@ draft: false
 
 Con enorme alegría anunciamos que obtuvimos la certificación [Great Place to
 Work](https://certificaciones.greatplacetowork.com.ar/mikroways), con un 100%
-de nuestros colaboradores afirmando que Mikroways es un gran lugar para
-trabajar.
+del equipo afirmando que Mikroways es un excelente lugar para trabajar.
 
 ![Equipo](/images/blog/gptw/4.webp)
 
@@ -31,3 +30,6 @@ pueda sentirse a gusto, y que le permita crecer y desarrollarse, tanto desde lo
 profesional como desde lo humano.
 
 ![Equipo](/images/blog/gptw/2.webp)
+
+¡Gracias a todo el equipo por hacer de Mikroways un excelente lugar para
+trabajar!
