@@ -1,5 +1,5 @@
 ---
-title: "¡Certificamos como gran lugar para trabajar!"
+title: "¡Certificamos Great Place to Work!"
 date: 2022-08-22T10:26:58-03:00
 # page header background image
 page_header_bg: "images/banner/banner2.jpg.webp"
