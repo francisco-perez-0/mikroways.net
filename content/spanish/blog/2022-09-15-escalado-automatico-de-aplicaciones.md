@@ -53,6 +53,12 @@ necesario buscar otras métricas que reflejen de forma más realista la
 experiencia de los usuarios con el servicio.
 
 Con todo lo mencionado como base, en la siguiente exposición se muestra un
-ejemplo de escalamiento automático utilizando tanto CPU como otras métricas.
+ejemplo de escalamiento automático utilizando tanto CPU como otras métricas. El
+[repositorio con el código de la
+demo](https://gitlab.com/mikroways/public/a-la-nube-con-escalas/escalado-automatico-de-aplicaciones-basado-en-la-carga)
+y la [presentación
+utilizada](/files/mikroways-a-la-nube-con-escalas-autoscaling.pdf) están
+disponibles para ser consultados.
 
 {{< youtube Y4Sa7TjfAdM >}}
+
