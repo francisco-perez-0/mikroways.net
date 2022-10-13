@@ -38,8 +38,8 @@ particularmente atractivo cuando se realiza de forma automática.
 
 Ahora bien, escalar es un problema que puede entenderse en dos fases:
 
-1. **Disparar el escamiento**: lo primero es detectar la situación en la cual es
-   necesario escalar. Para esto debe existir algún tipo de indicador que se
+1. **Disparar el escalamiento**: lo primero es detectar la situación en la cual
+   es necesario escalar. Para esto debe existir algún tipo de indicador que se
    estará observando y que, cuando atraviese un determinado umbral, disparará el
    escalado.
 1. **Ajustar los recursos**: una vez que se detectó la necesidad de escalar, el
