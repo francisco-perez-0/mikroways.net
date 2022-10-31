@@ -202,7 +202,7 @@ clients:
   client:
     - name : "AFIP"
       logo : "images/clients/afip.png.webp"
-      link : "https://www.afip.gob.ar"
+      link : "#"
       industry : Government
       country : Argentina
       homepage : true
