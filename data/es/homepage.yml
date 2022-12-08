@@ -219,6 +219,18 @@ clients:
       industry : Otro
       country : Argentina
       homepage : true
+    - name : "Balanz"
+      logo : "images/clients/balanz.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : true
+    - name : "ITX Corp"
+      logo : "images/clients/itx.png"
+      link : "#"
+      industry : Software
+      country : USA
+      homepage : true
     - name : "Gobierno de la Provincia de Buenos Aires"
       logo : "images/clients/gba.svg"
       link : "#"
@@ -230,6 +242,18 @@ clients:
       link : "#"
       industry : Software
       country : España
+      homepage : false
+    - name : "Team Quality"
+      logo : "images/clients/team-quality.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
+      homepage : false
+    - name : "Finca IT"
+      logo : "images/clients/finca.webp"
+      link : "#"
+      industry : Software
+      country : Argentina
       homepage : false
     - name : "easycommerce tech"
       logo : "images/clients/easy-commerce-tech.svg"
@@ -249,24 +273,24 @@ clients:
       industry : Software
       country : España
       homepage : false
-    - name : "BCN Quark"
-      logo : "images/clients/bcn-quark.png.webp"
-      link : "#"
-      industry : Software
-      country : España
-      homepage : false
     - name : "Entornos"
       logo : "images/clients/entornos.png.webp"
       link : "#"
       industry : Software
       country : Argentina
       homepage : true
+    - name : "BCN Quark"
+      logo : "images/clients/bcn-quark.png.webp"
+      link : "#"
+      industry : Software
+      country : España
+      homepage : false
     - name : "Snoop"
       logo : "images/clients/snoop.png.webp"
       link : "#"
       industry : Software
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "Senasa"
       logo : "images/clients/senasa.png.webp"
       link : "#"
@@ -278,7 +302,7 @@ clients:
       link : "#"
       industry : Software
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "Retail Commerce"
       logo : "images/clients/retail-commerce.png.webp"
       link : "#"
@@ -290,13 +314,13 @@ clients:
       link : "#"
       industry : Otro
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "Julasoft"
       logo : "images/clients/julasoft.jpg.webp"
       link : "#"
       industry : Software
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "Squad"
       logo : "images/clients/squad.png.webp"
       link : "#"
@@ -313,6 +337,12 @@ clients:
       logo : "images/clients/inta.png.webp"
       link : "#"
       industry : Gobierno
+      country : Argentina
+      homepage : false
+    - name : "Neocomplexx"
+      logo : "images/clients/neocomplexx.png"
+      link : "#"
+      industry : Software
       country : Argentina
       homepage : false
     - name : "Fecliba"
