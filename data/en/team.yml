@@ -181,6 +181,22 @@ team_member:
         icon : "fa-github"
         link : "#"
 
+  - name : "Inti Tidball"
+    image : "images/team/inti.webp"
+    designation : "DevOps Engineer"
+    social:
+      - name : "twitter"
+        icon : "fa-twitter"
+        link : "#"
+
+      - name : "linkedin"
+        icon : "fa-linkedin"
+        link : "#"
+
+      - name : "github"
+        icon : "fa-github"
+        link : "#"
+
   - name : "Danisa Di Tommaso"
     image : "images/team/danisa.jpg.webp"
     designation : "UI/UX Designer"
