@@ -17,10 +17,9 @@ draft: false
 
 En este post analizaremos el comportamiento de [OpenJDK](https://openjdk.org/)
 en ambientes containerizados, haciendo foco en la utilización de memoria y
-presentaremos un *conocido* problema de la versión 1.8.
-
-Presentaremos un conjunto de pruebas para ilustrar este problema y concluiremos
-con recomendaciones para mitigarlo.
+presentaremos un *conocido* problema de la versión 1.8. Para ello, utilizaremos
+un conjunto de pruebas para ilustrarlo y concluiremos mostrando algunas
+recomendaciones para mitigarlo.
 
 Antes de comenzar, repasaremos conceptos que serán de utilidad a lo largo
 del análisis.
@@ -29,10 +28,10 @@ del análisis.
 
 Java es un lenguaje orientado a objetos, compilado y **`multiplataforma`**.
 Hacemos énfasis en que es **`multiplataforma`** porque justamente se compila para
-una maquina virtual de java(**`JVM`**) quien terminara ejecutando los binarios. Es
-esta abstracción la que permite que sea **`multiplataforma`**; ya que basta con tener
-instalada dicha maquina para que podamos ejecutar nuestros programas en
-cualquier host.
+luego ser interpretado por una maquina virtual de java (**`JVM`**) quien
+terminará ejecutando los binarios. Es esta abstracción la que permite que sea
+**`multiplataforma`** ya que basta con tener instalada dicha maquina para que
+podamos ejecutar nuestros programas en cualquier host.
 
 La **`JVM`** es configurable mediante parámetros. Entre otras cosas podemos configurar la
 cantidad de memoria asignada  mediante **`minRAMPercenage`** y
@@ -53,17 +52,18 @@ llamada `Control Groups`.
 
 Nos permite agrupar los procesos y controlar
 la asignación de recursos, como por ejemplo: tiempo de CPU, memoria,
-entrada/salida, entre otros. Se diseño de forma tal que soporte diversos
+entrada/salida, entre otros. Se diseñó de forma tal que soporte diversos
 controladores para distintos tipos de recursos y que los procesos sean agrupados
 jerárquicamente (como en un filesystem).
 
 
 ### CGroups v1 o CGroups v2
 
-**`Cgroups v1`** aparece en el kernel de linux versión **2.6.24**. Con el tiempo se
-agregaron muchos controladores para distintos tipos de recursos. Estos
-desarrollos se llevaron a cabo sin coordinación trayendo como consecuencia
-inconsistencias entre los controladores complejizando su utilización.
+**`Cgroups v1`** aparece en el kernel de linux versión **2.6.24**. Con el tiempo
+se agregaron muchos controladores para distintos tipos de recursos sin
+coordinación previa entre ellos. Como consecuencia de ello, comenzaron a
+presentarse algunas inconsistencias entre los controladores que complicaban su
+uso.
  
 Es así como a partir de la versión **3.10** del kernel de linux se comenzó a 
 trabajar en una nueva implementación de CGroups (**`CGroups v2`**) para remediar
@@ -92,16 +92,27 @@ leaks que podrían degradar o incluso poner en peligro al host donde corren.
 Con todo lo dicho hasta ahora, resulta importante poder configurar los recursos
 dados a una JVM que se ejecuta en un contenedor. Nos centramos en
 la memoria ya que consideramos uno de los parámetros mas importantes a
-configurar. Para comprender mas en detalle esta elección ver la documentación
+configurar en este tipo de aplicaciones. Para comprender mas en detalle esta elección ver la documentación
 oficial de docker sobre 
 [límites de memoria](https://docs.docker.com/config/containers/resource_constraints/#memory)
 
-El problema presente en la versión de java 1.8 es que **no es posible limitar la
-cantidad de memoria de una JVM ejecutándose en un contenedor en un host que
-utiliza CGroupsv2**.
+La JVM admite configurar la memoria máxima a emplear, utilizando opciones que se
+envían a la JVM cuando corremos `java`. Ahora bien, estos comandos, si bien
+pueden establecer valores absolutos en términos de cuántos bytes asignar a la
+máquina virtual, también permiten trabajar en términos relativos a la memoria
+total del sistema.
 
-Para ilustrarlo realizamos un conjunto de pruebas. Veremos y analizaremos los
-resultados obtenidos.
+El primer problema que surgió con la adopción avasallante de contenedores es que
+la versión de java 8 previa al [update
+131](https://www.oracle.com/java/technologies/javase/8u131-relnotes.html),
+**no permitía limitar los recursos utilizando CGroupsv1**. Esta primer versión
+incluía soporte experimental de CGroupsv1, y recién en el [update
+191](https://www.oracle.com/java/technologies/javase/8u191-relnotes.html) se
+portó la funcionalidad de CGroupsv1 desde la versión 10 de la JVM. Luego, con el
+lanzamiento de CGroupsv2, sucedió exactamente el mismo problema.
+
+Para ilustrarlo realizamos un conjunto de pruebas que nos permitirán ir
+evidenciando y analizando qué sucede en base a los resultados obtenidos.
 
 ### Sobre las pruebas
 
