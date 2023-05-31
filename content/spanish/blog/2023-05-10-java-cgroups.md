@@ -33,24 +33,24 @@ terminará ejecutando los binarios. Es esta abstracción la que permite que sea
 **`multiplataforma`** ya que basta con tener instalada dicha maquina para que
 podamos ejecutar nuestros programas en cualquier host.
 
-La **`JVM`** es configurable mediante parámetros. Entre otras cosas podemos configurar la
-cantidad de memoria asignada  mediante **`minRAMPercenage`** y
-**`maxRAMPercentage`**. Ambos establecen que porcentaje de la memoria del sistema
-se le asignara a la **`JVM`**.
+La **`JVM`** es configurable mediante parámetros. Entre otras cosas podemos
+configurar la cantidad de memoria asignada  mediante **`minRAMPercentage`** y
+**`maxRAMPercentage`**. Ambos establecen qué porcentaje de la memoria del sistema
+se le asignará a la **`JVM`**.
 
 > Vale la pena desambiguar ambos parámetros ya que a simple
 > vista pareciera que establecen valores máximos y mínimos de memoria que se le
 > asignará a la **`JVM`**. En realidad, **`minRAMPercentage`** se utiliza en sistemas con poca
 > memoria (menos de 200MB); mientas que **`maxRAMPercentage`** se utiliza en sistemas
 > con mayor capacidad (a partir de 200MB). Para más información vea este
-> [interesante articulo explicativo](https://www.baeldung.com/java-jvm-parameters-rampercentage)
+> [interesante articulo explicativo](https://www.baeldung.com/java-jvm-parameters-rampercentage).
 
 # CGroups
 
-**`CGroups`** hace referencia a una funcionalidad del kernel de linux
+**`CGroups`** hace referencia a una funcionalidad del kernel de Linux
 llamada `Control Groups`.
 
-Nos permite agrupar los procesos y controlar
+Nos permiten agrupar los procesos y controlar
 la asignación de recursos, como por ejemplo: tiempo de CPU, memoria,
 entrada/salida, entre otros. Se diseñó de forma tal que soporte diversos
 controladores para distintos tipos de recursos, y que los procesos sean agrupados
@@ -65,7 +65,7 @@ coordinación previa entre ellos. Como consecuencia de ello, comenzaron a
 presentarse algunas inconsistencias entre los controladores que complicaban su
 uso.
  
-Es así como a partir de la versión **3.10** del kernel de linux se comenzó a 
+Es así como a partir de la versión **3.10** del kernel de Linux se comenzó a 
 trabajar en una nueva implementación de CGroups (**`CGroups v2`**) para remediar
 estos problemas. La misma fue incluida en la versión **4.5** de manera oficial.
 
@@ -76,15 +76,15 @@ sido portados.
 
 ### CGroups y contenedores
 
-Los runtimes de contenedores (como docker), hacen uso extensivo de los
+Los runtimes de contenedores (como Docker), hacen uso extensivo de los
 namespaces del kernel para que los contenedores corran como procesos aislados
-en el host manteniendo total control sobre ellos.
+en el host, manteniendo total control sobre ellos.
 
 Otra de las funcionalidades que proveen es la de 
 [limitar los recursos](https://docs.docker.com/config/containers/resource_constraints/)
-que se le asignan a un contenedor. Es deseable que utilicemos limites
+que se le asignan a un contenedor. Es deseable que utilicemos límites
 cuando ejecutamos nuestras aplicaciones containerizadas, ya que así evitamos que
-un contenedor utilice mas recursos de los asignados, previniendo
+un contenedor utilice más recursos de los asignados, previniendo
 leaks que podrían degradar o incluso poner en peligro al host donde corren otros
 contenedores.
 
@@ -95,11 +95,11 @@ dados a una JVM que se ejecuta dentro de un contenedor. Nos centramos
 particularmente en la memoria, ya que es un recurso crítico en las aplicaciones
 Java.
 
-> Para comprender mas en profundidad sobre la limitación de memoria en docker, se
+> Para comprender mas en profundidad sobre la limitación de memoria en Docker, se
 > recomienda leer la [documentación oficial.](https://docs.docker.com/config/containers/resource_constraints/#memory)
 
 La JVM admite configurar la memoria máxima a emplear, utilizando opciones que se
-envían a la JVM cuando corremos `java`. Ahora bien, estas opciones, admiten
+envían a la JVM cuando corremos `java`. Ahora bien, estas opciones admiten
 establecerse con valores absolutos, en términos de cuántos bytes asignar a la
 máquina virtual, como también permiten trabajar en términos relativos a la
 memoria total del sistema, expresada en un porcentaje.
@@ -109,10 +109,10 @@ la versión de java 8 previa al [update
 131](https://www.oracle.com/java/technologies/javase/8u131-relnotes.html),
 **no permitía limitar los recursos utilizando CGroupsv1**. Es decir, al utilizar
 porcentajes se tomaba el total de memoria en el host, ignorando los límites
-impuestos al contenedor. Esta primer versión de la JVM, incluía soporte
+impuestos al contenedor. Esta primera versión de la JVM, incluía soporte
 experimental de CGroupsv1. Recién en el [update 191](https://www.oracle.com/java/technologies/javase/8u191-relnotes.html)
 se portó la funcionalidad de CGroupsv1 desde la versión 10 de la JVM. Luego, con el
-lanzamiento de CGroupsv2, sucedió exactamente el mismo problema, es decir, los
+lanzamiento de CGroupsv2, sucedió exactamente el mismo problema, es decir,
 la JVM tomaba toda la memoria del host en vez de la limitada en el contenedor.
 
 Para ilustrar este problema realizamos un conjunto de pruebas que nos permitirán
@@ -120,10 +120,10 @@ evidenciar y analizar qué sucede en base a los resultados obtenidos.
 
 ### Sobre las pruebas
 
-Para realizar las pruebas creamos dos maquinas virtuales, una con con 
+Para realizar las pruebas creamos dos máquinas virtuales, una con con 
 **`ubuntu/xenial(CGroupsv1)`** y otra con **`ubuntu/jammy(CGroupsv2)`**.
 
-> Las pruebas pueden simplificarse si se utuliza
+> Las pruebas pueden simplificarse si se utiliza
 > [Vagrant](https://www.vagrantup.com/), con los boxes de
 > [ubuntu/xenial](https://app.vagrantup.com/ubuntu/boxes/xenial64) y
 > [ubuntu/jammy](https://app.vagrantup.com/ubuntu/boxes/jammy64).
@@ -174,9 +174,8 @@ echo "System Memory $system_memory"
 column -t output 
 ```
 Este script utiliza diferentes proveedores de java en diferentes versiones, 
-ejecutando un contenedor con limites de memoria, para finalmente imprimir un 
+ejecutando un contenedor con límites de memoria, para finalmente imprimir un 
 cuadro comparativo de los diferentes setups y su comportamiento.
-
 
 ### Análisis de resultados
 
@@ -185,7 +184,7 @@ A continuación transcribimos los resultados obtenidos.
 El cuadro comparativo cuenta con 5 columnas:
 * `Imagen`
 * `Límite de memoria`: Es el límite que se le asigna al contenedor. Elegimos limitar
-  en 100M y 500M respectivamente para probar tanto el parametro 
+  en 100M y 500M respectivamente para probar tanto el parámetro 
   **`minRamPercentage`** como **`maxRamPercentage`**.
 * `Memoria aplicada`: Memoria asignada al proceso java.
 * `Versión`: Versión utilizada en la imagen.
@@ -222,7 +221,7 @@ El cuadro comparativo cuenta con 5 columnas:
 La memoria disponible del host es de **`992M`**. 
 
 Al correr java en cualquier versión en un **contenedor limitando su memoria a `100M`** el factor de memoria
-asignado por defecto es del **`50%`**. Vemos que los limites de memoria se respetan ya
+asignado por defecto es del **`50%`**. Vemos que los límites de memoria se respetan ya
 que teniendo **`100M`** se asigna alrededor de **`50M`**.
 
 En segunda instancia, vemos que al correr java en cualquier versión en un 
@@ -279,13 +278,12 @@ vemos que para la **`versión 8`** no se esta aplicando bien el limite de memori
 | amazoncorretto:8-alpine | 500m | 235.88M | 1.8.0_352-b08 | 25 |
 | eclipse-temurin:8-alpine | 500m | 235.88M | 1.8.0_352-b08 | 25 |
 
-
-Viendo mas en detalle los resultados, vemos que para cualquier límite de memoria
+Viendo en detalle los resultados, observamos que para cualquier límite de memoria
 asignado (Ver columna 2) la memoria disponible es de alrededor de **`250M`**.
 Algo llamativo es que este valor es el **`25%`** de la memoria disponible del
 host.
 
-Lo que esta sucediendo es que **al no poseer soporte para utilizar los
+Lo que está sucediendo es que **al no poseer soporte para utilizar los
 controladores de `CGroups v2`, la JVM no toma los límites impuestos al
 contenedor. Es más, considera la memoria total del host (969M) y como ésta es
 mayor a `200M` aplica el factor del `25%`, resultando en una asignación de
@@ -297,12 +295,12 @@ versiones 1.8 en los updates 212 y 352**.
 # Conclusiones
 
 Siempre que debamos correr una aplicación java dentro de un contenedor, debemos
-prestar especial atención no solo a la versión de java utilizada sino también a
+prestar especial atención no sólo a la versión de java utilizada sino también a
 la versión de cgroups que emplea el host donde va a ejecutarse.
 
-En ambientes como kubernetes, el uso de límites de memoria es una práctica muy
+En ambientes con Kubernetes, el uso de límites de memoria es una práctica muy
 recomendada para evitar que el host quede fuera de servicio por algún proceso
-que haga un uso exhaustivo de recursos. Por ello, si empleamos límites que no
+que haga un uso excesivo de recursos. Por ello, si empleamos límites que no
 son considerados por la JVM, probablemente nuestro contenedor se reinicie
 frecuentemente por emplear más memoria de la permitida.
 
@@ -311,7 +309,7 @@ con esta limitación?`**
 
 En principio, tenemos **`buenas noticias`**. El problema que mencionamos [se
 encuentra identificado](https://bugs.openjdk.org/browse/JDK-8230305) y
-recientemente se lanzo un parche en la versión 8 de java de OpenJDK. Este parche
+recientemente se lanzó un parche en la versión 8 de java de OpenJDK. Este parche
 es el **`8u372-b07`** que agrega soporte para **`CGroups v2`**.
 
 Entonces basta con asegurarnos que la versión que utiliza nuestra imagen sea
@@ -320,7 +318,7 @@ que OpenJDK
 [ya no actualiza las imágenes de java 8](https://github.com/docker-library/openjdk/issues/505)
 por lo que para poder utilizar este parche tendremos que utilizar alguna de sus
 alternativas como [amazon-corretto](https://hub.docker.com/_/amazoncorretto) o
-[eclipse-temurin](https://hub.docker.com/_/eclipse-temurin), solo por mencionar
+[eclipse-temurin](https://hub.docker.com/_/eclipse-temurin), sólo por mencionar
 dos de las versiones mas populares según new relic.
 
 #### Referencias
@@ -328,12 +326,12 @@ dos de las versiones mas populares según new relic.
 * [OpenJDK official site](https://openjdk.org/)
 * [minRamPercentage y maxRamPercentage](https://www.baeldung.com/java-jvm-parameters-rampercentage)
 * [Manpage cgroups](https://man7.org/linux/man-pages/man7/cgroups.7.html)
-* [Recursos en docker](https://docs.docker.com/config/containers/resource_constraints/)
+* [Recursos en Docker](https://docs.docker.com/config/containers/resource_constraints/)
 * [Bug tracker de openjdk issue cgroups](https://bugs.openjdk.org/browse/JDK-8230305)
-* [Comunicado deprecacion de imágenes OpenJDK 8 y 11](https://github.com/docker-library/openjdk/issues/505)
+* [Comunicado deprecación de imágenes OpenJDK 8 y 11](https://github.com/docker-library/openjdk/issues/505)
 * [2022 state of the java ecosystem. New relic](https://newrelic.com/resources/report/2022-state-of-java-ecosystem)
 
-#### Creditos
+#### Créditos
 
 La imagen utilizada en este post se encuentra bajo [licencia
 unsplash](https://unsplash.com/license) y pertenece a 
