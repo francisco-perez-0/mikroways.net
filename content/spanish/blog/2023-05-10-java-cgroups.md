@@ -53,7 +53,7 @@ llamada `Control Groups`.
 Nos permite agrupar los procesos y controlar
 la asignación de recursos, como por ejemplo: tiempo de CPU, memoria,
 entrada/salida, entre otros. Se diseñó de forma tal que soporte diversos
-controladores para distintos tipos de recursos y que los procesos sean agrupados
+controladores para distintos tipos de recursos, y que los procesos sean agrupados
 jerárquicamente (como en un filesystem).
 
 
@@ -69,55 +69,64 @@ Es así como a partir de la versión **3.10** del kernel de linux se comenzó a
 trabajar en una nueva implementación de CGroups (**`CGroups v2`**) para remediar
 estos problemas. La misma fue incluida en la versión **4.5** de manera oficial.
 
-Pese a que **`CGroups v2`** nace como reemplazo de **`CGroups v1`**, ambas 
-versiones suelen coexistir y son compatibles entre sí. Con esto nos referimos a 
-que la **v2** puede utilizar aquellos controladores de la **v1** que aun no hayan sido
-portados.
+Pese a que **`CGroups v2`** nace como reemplazo de **`CGroups v1`**, ambas
+versiones suelen coexistir y son compatibles entre sí. Con esto nos referimos a
+que la **v2** puede utilizar aquellos controladores de la **v1** que aun no hayan
+sido portados.
 
 ### CGroups y contenedores
 
-Los runtimes de contenedores (como docker), hacen uso extensivo de esta
-funcionalidad entre otras, para que los contenedores puedan correr
-como procesos aislados en un host y tener total control sobre ellos.
+Los runtimes de contenedores (como docker), hacen uso extensivo de los
+namespaces del kernel para que los contenedores corran como procesos aislados
+en el host manteniendo total control sobre ellos.
 
-Una de las funcionalidades que proveen es la de 
+Otra de las funcionalidades que proveen es la de 
 [limitar los recursos](https://docs.docker.com/config/containers/resource_constraints/)
 que se le asignan a un contenedor. Es deseable que utilicemos limites
-cuando ejecutamos nuestras aplicaciones containerizadas, ya que así evitamos que un
-contenedor utilice mas recursos que los que originalmente debería, previniendo
-leaks que podrían degradar o incluso poner en peligro al host donde corren.
+cuando ejecutamos nuestras aplicaciones containerizadas, ya que así evitamos que
+un contenedor utilice mas recursos de los asignados, previniendo
+leaks que podrían degradar o incluso poner en peligro al host donde corren otros
+contenedores.
 
 # El problema
 
-Con todo lo dicho hasta ahora, resulta importante poder configurar los recursos
-dados a una JVM que se ejecuta en un contenedor. Nos centramos en
-la memoria ya que consideramos uno de los parámetros mas importantes a
-configurar en este tipo de aplicaciones. Para comprender mas en detalle esta elección ver la documentación
-oficial de docker sobre 
-[límites de memoria](https://docs.docker.com/config/containers/resource_constraints/#memory)
+Con todo lo dicho hasta ahora, resulta importante configurar los recursos
+dados a una JVM que se ejecuta dentro de un contenedor. Nos centramos
+particularmente en la memoria, ya que es un recurso crítico en las aplicaciones
+Java.
+
+> Para comprender mas en profundidad sobre la limitación de memoria en docker, se
+> recomienda leer la [documentación oficial.](https://docs.docker.com/config/containers/resource_constraints/#memory)
 
 La JVM admite configurar la memoria máxima a emplear, utilizando opciones que se
-envían a la JVM cuando corremos `java`. Ahora bien, estos comandos, si bien
-pueden establecer valores absolutos en términos de cuántos bytes asignar a la
-máquina virtual, también permiten trabajar en términos relativos a la memoria
-total del sistema.
+envían a la JVM cuando corremos `java`. Ahora bien, estas opciones, admiten
+establecerse con valores absolutos, en términos de cuántos bytes asignar a la
+máquina virtual, como también permiten trabajar en términos relativos a la
+memoria total del sistema, expresada en un porcentaje.
 
 El primer problema que surgió con la adopción avasallante de contenedores es que
 la versión de java 8 previa al [update
 131](https://www.oracle.com/java/technologies/javase/8u131-relnotes.html),
-**no permitía limitar los recursos utilizando CGroupsv1**. Esta primer versión
-incluía soporte experimental de CGroupsv1, y recién en el [update
-191](https://www.oracle.com/java/technologies/javase/8u191-relnotes.html) se
-portó la funcionalidad de CGroupsv1 desde la versión 10 de la JVM. Luego, con el
-lanzamiento de CGroupsv2, sucedió exactamente el mismo problema.
+**no permitía limitar los recursos utilizando CGroupsv1**. Es decir, al utilizar
+porcentajes se tomaba el total de memoria en el host, ignorando los límites
+impuestos al contenedor. Esta primer versión de la JVM, incluía soporte
+experimental de CGroupsv1. Recién en el [update 191](https://www.oracle.com/java/technologies/javase/8u191-relnotes.html)
+se portó la funcionalidad de CGroupsv1 desde la versión 10 de la JVM. Luego, con el
+lanzamiento de CGroupsv2, sucedió exactamente el mismo problema, es decir, los
+la JVM tomaba toda la memoria del host en vez de la limitada en el contenedor.
 
-Para ilustrarlo realizamos un conjunto de pruebas que nos permitirán ir
-evidenciando y analizando qué sucede en base a los resultados obtenidos.
+Para ilustrar este problema realizamos un conjunto de pruebas que nos permitirán
+evidenciar y analizar qué sucede en base a los resultados obtenidos.
 
 ### Sobre las pruebas
 
 Para realizar las pruebas creamos dos maquinas virtuales, una con con 
 **`ubuntu/xenial(CGroupsv1)`** y otra con **`ubuntu/jammy(CGroupsv2)`**.
+
+> Las pruebas pueden simplificarse si se utuliza
+> [Vagrant](https://www.vagrantup.com/), con los boxes de
+> [ubuntu/xenial](https://app.vagrantup.com/ubuntu/boxes/xenial64) y
+> [ubuntu/jammy](https://app.vagrantup.com/ubuntu/boxes/jammy64).
 
 Creamos también el siguiente script.
 
@@ -212,7 +221,7 @@ El cuadro comparativo cuenta con 5 columnas:
 
 La memoria disponible del host es de **`992M`**. 
 
-Al correr java en cualquier versión en un ambiente de **`100M`** el factor de memoria
+Al correr java en cualquier versión en un **contenedor limitando su memoria a `100M`** el factor de memoria
 asignado por defecto es del **`50%`**. Vemos que los limites de memoria se respetan ya
 que teniendo **`100M`** se asigna alrededor de **`50M`**.
 
@@ -222,7 +231,7 @@ ambiente de **`500M`**, el factor de memoria asignado por defecto es del
 **`125M`**.
 
 Entonces concluimos que **java se comporta sin problemas en un ambiente con 
-`CGroupsv1`**.
+`CGroupsv1` en las versiones verificadas**.
 
 #### CGroups v2
 
@@ -259,7 +268,7 @@ inconsistencias.
 Eperaríamos los mismos resultados que en las pruebas anteriores. Sin embargo
 vemos que para la **`versión 8`** no se esta aplicando bien el limite de memoria.
 
-Aquí un extracto de lo observado.
+##### Aquí un extracto de las inconsistencias observadas:
 
 | Imagen | Límite de Memoria | Memoria Aplicada | Versión | Factor de Memoria |
 |:------ |:-------------:|:---:|:-----------:|:------:|
@@ -270,33 +279,38 @@ Aquí un extracto de lo observado.
 | amazoncorretto:8-alpine | 500m | 235.88M | 1.8.0_352-b08 | 25 |
 | eclipse-temurin:8-alpine | 500m | 235.88M | 1.8.0_352-b08 | 25 |
 
+
 Viendo mas en detalle los resultados, vemos que para cualquier límite de memoria
 asignado (Ver columna 2) la memoria disponible es de alrededor de **`250M`**.
 Algo llamativo es que este valor es el **`25%`** de la memoria disponible del
 host.
 
 Lo que esta sucediendo es que **al no poseer soporte para utilizar los
-controladores de `CGroups v2` no toma los límites impuestos al contenedor. Es 
-mas, considera la memoria total del host (969M) y como esta es mayor a `200M` 
-aplica el factor del `25%`; resultando en una asignación de alrededor de
-`250M`**.
+controladores de `CGroups v2`, la JVM no toma los límites impuestos al
+contenedor. Es más, considera la memoria total del host (969M) y como ésta es
+mayor a `200M` aplica el factor del `25%`, resultando en una asignación de
+alrededor de `250M`**.
 
-# Conclusion
+Es importante destacar entonces que las **JVM con problemas son aquellas en las
+versiones 1.8 en los updates 212 y 352**.
 
-Siempre que debamos containerizar una aplicación java debemos prestar especial
-atención no solo a la versión de java utilizada sino también al host donde va a
-ejecutarse.
+# Conclusiones
 
-Es de vital importancia que podamos limitar la utilización de memoria de estos
-procesos ya que ante una sobreutilización de memoria el sistema operativo
-comenzara a sacrificar procesos, pudiendo ser uno de ellos algún proceso critico
-llevando a nuestro host a un estado no deseado.
+Siempre que debamos correr una aplicación java dentro de un contenedor, debemos
+prestar especial atención no solo a la versión de java utilizada sino también a
+la versión de cgroups que emplea el host donde va a ejecutarse.
+
+En ambientes como kubernetes, el uso de límites de memoria es una práctica muy
+recomendada para evitar que el host quede fuera de servicio por algún proceso
+que haga un uso exhaustivo de recursos. Por ello, si empleamos límites que no
+son considerados por la JVM, probablemente nuestro contenedor se reinicie
+frecuentemente por emplear más memoria de la permitida.
 
 Habiendo visto todo esto, surge inmediatamente la pregunta: **`¿Cómo lidiamos 
 con esta limitación?`** 
 
 En principio, tenemos **`buenas noticias`**. El problema que mencionamos [se
-encuentra identificado](https://bugs.openjdk.org/browse/JDK-8230305) y 
+encuentra identificado](https://bugs.openjdk.org/browse/JDK-8230305) y
 recientemente se lanzo un parche en la versión 8 de java de OpenJDK. Este parche
 es el **`8u372-b07`** que agrega soporte para **`CGroups v2`**.
 
