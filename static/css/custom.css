@@ -94,8 +94,20 @@ img#logo {
   border: 2px solid var(--green-mw-primary);
 }
 
-.blockquote {
-  border-left: 5px solid var(--green-mw-primary);
+blockquote {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: -1.7em;
+  margin-inline-end: 0em;
+}
+
+blockquote p {
+  font-size: 1rem;
+  line-height: 1.8em;
+}
+
+.blockquote, blockquote {
+  border-left: 5px solid var(--green-mw-primary) !important;
 }
 
 .blockquote p.mb-0 {
