@@ -46,7 +46,7 @@ Desde Mikroways les proveemos un [repositorio de demostración](https://github.c
 - Crear un archivo de valores sensibles, en este ejemplo, usamos `secrets.dec.yaml`.
 - Cifrar este archivo con SOPS, dandole un nombre descriptivo: `sops -e secrets.dec.yaml > secrets.enc.yaml`.
 - En estos ejemplos, `.dec` nos indica el archivo descifrado, y `.enc` el archivo cifrado.
-- Agregar el archivo `secrets.dec.yaml` a nuestro `.gitignore` para que no se versione por git (en nuestro ejemplo se version para facilitar el uso y el ejemplo).
+- Agregar el archivo `secrets.dec.yaml` a nuestro `.gitignore` para que no se versione por git (en nuestro ejemplo se versiona para facilitar el uso y el ejemplo).
 
 ### Uso de Terraform con "sops_file":
 - Desde un archivo de Terraform `.tf`, hacer referencia al recurso "sops_file" para traer los valores de `secrets.enc.yaml`.
@@ -59,4 +59,4 @@ Desde Mikroways les proveemos un [repositorio de demostración](https://github.c
 
 ---
 
-* Se puede ver un ejemplo de como crear la clave KMS y configurar el rol IAM en el subdirectorio del repositorio de ejemplo en el subdirectorio “aws_kms_iam_config”. Se encontrarán con un ejemplo para hacerlo con Terraform, e instructivos para hacerlo a través de la cons
+* Se puede ver un ejemplo de como crear la clave KMS y configurar el rol IAM en el subdirectorio del repositorio de ejemplo en el subdirectorio “aws_kms_iam_config”. Se encontrarán con un ejemplo para hacerlo con Terraform, e instructivos para hacerlo a través de la consola.
