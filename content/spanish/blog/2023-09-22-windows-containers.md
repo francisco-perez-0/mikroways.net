@@ -115,7 +115,7 @@ contenerizar, siempre que sea posible por las dependencias que la aplicación
 necesite para correr, podremos avanzar en este sentido. Lo mismo aplica a
 aplicaciones o servicios que corran en windows nano server o windows core.
 
-## Instalando docker en windows
+## Instalando un engine de contenedores en windows
 
 La instalación está muy clara en la [página oficial de
 Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce#windows-server-1).
@@ -128,8 +128,8 @@ En ella se explica cómo instalar:
 > El uso de containerd es el recomendado para clusters kubernetes que deban
 > tener nodos con la posibilidad de correr contenedores windows.
 
-Una vez instalado el engine de docker preferido, podremos trabajar con
-contendores, como lo hacemos con Linux.
+Una vez instalado el engine de contenedores preferido, podremos trabajar con
+contendores, como lo hacemos con Linux. Elegimos Docker CE en nuestro caso.
 
 ## Corriendo nuestro primer contenedor en windows
 
@@ -138,8 +138,8 @@ Probamos primero el comando `docker info` desde una consola de powershell:
 ![windows docker
 info](/images/blog/containers/windows-docker-info.png)
 
-Como vemos, el OSType es windows, así como el storage driver es uno específico
-de windows.
+Como vemos, el `OSType` es **windows**, así como el `Storage Driver` es uno
+específico de windows.
 
 La primer prueba que haremos, será justamente para dejar constancia que no
 podemos correr contenedores linux en un engine windows.
@@ -191,7 +191,7 @@ CMD [ "myapp" ]
 {{< / highlight >}}
 
 Como puede verse, se asume el código de la aplicación está dentro de la carpeta
-loca `code/`. Esta imagen basada en aspnet:4.8 puede inferirse está basada en
+loca `code/`. Esta imagen basada en aspnet 4.8 puede inferirse está basada en
 windows core 2022, dando soporte del framework .Net versión 4.8. Lo que hacemos
 con el `RUN` es configurar un AppPool de IIS y un Site indicando la carpeta
 desde donde servir los archivos.
