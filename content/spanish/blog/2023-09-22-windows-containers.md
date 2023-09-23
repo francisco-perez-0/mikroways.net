@@ -31,7 +31,7 @@ Ahora vemos qué sucede durante la contenerización:
 
 {{< figure src="/images/blog/containers/containerized-app.webp" >}}
 
-Como puede verse, al contenerizar el sistema operativo de base es compartido por
+Como puede verse, al contenerizar, el sistema operativo de base es compartido por
 todas las aplicaciones. Esta diferencia es **fundamental** porque es la causante
 de la popularidad de los contenedores debido a la eficiencia lograda por
 compartir el mismos sistema operativo de base.
@@ -39,8 +39,8 @@ compartir el mismos sistema operativo de base.
 Entonces, aquí aparece el primer punto donde los caminos se abren en diferentes
 direcciones:
 
-* Contenedores que corren en Linux porque el sistema de base es Linux
-* Contenedores que corren en Windows porque el sistema de base es Windows
+* Contenedores que corren en Linux porque el sistema de base es Linux.
+* Contenedores que corren en Windows porque el sistema de base es Windows.
 
 Como los contenedores en Linux son muy populares, la mayoría de las imágenes
 disponibles que solemos encontrar ejemplos corresponde a este tipo de
@@ -55,7 +55,7 @@ contenedores que existían eran los de Linux. [^1]
 
 Recién en 2017, [Windows Server
 2016](https://learn.microsoft.com/en-us/archive/msdn-magazine/2017/april/containers-bringing-docker-to-windows-developers-with-windows-server-containers)
-ofrece soporte de Windows Containers. Y este trabajo de Microsoft nació como un
+ofrece soporte de contenedores Windows. Y este trabajo de Microsoft nació como un
 proyecto ambicioso en el año 2014, cuando la adopción de contenedores se
 multiplicó y creció exponencialmente con la liberación de kubernetes.
 
@@ -86,33 +86,34 @@ esto no es un impedimento:
   que además recomienda usar podman en lugar de docker.
 
 Hasta aquí, como podrá notarse, hemos explicado diferentes formas de cómo correr
-contenedores linux, pero sólo mencionamos al pasar sobre Windows Containers.
-Ahora hablaremos de ellos.
+contenedores linux, pero sólo mencionamos al pasar sobre los contenedores
+Windows. Ahora hablaremos de ellos.
 
 ## Contenedores Windows con docker
 
 Como sucede con cualquier contenedor, la idea de lograr encapsular en una imagen
-de contenedores, toda la configuración necesaria para correr una aplicación se
+de contenedores toda la configuración necesaria para correr una aplicación, se
 mantiene y aplica por igual en este caso. 
 
-Desde Mikroways, estmos convencidos que la contenerización es un excelente
+Desde Mikroways, estamos convencidos que la contenerización es un excelente
 mecanismo por medio del cuál ordenamos en un simple Dockerfile los pasos
-manuales que antes una persona seguía para desplegar una aplicación en un nuevo
-ambiente, o ante una recuperación ante desastres. Además, contenedizar ofrece
+manuales, que antes una persona seguía para desplegar una aplicación en un nuevo
+ambiente, o ante una recuperación ante desastres. Además, contenerizar ofrece
 nuevas ventajas como es la escalabilidad de aplicaciones, auto sanado y service
 discovery de una forma simple.
 
 Con la introducción anterior, cabe mencionar entonces que el espectro cubierto
 por esta solución basada en contenedores windows aplica a proyectos que dependan
 de aplicaciones desarrolladas en .Net Framework en las versiones 3.x o 4.x. Las
-aplicaciones desarrolladas en .Net pueden correr tanto en windows como linux
+aplicaciones desarrolladas en .Net Core pueden correr tanto en windows como linux
 containers. Por cuestiones de performance y adopción por las grades comunidades
 o plataformas como kubernetes, se suele elegir utilizar contenedores linux en
 estas aplicaciones.
 
 Por tanto, si disponemos de una aplicación .Net Framework que queramos
 contenerizar, siempre que sea posible por las dependencias que la aplicación
-necesite para correr, podremos avanzar en este sentido.
+necesite para correr, podremos avanzar en este sentido. Lo mismo aplica a
+aplicaciones o servicios que corran en windows nano server o windows core.
 
 ## Instalando docker en windows
 
