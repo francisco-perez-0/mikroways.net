@@ -34,7 +34,7 @@ Ahora vemos qué sucede durante la contenerización:
 Como puede verse, al contenerizar, el sistema operativo de base es compartido por
 todas las aplicaciones. Esta diferencia es **fundamental** porque es la causante
 de la popularidad de los contenedores debido a la eficiencia lograda por
-compartir el mismos sistema operativo de base.
+compartir el mismo sistema operativo de base.
 
 Entonces, aquí aparece el primer punto donde los caminos se abren en diferentes
 direcciones:
