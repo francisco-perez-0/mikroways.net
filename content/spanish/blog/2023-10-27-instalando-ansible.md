@@ -6,7 +6,7 @@ page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
 image: "images/blog/snake-ansible.jpg"
 # post author
-author: "Christian Rodriguez"
+author: "Christian Rodriguez, Manuel Kloster (revisión)"
 # taxonomies
 categories: ["DevSecOps" ]
 tags: ["ansible", "python"]
