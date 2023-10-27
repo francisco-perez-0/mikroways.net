@@ -221,7 +221,7 @@ Y probamos con un navegador el resultado:
 
 Usar contenedores es un excelente recurso porque trabajamos con infraestructura
 inmutable. Esto era algo que se aprovechaba al máximo cuando se trataba de
-aplicaciones y servicios Linux. Pero ahora, con la posibilidad que nos da
+aplicaciones y servicios linux. Pero ahora, con la posibilidad que nos da
 Microsoft, expandimos el ecosistema de contenedores a nuevos destinos, donde
 aplicaciones legadas de nuestros clientes pueden portarse a contenedores windows
 con un esfuerzo menor que actualizar el framework.
