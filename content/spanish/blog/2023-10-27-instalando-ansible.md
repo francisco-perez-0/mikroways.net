@@ -6,7 +6,7 @@ page_header_bg: "images/banner/banner2.jpg.webp"
 # post thumb
 image: "images/blog/snake-ansible.jpg"
 # post author
-author: "Christian Rodriguez"
+author: "Christian Rodriguez, Manuel Kloster (revisión)"
 # taxonomies
 categories: ["DevSecOps" ]
 tags: ["ansible", "python"]
@@ -48,15 +48,14 @@ primero debemos saber que:
 
 Python es un lenguaje que siempre estará disponible en cualquier distribución
 Linux y su paquete por lo general viene instalado. Esto es porque muchas
-herramientas usadas por el propio sistema, se basan en scripts python.
+herramientas usadas por el propio sistema se basan en scripts python.
 
-Sin embargo, cualquier desarrollador, ocupe el lenguaje que sea, probablemente
-coincida en que la mejor forma de trabajar en múltiples proyectos, es
-especificando **para cada uno la versión del lenguaje a utilizar**. Así es como
-aparecen utilitarios que nos permiten trabajar en cada proyecto (es
-decir, en cada carpeta de nuestro filesystem) con una versión diferente del
-lenguaje de programación utilizado. A continuación mencionamos algunos de estos
-utilitarios:
+Sin embargo, el desarrollador coincidirá en que la mejor forma de trabajar en
+múltiples proyectos es especificando **para cada uno la versión del lenguaje a utilizar**
+, independientemente de cuál sea ese lenguaje. Así es como aparecen utilitarios
+que nos permiten trabajar en cada proyecto (es decir, en cada carpeta de nuestro
+filesystem) con una versión diferente del lenguaje de programación utilizado. A
+continuación mencionamos algunos de estos utilitarios:
 
 * En [python](https://www.python.org/) se utiliza
   [pyenv](https://github.com/pyenv/pyenv).
