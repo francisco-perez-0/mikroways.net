@@ -18,6 +18,19 @@
   background: white;
 }
 
+div.cd-full-width h2 {
+  text-transform: uppercase;
+  font-family: 'Montserrat Black';
+}
+
+div.cd-full-width h3 {
+  font-family: 'Montserrat';
+}
+
+.overlay2::before {
+  opacity: 0.5;
+}
+/*
 .navbar-brand {
   background: white;
 }
@@ -29,6 +42,195 @@
 
 nav.navbar {
   margin-left: 7em;
+}*/
+
+/* Added for Mega Menu 
+@media (min-width: 992px) {
+  navbar { padding-top: 0; padding-bottom: 0; }
+  navbar .has-megamenu{position:static!important;}
+  navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
+  navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
+}*/
+/*
+.megamenu-li {
+  position: static;
+}
+
+.megamenu {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -51vw;
+  margin-right: -48vw;
+}
+
+div.megamenu-item {
+  padding: 1em 1em;
+  display: grid;
+  cursor: pointer;
+  margin-right: 3em;
+  border-radius: 10px;
+  width: 100%;
+}
+
+div.megamenu-item-tab {
+  padding: 1em 1em;
+  display: grid;
+  cursor: pointer;
+  margin-right: 3em;
+  padding-right: 3em;
+  border-radius: 10px;
+  width: 100%;
+}
+
+a.megamenu-item {
+  width: 100%;
+  padding-left: 1em;
+  color: var(--blue-mw-primary);
+}
+
+a.megamenu-item:hover {
+  background-color: var(--gray);
+}
+
+a.megamenu-item.active {
+  background-color: var(--gray);
+}
+
+div.megamenu-pills {
+  border-right: 1px solid var(--gray);
+}
+
+div.megamenu-item a.dropdown-item,
+div.megamenu-item p.dropdown-item {
+  border-bottom: 0px;
+}
+*/
+
+
+.navbar-brand {
+  background: white;
+}
+
+.navbar-brand.navbar-bg {
+  white-space: nowrap;
+  vertical-align: middle;
+  padding-left: 0px !important;
+}
+
+.navbar{
+  background: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--blue-mw-primary);
+  background-color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--blue-mw-primary);
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  padding-top: 22px;
+  padding-bottom: 22px;
+  transition: 0.3s;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  background: #fff;
+  transition: 0.3s;
+  color: var(--blue-mw-primary) !important;
+}
+
+a.dropdown-item:focus, a.dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--blue-mw-primary) !important;
+}
+
+.sm-menu{
+  border-radius: 0px;
+  border: 0px;
+  top: 97%;
+  box-shadow: rgba(173, 173, 173, 0.2) 1px 3px 4px 0px;
+}
+
+.dropdown-item {
+  border-bottom: 0px;
+  white-space: normal;
+}
+
+a.dropdown-item {
+  color: #3c3c3c;
+  font-size: 14px;
+}
+
+a.dropdown-item.active,
+a.dropdown-item:active {
+  color: var(--blue-mw-primary);
+  text-decoration: none;
+  background-color: #f1f1f1;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.navbar-tog{
+  color: #1ebdc2;
+}
+
+.megamenu-li {
+  position: static;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.megamenu h6{
+  margin-left: 21px;
+}
+
+.megamenu i{
+  width: 20px;
+}
+
+div.megamenu-element:hover,
+div.megamenu-element:focus,
+div.megamenu-element:active,
+div.megamenu-element.active,
+div.megamenu-element {
+  background-color: #ffffff;
+}
+
+.megamenu-item-tab {
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+.dropdown-item p {
+  margin-bottom: -0.3em;
 }
 
 .helper {
@@ -43,6 +245,31 @@ img#logo {
   margin-bottom: 0.4em;
 }
 
+/*@media only screen and (min-width: 768px) {
+
+  img#logo {
+    margin-left: 0em;
+  }
+
+}*/
+
+@media (max-width: 992px) {
+
+  img#logo {
+    height: 70% !important;
+    margin-left: 1em;
+  }
+
+  nav.navbar {
+    margin-left: 0;
+  }
+
+  .navbar-brand.navbar-bg {
+    z-index: 2000;
+  }
+
+}
+
 .header {
   border-top: 5px solid var(--green-mw-primary);
 }
@@ -51,7 +278,7 @@ img#logo {
   color: var(--blue-mw-primary);
 }
 
-.nav-link:hover, .dropdown-item:hover {
+.nav-link:hover {
   color: var(--green-mw-primary) !important;
 }
 
@@ -540,22 +767,13 @@ div.card-header button:hover {
   padding-inline-start: 0px;
 }
 
-@media only screen and (min-width: 768px) {
-
-  img#logo {
-    margin-left: 5em;
-  }
-
-}
-
-
 /* Mobile */
 
 @media only screen and (max-width: 750px) {
 
-  div.navbar-collapse {
+  /*div.navbar-collapse {
     margin-right: 7em;
-  }
+  }*/
 
   .cd-slider-nav li {
     margin-top: 1.8em;
