@@ -1,80 +1,86 @@
 ############################ Slider ##########################
 slider:
-  enable : true
+  enable: true
+  # When navigation is false, only the first one of the items will be shown
+  # although the final HTML will have all of them, so it might be better to
+  # delete the items which are not intended to be used
+  navigation: false
   slider_item:
     ################# Slider item loop
-    - title : "Improve your IT team's productivity"
-      subtitle : "Discover everything DevSecOps can do for you"
-      bg_image : "images/slider/f1.jpg.webp"
-      image : ""
-      image_position : "false"
+    - title: "Improve your IT team's productivity"
+      subtitle: "Discover everything Platform Engineering can do for you"
+      bg_image: "images/slider/cheetah.jpg"
+      image: ""
+      image_position: "false"
       # slider navigator
       navigator:
-        label : "DevSecOps"
-        icon : "fa-solid fa-gears" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+        label: "DevSecOps"
+        icon: "fa-solid fa-gears" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
       buttons:
-        - label : "Let's talk"
-          style : "solid"
-          link : "contact"
+        - label: "Let's talk"
+          style: "solid"
+          link: "contact"
 
         # button loop
-        - label : "See more"
-          style : "white"
-          link : "devsecops"
+        - label: "See more"
+          style: "white"
+          link: "devsecops"
 
     ############### Slider item loop
-    - title : "Do you have a software project?"
-      subtitle : "You don't need to worry about infrastructure anymore"
-      bg_image : "images/slider/software.jpg.webp"
-      image : ""
-      image_position : "false"
+    - title: "Do you have a software project?"
+      subtitle: "You don't need to worry about infrastructure anymore"
+      bg_image: "images/slider/software.jpg.webp"
+      image: ""
+      image_position: "false"
       # slider navigator
       navigator:
-        label : "SaaS"
-        icon : "fa fa-solid fa-window-maximize" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+        label: "SaaS"
+        icon: "fa fa-solid fa-window-maximize" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
 
       # slider buttons
       buttons:
         # button loop
-        - label : "Let's talk"
-          style : "solid"
-          link : "contact"
+        - label: "Let's talk"
+          style: "solid"
+          link: "contact"
 
     ############### Slider item loop
-    - title : "Migrating to the cloud?"
-      subtitle : "Adopt the public cloud or create your own private cloud"
-      bg_image : "images/slider/cloud.jpg.webp"
-      image : ""
-      image_position : "false"
+    - title: "Migrating to the cloud?"
+      subtitle: "Adopt the public cloud or create your own private cloud"
+      bg_image: "images/slider/cloud.jpg.webp"
+      image: ""
+      image_position: "false"
       # slider navigator
       navigator:
-        label : "Cloud"
-        icon : "fa fa-cloud" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+        label: "Cloud"
+        icon: "fa fa-cloud" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
 
       # slider buttons
       buttons:
-        - label : "Let's talk"
-          style : "solid"
-          link : "contact"
+        - label: "Let's talk"
+          style: "solid"
+          link: "contact"
 
     ############### Slider item loop
-    - title : "Empower your team"
-      subtitle : "with new knowledge and skills"
-      bg_image : "images/slider/empower.jpg.webp"
-      image : ""
-      image_position : "false"
+    - title: "Empower your team"
+      subtitle: "with new knowledge and skills"
+      bg_image: "images/slider/empower.jpg.webp"
+      image: ""
+      image_position: "false"
       # slider navigator
       navigator:
-        label : "Training"
-        icon : "fa-solid fa-book-open"
+        label: "Training"
+        icon: "fa-solid fa-book-open"
       # slider buttons
       buttons:
         # button loop
-        - label : "I'm interested"
-          style : "solid"
-          link : "contact"
+        - label: "I'm interested"
+          style: "solid"
+          link: "contact"
 
 ############################### feature ##################################
+# This requires three items per row in order to be evenly presented
+# If required, it can be changed to dynamically support a different number of items
 feature:
   enable : true
   feature_item:
@@ -104,6 +110,11 @@ feature:
 
 
 ############################### Service ####################################
+workflow:
+  enable : true
+  # service content comes from "data/workflow.yml" file
+
+############################### Service ####################################
 service:
   enable : true
   # service content comes from "data/service.yml" file
@@ -111,7 +122,7 @@ service:
 
 ############################### portfolio ##################################
 portfolio:
-  enable : true
+  enable : false
   title : "Sucess stories"
   subtitle : "These are some of our projects"
   title_icon : "fa-suitcase"
@@ -120,21 +131,25 @@ portfolio:
   
 ############################### funfact ##################################
 funfact:
-  enable : false
+  enable : true
   funfact_item:
     # funfact item loop
-    - name : "Clientes"
+    - name : "Countries"
+      icon : "fa-globe" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+      count : "5"
+
+    - name : "Customers"
       icon : "fa-user" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
       count : "50"
 
     # funfact item loop
-    - name : "Proyectos"
+    - name : "Projects"
       icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-      count : "150"
+      count : "200"
 
 ############################### team ####################################
 team:
-  enable : true
+  enable : false
   # team content comes from "data/team.yml" file
 
 ############################ Call to action #############################
@@ -152,7 +167,7 @@ call_to_action:
 
 ############################ Newsletter #############################
 newsletter:
-  enable : true
+  enable : false
   title : "Newsletter"
   subtitle : "Subscribe to receive all the news in your mail"
   bg_image : "images/newsletter.jpg.webp"
@@ -170,7 +185,7 @@ pricing:
 
 ############################### testimonial ####################################
 testimonial:
-  enable : true
+  enable : false
   bg_image : "images/parallax/parallax2.jpg.webp"
   testimonial_item:
     - name: "Juan Escayola"
@@ -194,16 +209,27 @@ ideas that take your applications to a higher quality level."
 ############################ Clients logo slider ##########################
 clients:
   enable: true
-  enable_slider: true
-  title: "They have already chosen us"
-  subtitle: "Choose us too!"
-  title_icon : "fa-weixin"
+  enable_slider: false
+  title: "Our customers"
+  subtitle: "Be one of"
   url: "clients"
   client:
     - name : "AFIP"
       logo : "images/clients/afip.png.webp"
       link : "#"
       industry : Government
+      country : Argentina
+      homepage : true
+    - name : "Balanz"
+      logo : "images/clients/balanz.webp"
+      link : "#"
+      industry : Financial
+      country : Argentina
+      homepage : true
+    - name : "Banco Columbia"
+      logo : "images/clients/banco-columbia.svg"
+      link : "#"
+      industry : Financial
       country : Argentina
       homepage : true
     - name : "Veritran"
@@ -218,18 +244,24 @@ clients:
       industry : Other
       country : Argentina
       homepage : true
-    - name : "Balanz"
-      logo : "images/clients/balanz.webp"
+    - name : "ueno"
+      logo : "images/clients/ueno.svg"
       link : "#"
-      industry : Software
-      country : Argentina
-      homepage : true
+      industry : Financial
+      country : Paraguay
+      homepage : false
+    - name : "The Lucky App"
+      logo : "images/clients/lucky.png"
+      link : "#"
+      industry : Financial
+      country : Egypt
+      homepage : false
     - name : "ITX Corp"
       logo : "images/clients/itx.png"
       link : "#"
       industry : Software
       country : USA
-      homepage : true
+      homepage : false
     - name : "Government de la Provincia de Buenos Aires"
       logo : "images/clients/gba.svg"
       link : "#"
@@ -283,7 +315,7 @@ clients:
       link : "#"
       industry : Software
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "Snoop"
       logo : "images/clients/snoop.png.webp"
       link : "#"
@@ -295,7 +327,7 @@ clients:
       link : "#"
       industry : Government
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "QK Studio"
       logo : "images/clients/qk-studio.png.webp"
       link : "#"
@@ -469,13 +501,13 @@ clients:
       link : "#"
       industry : Software
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "DevsAr"
       logo : "images/clients/devsar.png.webp"
       link : "#"
       industry : Software
       country : Argentina
-      homepage : true
+      homepage : false
     - name : "Edelap"
       logo : "images/clients/edelap.png.webp"
       link : "#"
@@ -487,7 +519,7 @@ clients:
       link : "#"
       industry : Software
       country : Argentina
-      homepage : true
+      homepage : false
 
 ############################### training ##################################
 training:

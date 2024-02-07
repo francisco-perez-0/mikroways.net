@@ -1,11 +1,12 @@
 ############################ Slider ##########################
 slider:
   enable : true
+  navigation: false
   slider_item:
     ################# Slider item loop
     - title : "Mejora la productividad de tus equipos de IT"
-      subtitle : "Descubre todo lo que DevSecOps puede hacer por ti"
-      bg_image : "images/slider/f1.jpg.webp"
+      subtitle : "Descubre todo lo que Platform Engineering puede hacer por ti"
+      bg_image : "images/slider/cheetah.jpg"
       image : ""
       image_position : "false"
       # slider navigator
@@ -116,7 +117,7 @@ service:
 
 ############################### portfolio ##################################
 portfolio:
-  enable : true
+  enable : false
   title : "Casos de éxito"
   subtitle : "Estos son algunos de nuestros trabajos"
   title_icon : "fa-suitcase"
@@ -157,7 +158,7 @@ call_to_action:
 
 ############################ Newsletter #############################
 newsletter:
-  enable : true
+  enable : false
   title : "Newsletter"
   subtitle : "Suscríbete para recibir todas las novedades en tu mail"
   bg_image : "images/newsletter.jpg.webp"
@@ -175,7 +176,7 @@ pricing:
 
 ############################### testimonial ####################################
 testimonial:
-  enable : true
+  enable : false
   bg_image : "images/parallax/parallax2.jpg.webp"
   testimonial_item:
     - name: "Juan Escayola"

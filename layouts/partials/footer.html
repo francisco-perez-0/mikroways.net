@@ -49,33 +49,33 @@
 
 
 <!-- Copyright start -->
-<section id="copyright" class="copyright angle">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<ul class="footer-social unstyled">
-					<li>
-						{{ range .Site.Params.social }}
-						<a title="{{ .name }}" href="{{ .link | absURL }}">
-							<span class="icon-pentagon wow bounceIn"><i class="fa {{.icon}}"></i></span>
-						</a>
-						{{ end }}
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!--/ Row end -->
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<div class="copyright-info">{{ .Site.Params.copyright | markdownify }}</div>
-			</div>
-		</div>
-		<!--/ Row end -->
-		<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix position-fixed">
-			<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
-		</div>
-	</div>
-	<!--/ Container end -->
+<section id="copyright" class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="footer-social unstyled">
+          <li>
+            {{ range .Site.Params.social }}
+            <a title="{{ .name }}" href="{{ .link | absURL }}">
+              <span class="icon-pentagon wow bounceIn"><i class="fa {{.icon}}"></i></span>
+            </a>
+            {{ end }}
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--/ Row end -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="copyright-info">{{ .Site.Params.copyright | markdownify }}</div>
+      </div>
+    </div>
+    <!--/ Row end -->
+    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix position-fixed">
+      <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+    </div>
+  </div>
+  <!--/ Container end -->
 </section>
 <!--/ Copyright end -->
 
