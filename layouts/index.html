@@ -90,16 +90,16 @@
 <!-- Clients start -->
 {{ if $data.homepage.clients.enable }}
 {{ with $data.homepage.clients }}
-<section id="clients" class="clients" style="padding-top: 0em !important; padding-bottom: 0em !important; filter: grayscale(1);">
+<section id="clients" class="clients">
   <div class="container-fluid">
-    <div class="row border" style="display: flex; align-items: center;">
-      <div class="col-sm-2 text-center">
+    <div class="row clients">
+      <div class="col-sm-2 text-center client-title">
         <span class="title-desc" style="font-size: 1em;">{{ .subtitle | markdownify }}</span>
         <h2 class="title services" style="font-size: 1.5em;">{{ .title | markdownify }}</h2>
       </div>
       {{ range .client }}
       {{ if .homepage }}
-      <div class="col-sm-2">
+      <div class="col-sm-2 text-center">
         <figure class="m-0 item client_logo">
           <a href="{{ .link | safeURL }}">
             <img src="{{ .logo | absURL }}" class="client-logo" alt="{{ .name }}">
