@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
 
 :root {
   --blue-mw-primary: rgb(0, 81, 152);
@@ -22,7 +22,8 @@
 
 div.cd-full-width h2 {
   text-transform: uppercase;
-  font-family: 'Montserrat Black';
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 900;
 }
 
 .overlay2::before {
@@ -687,14 +688,15 @@ h2.title.services,
 h2.title.workflow {
   border-left: none;
   text-transform: uppercase;
-  font-family: 'Montserrat Black';
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 900;
   padding-left: 0;
 }
 
 h3.title.services {
   border-left: none;
   color: var(--blue-mw-primary);
-  font-family: 'Montserrat Black';
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: 900;
   font-size: 2.3em;
   /* elimino font-size, margin-left y padding-left en 0, para mobile, si no el titulo se ve corrido */
@@ -703,7 +705,8 @@ h3.title.services {
 h4.title.workflow {
   border-left: none;
   text-transform: uppercase;
-  font-family: 'Montserrat Black';
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 900;
   padding-left: 0;
 }
 
@@ -740,7 +743,8 @@ div.row.service-item {
 }
 
 .title-desc {
-  font-family: 'Montserrat Light', 'Open Sans', serif;
+  font-family: 'Montserrat', 'Open Sans', serif;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   padding-bottom: 0.3em;
