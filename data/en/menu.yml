@@ -2,31 +2,48 @@
 menu:
   menu_items:
     - name: "Services"
+      tag: "What we do"
       has_children: true
       children:
       - id: "platform"
-        name: "Platorm Engineering"
+        name: "Platform Engineering"
+        image: "images/services/platform-engineering.png"
         url: "platform-engineering"
         short: "Platform Engineering short"
         full: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        buttons:
+          - label : "Learn more"
+            style : "gray-wb"
 
       - id: "consultancy"
         name: "Consultancy"
+        image: "images/services/circle.png"
         url: "consultancy"
         short: "Consultancy short"
         full: "Id ornare arcu odio ut. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Aenean euismod elementum nisi quis eleifend quam. Eget duis at tellus at urna condimentum. Pharetra massa massa ultricies mi quis hendrerit dolor. At urna condimentum mattis pellentesque id. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Ac turpis egestas maecenas pharetra convallis posuere morbi. Faucibus a pellentesque sit amet porttitor eget. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Eget nunc lobortis mattis aliquam faucibus purus in massa. Vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt. Lectus quam id leo in vitae turpis massa sed elementum."
+        buttons:
+          - label : "Learn more"
+            style : "gray-wb"
 
       - id: "transformation"
         name: "Digital Transformation"
+        image: "images/services/circle.png"
         url: "digital-transformation"
         short: "Digital transformation short"
         full: "Leo integer malesuada nunc vel risus commodo. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. In metus vulputate eu scelerisque felis imperdiet proin. Sed nisi lacus sed viverra tellus in. Interdum velit laoreet id donec ultrices tincidunt. Fames ac turpis egestas sed tempus urna et pharetra. Id nibh tortor id aliquet lectus proin nibh nisl condimentum. Euismod elementum nisi quis eleifend. Amet mauris commodo quis imperdiet. Integer eget aliquet nibh praesent tristique magna. Eros donec ac odio tempor orci dapibus. Sit amet purus gravida quis blandit turpis cursus."
+        buttons:
+          - label : "Learn more"
+            style : "gray-wb"
 
       - id: "cybersecurity"
         name: "Cybersecurity"
+        image: "images/services/circle.png"
         url: "cybersecurity"
         short: "Cybersecurity short"
         full: "Etiam non quam lacus suspendisse faucibus interdum posuere. Amet est placerat in egestas erat imperdiet sed euismod. Velit dignissim sodales ut eu sem integer vitae. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Pellentesque dignissim enim sit amet venenatis urna cursus. Ut tristique et egestas quis ipsum. Ut enim blandit volutpat maecenas. Blandit turpis cursus in hac. At erat pellentesque adipiscing commodo elit at imperdiet. Non sodales neque sodales ut etiam. Quis risus sed vulputate odio ut enim. A cras semper auctor neque vitae tempus quam. Amet nisl purus in mollis nunc sed id semper risus. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac."
+        buttons:
+          - label : "Learn more"
+            style : "gray-wb"
 
     - name: "About"
       has_children: true

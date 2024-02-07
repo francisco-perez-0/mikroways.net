@@ -39,7 +39,7 @@
       {{ end }}
     </ul>
     <!--/ cd-hero-slider -->
-
+    {{ if .navigation }}
     <div class="cd-slider-nav">
       <nav>
         <ul>
@@ -50,6 +50,7 @@
         </ul>
       </nav>
     </div> <!-- .cd-slider-nav -->
+    {{ end }}
   </div>
   <!--/ Main slider end -->
 </section>
@@ -80,61 +81,157 @@
 {{ end }}
 <!--/ Feature box end -->
 
+<!-- Counter Strat -->
+{{ if $data.homepage.funfact.enable }}
+{{ partial "funfact.html" . }}
+{{ end }}
+<!--/ Counter end -->
+
+<!-- Clients start -->
+{{ if $data.homepage.clients.enable }}
+{{ with $data.homepage.clients }}
+<section id="clients" class="clients" style="padding-top: 0em !important; padding-bottom: 0em !important; filter: grayscale(1);">
+  <div class="container-fluid">
+    <div class="row border" style="display: flex; align-items: center;">
+      <div class="col-sm-2 text-center">
+        <span class="title-desc" style="font-size: 1em;">{{ .subtitle | markdownify }}</span>
+        <h2 class="title services" style="font-size: 1.5em;">{{ .title | markdownify }}</h2>
+      </div>
+      {{ range .client }}
+      {{ if .homepage }}
+      <div class="col-sm-2">
+        <figure class="m-0 item client_logo">
+          <a href="{{ .link | safeURL }}">
+            <img src="{{ .logo | absURL }}" class="client-logo" alt="{{ .name }}">
+          </a>
+        </figure>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+    <!--<div class="row wow fadeInLeft">
+      <div class="col-md-12 heading text-center">
+        <span class="title-desc">{{ .subtitle | markdownify }}</span>
+        <h2 class="title services">{{ .title | markdownify }}</h2>
+    </div>-->
+    <!--  {{ if .enable_slider }}
+      <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
+      {{ else }}
+      <div class="col-sm-12 text-center">
+      {{ end }}
+      <div class="container-fluid">
+        <div class="row">
+        {{ range .client }}
+        {{ if .homepage }}
+          <div class="col-sm-2">
+        <figure class="m-0 item client_logo">
+          <a href="{{ .link | safeURL }}">
+            <img src="{{ .logo | absURL }}" class="client-logo" alt="{{ .name }}">
+          </a>
+        </figure>
+          </div>
+        {{ end }}
+        {{ end }}
+          </div>
+          </div>
+      </div><!-- Owl carousel end -->
+<!--      <div class="col-md-12 text-center">
+        <a href="{{ $data.homepage.clients.url | relLangURL }}" id="all-clients-button" class="btn btn-primary solid">{{i18n `see_all`}}</a>
+</div>
+    </div>
+  </div>
+  </section>-->
+{{ end }}
+{{ end }}
+<!--/ Clients end -->
+
+
 <!-- Service box start -->
 {{ if $data.homepage.service.enable }}
-{{ with $data.service.services }}
+{{ with $data.menu.menu }}
 
-<section id="service" class="service angle">
+{{ range $index,$element := .menu_items }}
+{{ if in .name "Services" }}
+<div class="container-fluid border-bottom">
+</div>
+<section id="service" class="service">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 heading">
-        <h2 class="title">{{ .title | markdownify }} <span class="title-desc">{{ .subtitle | markdownify }}</span></h2>
+      <div class="col-md-12 heading text-center">
+        <span class="title-desc">{{ .name | markdownify }}</span>
+        <h2 class="title services">{{ .tag | markdownify }}</h2>
       </div>
     </div><!-- Title row end -->
-    <div class="row landing-tab">
-      <div class="col-md-3 col-sm-5">
-        <div class="nav flex-column nav-pills border-right" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          {{ range $index,$elements:= .profile_tab }}
-          <a class="animated fadeIn nav-link py-4 {{if eq $index 0}}active{{end}} d-flex align-items-center"
-             data-toggle="pill" href="#{{.name | urlize}}" role="tab" aria-selected="true">
-            <i class="fa {{.icon}} mr-4"></i>
-            <span class="h4 mb-0 font-weight-bold">{{ .name }}</span>
-          </a>
+    <div class="row">
+      {{ $len := (len .children) }}
+      {{ range $index_c,$element := .children }}
+      {{ if eq (add $index_c 1) $len }}
+      <div class="row service-item">
+      {{ else }}
+      <div class="row service-item border-bottom border-3">
+      {{ end }}
+        <div class="col-md-12 heading text-center">
+          <h3 class="title services">{{ .name }}</h2>
+        </div>
+        <div class="col-md-8">
+          <p>{{ .full | markdownify }}</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <img src="{{ .image | absURL }}">
+        </div>
+        <div class="col-md-12 heading text-center">
+          {{ range .buttons }}
+          <a href="{{ $element.url | relLangURL }}" class="btn btn-primary {{.style}} cd-btn">{{ .label }}</a>
           {{ end }}
         </div>
       </div>
-      <div class="col-md-9 col-sm-7">
-        <div class="tab-content" id="v-pills-tabContent">
-          {{ range $index,$elements:= .profile_tab }}
-          <div class="tab-pane pl-sm-5 fade {{if eq $index 0}}show active{{end}} animated fadeInLeft"
-               id="{{.name | urlize}}" role="tabpanel">
-            <h3>{{ .title | markdownify }}</h3>
-            <p>{{ .content | markdownify }}</p>
-            {{ range .buttons }}
-            <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}} cd-btn">{{ .label }}</a>
-            {{ end }}
-          </div>
-          {{ end }}
-        </div>
-      </div>
+      {{ end }}
     </div>
+    {{ end }}
+    {{ end }}
   </div>
 </section>
 {{ end }}
 {{ end }}
 <!--/ Service box end -->
 
+<!-- Our workflow start -->
+{{ if $data.homepage.workflow.enable }}
+{{ with $data.workflow.workflow }}
+<div class="container-fluid border-bottom">
+</div>
+<section id="workflow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 heading text-center">
+        <span class="title-desc">{{ .subtitle | markdownify }}</span>
+        <h2 class="title workflow">{{ .title | markdownify }}</h2>
+      </div>
+    </div>
+    <div class="row workflow">
+      <div class="col-md-6 workflow">
+        <img class="workflow" src="{{ .image | absURL }}">
+      </div>
+      <div class="col-md-6">
+        {{ range $index,$element := .steps }}
+        <h4 class="title workflow">{{ .name }}</h4>
+        <p class="workflow">{{ .description }}</p>
+        {{ end }}
+      </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- Our workflow end -->
+
+
 <!-- Portfolio start -->
 {{ if $data.homepage.portfolio.enable }}
 {{ partial "portfolio.html" . }}
 {{ end }}
 <!-- Portfolio end -->
-
-<!-- Counter Strat -->
-{{ if $data.homepage.funfact.enable }}
-{{ partial "funfact.html" . }}
-{{ end }}
-<!--/ Counter end -->
 
 
 {{ if $data.homepage.about.enable }}
@@ -175,39 +272,6 @@
 {{ end }}
 <!--/ Testimonial end-->
 
-<!-- Clients start -->
-{{ if $data.homepage.clients.enable_slider }}
-{{ with $data.homepage.clients }}
-<section id="clients" class="clients">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 heading">
-        {{ with .title_icon }} <span class="title-icon float-left"><i class="fa {{ . }}"></i></span> {{ end }}
-        <h2 class="title">{{ .title | markdownify }} <span class="title-desc">{{ .subtitle | markdownify }}</span></h2>
-      </div>
-    </div><!-- Title row end -->
-    <div class="row wow fadeInLeft">
-      <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
-        {{ range .client }}
-        {{ if .homepage }}
-        <figure class="m-0 item client_logo">
-          <a href="{{ .link | safeURL }}">
-            <img src="{{ .logo | absURL }}" class="client-logo" alt="{{ .name }}">
-          </a>
-        </figure>
-        {{ end }}
-        {{ end }}
-      </div><!-- Owl carousel end -->
-      <div class="col-md-12 text-center">
-        <a href="{{ $data.homepage.clients.url | relLangURL }}" id="all-clients-button" class="btn btn-primary solid">{{i18n `see_all`}}</a>
-      </div>
-    </div><!-- Main row end -->
-  </div>
-  <!--/ Container end -->
-</section>
-{{ end }}
-{{ end }}
-<!--/ Clients end -->
 
 <!-- Parallax 1 start -->
 {{ if $data.homepage.call_to_action.enable }}
@@ -265,8 +329,4 @@
 </section><!-- Parallax 1 end -->
 {{ end }}
 {{ end }}
-
-
-
 {{ end }}
-

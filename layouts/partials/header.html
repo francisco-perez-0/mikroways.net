@@ -40,9 +40,21 @@
                   <div class="tab-content" id="v-pills-tabContent">
                   {{ range $c_index,$c_element := .children }}
                   <div class="megamenu-item-tab tab-pane animated fadeInLeft {{if eq $c_index 0}}show active{{end}}" id="item-{{ $c_element.id }}" role="tabpanel">
-                      <h3>{{ $c_element.name }}</h3>
-                      <p>{{ $c_element.full | markdownify }}</p>
+                    {{ if $c_element.image }}
+                    <div class="row">
+                      <div class="col-md-3 megamenu-item-img">
+                        <img src="{{ $c_element.image | absURL }}">
+                      </div>
+                      <div class="col-md-9">
+                        <h3>{{ $c_element.name }}</h3>
+                        <p>{{ $c_element.full | markdownify }}</p>
+                      </div>
                     </div>
+                    {{ else }}
+                    <h3>{{ $c_element.name }}</h3>
+                    <p>{{ $c_element.full | markdownify }}</p>
+                    {{ end }}
+                  </div>
                   {{end}}
                   </div>
                 </div>
