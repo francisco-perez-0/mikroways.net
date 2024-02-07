@@ -107,8 +107,54 @@ div.megamenu-item p.dropdown-item {
 }
 */
 
+div.container-fluid.top-navigation-bar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .navbar-brand {
   background: white;
+}
+
+button.navbar-toggler {
+  margin-right: 1em;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    background: white;
+    margin-left: 3em;
+  }
+
+  #mobile_nav {
+    margin-right: 8.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand {
+    background: white;
+    margin-left: 8em;
+  }
+
+  #mobile_nav {
+    margin-right: 13.5em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .navbar-brand {
+    background: white;
+    margin-left: 15em;
+  }
+
+  #mobile_nav {
+    margin-right: 20.5em;
+  }
+}
+
+ul.navbar-nav.navbar-light {
+  z-index: 2000;
 }
 
 .navbar-brand.navbar-bg {
