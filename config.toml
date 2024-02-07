@@ -83,98 +83,8 @@ link = "js/newsletter.js"
 link = "https://kit.fontawesome.com/4e9fd50276.js"
 [[params.plugins.js]]
 link = "js/asciinema-player.js"
-
-
-############################## English navigation ###############################
-
-[[Languages.en.menu.main]]
-name = "Home"
-URL = "/"
-weight = 1
-
-[[Languages.en.menu.main]]
-name = "About us"
-weight = 2
-hasChildren = true
-
-  [[Languages.en.menu.main]]
-  parent = "About us"
-  name = "About Mikroways"
-  URL = "about"
-  weight = 1
-
-  [[Languages.en.menu.main]]
-  parent = "About us"
-  name = "The team"
-  URL = "team"
-  weight = 2
-
-  [[Languages.en.menu.main]]
-  parent = "About us"
-  name = "Our customers"
-  URL = "clients"
-  weight = 3
-
-[[Languages.en.menu.main]]
-name = "Success stories"
-URL = "portfolio"
-weight = 3
-
-[[Languages.en.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[Languages.en.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 5
-
-############################## Spanish navigation ###############################
-
-[[Languages.es.menu.main]]
-name = "Inicio"
-URL = "/es"
-weight = 1
-
-[[Languages.es.menu.main]]
-name = "La empresa"
-weight = 2
-hasChildren = true
-
-  [[Languages.es.menu.main]]
-  parent = "La empresa"
-  name = "Sobre Mikroways"
-  URL = "about"
-  weight = 1
-
-  [[Languages.es.menu.main]]
-  parent = "La empresa"
-  name = "El equipo"
-  URL = "team"
-  weight = 2
-
-  [[Languages.es.menu.main]]
-  parent = "La empresa"
-  name = "Nuestros clientes"
-  URL = "clients"
-  weight = 3
-
-[[Languages.es.menu.main]]
-name = "Casos de éxito"
-URL = "portfolio"
-weight = 3
-
-[[Languages.es.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[Languages.es.menu.main]]
-name = "Contacto"
-URL = "contact"
-weight = 5
-
+[[params.plugins.js]]
+link = "js/megamenu.js"
 
 #################### default parameters ################################
 [params]
@@ -189,7 +99,7 @@ address = "9 #562 2A, La Plata, Buenos Aires, Argentina"
 phone = "+54 (221) 447-3084"
 email = "contacto@mikroways.net"
 # copyright
-copyright = "Copyright &copy; 2021 Mikroways &copy;"
+copyright = "Copyright&copy; 2024 Mikroways&reg;"
 
 # flickr photos
 [[params.flickr_photos]]
@@ -260,8 +170,6 @@ weight = 1
 home = "Home"
 # footer content
 footer_content = "We specialize in productive IT services, and our mission is to build bridges using the appropriate technology to help our clients conquer and materialize their ideas."
-# copyright
-copyright = "Copyright 2021 Mikroways"
 
 ################################### Spanish language #####################################
 [Languages.es]
@@ -272,4 +180,3 @@ weight = 2
 home = "Inicio"
 # footer content
 footer_content = "Somos especialistas en servicios de IT productivos y nuestra misión es construir puentes, usando la tecnología adecuada, que les permitan a nuestros clientes conquistar y materializar sus ideas."
-copyright = "Copyright 2021 Mikroways"
