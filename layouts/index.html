@@ -90,15 +90,14 @@
 <!-- Clients start -->
 {{ if $data.homepage.clients.enable }}
 {{ with $data.homepage.clients }}
-<section id="clients" class="clients">
+<section id="clients" class="clients d-none d-xl-flex">
   <div class="container-fluid">
     <div class="row clients">
       <div class="col-sm-2 text-center client-title">
-        <span class="title-desc" style="font-size: 1em;">{{ .subtitle | markdownify }}</span>
-        <h2 class="title services" style="font-size: 1.5em;">{{ .title | markdownify }}</h2>
+        <span class="title-desc">{{ .subtitle | markdownify }}</span>
+        <h2 class="title services">{{ .title | markdownify }}</h2>
       </div>
-      {{ range .client }}
-      {{ if .homepage }}
+      {{ range first 5 .client }}
       <div class="col-sm-2 text-center">
         <figure class="m-0 item client_logo">
           <a href="{{ .link | safeURL }}">
@@ -107,42 +106,30 @@
         </figure>
       </div>
       {{ end }}
-      {{ end }}
     </div>
   </div>
 </section>
-    <!--<div class="row wow fadeInLeft">
-      <div class="col-md-12 heading text-center">
-        <span class="title-desc">{{ .subtitle | markdownify }}</span>
-        <h2 class="title services">{{ .title | markdownify }}</h2>
-    </div>-->
-    <!--  {{ if .enable_slider }}
-      <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
-      {{ else }}
-      <div class="col-sm-12 text-center">
-      {{ end }}
-      <div class="container-fluid">
-        <div class="row">
-        {{ range .client }}
-        {{ if .homepage }}
-          <div class="col-sm-2">
-        <figure class="m-0 item client_logo">
+
+<section id="clients" class="clients d-xs-flex d-xl-none">
+    <div class="container">
+      <div class="row">
+      </div><!-- Title row end -->
+      <div class="row wow fadeInLeft">
+        <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
+          {{ range .client }}
+          {{ if .homepage }}
+          <figure class="m-0 item client_logo">
           <a href="{{ .link | safeURL }}">
             <img src="{{ .logo | absURL }}" class="client-logo" alt="{{ .name }}">
-          </a>
-        </figure>
-          </div>
-        {{ end }}
-        {{ end }}
-          </div>
-          </div>
-      </div><!-- Owl carousel end -->
-<!--      <div class="col-md-12 text-center">
-        <a href="{{ $data.homepage.clients.url | relLangURL }}" id="all-clients-button" class="btn btn-primary solid">{{i18n `see_all`}}</a>
-</div>
+            </a>
+          </figure>
+          {{ end }}
+          {{ end }}
+        </div><!-- Owl carousel end -->
+      </div><!-- Main row end -->
     </div>
-  </div>
-  </section>-->
+    <!--/ Container end -->
+</section>
 {{ end }}
 {{ end }}
 <!--/ Clients end -->

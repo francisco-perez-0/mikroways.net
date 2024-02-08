@@ -662,12 +662,24 @@ section#clients.clients,
 section#clients.clients div.container-fluid {
   padding-top: 0em !important;
   padding-bottom: 0em !important;
-  filter: grayscale(1);
+}
+
+div.client-title span.title-desc {
+  font-size: 1em;
+}
+
+div.client-title h2.title {
+  font-size: 1.5em;
 }
 
 .client-carousel .item a {
   border: 0px;
   width: 187px;
+}
+
+.carousel-title {
+  align-items: center;
+  display: flex;
 }
 
 figure.client_logo {
