@@ -41,7 +41,7 @@
       </div>
       {{ end }}
 
-      <div class="col-md-5 col-sm-12 footer-widget">
+      <div class="col-md-5 col-sm-12 footer-widget about">
         <h3 class="footer-title">{{i18n `about_us`}}</h3>
         <p>{{ $data.about.about | markdownify }}</p>
         <p class="contact"><i class="fa fa-home info"></i><a target="_blank" href="{{ .Site.Params.address_url }}">{{ .Site.Params.address | markdownify }}</a></p>
@@ -56,24 +56,17 @@
 
 <!-- Copyright start -->
 <section id="copyright" class="copyright">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <ul class="footer-social unstyled">
-          <li>
-            {{ range .Site.Params.social }}
-            <a title="{{ .name }}" href="{{ .link | absURL }}">
-              <span class="icon-pentagon wow bounceIn"><i class="fa {{.icon}}"></i></span>
-            </a>
-            {{ end }}
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!--/ Row end -->
-    <div class="row">
-      <div class="col-md-12 text-center">
+  <div class="container-fluid">
+    <div class="row footer-bottom">
+      <div class="col-xs-12 col-sm-6 footer-bottom copyright">
         <div class="copyright-info">{{ .Site.Params.copyright | markdownify }}</div>
+      </div>
+      <div class="col-xs-12 col-sm-6 footer-bottom social">
+        {{ range .Site.Params.social }}
+        <a target="_blank" href="{{ .link | absURL }}">
+          <span class="social"><i class="fa {{.icon}}"></i></span>
+        </a>
+        {{ end }}
       </div>
     </div>
     <!--/ Row end -->
