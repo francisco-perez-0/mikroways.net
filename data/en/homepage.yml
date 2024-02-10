@@ -1,82 +1,17 @@
-############################ Slider ##########################
-slider:
+front:
   enable: true
-  # When navigation is false, only the first one of the items will be shown
-  # although the final HTML will have all of them, so it might be better to
-  # delete the items which are not intended to be used
-  navigation: false
-  slider_item:
-    ################# Slider item loop
-    - title: "Improve your IT team's productivity"
-      subtitle: "Discover everything Platform Engineering can do for you"
-      bg_image: "images/slider/cheetah.jpg"
-      image: ""
-      image_position: "false"
-      # slider navigator
-      navigator:
-        label: "DevSecOps"
-        icon: "fa-solid fa-gears" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-      buttons:
-        - label: "Let's talk"
-          style: "solid"
-          link: "contact"
+  title: "IT innovation within reach"
+  subtitle: "Take your company to the next level with tailored IT solutions. Meet our specialists in platform engineering and digital consultancy."
+  bg_image: "images/homepage.jpg"
+  buttons:
+  - label: "Let's talk"
+    style: "solid"
+    link: "contact"
 
-        # button loop
-        - label: "See more"
-          style: "white"
-          link: "devsecops"
-
-    ############### Slider item loop
-    - title: "Do you have a software project?"
-      subtitle: "You don't need to worry about infrastructure anymore"
-      bg_image: "images/slider/software.jpg.webp"
-      image: ""
-      image_position: "false"
-      # slider navigator
-      navigator:
-        label: "SaaS"
-        icon: "fa fa-solid fa-window-maximize" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-
-      # slider buttons
-      buttons:
-        # button loop
-        - label: "Let's talk"
-          style: "solid"
-          link: "contact"
-
-    ############### Slider item loop
-    - title: "Migrating to the cloud?"
-      subtitle: "Adopt the public cloud or create your own private cloud"
-      bg_image: "images/slider/cloud.jpg.webp"
-      image: ""
-      image_position: "false"
-      # slider navigator
-      navigator:
-        label: "Cloud"
-        icon: "fa fa-cloud" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-
-      # slider buttons
-      buttons:
-        - label: "Let's talk"
-          style: "solid"
-          link: "contact"
-
-    ############### Slider item loop
-    - title: "Empower your team"
-      subtitle: "with new knowledge and skills"
-      bg_image: "images/slider/empower.jpg.webp"
-      image: ""
-      image_position: "false"
-      # slider navigator
-      navigator:
-        label: "Training"
-        icon: "fa-solid fa-book-open"
-      # slider buttons
-      buttons:
-        # button loop
-        - label: "I'm interested"
-          style: "solid"
-          link: "contact"
+  # button loop
+  - label: "Learn more"
+    style: "white"
+    link: "devsecops"
 
 ############################### feature ##################################
 # This requires three items per row in order to be evenly presented
