@@ -130,6 +130,38 @@ div.frontpage-text a.btn {
   }
 }
 
+@media (max-width: 450px) {
+  div.frontpage-text {
+    padding-top: 7em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  div.frontpage-text h2 {
+    font-size: 1.6em;
+  }
+
+  div.frontpage-text h3 {
+    font-size: 1.0em;
+  }
+}
+
+@media (max-width: 360px) {
+  div.frontpage-text {
+    padding-top: 6em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  div.frontpage-text h2 {
+    font-size: 1.3em;
+  }
+
+  div.frontpage-text h3 {
+    font-size: 0.9em;
+  }
+}
+
 div.container-fluid.top-navigation-bar {
   padding-left: 0;
   padding-right: 0;
@@ -850,6 +882,12 @@ figure.client_logo {
     padding: 1.5em !important;
   }
 
+}
+
+@media only screen and (max-width: 992px) {
+  figure.client_logo {
+    float: unset;
+  }
 }
 
 @media only screen and (max-width: 750px) {
