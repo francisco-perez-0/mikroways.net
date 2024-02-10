@@ -57,12 +57,6 @@ menu:
         short: "IT infrastructure specialists"
         full: "We specialize in productive IT services, and our mission is to build bridges using the appropriate technology to help our clients conquer and materialize their ideas."
 
-      - id: "the-team"
-        name: "The team"
-        url: "team"
-        short: "Meet our awesome team"
-        full: "We specialize in productive IT services, and our mission is to build bridges using the appropriate technology to help our clients conquer and materialize their ideas."
-
       - id: "customers"
         name: "Our customers"
         url: "clients"
@@ -76,8 +70,20 @@ menu:
 
     - id: "careers"
       name: "Careers"
-      has_children: false
+      has_children: true
       url: "/portfolio"
+      children:
+      - id: "culture"
+        name: "Our culture"
+        url: "culture"
+        short: "Discover what it feels like be part of Mikroways"
+        full: "Discover what it feels like be part of Mikroways"
+
+      - id: "work-with-us"
+        name: "Work with us"
+        url: "opportunities"
+        short: "Come work with us!"
+        full: "Come work with us!"
 
     - id: "blog"
       name: "Blog"

@@ -23,7 +23,7 @@
           {{ range $index,$elements:= .menu_items }}
           {{ if .has_children }}
           <li class="nav-item dropdown megamenu-li">
-            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .name }}</a>
+            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .name }}</a>
             <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
               <div class="row">
                 <div class="col-lg-3 dropdown-item megamenu-element" id="{{ .id }}">
