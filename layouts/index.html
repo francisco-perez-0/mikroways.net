@@ -227,10 +227,8 @@
 <!-- Parallax 1 start -->
 {{ if $data.homepage.call_to_action.enable }}
 {{ with $data.homepage.call_to_action }}
-<section class="parallax" style="background-image: url('{{ .bg_image | absURL}}');">
-  <div class="parallax-overlay"></div>
+<section class="cta">
   <div class="container">
-    <div class="row">
       <div class="col-md-12 text-center">
         <h2>{{ .title | markdownify }}</h2>
         <h3>{{ .subtitle | markdownify}}</h3>
@@ -240,9 +238,8 @@
           {{ end }}
         </p>
       </div>
-    </div>
-  </div><!-- Container end -->
-</section><!-- Parallax 1 end -->
+  </div>
+</section>
 {{ end }}
 {{ end }}
 
