@@ -3,60 +3,24 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 <!-- Slider start -->
-{{ if $data.homepage.slider.enable }}
-{{ with $data.homepage.slider }}
+{{ if $data.homepage.front.enable }}
+{{ with $data.homepage.front }}
 <section id="home" class="p-0">
-  <div id="main-slide" class="cd-hero">
-    <ul class="cd-hero-slider">
-      {{ range $index, $elements:= .slider_item }}
-      {{ $imgPosition := .image_position | lower }}
-      <li class="{{if eq $index 0}}selected{{end}}">
-        <div class="overlay2">
-          <img src="{{ .bg_image | absURL }}" alt="slider">
-        </div>
-        {{if eq $imgPosition "right"}}
-        {{ with .image }}
-        <div class="cd-half-width cd-img-container img-right">
-          <img src="{{ . | absURL }}" alt="">
-        </div>
-        {{ end }}
-        {{ end }}
-        <div class="{{if .image}}cd-half-width{{else}}cd-full-width{{end}}">
-          <h2>{{ .title | markdownify }}</h2>
-          <h3>{{ .subtitle | markdownify }}</h3>
-          {{ range .buttons }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}} cd-btn">{{ .label }}</a>
-          {{ end }}
-        </div>
-        {{if eq $imgPosition "left"}}
-        {{ with .image }}
-        <div class="cd-half-width cd-img-container">
-          <img src="{{ . | absURL }}" alt="">
-        </div>
-        {{ end }}
-        {{ end }}
-      </li>
+  <div class="frontpage">
+    <div class="bg-image">
+      <img src="{{ .bg_image | absURL }}" alt="Homepage image">
+    </div>
+    <div class="frontpage-text">
+      <h2>{{ .title | markdownify }}</h2>
+      <h3>{{ .subtitle | markdownify }}</h3>
+      {{ range .buttons }}
+      <a href="{{ .link }}" class="btn btn-primary {{ .style }}">{{ .label }}</a>
       {{ end }}
-    </ul>
-    <!--/ cd-hero-slider -->
-    {{ if .navigation }}
-    <div class="cd-slider-nav">
-      <nav>
-        <ul>
-          {{ range $index, $elements:= .slider_item }}
-          <li class="{{if eq $index 0}}selected{{end}}"><a href="#0"><i class="{{ .navigator.icon }}"></i>
-              {{ .navigator.label }}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
-    </div> <!-- .cd-slider-nav -->
-    {{ end }}
+    </div>
   </div>
-  <!--/ Main slider end -->
 </section>
 {{ end }}
 {{ end }}
-<!--/ Slider end -->
 
 <!-- Feature box start -->
 {{ if $data.homepage.feature.enable }}
