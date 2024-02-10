@@ -1,3 +1,5 @@
+about: "We specialize in productive IT services, and our mission is to build bridges using the appropriate technology to help our clients conquer and materialize their ideas."
+
 ############################ Company Profile ########################
 company_profile:
   enable : true
@@ -39,3 +41,4 @@ funfact:
 team:
   enable : true
   # team content comes from "data/team.yml" file
+

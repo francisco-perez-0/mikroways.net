@@ -1,47 +1,53 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
 <!-- Footer start -->
 <footer id="footer" class="footer">
   <div class="container">
     <div class="row">
-<!--
-      <div class="col-md-4 col-sm-12 footer-widget">
-        <img id="logo-footer" src="{{ .Site.Params.white_logo | absURL }}"></img>
+      <div class="d-none d-md-block col-md-1 col-sm-12 footer-widget">
       </div>
--->
-      <div class="col-md-4 col-sm-12 footer-widget">
-        <h3 class="widget-title">{{i18n `recent_post`}}</h3>
-        {{ range first 3 ( where .Site.RegularPages "Section" "blog" )}}
-        <div class="latest-post-items media mb-3">
-          <div class="latest-post-content media-body">
-            <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-            <p class="post-meta">
-              <span class="post-meta-author">{{i18n `posted_by`}} {{ .Params.Author | title }}</span>
-              <span class="post-meta-cats">{{i18n `in`}} {{ range $index, $elements:= .Params.Categories }}<a
-                href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}"> {{ if ne $index 0 }}, {{ end }}
-                {{ . | title }}</a> {{ end}}</span>
-            </p>
-          </div>
-        </div><!-- Latest Post end -->
+      <!-- Menu on footer lists only the first 3 and the last 3 elements.
+        This works well when there are exactly 6 elements.-->
+      {{ with $data.menu.menu }}
+      {{ $first_column_items := math.Div (len .menu_items) 2 }}
+      <div class="col-md-3 col-sm-12 footer-widget">
+        {{ range first $first_column_items .menu_items }}
+        <div class="col-md-12 footer-menu-top">
+          <a {{ if not .has_children }}href="{{ .url }}"{{ end }}>{{ .name }}</a>
+        </div>
+        {{ if .has_children }}
+        {{ range $c_index,$c_element := .children }}
+        <div class="col-md-12 footer-menu-child">
+          <a href="{{ $c_element.url | relLangURL }}">{{ $c_element.name }}</a>
+        </div>
+        {{ end }}
+        {{ end }}
         {{ end }}
       </div>
-      <!--/ End Recent Posts-->
 
-      <div class="col-md-4 col-sm-12 footer-widget footer-about-us">
-        <h3 class="widget-title address">{{i18n `address`}}</h4>
-        <p>{{ .Site.Params.address | markdownify }}</p>
-        <div class="mb-4">
-          <h3 class="widget-title address">{{i18n `email`}}</h4>
-          <p>{{ .Site.Params.email | markdownify }}</p>
+      <div class="col-md-3 col-sm-12 footer-widget">
+        {{ range last (math.Sub (len .menu_items) $first_column_items) .menu_items }}
+        <div class="col-md-12 footer-menu-top">
+          <a {{ if not .has_children }}href="{{ .url }}"{{ end }}>{{ .name }}</a>
         </div>
-        <div class="mb-4">
-          <h3 class="widget-title address">{{i18n `phone`}}</h4>
-          <p>{{ .Site.Params.phone | markdownify }}</p>
+        {{ if .has_children }}
+        {{ range $c_index,$c_element := .children }}
+        <div class="col-md-12 footer-menu-child">
+          <a href="{{ $c_element.url | relLangURL }}">{{ $c_element.name }}</a>
         </div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
       </div>
-      <!--/ end about us -->
+      {{ end }}
 
-      <div class="col-md-4 col-sm-12 footer-widget">
-        <h3 class="widget-title">{{i18n `about_us`}}</h3>
-        <p>{{ .Site.Params.footer_content | markdownify }}</p>
+      <div class="col-md-5 col-sm-12 footer-widget">
+        <h3 class="footer-title">{{i18n `about_us`}}</h3>
+        <p>{{ $data.about.about | markdownify }}</p>
+        <p class="contact"><i class="fa fa-home info"></i><a target="_blank" href="{{ .Site.Params.address_url }}">{{ .Site.Params.address | markdownify }}</a></p>
+        <p class="contact"><i class="fa fa-phone info"></i><a target="_blank" href="{{ .Site.Params.phone_url | safeURL }}">{{ .Site.Params.phone | markdownify }}</a></p>
+        <p class="contact"><i class="fa fa-whatsapp info"></i><a target="_blank" href="{{ .Site.Params.whatsapp_url }}">{{ .Site.Params.whatsapp | markdownify }}</a></p>
+        <p class="contact"><i class="fa fa-envelope info"></i><a target="_blank"href="{{ .Site.Params.email_url }}">{{ .Site.Params.email | markdownify }}</a></p>
       </div>
     </div><!-- Row end -->
   </div><!-- Container end -->

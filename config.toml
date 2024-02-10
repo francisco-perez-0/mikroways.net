@@ -96,8 +96,13 @@ description = "En Mikroways somos especialistas en servicios de IT productivos y
 author = "Mikroways"
 # contact info
 address = "9 #562 2A, La Plata, Buenos Aires, Argentina"
+address_url = "https://maps.app.goo.gl/aWjbzQDLmYUfnNd19"
 phone = "+54 (221) 447-3084"
+phone_url = "tel:+542214473084"
+whatsapp = "+54 9 (221) 680-0267"
+whatsapp_url = "https://wa.me/+5492216800267"
 email = "contacto@mikroways.net"
+email_url = "mailto:contacto@mikroways.net"
 # copyright
 copyright = "Copyright&copy; 2024 Mikroways&reg;"
 
@@ -168,8 +173,6 @@ languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 home = "Home"
-# footer content
-footer_content = "We specialize in productive IT services, and our mission is to build bridges using the appropriate technology to help our clients conquer and materialize their ideas."
 
 ################################### Spanish language #####################################
 [Languages.es]
@@ -178,5 +181,3 @@ languageCode = "es-ar"
 contentDir = "content/spanish"
 weight = 2
 home = "Inicio"
-# footer content
-footer_content = "Somos especialistas en servicios de IT productivos y nuestra misión es construir puentes, usando la tecnología adecuada, que les permitan a nuestros clientes conquistar y materializar sus ideas."
