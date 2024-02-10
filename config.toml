@@ -150,22 +150,6 @@ name = "github"
 icon = "fa-github" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
 link = "https://github.com/orgs/Mikroways/repositories"
 
-[[params.social]]
-name = "twitter"
-icon = "fa-twitter" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-link = "https://twitter.com/mikroways"
-
-[[params.social]]
-name = "instagram"
-icon = "fa-instagram" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-link = "https://www.instagram.com/mikroways/"
-
-[[params.social]]
-name = "facebook"
-icon = "fa-facebook" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-link = "https://www.facebook.com/Mikroways/"
-
-
 ################################### English language #####################################
 [Languages.en]
 languageName = "En"
