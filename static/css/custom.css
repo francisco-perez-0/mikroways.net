@@ -7,12 +7,14 @@
   --blue-mw-primary: rgb(0, 81, 152);
   --blue-mw-secondary: rgb(0, 118, 182);
   --blue-mw-tertiary: rgb(4, 169, 211);
+  --blue-mw-primary-soft: rgba(0, 81, 152, 0.8);
   --green-mw-primary: rgb(0, 140, 63);
   --green-mw-secondary: rgb(66, 162, 64);
   --green-mw-tertiary: rgb(108, 190, 69);
   --main-font-color: #6a6a6a;
   --dark-gray: rgb(230, 230, 240);
   --footer-text: #333;
+  --gray-background: #333;
   --gray: #d0d0d0;
 }
 
@@ -712,6 +714,34 @@ section {
   padding: 4em 0 !important;
 }
 
+section.cta {
+  background-color: var(--gray-background);
+  transition: 1s;
+}
+
+section.cta:hover {
+  background-color: var(--blue-mw-primary-soft);
+  transition: 1s;
+}
+
+section.cta div.container h2,
+section.cta div.container h3 {
+  color: white;
+}
+
+section.cta div.container p {
+  padding-top: 1.2em;
+}
+
+
+section.cta div.container .btn.btn-primary.solid {
+  background: var(--gray-background);
+}
+
+section.cta div.container .btn.btn-primary.solid:hover {
+  background: var(--blue-mw-primary);
+}
+
 .footer-bottom {
   font-size: 1.2em !important;
   padding: 0 1.5em !important;
@@ -739,8 +769,7 @@ span.social {
 }
 
 #copyright {
-  background: var(--dark-gray);
-  background: #333;
+  background: var(--gray-background);
   color: var(--footer-text);
   padding-top: 1em !important;
   padding-bottom: 1em !important;
@@ -1204,3 +1233,6 @@ nav#TableOfContents ul li {
   width: 100%;
 }
 
+.facts-wrapper {
+  background: var(--gray-background);
+}
