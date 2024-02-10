@@ -673,6 +673,10 @@ img.success-story-client {
   color: var(--footer-text);
 }
 
+.footer-widget.about p {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
 @media (max-width:768px) {
   .footer-widget {
     text-align: center;
