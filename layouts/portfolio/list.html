@@ -1,7 +1,23 @@
 {{ define "main" }}
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.portfolio.portfolio }}
+<section id="portfolio-header">
+<div class="container-fluid text-center">
+  <div>
+    <h2>{{ .title }}</h2>
+    <h3>{{ .subtitle }}</h3>
+  </div>
+</div>
+</section>
+{{ end }}
+{{ partial "funfact.html" . }}
+
 <section id="portfolio" class="portfolio list">
+  <div class="col-sm-12 text-center portfolio-title">
+    <h2 class="portfolio-title">{{ $data.portfolio.portfolio.success_stories_title }}</h2>
+  </div>
+  {{ if .Site.Params.enableFilterSt }}
   <div class="container col-md-8 text-center">
     <!--Isotope filter start -->
     <div class="row text-center">
@@ -23,27 +39,31 @@
       </div>
     </div><!-- Isotope filter end -->
   </div>
+  {{ end }}
 
-  <div class="container-fluid col-md-8 portfolio list">
-    <div class="row isotope" id="isotope">
+  <div class="container col-md-8 portfolio list">
+        <div class="row isotope" id="isotope">
+          {{ $index := 0 }}
       {{ range (where .Site.RegularPages "Section" "portfolio") }}
-      <div class="col-sm-3 {{range .Params.types }}{{ . | urlize}} {{ end }} isotope-item">
-        <div class="grid">
-          <a href="{{ .RelPermalink }}">
-            <figure class="m-0 effect-oscar">
-              {{ range first 1 .Params.images }}
-              <img src="{{ . | absURL }}" alt="portfolio image">
-              {{ end }}
-              <figcaption>
-                <h3>{{ .Title | markdownify }}</h3>
-              </figcaption>
-            </figure>
-          </a>
+      <!--      <div class="col-sm-12 {{range .Params.types }}{{ . | urlize}} {{ end }} isotope-item st-cust {{ if gt $index 0 }}border-top{{end}}">-->
+      <div class="col-sm-12 {{range .Params.types }}{{ . | urlize}} {{ end }} isotope-item st-cust border-top">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 st-cust-logo m0 effect-oscar">
+            <a href="{{ .RelPermalink }}">
+            <img src="{{ .Params.customer.logo | absURL }}" alt="{{ .Params.customer.name }}"/>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-8 st-cust-desc">
+            <a href="{{ .RelPermalink }}">
+            <h3>{{ .Params.title | markdownify }}</h3>
+            <p>{{ .Params.description | markdownify }}</p>
+            </a>
+          </div>
         </div>
       </div><!-- Isotope item end -->
+      {{ $index = math.Add $index 1 }}
       {{ end }}
-    </div><!-- Content row end -->
+      </div><!-- Isotope item end -->
   </div><!-- Container end -->
 </section>
-
 {{ end }}

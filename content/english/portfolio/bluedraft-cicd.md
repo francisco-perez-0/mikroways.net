@@ -8,7 +8,7 @@ images:
   - "images/portfolio/rearchitect.webp"
 customer:
   name: "INTA"
-  logo: "images/clients/bluedraft.png.webp"
+  logo: "images/clients/bluedraft.svg"
   url: "https://www.bluedraft.com.ar"
 buttons:
   label : "I want this"

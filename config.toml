@@ -12,7 +12,6 @@ googleAnalytics = "UA-47781870-2"
 #disqusShortname = "#" # get your shortname form here : https://disqus.com
 removePathAccents = true
 
-
 ############################# Outputs ##############################
 [outputs]
 home = ["HTML", "RSS"]
@@ -105,6 +104,8 @@ email = "contacto@mikroways.net"
 email_url = "mailto:contacto@mikroways.net"
 # copyright
 copyright = "Copyright&copy; 2024 Mikroways&reg;"
+# Filter in success stories
+enableFilterSt = false
 
 # flickr photos
 [[params.flickr_photos]]

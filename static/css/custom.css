@@ -536,11 +536,24 @@ a {
 
 .isotope-nav ul li a {
   border: 1px solid var(--blue-mw-primary);
+  border-radius: 15px;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .isotope-nav.filter {
   margin-top: 0px;
   margin-bottom: 1em;
+}
+
+.isotope-item {
+  border-radius: 15px;
+  border-color: var(--gray-background);
+  margin: 0.5em;
+}
+
+.isotope-item a {
+  padding: 0.5em;
 }
 
 .testimonial-slide .testimonial-text:before, .testimonial-slide .testimonial-text:after {
@@ -592,6 +605,35 @@ img.success-story-client {
   width: 70%;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+#portfolio-header {
+  background-color: var(--blue-mw-primary-soft);
+}
+
+#portfolio-header div {
+  padding: 4em 4em 2em 4em;
+}
+
+#portfolio-header h2 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+#portfolio-header h3 {
+  color: white;
+}
+
+div.portfolio-title {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+h2.portfolio-title {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: 900;
 }
 
 #portfolio-button {
@@ -1277,4 +1319,65 @@ nav#TableOfContents ul li {
 
 .facts-wrapper {
   background: var(--gray-background);
+}
+
+.st-cust {
+  margin: auto;
+  display: flex;
+  height: 140px;
+  align-items: center;
+  padding: 3em 1em !important;
+  border-radius: 0;
+}
+
+.st-cust a {
+  color: var(--main-font-color);
+}
+
+.st-cust-logo {
+  display: flex;
+  align-items: center;
+}
+
+.st-cust-logo img {
+  width: 80%;
+}
+
+.st-cust-desc {
+  margin: auto;
+}
+
+.st-cust-desc h3,
+.st-cust-desc p {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.st-cust-desc h3 {
+  font-weight: 900;
+}
+
+.st-cust-desc p {
+  margin-bottom: 0;
+}
+
+.st-cust-even {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .st-cust-logo img {
+    width: auto;
+    max-height: 100px;
+    padding-bottom: 1.2em;
+  }
+
+  .st-cust {
+    margin: auto;
+    display: block;
+    height: 200px;
+    align-items: center;
+    padding: 3em 1em !important;
+    border-radius: 0;
+  }
 }
