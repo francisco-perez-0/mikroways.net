@@ -2,14 +2,24 @@
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ with $data.portfolio.portfolio }}
-<section id="portfolio-header">
-<div class="container-fluid text-center">
-  <div>
-    <h2>{{ .title }}</h2>
-    <h3>{{ .subtitle }}</h3>
+<section id="header" class="p-0">
+  <div class="frontpage success-stories">
+    <div class="bg-image">
+      <img src="{{ .bg_image | absURL }}" alt="Homepage image">
+    </div>
+    <div class="frontpage-text">
+      <h2>{{ .title | markdownify }}</h2>
+      <h3>{{ .subtitle | markdownify }}</h3>
+    </div>
   </div>
-</div>
+  <div class="container">
+    <div class="col-sm-12 text-center success-stories-intro">
+      <p>{{ .introduction }}</p>
+    </div>
+  </div>
 </section>
+
+
 {{ end }}
 {{ partial "funfact.html" . }}
 

@@ -61,7 +61,6 @@ div.frontpage-text {
   z-index: 100;
   left: 0;
   top: 0;
-  text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
@@ -96,6 +95,29 @@ div.frontpage-text h3 {
 div.frontpage-text a.btn {
   margin-top: 1em;
   margin-right: 1em;
+}
+
+div.frontpage.success-stories {
+  max-height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+div.success-stories-intro {
+  padding: 3em 6em;
+}
+
+div.success-stories-intro p {
+  font-size: 1.2em;
+}
+
+div.frontpage.success-stories div.frontpage-text {
+  max-width: unset;
+  text-align: right;
+  padding-left: 14em;
+  padding-right: 6em;
+  padding-top: 15em;
+  max-height: 500px;
 }
 
 @media (max-width: 1050px) {
@@ -1380,4 +1402,8 @@ nav#TableOfContents ul li {
     padding: 3em 1em !important;
     border-radius: 0;
   }
+}
+
+#service img {
+  width: 100%;
 }
