@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,900;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Syne:wght@400..800&display=swap');
 
 :root {
   --blue-mw-primary: rgb(0, 81, 152);
   --blue-mw-secondary: rgb(0, 118, 182);
   --blue-mw-tertiary: rgb(4, 169, 211);
   --blue-mw-primary-soft: rgba(0, 81, 152, 0.8);
+  --blue-mw-dark: #003e7b;
   --green-mw-primary: rgb(0, 140, 63);
   --green-mw-secondary: rgb(66, 162, 64);
   --green-mw-tertiary: rgb(108, 190, 69);
@@ -71,7 +73,6 @@ div.frontpage-text {
   text-align: left;
   padding-left: 8em;
   padding-top: 13em;
-  max-width: 750px;
 }
 
 div.frontpage-text h2,
@@ -87,6 +88,10 @@ div.cd-full-width h2 {
   font-size: 3.2em;
 }
 
+div.frontpage-text h2 {
+  padding-top: 0.5em;
+}
+
 div.frontpage-text h3 {
   font-size: 1.4em;
   color: #fff;
@@ -95,6 +100,30 @@ div.frontpage-text h3 {
 div.frontpage-text a.btn {
   margin-top: 1em;
   margin-right: 1em;
+}
+
+div.frontpage-text a {
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+a.frontpage-text-link {
+  color: white;
+  padding-bottom: 1em;
+  padding-right: 1em;
+}
+
+a.frontpage-text-name::before {
+  content: "";
+  display: inline-block;
+  background: var(--green-mw-primary);
+  width: 0.4em;
+  height: 0.4em;
+  margin-right: 1em;
+  margin-left: 1em;
+  border-radius: 50%;
+  margin-bottom: 0.1em;
 }
 
 div.frontpage.success-stories {
@@ -122,7 +151,7 @@ div.frontpage.success-stories div.frontpage-text {
 
 @media (max-width: 1050px) {
   div.frontpage-text {
-    padding-top: 12em;
+    padding-top: 10em;
     padding-left: 6em;
     padding-right: 8em;
   }
@@ -130,7 +159,7 @@ div.frontpage.success-stories div.frontpage-text {
 
 @media (max-width: 800px) {
   div.frontpage-text {
-    padding-top: 10em;
+    padding-top: 8em;
     padding-left: 2em;
     padding-right: 2em;
     text-align: center;
@@ -493,8 +522,9 @@ blockquote p {
 }
 
 body, p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   line-height: 1.8em;
+  font-weight: 300;
 }
 
 div.portfolio-desc h3, div.training-desc h2, div.training-desc h3 {
@@ -1121,7 +1151,7 @@ div.row.service-item {
 }
 
 .training-title, .training-sidebar {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: 600;
   margin-bottom: 1em;
 }
@@ -1405,5 +1435,78 @@ nav#TableOfContents ul li {
 }
 
 #service img {
-  width: 100%;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.cont-service-desc {
+  padding-bottom: 5em;
+}
+
+.cont-service-benefits {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background: var(--blue-mw-dark);
+}
+
+div.cont-service-benefits div.row {
+  padding-left: 4em;
+}
+
+.cont-service-benefits h2 {
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+div.cont-service-benefits img {
+  height: 1em;
+}
+
+div.cont-service-benefits p {
+  color: white;
+  padding-left: 1em;
+  padding-right: 2em;
+  margin-bottom: 0;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+#service div.service-desc {
+  padding-left: 10em;
+  padding-right: 3em;
+}
+
+#service div.service-desc p {
+  font-size: 1.2em;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  padding-top: 1em;
+}
+
+.mil-icon-frame.mil-icon-bg {
+  background-color: rgba(18,24,32,.05);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  padding-left: 0.9em;
+  padding-top: 0.8em;
+}
+
+#pe-header div.bg-image {
+  max-height: 500px;
+}
+
+.pillars h2 {
+  font-weight: 900;
+}
+
+div.pillars h4.number {
+  color: var(--green-mw-primary);
+}
+
+div.pillars i {
+  font-size: 2.5em;
+  color: var(--green-mw-primary);
 }
