@@ -1,63 +1,80 @@
 ############################ Services ########################
 services:
-  title : "What we do"
-  subtitle : "Services"
-  profile_tab:
-    - name : "DevSecOps"
-      icon : "fa-solid fa-gears"
-      title : "DevSecOps"
-      content : "DevSecOps allows you to increase your IT teams' productivity, achieve more stable and consistent services, and ensure compliance with good practices and key business rules. All this translates into a better service for your clients with all the necessary security components."
+  platform:
+    name: "Platform Engineering"
+    parent: "Services"
+    description: "We implement a platform tailored to the client to manage the entire lifecycle of their applications, covering development, maintenance, and production operation, with a focus on customer service, automation, and security."
+    bg_image: "images/services/pe-bg.png"
+    main_image: "images/services/platform-engineering.png"
+    brochure:
+      question: "Want to know more?"
+      answer: "Check out our slide deck"
       buttons:
-        - label : "I'm interested"
-          style : "solid-wb"
+        - label : "Download"
+          style : "solid"
           link : "contact"
-        - label : "See more"
-          style : "white-wb"
-          link : "devsecops"
-
-    - name : "Cloud migration"
-      icon : "fa fa-cloud"
-      title : "Cloud migration"
-      content : "Migrating to the cloud is a strategic decision. You can adopt the public cloud to instantly access computing resources with minimal initial investment, or the private cloud, where you will find great versatility without losing total control over the infrastructure. It's up to you! We take care of managing the migration and of all the solutions you want to put on it."
+    cta:
+      question: "Do you have a project?"
+      answer: "Let's discuss your opportunities"
       buttons:
-        - label : "I want to know more"
-          style : "solid-wb"
+        - label : "Contact us"
+          style : "solid"
           link : "contact"
+    benefits:
+      - benefit: "Accelerates software development"
+      - benefit: "Reduces operational complexity"
+      - benefit: "Ensures business continuity"
+      - benefit: "Empower developers with autonomy"
+      - benefit: "Facilitates easy scaling of applications"
+    pillars:
+      title: "Fundamental Pillars"
+      items:
+      - name: "Continuous Integration & Deployment"
+        description: "Continuous Deployment for Innovation: CI/CD not only accelerates delivery speed but also fosters constant innovation by providing an automated and repeatable workflow. The ability to deploy changes quickly and securely enables our teams to respond agilely to market demands and continuously enhance their products."
+        icon: "fa-solid fa-infinity"
 
-    - name : "Training"
-      icon : "fa-solid fa-book-open"
-      title : "Training"
-      content : "Training your teams has two great advantages: on the one hand, it will give you the opportunity to carry out more complex projects; and, on the other, it will increase your collaborators' satisfaction, giving them another reason to continue choosing you. We have different training programs, but we can also create one tailored to your organization."
-      buttons:
-        - label : "I'm interested"
-          style : "solid-wb"
-          link : "contact"
+      - name: "Cloud Computing & Virtualization"
+        description: "Operational Efficiency: By migrating to the cloud and leveraging virtualization, we help businesses reduce operational costs while improving efficiency. Virtualization allows the execution of multiple operating systems on a single physical server, optimizing hardware and energy utilization. Our team has extensive expertise in architecture creation and daily infrastructure management."
+        icon: "fa-solid fa-server"
 
-    - name : "Consulting"
-      icon : "fa-solid fa-unlock"
-      title : "Consulting"
-      content : "Are you experiencing problems that are difficult to solve? Do you want to update or improve your IT services, but you are not entirely sure how to do it or where to start? We can help you detect and prioritize opportunities for improvement and, if you consider it necessary, we can also help you plan, design and implement solutions."
+      - name: "Containers & Orchestration"
+        description: "Portability and Consistency: Containers encapsulate applications and their dependencies, providing portability across development, testing, and production environments. Orchestration, such as Kubernetes, in which we are experts, facilitates efficient container management, ensuring their consistent and scalable deployment."
+        icon: "fa-solid fa-cubes"
 
-      buttons:
-        - label : "I want to know more"
-          style : "solid-wb"
-          link : "contact"
+      - name: "Business Continuity"
+        description: "Business Resilience: Backup and disaster recovery services ensure business continuity by protecting crucial data against losses. We design and implement a specialized architecture for regular backups, and disaster recovery plans allow for swift restoration in the event of interruptions or data losses."
+        icon: "fa-solid fa-business-time"
 
-############################### funfact ##################################
-funfact:
-  # funfacts content comes from "data/homepage.yml" file
+      - name: "Observability"
+        description: "Observability involves real-time data collection and analysis to understand system performance, allowing early identification of issues, thus improving responsiveness and service quality. This facilitates informed decision-making and continuous improvement. Our expertise focuses on integrating various data sources to provide a comprehensive picture of the health and performance of your technological environment. We use the latest tools and technologies to visualize data effectively, identify patterns, and provide actionable insights."
+        icon: "fa-solid fa-magnifying-glass-chart"
 
+      - name: "Software Architecture & Engineering"
+        description: "Scalable Design: Software architecture focuses on creating robust and scalable systems. We emphasize designing an architecture that allows for modular growth and adaptability as business needs evolve. Sustainable Development: Here, we focus on software engineering and building solutions that are durable and maintainable. Adopting practices such as agile development and test automation ensures continuous quality and responsiveness to changes in the business environment."
+        icon: "fa-solid fa-circle-nodes"
+    technologies:
+      - name: "AWS"
+        logo: "images/tech/aws.png"
+      - name: "Google Cloud"
+        logo: "images/tech/gcloud.png"
+      - name: "Microsoft Azure"
+        logo: "images/tech/azure.png"
+      - name: "VMware"
+        logo: "images/tech/vmware.png"
+      - name: "Microsoft HyperV"
+        logo: "images/tech/hyperv.png"
+      - name: "Kubernetes"
+        logo: "images/tech/kubernetes.png"
+      - name: "Docker"
+        logo: "images/tech/docker.png"
+      - name: "Openshift"
+        logo: "images/tech/openshift.png"
+      - name: "Grafana"
+        logo: "images/tech/grafana.png"
+      - name: "Prometheus"
+        logo: "images/tech/prometheus.png"
+      - name: "Veeam"
+        logo: "images/tech/veeam.png"
+      - name: "Velero"
+        logo: "images/tech/velero.svg"
 
-############################### team ####################################
-team:
-  # team content comes from "data/team.yml" file
-
-
-############################### testimonial ####################################
-testimonial:
-  # testimonail content comes from "data/homepage.yml" file
-
-
-############################### pricing ####################################
-pricing:
-  # pricing content comes from "data/pricing.yml" file
