@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,900;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Syne:wght@400..800&display=swap');
 
 :root {
   --blue-mw-primary: rgb(0, 81, 152);
@@ -138,6 +137,18 @@ div.success-stories-intro {
 
 div.success-stories-intro p {
   font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+
+  div.success-stories-intro {
+    padding: 2em;
+  }
+
+  div.success-stories-intro p {
+    text-align: left;
+  }
+
 }
 
 div.frontpage.success-stories div.frontpage-text {
@@ -408,14 +419,6 @@ img#logo {
   margin-bottom: 0.4em;
 }
 
-/*@media only screen and (min-width: 768px) {
-
-  img#logo {
-    margin-left: 0em;
-  }
-
-}*/
-
 @media (max-width: 992px) {
 
   img#logo {
@@ -538,14 +541,12 @@ a {
 }
 
 #select-language {
-  /*color: var(--blue-mw-primary);*/
   color: var(--main-font-color);
   text-transform: uppercase;
   font-weight: 600;
 }
 
 #world-icon {
- /* color: var(--blue-mw-primary);*/
   color: var(--main-font-color);
   padding-left: 2em;
 }
@@ -739,7 +740,6 @@ h2.portfolio-title {
 }
 
 .success-case-sidebar h3.tech-stack {
-/*  border: 1px solid var(--green-mw-primary);*/
   padding: 1em;
   padding-top: 1.25em;
   margin-top: 1em;
@@ -845,12 +845,7 @@ section {
 }
 
 section.cta {
-  background-color: var(--gray-background);
-  transition: 1s;
-}
-
-section.cta:hover {
-  background-color: var(--blue-mw-primary-soft);
+  background-color: var(--green-mw-primary);
   transition: 1s;
 }
 
@@ -861,15 +856,6 @@ section.cta div.container h3 {
 
 section.cta div.container p {
   padding-top: 1.2em;
-}
-
-
-section.cta div.container .btn.btn-primary.solid {
-  background: var(--gray-background);
-}
-
-section.cta div.container .btn.btn-primary.solid:hover {
-  background: var(--blue-mw-primary);
 }
 
 .footer-bottom {
@@ -1074,7 +1060,6 @@ h3.title.services {
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: 900;
   font-size: 2.3em;
-  /* elimino font-size, margin-left y padding-left en 0, para mobile, si no el titulo se ve corrido */
 }
 
 @media only screen and (max-width: 750px) {
@@ -1242,10 +1227,6 @@ div.card-header button:hover {
 /* Mobile */
 
 @media only screen and (max-width: 750px) {
-
-  /*div.navbar-collapse {
-    margin-right: 7em;
-  }*/
 
   .cd-slider-nav li {
     margin-top: 1.8em;
@@ -1419,17 +1400,17 @@ nav#TableOfContents ul li {
 
 @media (max-width: 768px) {
   .st-cust-logo img {
-    width: auto;
-    max-height: 100px;
+    width: 60%;
+    max-height: 80px;
     padding-bottom: 1.2em;
   }
 
   .st-cust {
+    height: auto;
     margin: auto;
-    display: block;
-    height: 200px;
+    display: flex;
     align-items: center;
-    padding: 3em 1em !important;
+    padding: 2em 1em !important;
     border-radius: 0;
   }
 }
