@@ -12,7 +12,7 @@
       <h3>{{ .subtitle | markdownify }}</h3>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="col-sm-12 text-center success-stories-intro">
       <p>{{ .introduction }}</p>
     </div>
@@ -51,29 +51,28 @@
   </div>
   {{ end }}
 
-  <div class="container col-md-8 portfolio list">
-        <div class="row isotope" id="isotope">
-          {{ $index := 0 }}
+  <div class="container col-lg-8 col-sm-11 portfolio list">
+    <div class="row isotope" id="isotope">
+      {{ $index := 0 }}
       {{ range (where .Site.RegularPages "Section" "portfolio") }}
-      <!--      <div class="col-sm-12 {{range .Params.types }}{{ . | urlize}} {{ end }} isotope-item st-cust {{ if gt $index 0 }}border-top{{end}}">-->
       <div class="col-sm-12 {{range .Params.types }}{{ . | urlize}} {{ end }} isotope-item st-cust border-top">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 st-cust-logo m0 effect-oscar">
+        <div class="row d-xs-block d-md-flex">
+          <div class="col-xs-12 col-md-4 st-cust-logo m0">
             <a href="{{ .RelPermalink }}">
-            <img src="{{ .Params.customer.logo | absURL }}" alt="{{ .Params.customer.name }}"/>
+              <img src="{{ .Params.customer.logo | absURL }}" alt="{{ .Params.customer.name }}"/>
             </a>
           </div>
-          <div class="col-sm-12 col-md-8 st-cust-desc">
+          <div class="col-xs-12 col-md-8 st-cust-desc">
             <a href="{{ .RelPermalink }}">
-            <h3>{{ .Params.title | markdownify }}</h3>
-            <p>{{ .Params.description | markdownify }}</p>
+              <h3>{{ .Params.title | markdownify }}</h3>
+              <p>{{ .Params.description | markdownify }}</p>
             </a>
           </div>
         </div>
-      </div><!-- Isotope item end -->
+      </div>
       {{ $index = math.Add $index 1 }}
       {{ end }}
-      </div><!-- Isotope item end -->
-  </div><!-- Container end -->
+    </div>
+  </div>
 </section>
 {{ end }}
