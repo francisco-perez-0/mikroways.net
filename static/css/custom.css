@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,900;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
   --blue-mw-primary: rgb(0, 81, 152);
@@ -854,8 +854,21 @@ section.cta div.container h3 {
   color: white;
 }
 
+section.cta div.container h2 {
+  font-weight: 700;
+}
+
+section.cta div.container h3 {
+  font-weight: 400;
+  font-family: 'Source Sans 3', 'Montserrat', 'Open Sans', sans-serif;
+}
+
 section.cta div.container p {
   padding-top: 1.2em;
+}
+
+section.cta a.btn.btn-primary.solid:hover {
+  background: var(--blue-mw-secondary);
 }
 
 .footer-bottom {
@@ -1188,7 +1201,7 @@ div.row.service-item {
   margin-left: 4.3em;
   margin-top: -1.4em;
   font-size: 0.9em;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   margin-bottom: 2.5em;
 }
