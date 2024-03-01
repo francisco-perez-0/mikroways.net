@@ -1,9 +1,11 @@
 ############################ Services ########################
 services:
   platform:
-    name: "Platform Engineering"
+    name: |
+      Cloud & Platform  
+      Engineering
     parent: "Services"
-    description: "We implement a platform tailored to the client to manage the entire lifecycle of their applications, covering development, maintenance, and production operation, with a focus on customer service, automation, and security."
+    description: "We design and automate platforms tailored to your needs, obtaining predictable and repeatable environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
     bg_image: "images/services/pe-bg.png"
     main_image: "images/services/platform-engineering.png"
     brochure:
@@ -25,7 +27,49 @@ services:
       - benefit: "Reduces operational complexity"
       - benefit: "Ensures business continuity"
       - benefit: "Empower developers with autonomy"
-      - benefit: "Facilitates easy scaling of applications"
+      - benefit: "Reduces time to market"
+      - benefit: "Improves customer service"
+      - benefit: "Avoids provider lock-in"
+      - benefit: "Creates dependable systems"
+      - benefit: "Reduces costs"
+      - benefit: "Enables faster problem resolution"
+    components:
+      1:
+        id: "cloud-native-architecture"
+        name: "Cloud Native Architecture"
+        description: "To obtain all of the benefits of the cloud, the applications and infrastructure need to be created for it. We design workloads capable of taking full advantage of the cloud"
+        img: "/images/slider/cloud.jpg.webp"
+        button: "See more"
+      2:
+        id: "infrastructure-provisioning"
+        name: "Infrastructure provisioning"
+        description: "Creating, replicating, updating, and managing IT infrastructure in an automated manner provides essential flexibility and velocity to any business."
+        img: "/images/services/infrastructure.png"
+        button: "See more"
+      3:
+        id: "containerization-and-orchestration"
+        name: "Containerization & Orchestration"
+        img: "/images/services/containers.png"
+        description: "Containers encapsulate applications and their dependencies, providing portability across different environments, while orchestration, such as Kubernetes, facilitates efficient container management, ensuring their consistent and scalable deployment."
+        button: "See more"
+      4:
+        id: "continuous-integration-and-deployment"
+        name: "Continuous Integration & Deployment"
+        description: "Automating software deployment significantly reduces time-to-market and enhances the productivity of the IT team."
+        img: "/images/services/cicd.webp"
+        button: "See more"
+      5:
+        id: "monitoring-and-observability"
+        name: "Monitoring & Observability"
+        description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance their overall quality."
+        img: "/images/portfolio/monitoring.jpg.webp"
+        button: "See more"
+      6:
+        id: "business-continuity"
+        name: "Business Continuity"
+        description: "The continuity of your business is more important than anything else. That is why we make sure that you have at all times an actionable, tested, updated and effective disaster recovery plan, with minimal to no manual intervention."
+        img: "/images/services/time.jpg"
+        button: "See more"
     pillars:
       title: "Fundamental Pillars"
       items:

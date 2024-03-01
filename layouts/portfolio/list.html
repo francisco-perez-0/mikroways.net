@@ -28,7 +28,7 @@
     <h2 class="portfolio-title">{{ $data.portfolio.portfolio.success_stories_title }}</h2>
   </div>
   {{ if .Site.Params.enableFilterSt }}
-  <div class="container col-md-8 text-center">
+  <div class="container col-lg-9 col-sm-11 text-center">
     <!--Isotope filter start -->
     <div class="row text-center">
       <div class="col-md-12">
@@ -51,7 +51,7 @@
   </div>
   {{ end }}
 
-  <div class="container col-lg-8 col-sm-11 portfolio list">
+  <div class="container col-lg-9 col-sm-11 portfolio list">
     <div class="row isotope" id="isotope">
       {{ $index := 0 }}
       {{ range (where .Site.RegularPages "Section" "portfolio") }}

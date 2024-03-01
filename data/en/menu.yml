@@ -16,16 +16,6 @@ menu:
           - label : "Learn more"
             style : "gray-wb"
 
-      - id: "consultancy"
-        name: "Consultancy"
-        image: "images/services/circle.png"
-        url: "consultancy"
-        short: "Expert advice and solutions for optimizing technology usage and addressing business challenges."
-        full: "Not only do we provide timely advice, but we also become your committed long-term strategic partner. We adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments and evaluations, we identify optimization opportunities and maximize operational performance."
-        buttons:
-          - label : "Learn more"
-            style : "gray-wb"
-
       - id: "transformation"
         name: "Digital Transformation"
         image: "images/services/circle.png"
@@ -36,10 +26,20 @@ menu:
           - label : "Learn more"
             style : "gray-wb"
 
-      - id: "security"
-        name: "Security"
+      - id: "profservices"
+        name: "Professional services"
         image: "images/services/circle.png"
-        url: "security"
+        url: "professional-services"
+        short: "Expert advice and solutions for optimizing technology usage and addressing business challenges."
+        full: "Not only do we provide timely advice, but we also become your committed long-term strategic partner. We adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments and evaluations, we identify optimization opportunities and maximize operational performance."
+        buttons:
+          - label : "Learn more"
+            style : "gray-wb"
+
+      - id: "cybersecurity"
+        name: "Cybersecurity"
+        image: "images/services/circle.png"
+        url: "cybersecurity"
         short: "Expertise in safeguarding digital assets, mitigating risks, and ensuring data protection against cyber threats."
         full: "We offer cutting-edge security solutions. As IT consulting specialists, we excel in providing comprehensive protection for your infrastructure, ensuring the confidentiality and integrity of your data in a constantly evolving digital world."
         buttons:
@@ -48,20 +48,8 @@ menu:
 
     - id: "about"
       name: "About"
-      has_children: true
-      children:
-
-      - id: "about-mikroways"
-        name: "About Mikroways"
-        url: "about"
-        short: "IT infrastructure specialists"
-        full: "We specialize in productive IT services, and our mission is to build bridges using the appropriate technology to help our clients conquer and materialize their ideas."
-
-      - id: "customers"
-        name: "Our customers"
-        url: "clients"
-        short: "Meet our beloved customers!"
-        full: "The best customers ever!"
+      has_children: false
+      url: "/about"
 
     - id: "success-stories"
       name: "Success stories"

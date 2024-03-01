@@ -22,7 +22,7 @@
 <section id="service">
   <div class="container-fluid cont-service-desc">
     <div class="row d-flex align-items-center">
-      <div class="col-sm-8 service-desc">
+      <div class="col-sm-6 service-desc">
         <div class="mil-mr-30">
           <div class="mil-icon-frame mil-icon-frame-md mil-icon-bg">
             <img src="/images/pen.svg">
@@ -30,8 +30,22 @@
         </div>
         <p>{{ .description }}</p>
       </div>
-      <div class="col-sm-4">
-        <img src="{{ .main_image | absURL }}"/>
+      <div class="col-sm-6">
+        <div class="container service-grid">
+          <div class="row">
+            {{ $counter := 1 }} 
+            {{ range $index,$element := .components }}
+            <div class="col-sm service-box service-box-{{ $counter }}">
+              <a href="#{{ $element.id }}">{{ $element.name }}</a>
+            </div>
+            {{ if eq $counter 3 }}
+          </div>
+          <div class="row">
+            {{ end }}
+            {{ $counter = add $counter 1 }}
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -47,35 +61,75 @@
     </div>
   </div>
 
-<!-- Technology stack -->
-<section id="tech" class="tech d-none d-xl-flex border-top border-bottom">
-  <div class="container-fluid">
-    <div class="row tech">
-      {{ range .technologies }}
-      <div class="col-sm-1 text-center d-flex align-items-center">
-        <img src="{{ .logo | absURL }}" class="tech-logo" alt="{{ .name }}" style="width: 100%; max-height: 190px;">
+  <!-- Technology stack -->
+  <section id="tech" class="tech d-none d-xl-flex border-top border-bottom">
+    <div class="container-fluid">
+      <div class="row tech">
+        {{ range .technologies }}
+        <div class="col-sm-1 text-center d-flex align-items-center">
+          <img src="{{ .logo | absURL }}" class="tech-logo" alt="{{ .name }}" style="width: 100%; max-height: 190px;">
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="tech" class="tech d-xs-flex d-xl-none border-top border-bottom">
-    <div class="container">
+  <section id="tech" class="tech d-xs-flex d-xl-none border-top border-bottom">
+      <div class="container">
+        <div class="row">
+        </div><!-- Title row end -->
+        <div class="row wow fadeInLeft">
+          <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
+            {{ range .technologies }}
+              <img src="{{ .logo | absURL }}" class="client-logo" alt="{{ .name }}">
+            {{ end }}
+          </div><!-- Owl carousel end -->
+        </div><!-- Main row end -->
+      </div>
+      <!--/ Container end -->
+  </section>
+  <!-- End Technoloy stack -->
+
+  <div class="pt-5 pb-5">
+    {{ $index := 0 }}
+    {{ range .components }}
+    <div id="{{ .id }}" class="container pt-5">
       <div class="row">
-      </div><!-- Title row end -->
-      <div class="row wow fadeInLeft">
-        <div id="client-carousel" class="col-sm-12 owl-carousel owl-theme text-center client-carousel">
-          {{ range .technologies }}
-            <img src="{{ .logo | absURL }}" class="client-logo" alt="{{ .name }}">
+        <div class="col-sm-6 align-self-center service-alt-grid">
+          {{ if eq (math.Mod $index 2) 0 }}
+          <h2>{{ .name }}</h2>
+          <p>{{ .description }}</p>
+          <div class="col-sm-12 btn-service">
+            <a href="{{ .id | relLangURL }}" class="btn-service">
+              <span>{{ .button }}</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          {{ else }}
+          <img src="{{ .img }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
           {{ end }}
-        </div><!-- Owl carousel end -->
-      </div><!-- Main row end -->
+        </div>
+        <div class="col-sm-6 align-self-center service-alt-grid">
+          {{ if eq (math.Mod $index 2) 0 }}
+          <img src="{{ .img }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
+          {{ else }}
+          <h2>{{ .name }}</h2>
+          <p>{{ .description }}</p>
+          <div class="col-sm-12 btn-service">
+            <a href="{{ .id | relLangURL }}" class="btn-service">
+              <span>{{ .button }}</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
     </div>
-    <!--/ Container end -->
-</section>
-<!-- End Technoloy stack -->
+    {{ $index = math.Add $index 1 }}
+    {{ end }}
+  </div>
 
+  <!--
   <div class="container pt-5">
     <div class="col-sm-12 text-center text-uppercase pillars pt-3">
       <h2>{{ .pillars.title }}</h2>
@@ -96,6 +150,7 @@
       {{ end }}
     </div>
   </div>
+  -->
 </section>
 <!--
 <section class="cta">
