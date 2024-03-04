@@ -4,20 +4,8 @@
 
 {{ $thisPage := .GetPage "." }}
 
-<!-- Slider start -->
 {{ with $data.service.services.platform }}
-<section id="pe-header" class="p-0">
-  <div class="frontpage">
-    <div class="bg-image">
-      <img src="{{ .bg_image | absURL }}" alt="Homepage image">
-    </div>
-    <div class="frontpage-text">
-      <a href="{{ .Parent.Permalink | relLangURL }}">{{ site.Params.home }}</a><a class="frontpage-text-name">{{ .parent }}</a>
-      <h2>{{ .name | markdownify }}</h2>
-    </div>
-  </div>
-</section>
-
+{{ partial "service-page-header.html" . }}
 
 <section id="service">
   <div class="container-fluid cont-service-desc">
@@ -106,12 +94,12 @@
             </a>
           </div>
           {{ else }}
-          <img src="{{ .img }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
+          <img src="{{ .bg_image }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
           {{ end }}
         </div>
         <div class="col-sm-6 align-self-center service-alt-grid">
           {{ if eq (math.Mod $index 2) 0 }}
-          <img src="{{ .img }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
+          <img src="{{ .bg_image }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
           {{ else }}
           <h2>{{ .name }}</h2>
           <p>{{ .description }}</p>

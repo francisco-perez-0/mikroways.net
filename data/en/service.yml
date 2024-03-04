@@ -7,7 +7,6 @@ services:
     parent: "Services"
     description: "We design and automate platforms tailored to your needs, obtaining predictable and repeatable environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
     bg_image: "images/services/pe-bg.png"
-    main_image: "images/services/platform-engineering.png"
     brochure:
       question: "Want to know more?"
       answer: "Check out our slide deck"
@@ -34,41 +33,47 @@ services:
       - benefit: "Reduces costs"
       - benefit: "Enables faster problem resolution"
     components:
-      1:
+      a:
         id: "cloud-native-architecture"
         name: "Cloud Native Architecture"
-        description: "To obtain all of the benefits of the cloud, the applications and infrastructure need to be created for it. We design workloads capable of taking full advantage of the cloud"
-        img: "/images/slider/cloud.jpg.webp"
+        description: "To obtain all of the benefits of the cloud, the applications and infrastructure need to be created for it. We design workloads capable of taking full advantage of the cloud."
+        bg_image: "/images/slider/cloud.jpg.webp"
         button: "See more"
-      2:
+        page:
+          description: |
+            Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.  
+            These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil ([CNCF](https://github.com/cncf/toc/blob/main/DEFINITION.md)).
+          principles:
+          model:
+      b:
         id: "infrastructure-provisioning"
         name: "Infrastructure provisioning"
         description: "Creating, replicating, updating, and managing IT infrastructure in an automated manner provides essential flexibility and velocity to any business."
-        img: "/images/services/infrastructure.png"
+        bg_image: "/images/services/infrastructure.png"
         button: "See more"
-      3:
+      c:
         id: "containerization-and-orchestration"
         name: "Containerization & Orchestration"
-        img: "/images/services/containers.png"
+        bg_image: "/images/services/containers.png"
         description: "Containers encapsulate applications and their dependencies, providing portability across different environments, while orchestration, such as Kubernetes, facilitates efficient container management, ensuring their consistent and scalable deployment."
         button: "See more"
-      4:
+      d:
         id: "continuous-integration-and-deployment"
         name: "Continuous Integration & Deployment"
         description: "Automating software deployment significantly reduces time-to-market and enhances the productivity of the IT team."
-        img: "/images/services/cicd.webp"
+        bg_image: "/images/services/cicd.webp"
         button: "See more"
-      5:
+      e:
         id: "monitoring-and-observability"
         name: "Monitoring & Observability"
         description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance their overall quality."
-        img: "/images/portfolio/monitoring.jpg.webp"
+        bg_image: "/images/portfolio/monitoring.jpg.webp"
         button: "See more"
-      6:
+      f:
         id: "business-continuity"
         name: "Business Continuity"
         description: "The continuity of your business is more important than anything else. That is why we make sure that you have at all times an actionable, tested, updated and effective disaster recovery plan, with minimal to no manual intervention."
-        img: "/images/services/time.jpg"
+        bg_image: "/images/services/time.jpg"
         button: "See more"
     pillars:
       title: "Fundamental Pillars"
@@ -121,4 +126,35 @@ services:
         logo: "images/tech/veeam.png"
       - name: "Velero"
         logo: "images/tech/velero.svg"
-
+  digital_transformation:
+    name: |
+      Digital Transformation
+    parent: "Services"
+    description: "We lead the adoption of innovative technologies and optimize processes to enhance the efficiency and competitiveness of your company. From identifying opportunities to ongoing management, we work closely to design strategies aligned with your goals. Specializing in process optimization, we leverage advanced tools to maximize productivity and accelerate time-to-market."
+    bg_image: "images/services/dt-bg.png"
+    benefits:
+      title: "Benefits"
+      items:
+        - title: "Increase productivity and efficiency"
+          description: "Aumento en la productividad y la eficiencia en las operaciones"
+        - title: "Improve customer service"
+          description: "test"
+        - title: "Respond faster to customer needs"
+          description: "test"
+        - title: "Obtain competitive advantages"
+          description: "test"
+  professional_services:
+    name: |
+      Professional Services
+    parent: "Services"
+    description: "Not only do we provide timely advice, but we also become your committed long-term strategic partner. We adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments and evaluations, we identify optimization opportunities and maximize operational performance."
+    bg_image: "images/services/ps-bg.png"
+    consultancy:
+    managed_services:
+    cto_aas:
+  cybersecurity:
+    name: |
+      Cybersecurity
+    parent: "Services"
+    description: "We offer cutting-edge security solutions. As IT consulting specialists, we excel in providing comprehensive protection for your infrastructure, ensuring the confidentiality and integrity of your data in a constantly evolving digital world."
+    bg_image: "images/services/cybersecurity-bg.png"

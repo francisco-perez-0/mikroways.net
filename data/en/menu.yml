@@ -7,7 +7,7 @@ menu:
       has_children: true
       children:
       - id: "platform"
-        name: "Platform Engineering"
+        name: "Cloud & Platform Engineering"
         image: "images/services/platform-engineering.png"
         url: "platform-engineering"
         short: "Design, build, and maintain scalable and reliable technology frameworks for various applications."

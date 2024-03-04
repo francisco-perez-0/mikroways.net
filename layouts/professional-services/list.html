@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ $thisPage := .GetPage "." }}
+
+<!-- Slider start -->
+{{ with $data.service.services.professional_services }}
+{{ partial "service-page-header.html" . }}
+
+<section id="service">
+  <div class="container cont-service-desc">
+    <div class="row d-flex align-items-center">
+      <div class="col-sm-12 service-desc">
+        <div class="mil-mr-30">
+          <div class="mil-icon-frame mil-icon-frame-md mil-icon-bg">
+            <img src="/images/pen.svg">
+          </div>
+        </div>
+        <p>{{ .description }}</p>
+      </div>
+    </div>
+  </div>
+
+  {{ with $data.service.services.digital_transformation.benefits }}
+  <div class="container pt-5">
+    <div class="col-sm-12 text-center text-uppercase pillars pt-3">
+      <h2>{{ .title }}</h2>
+    </div>
+    <div class="row">
+      {{ $index := 1 }}
+      {{ range .items }}
+      <div class="col-md-1 pillars pt-5">
+        <i class="{{ .icon }}"></i>
+      </div>
+      <div class="col-sm-12 col-md-5 pillars pt-5 pr-5">
+        <div class="pb-3 d-flex">
+          </i><h4 class="number">0{{ $index }}</h4><h4>&nbsp;{{ .title }}</h4>
+        </div>
+        <p>{{ .description }}</p>
+      </div>
+      {{ $index = math.Sum $index 1 }}
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</section>
+
+<section class="cta">
+  <div class="container">
+      <div class="col-md-12 text-center">
+        <h2>{{ .cta.question }}</h2>
+        <h3>{{ .cta.answer }}</h3>
+        <p>
+          {{ range .cta.buttons }}
+          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
+          {{ end }}
+        </p>
+      </div>
+  </div>
+</section>
+
+{{ end }}
+{{ end }}
+
