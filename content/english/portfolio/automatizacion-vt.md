@@ -1,5 +1,5 @@
 ---
-title: "Deploying DevOps in Veritran"
+title: "Deploying DevOps"
 date: 2017-09-01
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
@@ -15,6 +15,7 @@ buttons:
   style : "solid"
   link : "contact"
 # filter types
+featured: "platform"
 types: ["devsecops", "ci/cd", "public cloud", "cloud migration"]
 # used technologies
 tech: ["Kubernetes", "Docker", "AWS", "Gitlab CI", "Jenkins", "GIT"]

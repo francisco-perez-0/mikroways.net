@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="container-fluid text-center cont-service-benefits">
-    <h2>Benefits</h2>
+    <h2>{{ i18n `benefits`}}</h2>
     <div class="row text-left">
       {{ range .benefits }}
       <div class="col-sm-6 col-md-4 d-flex align-items-center pt-4">
@@ -116,44 +116,30 @@
     {{ $index = math.Add $index 1 }}
     {{ end }}
   </div>
+</section>
 
-  <!--
-  <div class="container pt-5">
-    <div class="col-sm-12 text-center text-uppercase pillars pt-3">
-      <h2>{{ .pillars.title }}</h2>
+<section class="success-stories-strip">
+  <div class="container">
+    <div class="text-center success-stories-strip">
+      <h2>{{ i18n `success_stories` }}</h2>
     </div>
     <div class="row">
-      {{ $index := 1 }}
-      {{ range .pillars.items }}
-      <div class="col-md-1 pillars pt-5">
-        <i class="{{ .icon }}"></i>
-      </div>
-      <div class="col-sm-12 col-md-5 pillars pt-5 pr-5">
-        <div class="pb-3 d-flex">
-          </i><h4 class="number">0{{ $index }}</h4><h4>&nbsp;{{ .name }}</h4>
+      {{- range (where site.RegularPages "Section" "portfolio") }}
+      {{ if eq .Params.featured "platform" }}
+      <div class="col-sm-12 col-md-6">
+        <a href="{{ .RelPermalink}}">
+        <div class="ss-box">
+          <h4 class="card-title">{{ .Title | markdownify }}</h5>
+          <h5 class="card-subtitle mb-3">{{ .Params.customer.name | markdownify }}</h6>
+          <p class="card-text">{{ .Params.description }}</p>
         </div>
-        <p>{{ .description }}</p>
+        </a>
       </div>
-      {{ $index = math.Sum $index 1 }}
+      {{ end }}
       {{ end }}
     </div>
   </div>
-  -->
 </section>
-<!--
-<section class="cta">
-  <div class="container">
-      <div class="col-md-12 text-center">
-        <h2>{{ .brochure.question }}</h2>
-        <h3>{{ .brochure.answer }}</h3>
-        <p>
-          {{ range .brochure.buttons }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
-          {{ end }}
-        </p>
-      </div>
-  </div>
-</section>-->
 
 <section class="cta">
   <div class="container">

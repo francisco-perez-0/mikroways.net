@@ -1,5 +1,5 @@
 ---
-title: "DevOps for Bluedraft"
+title: "DevOps implementation"
 date: 2021-03-01
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
@@ -15,6 +15,7 @@ buttons:
   style : "solid"
   link : "contact"
 # filter types
+featured: "platform"
 types: ["devsecops", "ci/cd"]
 # used technologies
 tech: ["AWS", "Docker"]

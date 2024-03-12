@@ -1311,7 +1311,7 @@ div.post-content h3 {
   margin-top: 1.5em;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-weight: 600;
 }
@@ -1447,7 +1447,8 @@ div.cont-service-benefits div.row {
   padding-left: 4em;
 }
 
-.cont-service-benefits h2 {
+.cont-service-benefits h2,
+.success-stories-strip h2 {
   font-weight: 900;
   color: white;
   text-transform: uppercase;
@@ -1664,4 +1665,54 @@ a.btn-service i {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+div.cont-service-benefits.white-bg {
+  background-color: white;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+div.cont-service-benefits.white-bg p {
+  color: var(--main-font-color);
+  font-weight: 300;
+}
+
+section.success-stories-strip {
+  background-color: white;
+}
+
+.success-stories-strip {
+  margin-bottom: 1em;
+}
+
+.success-stories-strip,
+.success-stories-strip h2 {
+  color: black !important;
+}
+
+.success-stories-strip a {
+  font-weight: 700;
+  color: black;
+}
+
+.success-stories-strip div.ss-box {
+  width: 90%;
+  margin: auto;
+  padding: 2em;
+  border-radius: 5px;
+  background-color: var(--gray-background);
+  background-color: white;
+  text-align: center;
+  border: 2px #000 solid;
+}
+
+.success-stories-strip div.ss-box:hover {
+  background-color: #001b36;
+  color: white;
+}
+
+.success-stories-strip h4.card-title {
+  font-weight: 900;
 }

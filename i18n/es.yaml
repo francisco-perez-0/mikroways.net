@@ -150,3 +150,9 @@
 
 - id: see_all
   translation: Ver todos
+
+- id: benefits
+  translation: Beneficios
+
+- id: success_stories
+  translation: Casos de éxito

@@ -1,5 +1,5 @@
 ---
-title: "INTA's private cloud"
+title: "Private cloud implementation"
 date: 2021-03-01
 page_header_bg: "images/banner/banner1.jpg.webp"
 description: "Success story that describes the implementation of INTA's private

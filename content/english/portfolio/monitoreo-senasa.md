@@ -1,5 +1,5 @@
 ---
-title: "Observability in Senasa"
+title: "Observability"
 date: 2017-05-12
 page_header_bg: "images/banner/banner1.jpg.webp"
 description: "Success story that describes the implementation of a monitoring

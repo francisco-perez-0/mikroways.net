@@ -1,5 +1,5 @@
 ---
-title: "Cost reduction in Circular Lab"
+title: "Cost reduction"
 date: 2021-03-01
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
