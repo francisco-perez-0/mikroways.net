@@ -94,12 +94,12 @@
             </a>
           </div>
           {{ else }}
-          <img src="{{ .bg_image }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
+          <img src="{{ .bg_image }}">
           {{ end }}
         </div>
         <div class="col-sm-6 align-self-center service-alt-grid">
           {{ if eq (math.Mod $index 2) 0 }}
-          <img src="{{ .bg_image }}" style="width: 100%; max-width: unset; max-height: unset; border-radius: 16px;">
+          <img src="{{ .bg_image }}">
           {{ else }}
           <h2>{{ .name }}</h2>
           <p>{{ .description }}</p>

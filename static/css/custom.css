@@ -1606,30 +1606,6 @@ section#about div.frontpage-text h2 {
 .service-box a {
   color: white;
 }
-/*
-.service-box-1 {
-  background-color: #008C3F;
-}
-
-.service-box-2 {
-  background-color: #42a240;
-}
-
-.service-box-4 {
-  background-color: #6bbe45;
-}
-
-.service-box-3 {
-  background-color: #2e995e;
-}
-
-.service-box-5 {
-  background-color: #139e1c;
-}
-
-.service-box-6 {
-  background-color: #63a851;
-}*/
 
 div.service-alt-grid {
   padding-left: 2em;
@@ -1639,6 +1615,13 @@ div.service-alt-grid {
 div.service-alt-grid h2 {
   font-weight: 700;
   font-size: 28px;
+}
+
+div.service-alt-grid img {
+  width: 100%;
+  max-width: unset !important;
+  max-height: unset !important;
+  border-radius: 16px;
 }
 
 div.btn-service {
@@ -1701,15 +1684,17 @@ section.success-stories-strip {
   width: 90%;
   margin: auto;
   padding: 2em;
-  border-radius: 5px;
+  border-radius: 16px;
   background-color: var(--gray-background);
   background-color: white;
   text-align: center;
   border: 2px #000 solid;
+  border: 2px var(--blue-mw-primary) solid;
 }
 
 .success-stories-strip div.ss-box:hover {
   background-color: #001b36;
+  background-color: var(--blue-mw-primary);
   color: white;
 }
 
