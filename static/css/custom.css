@@ -1663,41 +1663,43 @@ div.cont-service-benefits.white-bg p {
 }
 
 section.success-stories-strip {
-  background-color: white;
-}
-
-.success-stories-strip {
-  margin-bottom: 1em;
+  background-color: #888;
+  padding-bottom: 6em !important;
+  opacity: 0.85;
+  background-image: url(../images/overaly.png);
 }
 
 .success-stories-strip,
 .success-stories-strip h2 {
-  color: black !important;
+  color: white !important;
+}
+
+.success-stories-strip h2 {
+  padding-top: 1em;
+  padding-bottom: 1.6em;
 }
 
 .success-stories-strip a {
   font-weight: 700;
-  color: black;
+  color: white;
 }
 
 .success-stories-strip div.ss-box {
-  width: 90%;
+  width: 75%;
+  height: 100%;
   margin: auto;
   padding: 2em;
   border-radius: 16px;
-  background-color: var(--gray-background);
-  background-color: white;
+  background-color: #222;
   text-align: center;
-  border: 2px #000 solid;
-  border: 2px var(--blue-mw-primary) solid;
+  padding: 4em 2em;
 }
 
 .success-stories-strip div.ss-box:hover {
-  background-color: #001b36;
-  background-color: var(--blue-mw-primary);
-  color: white;
+  background-color: #000;
 }
 
 .success-stories-strip h4.card-title {
   font-weight: 900;
+  font-size: 1.4em;
 }

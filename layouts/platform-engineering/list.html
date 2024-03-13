@@ -124,7 +124,7 @@
       <h2>{{ i18n `success_stories` }}</h2>
     </div>
     <div class="row">
-      {{- range (where site.RegularPages "Section" "portfolio") }}
+      {{ range (where site.RegularPages "Section" "portfolio") }}
       {{ if eq .Params.featured "platform" }}
       <div class="col-sm-12 col-md-6">
         <a href="{{ .RelPermalink}}">
