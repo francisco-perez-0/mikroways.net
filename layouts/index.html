@@ -47,7 +47,9 @@
 
 <!-- Counter Strat -->
 {{ if $data.homepage.funfact.enable }}
+{{ with $data.homepage.funfact }}
 {{ partial "funfact.html" . }}
+{{ end }}
 {{ end }}
 <!--/ Counter end -->
 
