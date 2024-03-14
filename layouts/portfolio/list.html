@@ -18,10 +18,13 @@
     </div>
   </div>
 </section>
-
-
 {{ end }}
+
+<!-- Counter Strat -->
+{{ with $data.homepage.funfact }}
 {{ partial "funfact.html" . }}
+{{ end }}
+<!--/ Counter end -->
 
 <section id="portfolio" class="portfolio list">
   <div class="col-sm-12 text-center portfolio-title">
