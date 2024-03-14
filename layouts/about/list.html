@@ -3,50 +3,110 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 {{ with $data.about }}
-<section id="about" class="p-0">
+<section id="about" class="p-0 mb-5">
   <div class="frontpage mb-5">
     <div class="bg-image">
+      <img src="{{ .bg_image | absURL }}" alt="Homepage image" style="opacity: 0.2";>
     </div>
     <div class="frontpage-text">
-      <h2>{{ .page_header }}</h2>
+      <h2 class="text-uppercase" style="font-weight: 900;">{{ .title | markdownify }}</h2>
+      <h3 style="font-family: 'Source Sans 3'; font-size: 1.6em;">{{ .subtitle | markdownify }}</h3>
     </div>
   </div>
 
-  <div class="container">
-    <div class="d-flex align-items-center">
-      <div class="row">
-        <div class="col-md-6 d-flex">
-          <div class="col-md-4 about-box">
-            <h2>{{ .who_we_are.title | markdownify }}</h2>
-          </div>
-          <div class="col-md-8">
-            <p>{{ .who_we_are.description | markdownify }}</p> 
-          </div>
-        </div>
-        <div class="col-md-6 d-flex about-box">
-          <div class="col-md-4">
-            <h2>{{ .what_we_do.title | markdownify }}</h2>
-          </div>
-          <div class="col-md-8">
-            <p>{{ .what_we_do.description | markdownify }}</p>
-          </div>
-        </div>
-      </div>
+  <div class="container about-full-desc">
+    <div class="col-sm-12 mb-5 text-center">
+      <h2 style="">{{ .page_header }}</h2>
     </div>
-  </div>
-
-</section>
-
-<section id="tech" class="tech d-none d-xl-flex border-top border-bottom">
-  <div class="container-fluid">
-    <div class="row tech">
-      <div class="col-sm-12 text-center d-flex align-items-center">
-        <img src="/images/gptw.webp" style="max-height: 200px;">
-        <p>100% of our team affirm we are a great place to work!</p>
-      </div>
+    <div class="col-sm-12">
+      {{ range .full_description }}
+      <p>{{ .item }}</p>
+      {{ end }}
     </div>
   </div>
 </section>
+
+<!-- Counter Strat -->
+{{ partial "funfact.html" . }}
+<!--/ Counter end -->
+
+<div class="container pb-5 mb-5">
+  <div class="col-sm-12 text-center text-uppercase pillars mt-5 mb-3 pt-5 pb-5">
+    <h2>{{ .we_section_title }}</h2>
+  </div>
+  <div class="row about-boxes" style="height: 510px;">
+    <div class="col-lg-4 col-sm-12">
+      <div class="about-box small">
+        <img src="{{ .who_we_are.img }}">
+      </div>
+      <div class="about-box small text-center">
+        <h2>{{ .who_we_are.title | markdownify }}</h2>
+        <p>{{ .who_we_are.description }}</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12">
+      <div class="about-box tall text-center pt-4">
+        <i class="{{ .our_values.icon }}" style="font-size: 3.5em;"></i>
+        <h2>{{ .our_values.title | markdownify }}</h2>
+        <p>{{ .our_values.description | markdownify }}</p>
+        <ul>
+        {{ range .our_values.values }}
+        <li>{{ .value }}</li>
+        {{ end }}
+        </ul>
+        <div class="col-sm-12 btn-service align-self-center">
+          <a href="{{ .link }}" class="btn-service">
+            <span style="color: var(--blue-mw-dark);">{{ i18n `see_more` }}</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12">
+      <div class="about-box small text-center">
+        <h2>{{ .what_we_do.title | markdownify }}</h2>
+        <p>{{ .what_we_do.description }}</p>
+      </div>
+      <div class="about-box small">
+        <img src="{{ .what_we_do.img }}">
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr></hr>
+<div class="container about-full-desc mb-5 pb-3">
+  <div class="col-sm-12 text-center text-uppercase pillars mt-5 mb-5 pt-3">
+    <h2 style="">{{ .value_proposition.title }}</h2>
+  </div>
+  <div class="col-sm-12">
+    {{ range .value_proposition.description }}
+    <p>{{ .item }}</p>
+    {{ end }}
+  </div>
+</div>
+<hr></hr>
+
+<div class="container about-full-desc mt-5 mb-5 pb-5">
+  <div class="col-sm-12 text-center text-uppercase pillars mt-5 mb-5 pt-3">
+    <h2 style="">{{ .gptw.title }}</h2>
+  </div>
+  <div class="row mb-5">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8 text-center d-flex align-items-center">
+      <img src="/images/gptw.webp" style="max-height: 160px; display: block; margin: auto;">
+      <h2 style="font-weight: 700; line-height: 1.7em; color: var(--blue-mw-dark);">{{ .gptw.statement | markdownify }}</h2>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+  <div class="col-sm-12">
+    {{ range .gptw.description }}
+    <p>{{ .item }}</p>
+    {{ end }}
+  </div>
+</div>
 {{ end }}
 {{ end }}
 

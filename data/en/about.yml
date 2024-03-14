@@ -1,44 +1,60 @@
 about: "We specialize in productive IT services, and our mission is to build bridges using the appropriate technology to help our clients conquer and materialize their ideas."
 
 ############################ Company Profile ########################
-company_profile:
-  enable : true
-  title : "The company"
-  title_icon : "fa-suitcase"
-  profile_tab:
-    - name : "Who are we?"
-      icon : "fa-info-circle"
-      title : "Who are we?"
-      content : "We specialize in productive IT services. We are passionate about challenges, and our goal is to always provide the best solution for each client.\n\nWe believe in ideas: we think they have the power to make the world a better place, and we know there are many people and organizations with great ideas. Therefore, our mission is to build bridges using the appropriate technology to help our clients conquer and materialize those ideas.\n\nTo achieve this, we have a team of committed and devoted professionals, guided by empathy, curiosity, creativity and great collaborative spirit."
+title: "We are Mikroways"
+subtitle: "We provide IT solutions for a better world"
+page_header: "We are experts in designing, deploying and managing IT services in production"
+bg_image: "/images/about/about.webp"
+we_section_title: "You can rely on us"
+who_we_are:
+  title: "who we are"
+  description: "We are a team of committed and devoted professionals, who specialize in productive IT services. We are passionate about challenges, and our goal is to always provide the best solution for each client."
+  img: "/images/about/team.webp"
+what_we_do:
+  title: "what we do"
+  description: "We unleash our customers potential to provide the highest quality in software products and productive IT services. We achieve that by designing solutions that meet their unique requirements."
+  img: "/images/about/what-we-do.webp"
+our_values:
+  title: "our values"
+  description: "Our values are at the very core of who we are, we live and work by them."
+  icon: "fa-solid fa-heart"
+  values:
+    - value: "Asumir y honrar los compromisos"
+    - value: "Curiosidad"
+    - value: "Empatía"
+    - value: "Creatividad"
+    - value: "Colaboración"
+  link:
+value_proposition:
+  title: "Our value proposition"
+  description:
+    - item: "Creemos que en un contexto cada vez más incierto y complejo la especialización se vuelve indispensable, no sólo para crecer y prosperar, sino incluso para mantenerse competitivos. Por este motivo es fundamental enfocar todas las energías en lo que constituye el core de cada negocio. Consideramos que eso es verdad para nuestros clientes y que también lo es para nosotros. Así es como en Mikroways decidimos especializarnos en tecnología, y específicamente en cómo la tecnología puede liberar todo el potencial contenido."
+    - item: "En base a ello, buscamos crear alianzas estratégicas con nuestros clientes, que les permita enfocarse en gestionar y hacer crecer su negocio, confiando en Mikroways para acompañar ese crecimiento con las soluciones tecnológicas necesarias."
+    - item: "Dado que la evolución tecnológica es continua, nuestra propuesta consiste entonces en dar soluciones integrales y sustentables, haciéndonos responsables de su funcionamiento y de su evolución."
+full_description:
+  - item: "En Mikroways, fusionamos la pasión por el desarrollo con una mentalidad de constante innovación. Nuestra dedicación hacia la transformación tecnológica va más allá de la implementación de soluciones; es una promesa de cuidado absoluto hacia nuestros clientes, considerandonos arquitectos de futuros digitales. Somos artífices de experiencias digitales excepcionales, guiando a empresas hacia un futuro tecnológico brillante con creatividad, compromiso y una visión vanguardista."
+  - item: "Este enfoque ha dado lugar a un equipo altamente capacitado y orientado a la innovación. Nos destacamos por comprender las necesidades específicas de cada cliente, encontrando motivación en proporcionar soluciones óptimas para sus situaciones particulares. Con una visión amplia y la combinación única de experiencia y conocimiento, en Mikroways nos esforzamos por ofrecer soluciones de la más alta calidad, respaldadas por décadas de experiencia y un compromiso inquebrantable con la mejora continua."
+funfact_item:
+  # funfact item loop
+  - name : "Countries"
+    icon : "fa-globe" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+    count : "5"
 
-    - name : "Our history"
-      icon : "fa-solid fa-timeline"
-      title : "From the academy to the world"
-      content : "Initiated in network and server administration in the National University of La Plata, in Argentina, we quickly fell in love with solving problems through quality, elegant, effective and efficient solutions. In addition, our time in College instilled in us another passion: teaching.\n\nDuring the following years, we worked in IT support and infrastructure, and in software development, in addition to collaborating with multiple organizations, both private and public. We believe that all this experience has given us a broad perspective on the reality of the industry and its players.\n\nHaving experienced firsthand many of the problems organizations face, we understood that the solutions that worked for us could help others. That's how Mikroways was born, with the aim of providing solutions for organizations so that they can overcome the technological barriers that limit or prevent their growth and progress."
+  - name : "Customers"
+    icon : "fa-user" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+    count : "50"
 
-    - name : "What do we do?"
-      icon : "fa-sold fa-suitcase"
-      title : "What do we do?"
-      content : "* We provide solutions aimed at improving the quality of software products and productive IT services.\n* We strengthen the abilities of the software development and operations teams so that they reach their highest potential.\n\nTo achieve this, we take two fundamental aspects into consideration: first, we understand that each client has a specific reality and that it's necessary to approach the solution in that particular context; and, second, we believe that innovating and improving is the only way to achieve a quality and sustainable service."
-
-    - name : "Our partnerships"
-      icon : "fa-solid fa-handshake"
-      title : "We have the necessary support"
-      content : "Thanks to two key alliances, we have the necessary support to give our clients the best possible solution."
-      images:
-        - title: Amazon Web Services
-          url: '/images/partners/aws.webp'
-        - title: Red Hat
-          url: '/images/partners/red-hat.png'
-
-############################### funfact ##################################
-funfact:
-  enable : false
-  # funfacts content comes from "data/homepage.yml" file
-
-
-############################### team ####################################
-team:
-  enable : true
-  # team content comes from "data/team.yml" file
-
+  # funfact item loop
+  - name : "Projects"
+    icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+    count : "200"
+gptw:
+  title: "We are a great place to work"
+  statement: |
+    100% of our team  
+    affirm that we are a  
+    **great place to work!**
+  description:
+    - item: "Por segundo año consecutivo hemos obtenido la certificación “Great Place to Work”, lo que refleja el profundo compromiso de Mikroways de crear un ambiente laboral excepcional para nuestros colaboradores."
+    - item: "En Mikroways, valoramos profundamente a nuestro equipo y nos esforzamos por fomentar una cultura de inclusión, colaboración y crecimiento personal y profesional. Este reconocimiento es un testimonio del arduo trabajo y la dedicación de cada miembro de nuestro equipo."
+    - item: "Estamos orgullosos de proporcionar un ambiente de trabajo donde todos los colaboradores se sienten valorados, respetados y motivados para alcanzar su máximo potencial. Creemos firmemente que un equipo feliz y comprometido es fundamental para el éxito de Mikroways."
