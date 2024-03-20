@@ -1,0 +1,58 @@
+{{ if eq .contact_form_only "false" }}
+<div class="col-md-8">
+{{ end }}
+<h3 style="text-align: center; font-weight: 800; text-transform: uppercase;">{{ if .title }}{{ .title }}{{ else }}{{ i18n `contact_us`}}{{ end }}</h3>
+
+    <form id="contact-form" method="post" role="form">
+
+      <div class="messages"></div>
+
+      <div class="controls">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form_name">{{i18n `name` }} *</label>
+              <input id="form_name" type="text" name="name" class="form-control" placeholder="{{i18n `provide_name`}}" required="required" data-error="Firstname is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form_email">{{i18n `email`}} *</label>
+              <input id="form_email" type="email" name="email" class="form-control" placeholder="{{i18n `provide_email`}}" required="required" data-error="Valid email is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="form_message">{{i18n `message`}} *</label>
+              <textarea id="form_message" name="message" class="form-control" placeholder="{{i18n `provide_message`}}" rows="5" required="required" data-error="Please, leave us a message."></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <input type="button" id="submitbutton" class="btn btn-success btn-send" value="{{i18n `send_message`}}">
+          </div>
+        </div>
+      </div>
+
+    </form>
+    <div id="success" style="display:none" class="alert alert-success">
+      {{i18n `contact_form_message_success`}}
+    </div>
+    <div id="error" style="display:none" class="alert alert-danger">
+      {{i18n `contact_form_message_error`}}
+    </div>
+  {{ if eq .contact_form_only "false" }}
+  </div>
+  <div class="col-md-4">
+    <div class="contact-info">
+      <p><i class="fa fa-home info"></i> {{ site.Params.address | markdownify }} </p>
+      <p><i class="fa fa-phone info"></i> {{ site.Params.phone | markdownify }} </p>
+      <p><i class="fa fa-envelope-o info"></i> {{ site.Params.email | markdownify }}</p>
+    </div>
+  </div>
+  {{ end }}

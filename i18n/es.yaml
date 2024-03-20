@@ -37,6 +37,9 @@
 - id: contact_details
   translation: Detalles de contacto
 
+- id: contact_us
+  translation: Contáctanos
+
 - id: provide_name
   translation: Ingresa tu nombre
 

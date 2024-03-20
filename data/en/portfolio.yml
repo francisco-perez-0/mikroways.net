@@ -5,3 +5,14 @@ portfolio:
   success_stories_title: "Success stories"
   bg_image: "images/portfolio/header.png"
   introduction: "Our success stories are a testimony of our work. With them we celebrate the unique journey of each of our clients. At Mikroways, we believe that every customer has different needs and thus we customize our solutions to meet those needs. Explore how our tailored solutions have empowered businesses like yours to achieve remarkable results. Join us in highlighting the diverse and exceptional achievements that make our clients truly extraordinary"
+  call_to_action:
+    enable: true
+    title: "Do you have a project?"
+    subtitle: "Let's make it a success story"
+    buttons:
+      - label: "Contact us"
+        style: "solid"
+        internal_link: "contact"
+      - label: "Book a meeting"
+        style: "solid"
+        calendly_url: "https://calendly.com/leandro-ditommaso/15min"

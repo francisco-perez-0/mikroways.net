@@ -34,6 +34,9 @@
 - id: contact_details
   translation: Contact Details
 
+- id: contact_us
+  translation: Contact Us
+
 - id: provide_name
   translation: Please enter your full name
 

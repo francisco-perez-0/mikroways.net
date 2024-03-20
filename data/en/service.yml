@@ -15,12 +15,15 @@ services:
           style : "solid"
           link : "contact"
     cta:
-      question: "Do you have a project?"
-      answer: "Let's discuss your opportunities"
+      title: "Do you have a project?"
+      subtitle: "Let's discuss your opportunities"
       buttons:
         - label : "Contact us"
           style : "solid"
-          link : "contact"
+          internal_link : "contact"
+        - label: "Book a meeting"
+          style: "solid"
+          calendly_url: "https://calendly.com/leandro-ditommaso/15min"
     benefits:
       - benefit: "Accelerates software development"
       - benefit: "Reduces operational complexity"
@@ -147,11 +150,25 @@ services:
     name: |
       Professional Services
     parent: "Services"
-    description: "Not only do we provide timely advice, but we also become your committed long-term strategic partner. We adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments and evaluations, we identify optimization opportunities and maximize operational performance."
+    description: "We have designed our line of professional services, honoring our commitment to adapting to our clients' specific needs and always providing the best possible solution for each case. In that regard, we adopt a proactive approach to continuously drive improvements and efficiency in your business by applying our knowledge and expertise to your particular situation."
     bg_image: "images/services/ps-bg.png"
-    consultancy:
     managed_services:
+      title: "Managed Services"
+      description: |
+        Managed services are an essential part of our proposal to provide a comprehensive solution. With this service, we aim to free our clients from the complex task of managing their infrastructure and its components, by taking responsibility for its operation. In tha regard, we focus on the following points:
+      focus:
+        - item: "Reactive and proactive maintenance"
+        - item: "Continuous services monitoring"
+        - item: "Periodic capacity analysis"
+        - item: "Generation of documentation"
+        - item: "Improvements suggestions"
+
+    consultancy:
+      title: "Consultancy"
+      description: 
     cto_aas:
+      title: "CTO as a service"
+      description: 
   cybersecurity:
     name: |
       Cybersecurity

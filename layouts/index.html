@@ -229,22 +229,9 @@
 <!-- Parallax 1 start -->
 {{ if $data.homepage.call_to_action.enable }}
 {{ with $data.homepage.call_to_action }}
-<section class="cta">
-  <div class="container">
-      <div class="col-md-12 text-center">
-        <h2>{{ .title | markdownify }}</h2>
-        <h3>{{ .subtitle | markdownify}}</h3>
-        <p>
-          {{ range .buttons }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
-          {{ end }}
-        </p>
-      </div>
-  </div>
-</section>
+{{ partial "cta.html" . }}
 {{ end }}
 {{ end }}
-
 
 <!-- Parallax 1 start -->
 {{ if $data.homepage.newsletter.enable }}

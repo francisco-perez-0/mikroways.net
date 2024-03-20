@@ -89,16 +89,16 @@ team:
 
 ############################ Call to action #############################
 call_to_action:
-  enable : true
-  title : "Do you still have questions?"
-  subtitle : "It'll be our pleasure to answer them!"
-  bg_image : "images/parallax/questions.jpg.webp"
+  enable: true
+  title: "Do you still have questions?"
+  subtitle: "It'll be our pleasure to answer them!"
   buttons:
-    # button loop
-    - label : "Let's talk"
-      style : "solid"
-      link : "contact"
-
+    - label: "Contact us"
+      style: "solid"
+      internal_link: "contact"
+    - label: "Book a meeting"
+      style: "solid"
+      calendly_url: "https://calendly.com/leandro-ditommaso/15min"
 
 ############################ Newsletter #############################
 newsletter:
