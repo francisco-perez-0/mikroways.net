@@ -1,26 +1,19 @@
 {{ define "main" }}
 
-<section id="main-container">
-  <div class="container">
-    <!-- Map start here -->
-    {{ if .Site.Params.map.enable }}
-    {{ with .Site.Params.map }}
-    <div class="map" id="map" data-latitude="{{ .map_latitude }}"
-      data-longitude="{{ .map_longitude }}" data-marker="{{ .map_marker | absURL }}"
-      data-marker-name="{{ $.Site.Title }}">
-    </div>
+{{ $data := index .Site.Data .Site.Language.Lang }}
 
-    <div class="gap-40"></div>
-    {{ end }}
-    {{ end }}
-    <!--/ Map end here -->
-    <div class="row">
-    {{ partial "contact.html" (dict "contact_form_only" "false") }}
-    </div>
-
-  </div>
-  <!--/ container end -->
+{{ with $data.contact }}
+<section id="about" class="pt-0">
+  {{ partial "page-header-bgimage.html" . }}
 </section>
+
+{{ end }}
+
+<div class="container pt-3 pb-5 mb-5">
+  <div class="row">
+    {{ partial "contact.html" (dict "contact_form_only" "false") }}
+  </div>
+</div>
 
 
 {{ end }}

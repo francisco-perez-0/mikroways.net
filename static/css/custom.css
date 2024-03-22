@@ -1786,3 +1786,19 @@ div.about-full-desc p {
   font-family: 'Montserrat' !important;
   font-weight: 600 !important;
 }
+
+.form-control {
+  border-radius: 16px !important;
+}
+
+#contact-form label {
+  padding-left: 10px !important;
+}
+
+.contact-info {
+  margin-top: 25px;
+}
+
+.contact-info p {
+  font-size: 15px;
+}
