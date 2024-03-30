@@ -3,7 +3,7 @@
     <img src="{{ .bg_image | absURL }}" alt="Homepage image" style="opacity: 0.2";>
   </div>
   <div class="frontpage-text">
-    <a href="{{ .Parent.Permalink | relLangURL }}">{{ site.Params.home }}</a><a class="frontpage-text-name">{{ .parent }}</a>
+    <a href="{{ .Parent.Permalink | relLangURL }}">{{ site.Params.home }}</a><a class="frontpage-text-name">{{ if .parent }}{{ .parent }}{{ else }}{{ page.Title }}{{ end }}</a>
     <h2 class="text-uppercase" style="font-weight: 900;">{{ .title | markdownify }}</h2>
     <h3 style="font-family: 'Source Sans 3'; font-size: 1.6em;">{{ .subtitle | markdownify }}</h3>
   </div>

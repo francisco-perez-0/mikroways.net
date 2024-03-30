@@ -26,7 +26,7 @@
             <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .name }}</a>
             <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
               <div class="row">
-                <div class="col-lg-4 dropdown-item megamenu-element" id="{{ .id }}">
+                <div class="col-lg-5 dropdown-item megamenu-element" id="{{ .id }}">
                   {{ range $c_index,$c_element := .children }}
                   <a class="dropdown-item {{if eq $c_index 0}}active{{end}}" id="{{$c_element.id}}" href="{{ $c_element.url | relLangURL }}" aria-selected="true">
                     <span>
@@ -36,7 +36,7 @@
                   </a>
                   {{ end }}
                 </div>
-                <div class="d-none d-lg-block col-lg-8 mb-4 border-left megamenu-desktop" id="{{ .id }}">
+                <div class="d-none d-lg-block col-lg-7 mb-4 border-left megamenu-desktop" id="{{ .id }}">
                   <div class="tab-content" id="v-pills-tabContent">
                   {{ range $c_index,$c_element := .children }}
                   <div class="megamenu-item-tab tab-pane animated fadeInLeft {{if eq $c_index 0}}show active{{end}}" id="item-{{ $c_element.id }}" role="tabpanel">

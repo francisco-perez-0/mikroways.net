@@ -15,16 +15,34 @@ what_we_do:
   description: "We unleash our customers potential to provide the highest quality in software products and productive IT services. We achieve that by designing solutions that meet their unique requirements."
   img: "/images/about/what-we-do.webp"
 our_values:
+  id: "values"
   title: "our values"
   description: "Our values are at the very core of who we are, we live and work by them."
   icon: "fa-solid fa-heart"
   values:
     - value: "Asumir y honrar los compromisos"
+      description: "Nos comprometemos a buscar siempre la verdad, a respetar la palabra empeñada, con nuestro trabajo y los resultados que buscamos, con nuestro clientes y con nuestros compañeros de trabajo."
     - value: "Curiosidad"
+      description: "Innovamos porque nos apasiona aprender, descubrir y definir nuevas maneras de hacer las cosas y eso está movido por una genuina curiosidad."
     - value: "Empatía"
-    - value: "Creatividad"
+      description: "Para poder diseñar soluciones a medida, es fundamental comprender las necesidades de nuestros clientes, y eso requiere ponernos en su lugar."
+    - value: "Creatividad proactiva"
+      description: "Apoyados en lo que sabemos y el deseo de aprender, buscamos mejorar y crear soluciones más eficientes, más elegantes y más efectivas, aún cuando las que existen funcionen correctamente."
     - value: "Colaboración"
-  link:
+      description: "Creemos en la maravillosa sinergia que generan los equipos, y esa sinergia es posible si existe capacidad y predisposición de las personas para colaborar entre sí."
+  link: "our-culture"
+why_work_with_us:
+  title: "Benefits of working at Mikroways"
+  benefits:
+    - benefit: "Trabaja 100% remoto"
+    - benefit: "Días adicionales de vacaciones"
+    - benefit: "Incremento trimestral de salario"
+    - benefit: "Servicio de medicina privada"
+    - benefit: "Clases de inglés"
+    - benefit: "Certificaciones pagas"
+    - benefit: "Capacitaciones internas permanentes"
+    - benefit: "Flexibilidad horaria"
+
 value_proposition:
   title: "Our value proposition"
   description:
@@ -49,6 +67,7 @@ funfact_item:
     icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
     count : "200"
 gptw:
+  id: "gptw"
   title: "We are a great place to work"
   statement: |
     100% of our team affirm that we are a **great place to work!**
@@ -57,6 +76,23 @@ gptw:
     - item: "En Mikroways, valoramos profundamente a nuestro equipo y nos esforzamos por fomentar una cultura de inclusión, colaboración y crecimiento personal y profesional. Este reconocimiento es un testimonio del arduo trabajo y la dedicación de cada miembro de nuestro equipo."
     - item: "Estamos orgullosos de proporcionar un ambiente de trabajo donde todos los colaboradores se sienten valorados, respetados y motivados para alcanzar su máximo potencial. Creemos firmemente que un equipo feliz y comprometido es fundamental para el éxito de Mikroways."
   see_more:
-    link: "culture"
+    link: "our-culture"
     label: "See more"
     style: "solid"
+our_culture:
+  title: "We are Mikroways"
+  subtitle: "We provide IT solutions for a better world"
+  page_header: "Forma parte de un equipo donde tu persona y tus ideas serán apreciadas"
+  bg_image: "/images/team.webp"
+  description:
+    - item: "En Mikroways creemos que las ideas tienen el potencial de hacer del mundo un mejor lugar para vivir y que el mundo está lleno de personas y organizaciones con grandes ideas, que deseamos ver nacer y florecer. Creemos también que, en el mundo en el que vivimos, la tecnología es determinante para hacer realidad esas ideas. No obstante, adoptar la tecnología adecuada y adaptarla a las necesidades específicas puede resultar altamente complejo para las organizaciones."
+    - item: "Por ello, nos hemos propuesto la misión de construir puentes, usando la tecnología adecuada, que les permita a nuestros clientes conquistar y materializar sus ideas."
+    - item: "Esto implica que entendamos la situación específica del cliente y sus objetivos. También demanda que conozcamos y comprendamos la tecnología disponible en todo momento. Para ello, debemos estar siempre informados, aprendiendo de forma continua. Nuestros clientes confían en que les daremos la mejor solución posible y por ello recae en nosotros la responsabilidad de saber, entender y hacer todo lo necesario para retribuir esa confianza."
+    - item: "Todo ello es posible sólo si contamos con un entorno laboral propicio, dinámico, que fomente la creatividad y la innovación, que promueva la colaboración y el intercambio de ideas, donde se respeten y capitalicen las diferentes opiniones y perspectivas. En ese sentido, es fundamental contar con un equipo de excelente calidad humana, profesional y con una enorme capacidad técnica."
+cta:
+  title: "Ready to be a part of our team?"
+  subtitle: "Check out the open opportunities"
+  buttons:
+    - label : "Join Mikroways"
+      style : "solid"
+      internal_link : "work-with-us"

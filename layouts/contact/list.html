@@ -2,6 +2,8 @@
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
+{{ $thisPage := .GetPage "." }}
+
 {{ with $data.contact }}
 <section id="about" class="pt-0">
   {{ partial "page-header-bgimage.html" . }}

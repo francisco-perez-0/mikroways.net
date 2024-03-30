@@ -47,7 +47,7 @@
         {{ end }}
         </ul>
         <div class="col-sm-12 btn-service align-self-center">
-          <a href="{{ .link }}" class="btn-service">
+          <a href="{{ .our_values.link | relLangURL }}#{{ .our_values.id }}" class="btn-service">
             <span style="color: var(--blue-mw-dark);">{{ i18n `see_more` }}</span>
             <i class="fas fa-arrow-right"></i>
           </a>
@@ -69,7 +69,7 @@
 <hr></hr>
 <div class="container about-full-desc mb-5 pb-3">
   <div class="col-sm-12 text-center text-uppercase pillars mt-5 mb-5 pt-3">
-    <h2 style="">{{ .value_proposition.title }}</h2>
+    <h2>{{ .value_proposition.title }}</h2>
   </div>
   <div class="col-sm-12">
     {{ range .value_proposition.description }}
@@ -96,7 +96,7 @@
       {{ end }}
       </div>
       <div class="col-md-12 text-center">
-        <a href="{{ .gptw.see_more.link }}" class="btn-service">
+        <a href="{{ .gptw.see_more.link | relLangURL }}#{{ .gptw.id }}" class="btn-service">
           <span style="color: var(--blue-mw-dark);">{{ i18n `see_more` }}</span>
           <i class="fas fa-arrow-right"></i>
         </a>

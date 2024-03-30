@@ -63,15 +63,15 @@ menu:
       children:
       - id: "culture"
         name: "Our culture"
-        url: "culture"
+        url: "our-culture"
         short: "Discover what it feels like be part of Mikroways"
-        full: "Discover what it feels like be part of Mikroways"
+        full: "Discover our culture and how we team up to make wonderful solutions for our customers!"
 
       - id: "work-with-us"
         name: "Work with us"
-        url: "opportunities"
+        url: "work-with-us"
         short: "Come work with us!"
-        full: "Come work with us!"
+        full: "Come work with us at Mikroways and elevate your career!"
 
     - id: "blog"
       name: "Blog"
