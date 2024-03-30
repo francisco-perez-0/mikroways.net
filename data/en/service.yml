@@ -23,7 +23,7 @@ services:
           internal_link : "contact"
         - label: "Book a meeting"
           style: "solid"
-          calendly_url: "https://calendly.com/leandro-ditommaso/15min"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
     benefits:
       - benefit: "Accelerates software development"
       - benefit: "Reduces operational complexity"

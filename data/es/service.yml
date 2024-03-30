@@ -1,72 +1,177 @@
 ############################ Services ########################
 services:
-  enable : true
-  title : "Podemos lograrlo"
-  title_icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
-  subtitle : "Porque tu progreso es el nuestro"
-  profile_tab:
-    - name : "DevSecOps"
-      icon : "fa-solid fa-gears"
-      title : "DevSecOps"
-      content : "DevSecOps permite aumentar la productividad de tus equipos IT, lograr servicios más estables y consistentes y asegurar el cumplimiento de buenas prácticas y reglas de negocio clave. Todo esto se traduce en un mejor servicio para tus clientes con todos los componentes de seguridad necesarios."
+  platform:
+    name: |
+      Cloud & Platform  
+      Engineering
+    parent: "Services"
+    description: "We design and automate platforms tailored to your needs, obtaining predictable and repeatable environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
+    bg_image: "images/services/pe-bg.png"
+    brochure:
+      question: "Want to know more?"
+      answer: "Check out our slide deck"
       buttons:
-        - label : "Me interesa"
-          style : "solid-wb"
+        - label : "Download"
+          style : "solid"
           link : "contact"
-        - label : "Ver más"
-          style : "white-wb"
-          link : "devsecops"
-
-    - name : "Migración a la nube"
-      icon : "fa fa-cloud"
-      title : "Migración a la nube"
-      content : "La migración a la nube es una decisión estratégica. Puedes adoptar la nube pública para acceder instantáneamente a recursos de cómputo con una mínima inversión inicial, o bien la nube privada, donde encontrarás una gran versatilidad sin perder el control total sobre la infraestructura. ¡Tú decides! Nosotros nos encargamos de gestionar la migración y todas las soluciones que quieras montar sobre ella."
+    cta:
+      title: "Do you have a project?"
+      subtitle: "Let's discuss your opportunities"
       buttons:
-        - label : "Quiero saber más"
-          style : "solid-wb"
-          link : "contact"
+        - label : "Contact us"
+          style : "solid"
+          internal_link : "contact"
+        - label: "Book a meeting"
+          style: "solid"
+          calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
+    benefits:
+      - benefit: "Accelerates software development"
+      - benefit: "Reduces operational complexity"
+      - benefit: "Ensures business continuity"
+      - benefit: "Empower developers with autonomy"
+      - benefit: "Reduces time to market"
+      - benefit: "Improves customer service"
+      - benefit: "Avoids provider lock-in"
+      - benefit: "Creates dependable systems"
+      - benefit: "Reduces costs"
+      - benefit: "Enables faster problem resolution"
+    components:
+      a:
+        id: "cloud-native-architecture"
+        name: "Cloud Native Architecture"
+        description: "To obtain all of the benefits of the cloud, the applications and infrastructure need to be created for it. We design workloads capable of taking full advantage of the cloud."
+        bg_image: "/images/slider/cloud.jpg.webp"
+        button: "See more"
+        page:
+          description: |
+            Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.  
+            These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil ([CNCF](https://github.com/cncf/toc/blob/main/DEFINITION.md)).
+          principles:
+          model:
+      b:
+        id: "infrastructure-provisioning"
+        name: "Infrastructure provisioning"
+        description: "Creating, replicating, updating, and managing IT infrastructure in an automated manner provides essential flexibility and velocity to any business."
+        bg_image: "/images/services/infrastructure.png"
+        button: "See more"
+      c:
+        id: "containerization-and-orchestration"
+        name: "Containerization & Orchestration"
+        bg_image: "/images/services/containers.png"
+        description: "Containers encapsulate applications and their dependencies, providing portability across different environments, while orchestration, such as Kubernetes, facilitates efficient container management, ensuring their consistent and scalable deployment."
+        button: "See more"
+      d:
+        id: "continuous-integration-and-deployment"
+        name: "Continuous Integration & Deployment"
+        description: "Automating software deployment significantly reduces time-to-market and enhances the productivity of the IT team."
+        bg_image: "/images/services/cicd.webp"
+        button: "See more"
+      e:
+        id: "monitoring-and-observability"
+        name: "Monitoring & Observability"
+        description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance their overall quality."
+        bg_image: "/images/portfolio/monitoring.jpg.webp"
+        button: "See more"
+      f:
+        id: "business-continuity"
+        name: "Business Continuity"
+        description: "The continuity of your business is more important than anything else. That is why we make sure that you have at all times an actionable, tested, updated and effective disaster recovery plan, with minimal to no manual intervention."
+        bg_image: "/images/services/time.jpg"
+        button: "See more"
+    pillars:
+      title: "Fundamental Pillars"
+      items:
+      - name: "Continuous Integration & Deployment"
+        description: "Continuous Deployment for Innovation: CI/CD not only accelerates delivery speed but also fosters constant innovation by providing an automated and repeatable workflow. The ability to deploy changes quickly and securely enables our teams to respond agilely to market demands and continuously enhance their products."
+        icon: "fa-solid fa-infinity"
 
-    - name : "Capacitación"
-      icon : "fa-solid fa-book-open"
-      title : "Capacitación"
-      content : "Capacitar a tus equipos tiene dos grandes ventajas: por un lado, te brindará la oportunidad de llevar adelante proyectos más complejos; y, por el otro, aumentará la satisfacción de tus colaboradores, que encontrarán un motivo más para seguir eligiéndote. Contamos con todo tipo de programas de capacitación, e incluso podemos crear uno a la medida de tu organización."
-      buttons:
-        - label : "Me interesa"
-          style : "solid-wb"
-          link : "contact"
-        - label : "Ver más"
-          style : "white-wb"
-          link : "training"
+      - name: "Cloud Computing & Virtualization"
+        description: "Operational Efficiency: By migrating to the cloud and leveraging virtualization, we help businesses reduce operational costs while improving efficiency. Virtualization allows the execution of multiple operating systems on a single physical server, optimizing hardware and energy utilization. Our team has extensive expertise in architecture creation and daily infrastructure management."
+        icon: "fa-solid fa-server"
 
-    - name : "Consultoría"
-      icon : "fa-solid fa-unlock"
-      title : "Consultoría"
-      content : "¿Estás experimentando problemas de difícil solución? ¿Quieres actualizar o mejorar tus servicios de IT, pero no tienes del todo claro cómo hacerlo o por dónde empezar? Podemos ayudarte a detectar y priorizar las oportunidades de mejora y, si lo consideras necesario, a planificar, diseñar e implementar las soluciones."
+      - name: "Containers & Orchestration"
+        description: "Portability and Consistency: Containers encapsulate applications and their dependencies, providing portability across development, testing, and production environments. Orchestration, such as Kubernetes, in which we are experts, facilitates efficient container management, ensuring their consistent and scalable deployment."
+        icon: "fa-solid fa-cubes"
 
-      buttons:
-        - label : "Quiero saber más"
-          style : "solid-wb"
-          link : "contact"
+      - name: "Business Continuity"
+        description: "Business Resilience: Backup and disaster recovery services ensure business continuity by protecting crucial data against losses. We design and implement a specialized architecture for regular backups, and disaster recovery plans allow for swift restoration in the event of interruptions or data losses."
+        icon: "fa-solid fa-business-time"
 
-############################### funfact ##################################
-funfact:
-  enable : true
-  # funfacts content comes from "data/homepage.yml" file
+      - name: "Observability"
+        description: "Observability involves real-time data collection and analysis to understand system performance, allowing early identification of issues, thus improving responsiveness and service quality. This facilitates informed decision-making and continuous improvement. Our expertise focuses on integrating various data sources to provide a comprehensive picture of the health and performance of your technological environment. We use the latest tools and technologies to visualize data effectively, identify patterns, and provide actionable insights."
+        icon: "fa-solid fa-magnifying-glass-chart"
 
+      - name: "Software Architecture & Engineering"
+        description: "Scalable Design: Software architecture focuses on creating robust and scalable systems. We emphasize designing an architecture that allows for modular growth and adaptability as business needs evolve. Sustainable Development: Here, we focus on software engineering and building solutions that are durable and maintainable. Adopting practices such as agile development and test automation ensures continuous quality and responsiveness to changes in the business environment."
+        icon: "fa-solid fa-circle-nodes"
+    technologies:
+      - name: "AWS"
+        logo: "images/tech/aws.png"
+      - name: "Google Cloud"
+        logo: "images/tech/gcloud.png"
+      - name: "Microsoft Azure"
+        logo: "images/tech/azure.png"
+      - name: "VMware"
+        logo: "images/tech/vmware.png"
+      - name: "Microsoft HyperV"
+        logo: "images/tech/hyperv.png"
+      - name: "Kubernetes"
+        logo: "images/tech/kubernetes.png"
+      - name: "Docker"
+        logo: "images/tech/docker.png"
+      - name: "Openshift"
+        logo: "images/tech/openshift.png"
+      - name: "Grafana"
+        logo: "images/tech/grafana.png"
+      - name: "Prometheus"
+        logo: "images/tech/prometheus.png"
+      - name: "Veeam"
+        logo: "images/tech/veeam.png"
+      - name: "Velero"
+        logo: "images/tech/velero.svg"
+  digital_transformation:
+    name: |
+      Digital Transformation
+    parent: "Services"
+    description: "We lead the adoption of innovative technologies and optimize processes to enhance the efficiency and competitiveness of your company. From identifying opportunities to ongoing management, we work closely to design strategies aligned with your goals. Specializing in process optimization, we leverage advanced tools to maximize productivity and accelerate time-to-market."
+    bg_image: "images/services/dt-bg.png"
+    benefits:
+      title: "Benefits"
+      items:
+        - title: "Increase productivity and efficiency"
+          description: "Aumento en la productividad y la eficiencia en las operaciones"
+        - title: "Improve customer service"
+          description: "test"
+        - title: "Respond faster to customer needs"
+          description: "test"
+        - title: "Obtain competitive advantages"
+          description: "test"
+  professional_services:
+    name: |
+      Professional Services
+    parent: "Services"
+    description: "We have designed our line of professional services, honoring our commitment to adapting to our clients' specific needs and always providing the best possible solution for each case. In that regard, we adopt a proactive approach to continuously drive improvements and efficiency in your business by applying our knowledge and expertise to your particular situation."
+    bg_image: "images/services/ps-bg.png"
+    managed_services:
+      title: "Managed Services"
+      description: |
+        Managed services are an essential part of our proposal to provide a comprehensive solution. With this service, we aim to free our clients from the complex task of managing their infrastructure and its components, by taking responsibility for its operation. In tha regard, we focus on the following points:
+      focus:
+        - item: "Reactive and proactive maintenance"
+        - item: "Continuous services monitoring"
+        - item: "Periodic capacity analysis"
+        - item: "Generation of documentation"
+        - item: "Improvements suggestions"
 
-############################### team ####################################
-team:
-  enable : true
-  # team content comes from "data/team.yml" file
-
-
-############################### testimonial ####################################
-testimonial:
-  enable : true
-  # testimonail content comes from "data/homepage.yml" file
-
-
-############################### pricing ####################################
-pricing:
-  enable : false
-  # pricing content comes from "data/pricing.yml" file
+    consultancy:
+      title: "Consultancy"
+      description: 
+    cto_aas:
+      title: "CTO as a service"
+      description: 
+  cybersecurity:
+    name: |
+      Cybersecurity
+    parent: "Services"
+    description: "We offer cutting-edge security solutions. As IT consulting specialists, we excel in providing comprehensive protection for your infrastructure, ensuring the confidentiality and integrity of your data in a constantly evolving digital world."
+    bg_image: "images/services/cybersecurity-bg.png"
