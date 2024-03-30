@@ -1,5 +1,5 @@
 ---
-title: "Apply for a job"
+title: "Application form"
 # meta description
 description: "Work with us!"
 # save as draft

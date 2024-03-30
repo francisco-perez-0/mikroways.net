@@ -3,7 +3,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 <section id="about" class="p-0 mb-3">
-{{ partial "page-header-bgimage.html" (dict "bg_image" $data.jobs.bg_image "parent" (page.Parent).Title "title" .Params.title) }}
+{{ partial "page-header-bgimage.html" (dict "bg_image" $data.jobs.bg_image "parent" $data.jobs.title "title" .Params.title) }}
 </section>
 
 <div class="container p-5 mt-5">
