@@ -2,16 +2,9 @@
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ with $data.portfolio.portfolio }}
-<section id="header" class="p-0">
-  <div class="frontpage success-stories">
-    <div class="bg-image">
-      <img src="{{ .bg_image | absURL }}" alt="Homepage image">
-    </div>
-    <div class="frontpage-text">
-      <h2>{{ .title | markdownify }}</h2>
-      <h3>{{ .subtitle | markdownify }}</h3>
-    </div>
-  </div>
+
+<section id="about" class="p-0 mb-5">
+{{ partial "page-header-bgimage.html" . }}
 </section>
 
 <div class="container about-full-desc">

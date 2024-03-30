@@ -159,3 +159,9 @@
 
 - id: success_stories
   translation: Casos de éxito
+
+- id: apply_now
+  translation: Enviar solicitud
+
+- id: learn_more
+  translation: Ver más

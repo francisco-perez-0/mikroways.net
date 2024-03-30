@@ -157,3 +157,8 @@
 - id: success_stories
   translation: Success Stories
 
+- id: apply_now
+  translation: Apply now
+
+- id: learn_more
+  translation: Learn more

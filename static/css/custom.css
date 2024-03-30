@@ -455,6 +455,12 @@ img#logo {
   background: var(--blue-mw-primary);
 }
 
+.btn.btn-primary.solid-blue {
+  font-weight: 600;
+  background: var(--blue-mw-dark);
+  color: white;
+}
+
 .btn.btn-primary.solid-wb {
   color: white;
 }
@@ -467,6 +473,11 @@ img#logo {
   font-weight: 600;
   background: transparent;
   color: white;
+}
+
+.btn.btn-primary.solid-blue:hover {
+  font-weight: 600;
+  background-color: var(--blue-mw-secondary);
 }
 
 .btn.btn-primary.solid-wb:hover {
@@ -1801,4 +1812,26 @@ div.about-full-desc p {
 
 .contact-info p {
   font-size: 15px;
+}
+
+.jobs {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.jobs p {
+  line-height: 2em;
+  margin-bottom: 0.7em;
+}
+
+.jobs li {
+  list-style: circle;
+  margin-bottom: 0.4em;
+}
+
+.jobs h1,
+.jobs h2,
+.jobs h3 {
+  font-weight: 900;
+  line-height: 2em;
 }
