@@ -134,9 +134,9 @@ services:
       Digital Transformation
     parent: "Services"
     description:
-      - item: "En el dinámico mundo empresarial actual, la Transformación Digital es más que una necesidad: es una estrategia esencial para la supervivencia y el éxito a largo plazo. En Mikroways, comprendemos la complejidad de este proceso y ofrecemos un servicio integral de Transformación Digital diseñado para impulsar a tu empresa hacia la vanguardia digital."
-      - item: "Nuestro mundo actual está hiperconectado; el cambio es superacelerado; la inteligencia artificial es omnipresente; y las decisiones están cada vez más basadas en datos."
-      - item: "¿Y si pudieras acelerar la innovación práctica en tu negocio? El equipo de transformación digital de Mikroways te ayudará a inspirar nuevas ideas y a impulsar la innovación práctica."
+      - item: "In today's dynamic business world, Digital Transformation is more than a necessity: it is an essential strategy for survival and long-term success. At Mikroways, we understand the complexity of this process and offer a comprehensive Digital Transformation service designed to propel your company to the digital forefront."
+      - item: "Our current world is hyperconnected; change is super-accelerated; artificial intelligence is omnipresent; and decisions are increasingly data-driven."
+      - item: "What if you could accelerate practical innovation in your business? Mikroways' digital transformation team will help you inspire new ideas and drive practical innovation."
     bg_image: "images/services/dt-bg.png"
     components_heading: "Our approach"
     components:
