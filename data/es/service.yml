@@ -15,13 +15,13 @@ services:
           style : "solid"
           link : "contact"
     cta:
-      title: "Do you have a project?"
-      subtitle: "Let's discuss your opportunities"
+      title: "¿Tienes un proyecto?"
+      subtitle: "Evaluemos tus oportunidades"
       buttons:
-        - label : "Contact us"
+        - label : "Contáctanos"
           style : "solid"
           internal_link : "contact"
-        - label: "Book a meeting"
+        - label: "Programa una reunión"
           style: "solid"
           calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
     benefits:

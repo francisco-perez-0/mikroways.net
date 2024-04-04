@@ -1,49 +1,49 @@
 ############################ Menu ########################
 menu:
   menu_items:
-    - id: "servicios"
+    - id: "services"
       name: "Servicios"
-      tag: "what we do"
+      tag: "qué hacemos"
       has_children: true
       children:
       - id: "platform"
         name: "Cloud & Platform Engineering"
         image: "images/services/platform-engineering.png"
         url: "platform-engineering"
-        short: "Design, build, and maintain scalable and reliable technology frameworks for various applications."
-        full: "We focus our efforts on implementing and maintaining Internal Development Platforms (IDP). These IDPs enhance the self-service capabilities of the development team, achieving cost optimization, a reduction in management complexities, and a significant increase in operational reliability"
+        short: "Diseñar, construir y mantener plataformas tecnológicas escalables y confiables."
+        full: "Nos enfocamos en implementar y mantener Plataformas de Desarrollo Interno (IDP), que le dan al equipo de desarrollo la capacidad de autoservicio, lo que optimiza los costos, simplifica la gestión y genera un aumento significativo en la confiabilidad operativa."
         buttons:
-          - label : "Learn more"
+          - label : "Ver más"
             style : "gray-wb"
 
       - id: "transformation"
         name: "Transformación digital"
         image: "images/services/circle.png"
         url: "digital-transformation"
-        short: "Guides businesses in leveraging technology to innovate, streamline processes, and enhance customer experiences."
-        full: "We lead the adoption of innovative technologies and optimize processes to enhance the efficiency and competitiveness of your company. From identifying opportunities to ongoing management, we work closely to design strategies aligned with your goals. Specializing in process optimization, we leverage advanced tools to maximize productivity and accelerate Time to Market."
+        short: "Apalancarse en la tecnología para innovar, optimizar procesos y mejorar la experiencia de los clientes."
+        full: "Lideramos la adopción de tecnologías innovadoras y optimizamos procesos para mejorar la eficiencia y competitividad de su empresa. Desde la identificación de oportunidades hasta la gestión continua, trabajamos en estrecha colaboración para diseñar estrategias alineadas con sus objetivos. Especializados en la optimización de procesos, aprovechamos herramientas avanzadas para maximizar la productividad y acelerar el time-to-market."
         buttons:
-          - label : "Learn more"
+          - label : "Ver más"
             style : "gray-wb"
 
       - id: "profservices"
         name: "Servicios profesionales"
         image: "images/services/circle.png"
         url: "professional-services"
-        short: "Expert advice and solutions for optimizing technology usage and addressing business challenges."
-        full: "Not only do we provide timely advice, but we also become your committed long-term strategic partner. We adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments and evaluations, we identify optimization opportunities and maximize operational performance."
+        short: "Soluciones para optimizar el uso de la tecnología y resolver desafíos de negocio."
+        full: "Desde Mikroways buscamos no sólo ofrecer asesoramiento, sino convertimos en su socio estratégico, comprometidos a largo plazo con el éxito de su compañía. Para ello, adoptamos un enfoque proactivo que permita impulsar mejoras continuas y aumentar la eficiencia en su negocio. A través de evaluaciones y análisis regulares, identificamos oportunidades de optimización y maximizamos el rendimiento operativo."
         buttons:
-          - label : "Learn more"
+          - label : "Ver más"
             style : "gray-wb"
 
       - id: "cybersecurity"
         name: "Ciberseguridad"
         image: "images/services/circle.png"
         url: "cybersecurity"
-        short: "Expertise in safeguarding digital assets, mitigating risks, and ensuring data protection against cyber threats."
-        full: "We offer cutting-edge security solutions. As IT consulting specialists, we excel in providing comprehensive protection for your infrastructure, ensuring the confidentiality and integrity of your data in a constantly evolving digital world."
+        short: "Expertos en proteger activos digitales, mitigando riesgos y asegurando la protección de datos contra ciberataques."
+        full: "Ofrecemos soluciones de seguridad de vanguardia. Como especialistas en consultoría de TI, destacamos en proporcionar protección integral para su infraestructura, garantizando la confidencialidad y la integridad de sus datos en un mundo digital en constante evolución."
         buttons:
-          - label : "Learn more"
+          - label : "Ver más"
             style : "gray-wb"
 
     - id: "about"

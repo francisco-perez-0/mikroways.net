@@ -1,17 +1,19 @@
 front:
   enable: true
-  title: "IT innovation within reach"
-  subtitle: "Take your company to the next level with tailored IT solutions. Meet our specialists in platform engineering and digital transformation."
+  title: "Innovación IT a tu alcance"
+  subtitle: |
+    Lleva a tu compañía al siguiente nivel con soluciones de IT personalizadas.  
+    Conoce a nuestro equipo de especialistas en ingeniería de plataformas y transformación digital.
   bg_image: "images/homepage.jpg"
   buttons:
-  - label: "Let's talk"
+  - label: "Hablemos"
     style: "solid"
     link: "contact"
 
   # button loop
-  - label: "Learn more"
+  - label: "Ver más"
     style: "white"
-    link: "devsecops"
+    link: "platform-engineering"
 
 ############################### feature ##################################
 # This requires three items per row in order to be evenly presented
@@ -19,29 +21,29 @@ front:
 feature:
   enable : true
   feature_item:
-    - name : "Increase your services availability"
+    - name : "Aumenta la disponibilidad de tus servicios"
       icon : "fa-solid fa-calendar-check"
-      content : "Do you experience outages or crashes in your systems or services often? We can help you put those problems behind you."
+      content : "¿Experimentas a menudo cortes o caídas en tus sistemas o servicios? Podemos ayudarte a dejar esos problemas atrás."
 
-    - name : "Have a reliable contingency plan"
+    - name : "Cuenta con un plan de contingencia confiable"
       icon : "fa-solid fa-helmet-safety"
-      content : "Faced with a disaster, can you restore your services quickly? And can you recover the information?"
+      content : "Ante un desastre, ¿puedes restaurar tus servicios rápidamente? ¿Y puedes recuperar la información?"
 
-    - name : "Reduce your costs"
+    - name : "Reduce tus costos"
       icon : "fa-solid fa-coins"
-      content : "Yes, it's possible to spend less, both on software development and maintenance and on IT infrastructure."
+      content : "Sí, gastar menos es posible, tanto en el desarrollo y mantenimiento del software como en la infraestructura de IT."
 
-    - name : "Easily replicate environments"
+    - name : "Replica ambientes fácilmente"
       icon : "fa-solid fa-clone"
-      content : "Doing a test takes too long? The system works in development but not in production? It doesn't have to be that way."
+      content : "¿Hacer una prueba lleva mucho tiempo? ¿El sistema funciona en desarrollo pero no en producción? No tiene por qué ser así."
 
-    - name : "Improve your collaborators' performances"
+    - name : "Mejora el rendimiento de tus colaboradores"
       icon : "fa-solid fa-arrow-trend-up"
-      content : "Investing in your team is a strategic decision. With the right methodologies and tools, you will be able to improve your business performance."
+      content : "Invertir en tu equipo es una decisión estratégica. Gracias a las metodologías y las herramientas correctas, podrás mejorar el rendimiento de tu negocio."
 
-    - name : "Quickly diagnose problems"
+    - name : "Diagnostica problemas rápidamente"
       icon : "fa-solid fa-magnifying-glass"
-      content : "Problems can always arise. The important thing is to know how to diagnose and solve them in the most effective way."
+      content : "Siempre puede surgir algún problema, pero lo importante es poder diagnosticarlo y resolverlo de la forma más eficaz."
 
 
 ############################### Service ####################################
@@ -68,85 +70,45 @@ portfolio:
 funfact:
   enable : true
   funfact_item:
-    # funfact item loop
-    - name : "Countries"
-      icon : "fa-globe" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+    - name : "Países"
+      icon : "fa-globe"
       count : "5"
-
-    - name : "Customers"
-      icon : "fa-user" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+    - name : "Clientes"
+      icon : "fa-user"
       count : "50"
-
-    # funfact item loop
-    - name : "Projects"
-      icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
+    - name : "Proyectos"
+      icon : "fa-suitcase"
       count : "200"
 
-############################### team ####################################
-team:
-  enable : false
-  # team content comes from "data/team.yml" file
+############################### Service ####################################
+workflow:
+  enable: true
+  # service content comes from "data/workflow.yml" file
+
+############################### Service ####################################
+service:
+  enable: true
+  # service content comes from "data/service.yml" file
 
 ############################ Call to action #############################
 call_to_action:
   enable: true
-  title: "Do you still have questions?"
-  subtitle: "It'll be our pleasure to answer them!"
+  title: "¿Aún tienes preguntas?"
+  subtitle: "¡Será un placer responderlas!"
   buttons:
-    - label: "Contact us"
+    - label: "Contáctanos"
       style: "solid"
       internal_link: "contact"
-    - label: "Book a meeting"
+    - label: "Programa una reunión"
       style: "solid"
       calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
 
-############################ Newsletter #############################
-newsletter:
-  enable : false
-  title : "Newsletter"
-  subtitle : "Subscribe to receive all the news in your mail"
-  bg_image : "images/newsletter.jpg.webp"
-  buttons:
-    - label : "Subscribe"
-      style : "solid"
-      link : "contact"
-
-
-############################### pricing ####################################
-pricing:
-  enable : false
-  # pricing content comes from "data/pricing.yml" file
-
-
-############################### testimonial ####################################
-testimonial:
-  enable : false
-  bg_image : "images/parallax/parallax2.jpg.webp"
-  testimonial_item:
-    - name: "Juan Escayola"
-      image: "images/clients/testimonials/juan-escayola.webp"
-      designation: "CTO of Circular-Lab"
-      content: "AWS offers infinite opportunities to software development companies,
-but to take advantage of them is necessary to rely on companies such as
-Mikroways, that have a vast knowledge about software, infrastructure and the AWS
-services. Mikroways helps you from the very beginning and provides creative
-ideas that take your applications to a higher quality level."
-    - name : "Miguel Catucci"
-      image : "images/clients/testimonials/miguel-catucci.png.webp"
-      designation : "CEO of Julasoft"
-      content : "We have worked with Mikroways on several ocassions, they have always been very professionals, oriented to add value and to adapt the technical solution to our needs. I highly recommend them."
-
-    - name : "Gastón Menvielle"
-      image : "images/clients/testimonials/gaston-menvielle.png.webp"
-      designation : "CEO of DevP"
-      content : "Mikroways was of great help during the planning, development and deployment of several of our company's products. They are excellent professionals, with amazing personal treatment and outstanding technical skills. They have transformed our business and helped us double our size."
-        
 ############################ Clients logo slider ##########################
 clients:
   enable: true
   enable_slider: false
-  title: "Our customers"
-  subtitle: "Be one of"
+  title: "Nuestros clientes"
+  subtitle: ""
   url: "clients"
   client:
     - name : "AFIP"
@@ -455,12 +417,3 @@ clients:
       industry : Software
       country : Argentina
       homepage : false
-
-############################### training ##################################
-training:
-  enable : false
-  title : "Capacitaciones"
-  subtitle : "Estas son nuestras capacitaciones"
-  title_icon : "fa-solid fa-books"
-  description: ""
-  buy_url: contact

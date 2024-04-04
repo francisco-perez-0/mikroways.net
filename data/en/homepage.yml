@@ -1,7 +1,9 @@
 front:
   enable: true
   title: "IT innovation within reach"
-  subtitle: "Take your company to the next level with tailored IT solutions. Meet our specialists in platform engineering and digital transformation."
+  subtitle: |
+    Take your company to the next level with tailored IT solutions.  
+    Meet our specialists in platform engineering and digital transformation.
   bg_image: "images/homepage.jpg"
   buttons:
   - label: "Let's talk"
@@ -11,7 +13,7 @@ front:
   # button loop
   - label: "Learn more"
     style: "white"
-    link: "devsecops"
+    link: "platform-engineering"
 
 ############################### feature ##################################
 # This requires three items per row in order to be evenly presented

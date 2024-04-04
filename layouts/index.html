@@ -106,7 +106,7 @@
 {{ with $data.menu.menu }}
 
 {{ range $index,$element := .menu_items }}
-{{ if in .name "Services" }}
+{{ if in .id "services" }}
 <div class="container-fluid border-bottom">
 </div>
 <section id="service" class="service">
@@ -178,13 +178,6 @@
 {{ end }}
 {{ end }}
 <!-- Our workflow end -->
-
-
-<!-- Portfolio start -->
-{{ if $data.homepage.portfolio.enable }}
-{{ partial "portfolio.html" . }}
-{{ end }}
-<!-- Portfolio end -->
 
 
 {{ if $data.homepage.about.enable }}

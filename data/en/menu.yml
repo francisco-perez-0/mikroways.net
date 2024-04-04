@@ -59,7 +59,6 @@ menu:
     - id: "careers"
       name: "Careers"
       has_children: true
-      url: "/portfolio"
       children:
       - id: "culture"
         name: "Our culture"
