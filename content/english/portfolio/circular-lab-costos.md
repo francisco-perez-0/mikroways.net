@@ -17,6 +17,7 @@ buttons:
   style : "solid"
   link : "contact"
 # filter types
+featured: ["transformation"]
 types: ["costs reduction", "public cloud"]
 tech: ["AWS"]
 problem: "Circular-Lab had a number of productive applications on AWS

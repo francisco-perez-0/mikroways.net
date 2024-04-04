@@ -15,6 +15,7 @@ buttons:
   style : "solid"
   link : "contact"
 # filter types
+featured: "platform"
 types: ["devsecops", "ci/cd"]
 # used technologies
 tech: ["AWS", "Docker"]

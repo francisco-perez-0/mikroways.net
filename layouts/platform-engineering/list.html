@@ -125,7 +125,7 @@
     </div>
     <div class="row">
       {{ range (where site.RegularPages "Section" "portfolio") }}
-      {{ if eq .Params.featured "platform" }}
+      {{ if in .Params.featured "platform" }}
       <div class="col-sm-12 col-md-6">
         <a href="{{ .RelPermalink}}">
         <div class="ss-box">

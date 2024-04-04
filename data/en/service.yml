@@ -133,19 +133,76 @@ services:
     name: |
       Digital Transformation
     parent: "Services"
-    description: "We lead the adoption of innovative technologies and optimize processes to enhance the efficiency and competitiveness of your company. From identifying opportunities to ongoing management, we work closely to design strategies aligned with your goals. Specializing in process optimization, we leverage advanced tools to maximize productivity and accelerate time-to-market."
+    description:
+      - item: "En el dinámico mundo empresarial actual, la Transformación Digital es más que una necesidad: es una estrategia esencial para la supervivencia y el éxito a largo plazo. En Mikroways, comprendemos la complejidad de este proceso y ofrecemos un servicio integral de Transformación Digital diseñado para impulsar a tu empresa hacia la vanguardia digital."
+      - item: "Nuestro mundo actual está hiperconectado; el cambio es superacelerado; la inteligencia artificial es omnipresente; y las decisiones están cada vez más basadas en datos."
+      - item: "¿Y si pudieras acelerar la innovación práctica en tu negocio? El equipo de transformación digital de Mikroways te ayudará a inspirar nuevas ideas y a impulsar la innovación práctica."
     bg_image: "images/services/dt-bg.png"
-    benefits:
-      title: "Benefits"
-      items:
-        - title: "Increase productivity and efficiency"
-          description: "Aumento en la productividad y la eficiencia en las operaciones"
-        - title: "Improve customer service"
-          description: "test"
-        - title: "Respond faster to customer needs"
-          description: "test"
-        - title: "Obtain competitive advantages"
-          description: "test"
+    components_heading: "Our approach"
+    components:
+      a:
+        id: "digital-vision-strategy"
+        name: "Vision and digital strategy"
+        description: |
+          Our goal is to focus on digital strategy, integration, and comprehensive transformation, including the ability to demonstrate the viability and value of secure and efficient business solutions. At Mikroways, we offer a complementary portfolio to the industry, leveraging cross-sector best practices, and aspire to be the top choice for our clients in identifying, designing, accelerating, and scaling transformation opportunities.  
+          We lead transformation conversations and programs, as well as strategic design of digital businesses, operating models, products, and services. 
+        bg_image: "/images/slider/cloud.jpg.webp"
+      b:
+        id: "insights"
+        name: "Insights"
+        description: |
+          Data is a fundamental asset in your organization, allowing optimization of operations or gaining competitive advantages. Investment in digital maturity, data credibility, and integration into organizational processes are essential elements for success. To achieve this, it is necessary to make accurate technological decisions that help meet drivers and achieve expected results.  
+          Mikroways offers a data-centric approach and robust governance to assist you in identifying and supporting relevant use cases with appropriate solutions for differentiated data management, while leveraging artificial intelligence and machine learning for intelligent and optimized processes.
+        bg_image: "/images/services/infrastructure.png"
+      c:
+        id: "experience"
+        name: "Experience"
+        bg_image: "/images/services/containers.png"
+        description: |
+          Products and services are nowadays more complex, involving multiple touchpoints, processes, people, and technologies. They are conceived, developed, and managed by multifunctional teams both internal and external to the business, often with different ideas, agendas, constraints, and priorities influencing the final experience. At Mikroways, our role is to manage this complexity, generating value from conception to operation for both the business and the customer, and ensuring the success, adoption, and usage of products and services.
+      d:
+        id: "process-excellence"
+        name: "Excellence in processes"
+        description: |
+          To achieve sustainable transformation and reach the potential of technological investments and sustainability goals, organizations must rely on robust, stable, and efficient processes.  
+          Our team of process professionals brings extensive experience and skills combining process mining and business process management. We have specialized skills and work closely with our automation and change management experts to achieve sustainable results.
+        bg_image: "/images/services/cicd.webp"
+      e:
+        id: "process-automation"
+        name: "Process automation"
+        description: |
+          At Mikroways, we offer support in designing, building, and managing your automation capability. We have experts who can assist you in developing your strategy; take cautious first steps; design your operating model; or scale automation.
+          Our experts possess essential digital transformation consulting skills to help you discover and prioritize your best opportunities; improve process performance through simplification, and demonstrate the practical application of the latest technologies to expand your automation to more complex use cases.
+        bg_image: "/images/portfolio/monitoring.jpg.webp"
+      f:
+        id: "change-management"
+        name: "Organizational change management"
+        description: |
+          We engage with people to empower and enable them throughout the digital transformation journey, ultimately helping the organization succeed in a new (hybrid) work environment.
+        bg_image: "/images/services/time.jpg"
+      g:
+        id: "tech-strategy"
+        name: "Technology Strategy and Innovation"
+        description: |
+          The IT team has transformed into an essential strategic and innovation partner, proactively driving digitally-enabled products, services, and business models. All while addressing the transformational challenges of complex IT legacy.
+          Optimize what you've achieved in operations, services, applications, and architectures, or enhance your capabilities with an innovation partner like Mikroways. We offer effective best practices to help clients master their IT digital transformations. Discover how we can help you deliver tangible future-proof business outcomes.
+        bg_image: "/images/services/time.jpg"
+      h:
+        id: "business-continuity"
+        name: "Accelerate your digital innovation"
+        description: |
+          We create highly effective multifunctional squads that adopt an agile approach to accelerate the delivery of prototypes or minimum viable solutions (MVPs) aligned with business objectives.
+        bg_image: "/images/services/time.jpg"
+    cta:
+      title: "Do you have a project?"
+      subtitle: "Let's discuss your opportunities"
+      buttons:
+        - label : "Contact us"
+          style : "solid"
+          internal_link : "contact"
+        - label: "Book a meeting"
+          style: "solid"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
   professional_services:
     name: |
       Professional Services
