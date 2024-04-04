@@ -22,43 +22,28 @@
     </div>
   </div>
 
-  {{ with $data.service.services.digital_transformation.benefits }}
-  <div class="container pt-5">
-    <div class="col-sm-12 text-center text-uppercase pillars pt-3">
+  {{ with $data.service.services.cybersecurity.catalog }}
+  <div class="container">
+    <div class="col-sm-12 text-center text-uppercase pillars pt-3 pb-5">
       <h2>{{ .title }}</h2>
     </div>
-    <div class="row">
-      {{ $index := 1 }}
+    <div class="row justify-content-center">
       {{ range .items }}
-      <div class="col-md-1 pillars pt-5">
-        <i class="{{ .icon }}"></i>
-      </div>
-      <div class="col-sm-12 col-md-5 pillars pt-5 pr-5">
+      <div class="col-sm-12 col-md-5 col-lg-3 pt-3 border" style="border-radius: 10px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.2); min-height: 200px; margin: 0 1em 2em 1em;">
         <div class="pb-3 d-flex">
-          </i><h4 class="number">0{{ $index }}</h4><h4>&nbsp;{{ .title }}</h4>
+          <h4>{{ .title }}</h4>
         </div>
         <p>{{ .description }}</p>
       </div>
-      {{ $index = math.Sum $index 1 }}
       {{ end }}
     </div>
   </div>
   {{ end }}
 </section>
 
-<section class="cta">
-  <div class="container">
-      <div class="col-md-12 text-center">
-        <h2>{{ .cta.question }}</h2>
-        <h3>{{ .cta.answer }}</h3>
-        <p>
-          {{ range .cta.buttons }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
-          {{ end }}
-        </p>
-      </div>
-  </div>
-</section>
+{{ with .cta }}
+{{ partial "cta.html" . }}
+{{ end }}
 
 {{ end }}
 {{ end }}

@@ -164,14 +164,39 @@ services:
         - item: "Improvements suggestions"
 
     consultancy:
-      title: "Consultancy"
+      title: "Consultoría"
       description: 
     cto_aas:
       title: "CTO as a service"
       description: 
   cybersecurity:
     name: |
-      Cybersecurity
-    parent: "Services"
-    description: "We offer cutting-edge security solutions. As IT consulting specialists, we excel in providing comprehensive protection for your infrastructure, ensuring the confidentiality and integrity of your data in a constantly evolving digital world."
+      Ciberseguridad
+    parent: "Servicios"
+    description: "La seguridad cibernética es una prioridad ineludible en la era digital, donde las amenazas evolucionan constantemente. En Mikroways, comprendemos la importancia de proteger tus activos digitales y datos confidenciales. Nuestra línea de servicio de Seguridad está diseñada para brindar una defensa robusta y proactiva contra las amenazas cibernéticas."
     bg_image: "images/services/cybersecurity-bg.png"
+    catalog:
+      title: "Línea de servicios"
+      items:
+        - title: "Test de penetración"
+          description: "Aumento en la productividad y la eficiencia en las operaciones"
+        - title: "Evaluación y auditoría de seguridad"
+          description: "test"
+        - title: "Seguridad en la nube"
+          description: "test"
+        - title: "Implementación de soluciones de seguridad"
+          description: "test"
+        - title: "Monitoreo continuo"
+          description: "test"
+        - title: "Creación de arquitecturas resilientes"
+          description: "test"
+    cta:
+      title: "¿Tienes un proyecto?"
+      subtitle: "Evaluemos tus oportunidades"
+      buttons:
+        - label : "Contáctanos"
+          style : "solid"
+          internal_link : "contact"
+        - label: "Programa una reunión"
+          style: "solid"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"

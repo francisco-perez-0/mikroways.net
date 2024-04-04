@@ -173,5 +173,30 @@ services:
     name: |
       Cybersecurity
     parent: "Services"
-    description: "We offer cutting-edge security solutions. As IT consulting specialists, we excel in providing comprehensive protection for your infrastructure, ensuring the confidentiality and integrity of your data in a constantly evolving digital world."
+    description: "Cybersecurity is an unavoidable priority in the digital age, where threats constantly evolve. At Mikroways, we understand the importance of protecting your digital assets and data. Thus, our security service line is designed to provide robust and proactive defense against cyber threats."
     bg_image: "images/services/cybersecurity-bg.png"
+    catalog:
+      title: "Service line"
+      items:
+        - title: "Penetration test"
+          description: "Aumento en la productividad y la eficiencia en las operaciones"
+        - title: "Security assessment"
+          description: "test"
+        - title: "Security in the cloud"
+          description: "test"
+        - title: "Security solutions implementation"
+          description: "test"
+        - title: "Continuous monitoring"
+          description: "test"
+        - title: "Deployment of resilient architectures"
+          description: "test"
+    cta:
+      title: "Do you have a project?"
+      subtitle: "Let's discuss your opportunities"
+      buttons:
+        - label : "Contact us"
+          style : "solid"
+          internal_link : "contact"
+        - label: "Book a meeting"
+          style: "solid"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
