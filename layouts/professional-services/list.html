@@ -8,10 +8,10 @@
 {{ with $data.service.services.professional_services }}
 {{ partial "service-page-header.html" . }}
 
-<section id="service">
+<section id="service" style="padding-bottom: 2em !important;" class="border-bottom">
   <div class="container cont-service-desc">
-    <div class="row d-flex align-items-center">
-      <div class="col-sm-12 service-desc">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-sm-10 service-desc" style="padding-left: 0; padding-right: 0;">
         <div class="mil-mr-30">
           <div class="mil-icon-frame mil-icon-frame-md mil-icon-bg">
             <img src="/images/pen.svg">
@@ -21,44 +21,36 @@
       </div>
     </div>
   </div>
+</section>
 
-  {{ with $data.service.services.digital_transformation.benefits }}
-  <div class="container pt-5">
-    <div class="col-sm-12 text-center text-uppercase pillars pt-3">
-      <h2>{{ .title }}</h2>
-    </div>
+<div class="mt-5 pt-5 pb-5" style="margin-left: 8em; margin-right: 8em;">
+  <div class="col-sm-12 text-center text-uppercase pillars pt-3 pb-5">
+    <h2>{{ .components_heading }}</h2>
+  </div>
+  {{ range .components }}
+  <div id="{{ .id }}" class="container pt-5 mt-5 mb-5 border" style="padding: 0 4em; border-radius: 16px; box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);">
+    <h2 style="color: var(--blue-mw-dark); font-weight: 900; margin-bottom: 1em;">{{ .name }}</h2>
     <div class="row">
-      {{ $index := 1 }}
-      {{ range .items }}
-      <div class="col-md-1 pillars pt-5">
-        <i class="{{ .icon }}"></i>
+      <div class="col-sm-3">
+        <img style="width: 100%; box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.3); margin-top: 0.4em; margin-bottom: 3em;" src="{{ .bg_image }}">
       </div>
-      <div class="col-sm-12 col-md-5 pillars pt-5 pr-5">
-        <div class="pb-3 d-flex">
-          </i><h4 class="number">0{{ $index }}</h4><h4>&nbsp;{{ .title }}</h4>
-        </div>
-        <p>{{ .description }}</p>
+      <div class="col-sm-9">
+        <p>{{ .description | markdownify }}</p>
+        <ul class="mb-5">
+        {{ range .benefits }}
+        <li>{{ .item }}</li>
+        {{ end }}
+        </ul>
       </div>
-      {{ $index = math.Sum $index 1 }}
-      {{ end }}
     </div>
   </div>
   {{ end }}
-</section>
+</div>
+</div>
 
-<section class="cta">
-  <div class="container">
-      <div class="col-md-12 text-center">
-        <h2>{{ .cta.question }}</h2>
-        <h3>{{ .cta.answer }}</h3>
-        <p>
-          {{ range .cta.buttons }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
-          {{ end }}
-        </p>
-      </div>
-  </div>
-</section>
+{{ with .cta }}
+{{ partial "cta.html" . }}
+{{ end }}
 
 {{ end }}
 {{ end }}

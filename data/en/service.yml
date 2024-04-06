@@ -41,7 +41,7 @@ services:
         name: "Cloud Native Architecture"
         description: "To obtain all of the benefits of the cloud, the applications and infrastructure need to be created for it. We design workloads capable of taking full advantage of the cloud."
         bg_image: "/images/slider/cloud.jpg.webp"
-        button: "See more"
+        button:
         page:
           description: |
             Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.  
@@ -53,31 +53,31 @@ services:
         name: "Infrastructure provisioning"
         description: "Creating, replicating, updating, and managing IT infrastructure in an automated manner provides essential flexibility and velocity to any business."
         bg_image: "/images/services/infrastructure.png"
-        button: "See more"
+        button:
       c:
         id: "containerization-and-orchestration"
         name: "Containerization & Orchestration"
         bg_image: "/images/services/containers.png"
         description: "Containers encapsulate applications and their dependencies, providing portability across different environments, while orchestration, such as Kubernetes, facilitates efficient container management, ensuring their consistent and scalable deployment."
-        button: "See more"
+        button:
       d:
         id: "continuous-integration-and-deployment"
         name: "Continuous Integration & Deployment"
         description: "Automating software deployment significantly reduces time-to-market and enhances the productivity of the IT team."
         bg_image: "/images/services/cicd.webp"
-        button: "See more"
+        button:
       e:
         id: "monitoring-and-observability"
         name: "Monitoring & Observability"
         description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance their overall quality."
         bg_image: "/images/portfolio/monitoring.jpg.webp"
-        button: "See more"
+        button:
       f:
         id: "business-continuity"
         name: "Business Continuity"
         description: "The continuity of your business is more important than anything else. That is why we make sure that you have at all times an actionable, tested, updated and effective disaster recovery plan, with minimal to no manual intervention."
         bg_image: "/images/services/time.jpg"
-        button: "See more"
+        button:
     pillars:
       title: "Fundamental Pillars"
       items:
@@ -208,24 +208,52 @@ services:
       Professional Services
     parent: "Services"
     description: "We have designed our line of professional services, honoring our commitment to adapting to our clients' specific needs and always providing the best possible solution for each case. In that regard, we adopt a proactive approach to continuously drive improvements and efficiency in your business by applying our knowledge and expertise to your particular situation."
-    bg_image: "images/services/ps-bg.png"
-    managed_services:
-      title: "Managed Services"
-      description: |
-        Managed services are an essential part of our proposal to provide a comprehensive solution. With this service, we aim to free our clients from the complex task of managing their infrastructure and its components, by taking responsibility for its operation. In tha regard, we focus on the following points:
-      focus:
-        - item: "Reactive and proactive maintenance"
-        - item: "Continuous services monitoring"
-        - item: "Periodic capacity analysis"
-        - item: "Generation of documentation"
-        - item: "Improvements suggestions"
-
-    consultancy:
-      title: "Consultancy"
-      description: 
-    cto_aas:
-      title: "CTO as a service"
-      description: 
+    bg_image: "/images/services/ps-bg.png"
+    components_heading: "Our professional services"
+    components:
+      a:
+        id: "managed-services"
+        name: "Managed Services"
+        bg_image: "/images/services/ps-bg.png"
+        description: "Managed services are an essential part of our proposal to provide a comprehensive solution. With this service, we aim to free our clients from the complex task of managing their infrastructure and its components, by taking responsibility for its operation. We focus on the following points:"
+        benefits:
+          - item: "Reactive and proactive maintenance"
+          - item: "Continuous services monitoring"
+          - item: "Periodic capacity analysis"
+          - item: "Generation of documentation"
+          - item: "Improvements suggestions"
+      b:
+        id: "consultancy"
+        name: "Consultancy"
+        bg_image: "/images/services/ps-bg.png"
+        description: "With our consulting service, we not only provide timely advice but also adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments, we identify optimization opportunities and maximize operational performance. Our consultancy service is characterized by:"
+        benefits:
+          - item: "Continuous assistance"
+          - item: "Dynamic assessments"
+          - item: "Improvements' implementation"
+          - item: "Flexibility and adaptability"
+          - item: "Continuous monitoring"
+      c: 
+        id: "ctoaas"
+        name: "CTO as a service"
+        bg_image: "/images/services/ps-bg.png"
+        description: "It's a comprehensive solution for your company's technological needs, without the need to hire a full-time Chief Technology Officer (CTO). Our team of experts becomes your virtual CTO, providing strategic technological leadership and managing all facets of your digital infrastructure. Gain the following benefits:"
+        benefits:
+          - item: "Customized technological strategy"
+          - item: "Costs optimization"
+          - item: "Comprehensive management"
+          - item: "Flexibility and scalability"
+          - item: "Focus on core business"
+    cta:
+      title: "Do you have a project?"
+      subtitle: "Let's discuss your opportunities"
+      buttons:
+        - label : "Contact us"
+          style : "solid"
+          internal_link : "contact"
+        - label: "Book a meeting"
+          style: "solid"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
   cybersecurity:
     name: |
       Cybersecurity

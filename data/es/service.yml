@@ -4,16 +4,9 @@ services:
     name: |
       Cloud & Platform  
       Engineering
-    parent: "Services"
-    description: "We design and automate platforms tailored to your needs, obtaining predictable and repeatable environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
+    parent: "Servicios"
+    description: "Diseñamos y automatizamos plataformas adaptadas a tus necesidades, obteniendo entornos predecibles y repetibles en los cuales tu software y servicios puedan ser desplegados de manera eficiente y consistente. Cubre el desarrollo, mantenimiento y operación en producción, con un enfoque en el servicio al cliente, la automatización y la seguridad."
     bg_image: "images/services/pe-bg.png"
-    brochure:
-      question: "Want to know more?"
-      answer: "Check out our slide deck"
-      buttons:
-        - label : "Download"
-          style : "solid"
-          link : "contact"
     cta:
       title: "¿Tienes un proyecto?"
       subtitle: "Evaluemos tus oportunidades"
@@ -25,23 +18,23 @@ services:
           style: "solid"
           calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
     benefits:
-      - benefit: "Accelerates software development"
-      - benefit: "Reduces operational complexity"
-      - benefit: "Ensures business continuity"
-      - benefit: "Empower developers with autonomy"
-      - benefit: "Reduces time to market"
-      - benefit: "Improves customer service"
-      - benefit: "Avoids provider lock-in"
-      - benefit: "Creates dependable systems"
-      - benefit: "Reduces costs"
-      - benefit: "Enables faster problem resolution"
+      - benefit: "Acelera el desarrollo de software"
+      - benefit: "Reduce la complejidad operacional"
+      - benefit: "Asegura la continuidad del negocio"
+      - benefit: "Brinda autonomía a los desarrolladores"
+      - benefit: "Reduce el time-to-market"
+      - benefit: "Mejora el servicio al cliente"
+      - benefit: "Elimina la dependencia del proveedor"
+      - benefit: "Crea sistemas confiables"
+      - benefit: "Reduce los costos"
+      - benefit: "Acelera la resolución de problemas"
     components:
       a:
         id: "cloud-native-architecture"
-        name: "Cloud Native Architecture"
-        description: "To obtain all of the benefits of the cloud, the applications and infrastructure need to be created for it. We design workloads capable of taking full advantage of the cloud."
+        name: "Arquitectura Cloud Native"
+        description: "Para obtener todos los beneficios de la nube, las aplicaciones y la infraestructura deben ser creadas para ella. Diseñamos cargas de trabajo capaces de aprovechar al máximo la nube."
         bg_image: "/images/slider/cloud.jpg.webp"
-        button: "See more"
+        button:
         page:
           description: |
             Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.  
@@ -50,60 +43,34 @@ services:
           model:
       b:
         id: "infrastructure-provisioning"
-        name: "Infrastructure provisioning"
-        description: "Creating, replicating, updating, and managing IT infrastructure in an automated manner provides essential flexibility and velocity to any business."
+        name: "Provisión de infraestructura"
+        description: "Crear, replicar, actualizar y gestionar la infraestructura de TI de manera automatizada proporciona flexibilidad y velocidad esenciales a cualquier negocio."
         bg_image: "/images/services/infrastructure.png"
-        button: "See more"
+        button:
       c:
         id: "containerization-and-orchestration"
-        name: "Containerization & Orchestration"
+        name: "Contenerización y orquestación"
         bg_image: "/images/services/containers.png"
-        description: "Containers encapsulate applications and their dependencies, providing portability across different environments, while orchestration, such as Kubernetes, facilitates efficient container management, ensuring their consistent and scalable deployment."
-        button: "See more"
+        description: "Los contenedores encapsulan aplicaciones y sus dependencias, proporcionando portabilidad entre diferentes entornos, mientras que la orquestación, con Kubernetes, facilita la gestión eficiente de contenedores, asegurando su despliegue consistente y escalable."
+        button:
       d:
         id: "continuous-integration-and-deployment"
-        name: "Continuous Integration & Deployment"
-        description: "Automating software deployment significantly reduces time-to-market and enhances the productivity of the IT team."
+        name: "Integración y despliegue continuos"
+        description: "La automatización del despliegue de software reduce significativamente el tiempo de llegada al mercado y mejora la productividad del equipo de TI."
         bg_image: "/images/services/cicd.webp"
-        button: "See more"
+        button:
       e:
         id: "monitoring-and-observability"
-        name: "Monitoring & Observability"
-        description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance their overall quality."
+        name: "Monitoreo y observabilidad"
+        description: "Obtener información en tiempo real sobre aplicaciones y servicios permite minimizar el tiempo de resolución de problemas y mejorar su calidad general."
         bg_image: "/images/portfolio/monitoring.jpg.webp"
-        button: "See more"
+        button:
       f:
         id: "business-continuity"
-        name: "Business Continuity"
-        description: "The continuity of your business is more important than anything else. That is why we make sure that you have at all times an actionable, tested, updated and effective disaster recovery plan, with minimal to no manual intervention."
+        name: "Continuidad del negocio"
+        description: "La continuidad de tu negocio es más importante que cualquier otra cosa. Por eso nos aseguramos de que siempre tengas un plan de recuperación ante desastres accionable, probado, actualizado y efectivo, con mínima o ninguna intervención manual."
         bg_image: "/images/services/time.jpg"
-        button: "See more"
-    pillars:
-      title: "Fundamental Pillars"
-      items:
-      - name: "Continuous Integration & Deployment"
-        description: "Continuous Deployment for Innovation: CI/CD not only accelerates delivery speed but also fosters constant innovation by providing an automated and repeatable workflow. The ability to deploy changes quickly and securely enables our teams to respond agilely to market demands and continuously enhance their products."
-        icon: "fa-solid fa-infinity"
-
-      - name: "Cloud Computing & Virtualization"
-        description: "Operational Efficiency: By migrating to the cloud and leveraging virtualization, we help businesses reduce operational costs while improving efficiency. Virtualization allows the execution of multiple operating systems on a single physical server, optimizing hardware and energy utilization. Our team has extensive expertise in architecture creation and daily infrastructure management."
-        icon: "fa-solid fa-server"
-
-      - name: "Containers & Orchestration"
-        description: "Portability and Consistency: Containers encapsulate applications and their dependencies, providing portability across development, testing, and production environments. Orchestration, such as Kubernetes, in which we are experts, facilitates efficient container management, ensuring their consistent and scalable deployment."
-        icon: "fa-solid fa-cubes"
-
-      - name: "Business Continuity"
-        description: "Business Resilience: Backup and disaster recovery services ensure business continuity by protecting crucial data against losses. We design and implement a specialized architecture for regular backups, and disaster recovery plans allow for swift restoration in the event of interruptions or data losses."
-        icon: "fa-solid fa-business-time"
-
-      - name: "Observability"
-        description: "Observability involves real-time data collection and analysis to understand system performance, allowing early identification of issues, thus improving responsiveness and service quality. This facilitates informed decision-making and continuous improvement. Our expertise focuses on integrating various data sources to provide a comprehensive picture of the health and performance of your technological environment. We use the latest tools and technologies to visualize data effectively, identify patterns, and provide actionable insights."
-        icon: "fa-solid fa-magnifying-glass-chart"
-
-      - name: "Software Architecture & Engineering"
-        description: "Scalable Design: Software architecture focuses on creating robust and scalable systems. We emphasize designing an architecture that allows for modular growth and adaptability as business needs evolve. Sustainable Development: Here, we focus on software engineering and building solutions that are durable and maintainable. Adopting practices such as agile development and test automation ensures continuous quality and responsiveness to changes in the business environment."
-        icon: "fa-solid fa-circle-nodes"
+        button:
     technologies:
       - name: "AWS"
         logo: "images/tech/aws.png"
@@ -195,27 +162,55 @@ services:
         bg_image: "/images/services/time.jpg"
   professional_services:
     name: |
-      Professional Services
-    parent: "Services"
-    description: "We have designed our line of professional services, honoring our commitment to adapting to our clients' specific needs and always providing the best possible solution for each case. In that regard, we adopt a proactive approach to continuously drive improvements and efficiency in your business by applying our knowledge and expertise to your particular situation."
-    bg_image: "images/services/ps-bg.png"
-    managed_services:
-      title: "Managed Services"
-      description: |
-        Managed services are an essential part of our proposal to provide a comprehensive solution. With this service, we aim to free our clients from the complex task of managing their infrastructure and its components, by taking responsibility for its operation. In tha regard, we focus on the following points:
-      focus:
-        - item: "Reactive and proactive maintenance"
-        - item: "Continuous services monitoring"
-        - item: "Periodic capacity analysis"
-        - item: "Generation of documentation"
-        - item: "Improvements suggestions"
-
-    consultancy:
-      title: "Consultoría"
-      description: 
-    cto_aas:
-      title: "CTO as a service"
-      description: 
+      Servicios Profesionales
+    parent: "Servicios"
+    description: "Hemos diseñado nuestra línea de servicios profesionales, honrando nuestro compromiso de adaptarnos a las necesidades específicas de nuestros clientes y de proporcionar siempre la mejor solución para cada caso. En ese sentido, adoptamos un enfoque proactivo para impulsar continuamente mejoras y eficiencia en su negocio mediante la aplicación de nuestro conocimiento y experiencia a su situación particular."
+    bg_image: "/images/services/ps-bg.png"
+    components_heading: "Nuestros servicios profesionales"
+    components:
+      a:
+        id: "managed-services"
+        name: "Servicios gestionados"
+        bg_image: "/images/services/ps-bg.png"
+        description: "Los servicios gestionados son una parte esencial de nuestra propuesta para proporcionar una solución integral. Con este servicio, nuestro objetivo es liberar a nuestros clientes de la compleja tarea de gestionar su infraestructura y sus componentes, asumiendo la responsabilidad de su operación. Nos enfocamos en los siguientes puntos:"
+        benefits:
+          - item: "Mantenimiento proactivo y reactivo"
+          - item: "Monitoreo continuo"
+          - item: "Análisis periódico de la capacidad"
+          - item: "Generación de documentación"
+          - item: "Sugerencias de mejora"
+      b:
+        id: "consultancy"
+        name: "Consultoría"
+        bg_image: "/images/services/ps-bg.png"
+        description: "En nuestro servicio de consultoría no sólo proporcionamos asesoramiento puntual, sino que adoptamos un enfoque proactivo para impulsar continuamente mejoras y eficiencia en tu negocio. A través de evaluaciones periódicas, identificamos oportunidades de optimización y maximizamos el rendimiento operativo. Nuestra consultoría se caracteriza por:"
+        benefits:
+          - item: "Asesoramiento continuo"
+          - item: "Evaluaciones dinámicas"
+          - item: "Implementación de mejoras"
+          - item: "Flexibilidad y adaptabilidad"
+          - item: "Monitoreo continuo"
+      c: 
+        id: "ctoaas"
+        name: "CTO como servicio"
+        bg_image: "/images/services/ps-bg.png"
+        description: "Es la solución integral para las necesidades tecnológicas de tu empresa, sin la necesidad de contratar un Director de Tecnología o CTO a tiempo completo. Nuestro equipo de expertos se convierte en tu CTO virtual, brindando liderazgo estratégico en tecnología y gestionando todas las facetas de tu infraestructura digital. Apaláncate en Mikroways y obtén los siguientes beneficios:"
+        benefits:
+          - item: "Estrategia tecnológica personalizada"
+          - item: "Optimización de costos"
+          - item: "Gestión integral"
+          - item: "Flexibilidad y escalabilidad"
+          - item: "Enfoque en el core business"
+    cta:
+      title: "¿Tienes un proyecto?"
+      subtitle: "Evaluemos tus oportunidades"
+      buttons:
+        - label : "Contáctanos"
+          style : "solid"
+          internal_link : "contact"
+        - label: "Programa una reunión"
+          style: "solid"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
   cybersecurity:
     name: |
       Ciberseguridad

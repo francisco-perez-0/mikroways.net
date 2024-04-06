@@ -87,12 +87,14 @@
           {{ if eq (math.Mod $index 2) 0 }}
           <h2>{{ .name }}</h2>
           <p>{{ .description }}</p>
+          {{ if .button }}
           <div class="col-sm-12 btn-service">
             <a href="{{ .id | relLangURL }}" class="btn-service">
               <span>{{ .button }}</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </div>
+          {{ end }}
           {{ else }}
           <img src="{{ .bg_image }}">
           {{ end }}
@@ -103,12 +105,14 @@
           {{ else }}
           <h2>{{ .name }}</h2>
           <p>{{ .description }}</p>
+          {{ if .button }}
           <div class="col-sm-12 btn-service">
             <a href="{{ .id | relLangURL }}" class="btn-service">
               <span>{{ .button }}</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </div>
+          {{ end }}
           {{ end }}
         </div>
       </div>
