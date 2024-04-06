@@ -43,7 +43,6 @@
 
   <div class="container col-lg-9 col-sm-11 portfolio list">
     <div class="row isotope" id="isotope">
-      {{ $index := 0 }}
       {{ range (where site.RegularPages "Section" "portfolio") }}
       <div class="col-sm-12 {{range .Params.types }}{{ . | urlize}} {{ end }} isotope-item st-cust border-top">
         <div class="row d-xs-block d-md-flex">
@@ -60,7 +59,6 @@
           </div>
         </div>
       </div>
-      {{ $index = math.Add $index 1 }}
       {{ end }}
     </div>
   </div>
