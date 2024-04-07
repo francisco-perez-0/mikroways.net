@@ -99,7 +99,7 @@ call_to_action:
       style: "solid"
       internal_link: "contact"
     - label: "Book a meeting"
-      style: "solid"
+      style: "solid-wb"
       calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
 
 ############################ Newsletter #############################

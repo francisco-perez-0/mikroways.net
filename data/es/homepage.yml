@@ -100,7 +100,7 @@ call_to_action:
       style: "solid"
       internal_link: "contact"
     - label: "Programa una reunión"
-      style: "solid"
+      style: "solid-wb"
       calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
 
 ############################ Clients logo slider ##########################

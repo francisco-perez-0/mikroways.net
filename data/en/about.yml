@@ -94,5 +94,5 @@ cta:
   subtitle: "Check out the open opportunities"
   buttons:
     - label : "Join Mikroways"
-      style : "solid"
+      style : "solid-wb"
       internal_link : "work-with-us"

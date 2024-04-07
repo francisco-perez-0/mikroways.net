@@ -62,7 +62,7 @@
             </div>
           </li>
           {{ else }}
-          <li class="nav-item"><a class="nav-link" href="{{ .url }}">{{ .name }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ .url | relLangURL }}">{{ .name }}</a></li>
           {{ end }}
           {{ end }}
           {{ end }}

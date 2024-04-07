@@ -61,6 +61,17 @@ div.bg-image img {
   width: 100%;
 }
 
+div.cta-bg-image::before {
+  position: absolute;
+  content: '';
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/cta-bg.svg);
+}
+
 div.frontpage-text {
   position: absolute;
   width: 100%;
@@ -466,7 +477,8 @@ img#logo {
 }
 
 .btn.btn-primary.solid-wb {
-  color: white;
+  background: white;
+  color: var(--blue-mw-primary);
 }
 
 .btn.btn-primary {
@@ -479,16 +491,11 @@ img#logo {
   color: white;
 }
 
-.btn.btn-primary.solid-blue:hover {
-  font-weight: 600;
-  background-color: var(--blue-mw-secondary);
-}
-
+.btn.btn-primary.solid-blue:hover,
 .btn.btn-primary.solid-wb:hover {
   font-weight: 600;
-  background: transparent;
-  color: var(--blue-mw-primary);
-  border: 2px solid var(--blue-mw-primary);
+  background-color: var(--blue-mw-secondary);
+  color: white;
 }
 
 .btn.btn-primary.gray-wb {

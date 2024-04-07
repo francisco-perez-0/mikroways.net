@@ -7,13 +7,6 @@ services:
     parent: "Services"
     description: "We design and automate platforms tailored to your needs, obtaining predictable and repeatable environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
     bg_image: "images/services/pe-bg.png"
-    brochure:
-      question: "Want to know more?"
-      answer: "Check out our slide deck"
-      buttons:
-        - label : "Download"
-          style : "solid"
-          link : "contact"
     cta:
       title: "Do you have a project?"
       subtitle: "Let's discuss your opportunities"
@@ -22,7 +15,7 @@ services:
           style : "solid"
           internal_link : "contact"
         - label: "Book a meeting"
-          style: "solid"
+          style: "solid-wb"
           calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
     benefits:
       - benefit: "Accelerates software development"
@@ -201,7 +194,7 @@ services:
           style : "solid"
           internal_link : "contact"
         - label: "Book a meeting"
-          style: "solid"
+          style: "solid-wb"
           calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
   professional_services:
     name: |
@@ -252,7 +245,7 @@ services:
           style : "solid"
           internal_link : "contact"
         - label: "Book a meeting"
-          style: "solid"
+          style: "solid-wb"
           calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
   cybersecurity:
     name: |
@@ -289,5 +282,5 @@ services:
           style : "solid"
           internal_link : "contact"
         - label: "Book a meeting"
-          style: "solid"
+          style: "solid-wb"
           calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"

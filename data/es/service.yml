@@ -15,7 +15,7 @@ services:
           style : "solid"
           internal_link : "contact"
         - label: "Programa una reunión"
-          style: "solid"
+          style: "solid-wb"
           calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
     benefits:
       - benefit: "Acelera el desarrollo de software"
@@ -209,7 +209,7 @@ services:
           style : "solid"
           internal_link : "contact"
         - label: "Programa una reunión"
-          style: "solid"
+          style: "solid-wb"
           calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
   cybersecurity:
     name: |
@@ -246,5 +246,5 @@ services:
           style : "solid"
           internal_link : "contact"
         - label: "Programa una reunión"
-          style: "solid"
+          style: "solid-wb"
           calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
