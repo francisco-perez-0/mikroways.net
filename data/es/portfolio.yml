@@ -1,18 +1,18 @@
 ############################ Portfolio ########################
 portfolio:
-  title : "Tailored IT solutions"
-  subtitle: "Because each customer is unique"
-  success_stories_title: "Success stories"
-  bg_image: "images/portfolio/header.png"
-  introduction: "Our success stories are a testimony of our work. With them we celebrate the unique journey of each of our clients. At Mikroways, we believe that every customer has different needs and thus we customize our solutions to meet those needs. Explore how our tailored solutions have empowered businesses like yours to achieve remarkable results. Join us in highlighting the diverse and exceptional achievements that make our clients truly extraordinary"
+  title : "Soluciones personalizadas"
+  subtitle: "Porque cada cliente es único"
+  success_stories_title: "Casos de éxito"
+  bg_image: "images/success-stories.webp"
+  introduction: "Nuestras historias de éxito son testimonio de nuestro trabajo. Con ellas celebramos el viaje único de cada uno de nuestros clientes. En Mikroways, creemos que cada cliente tiene necesidades diferentes y por eso personalizamos nuestras soluciones para satisfacerlas. Descubra cómo nuestras soluciones a medida han permitido a empresas como la suya lograr resultados unicos. Únase a nosotros para destacar los diversos y excepcionales logros que hacen que nuestros clientes sean realmente extraordinarios."
   call_to_action:
     enable: true
-    title: "Do you have a project?"
-    subtitle: "Let's make it a success story"
+    title: "¿Tienes un proyecto?"
+    subtitle: "Evaluemos tus oportunidades"
     buttons:
-      - label: "Contact us"
+      - label: "Contactáctanos"
         style: "solid"
         internal_link: "contact"
-      - label: "Book a meeting"
+      - label: "Programa una reunión"
         style: "solid-wb"
         calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
