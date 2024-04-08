@@ -1,6 +1,6 @@
 ---
 title: "Migración a la nube de Fútbol Prode"
-date: 2019-05-12
+date: 3
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 description: "Caso de éxito que comenta la migración de la plataforma de Fútbol
@@ -28,7 +28,7 @@ solution: "Diseñamos e implementamos en AWS una infraestructura con capacidad d
 adaptarse a la demanda de forma automática, con alta disponibilidad y con una
 reducción de los costos del 72%."
 # save as draft
-draft: false
+draft: true
 ---
 
 Formamos un grupo de trabajo de cinco personas para enfrentar distintos

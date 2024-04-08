@@ -1,14 +1,14 @@
 ---
 title: "DevOps para Bluedraft"
-date: 2021-03-01
+date: 1
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 # clients
 images: 
-  - "images/portfolio/rearchitect.webp"
+  - "images/clients/bluedraft.svg"
 customer:
   name: "INTA"
-  logo: "images/clients/bluedraft.png.webp"
+  logo: "images/clients/bluedraft.svg"
   url: "https://www.bluedraft.com.ar"
 buttons:
   label : "Quiero esto"

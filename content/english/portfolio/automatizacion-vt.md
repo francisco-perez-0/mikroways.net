@@ -1,6 +1,6 @@
 ---
 title: "Deploying DevOps"
-date: 2017-09-01
+date: 4
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 # clients
@@ -20,8 +20,8 @@ types: ["devsecops", "ci/cd", "public cloud", "cloud migration"]
 # used technologies
 tech: ["Kubernetes", "Docker", "AWS", "Gitlab CI", "Jenkins", "GIT"]
 # meta description
-description: "Success story that describes the first Devops implementation in
-Veritran."
+description: "Digital transformation in Veritran, starting with the
+implementation of DevOps."
 problem: "The core of their system was programmed in C/C++ and had to run on
 various platforms, which required compiling each new version on several
 different architectures. This task required advanced knowledge and created a

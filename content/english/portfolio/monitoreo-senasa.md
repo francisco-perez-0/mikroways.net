@@ -1,14 +1,14 @@
 ---
 title: "Observability"
-date: 2017-05-12
+date: 3
 page_header_bg: "images/banner/banner1.jpg.webp"
-description: "Success story that describes the implementation of a monitoring
-and alerting platform for Senasa."
+description: "How we implemented an observability platform for Senasa, with
+detailed monitoring and alerting."
 images: 
-  - "images/portfolio/monitoring2.webp"
+  - "images/clients/senasa.jpg.webp"
 customer:
   name: "Senasa"
-  logo: "images/clients/senasa.jpg.webp"
+  logo: "images/clients/senasa-no-name.webp"
   url: "https://www.senasa.gob.ar"
 buttons:
   label : "I want this"

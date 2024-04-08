@@ -1,6 +1,6 @@
 ---
 title: "Cost reduction"
-date: 2021-03-01
+date: 2
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 description: "Success story explaining how Circular Lab, together with
@@ -27,14 +27,6 @@ solution: "After a detailed analysis of the infrastructure, we implemented a
 series of improvements, reducing costs by more than 50% in the first month
 alone. During the implementation, we didn't compromise any of the requirements
 with which the infrastructure had been originally designed."
-testimony:
-  text: "AWS offers infinite opportunities to software development companies,
-but to take advantage of them is necessary to rely on companies such as
-Mikroways, that have a vast knowledge about software, infrastructure and the AWS
-services. Mikroways helps you from the very beginning and provides creative
-ideas that take your applications to a higher quality level."
-  author: "Juan Escayola"
-  position: CTO
 ---
 
 After understanding the client's needs, the following goals were set:

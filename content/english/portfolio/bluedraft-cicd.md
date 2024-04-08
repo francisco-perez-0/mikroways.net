@@ -1,11 +1,11 @@
 ---
 title: "DevOps implementation"
-date: 2021-03-01
+date: 1
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 # clients
 images: 
-  - "images/portfolio/rearchitect.webp"
+  - "images/clients/bluedraft.svg"
 customer:
   name: "Bluedraft"
   logo: "images/clients/bluedraft.svg"
@@ -21,8 +21,8 @@ types: ["devsecops", "ci/cd"]
 tech: ["AWS", "Docker"]
 # porjects link
 # meta description
-description: "Sucess story which narrates the implementation of DevOps for one
-of Bluedraft's own applications."
+description: "This story narrates the implementation of DevOps for one of
+Bluedraft's own applications."
 # Problem overview
 problem: "BlueDraft had developed a Forecasting and Financial Analytics tool for
 large companies customized by client, which required complex, slow and expensive

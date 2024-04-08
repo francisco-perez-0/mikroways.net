@@ -1480,6 +1480,8 @@ nav#TableOfContents ul li {
   padding-top: 5em;
   padding-bottom: 5em;
   background-image: url("/images/benefits-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 div.cont-service-benefits div.row {
@@ -1687,18 +1689,16 @@ div.cont-service-benefits.white-bg p {
 }
 
 section.success-stories-strip {
-  background-color: #888;
+  background-color: #f5faff;
   padding-bottom: 6em !important;
-  opacity: 0.85;
-  background-image: url(../images/overaly.png);
 }
 
-.success-stories-strip,
-.success-stories-strip h2 {
+.success-stories-strip {
   color: white !important;
 }
 
 .success-stories-strip h2 {
+  color: #323232;
   padding-top: 1em;
   padding-bottom: 1.6em;
 }
@@ -1932,10 +1932,6 @@ div.st-deck {
   padding: 2em 2.3em;
 }
 
-div.st-deck-img {
-  height: 100px;
-}
-
 div.st-deck img {
   max-width: 80%;
 }
@@ -1955,9 +1951,20 @@ div.st-deck-body p {
   color: var(--main-font-color);
 }
 
+h2.culture-header {
+  padding: 2em 5em;
+  color: white;
+  font-weight: 900;
+  line-height: 1.8em;
+}
+
 @media (max-width: 768px) {
   div.st-deck-row {
     margin-left: 1em;
     margin-right: 1em;
+  }
+
+  h2.culture-header {
+    padding: 2em 2em;
   }
 }

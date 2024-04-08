@@ -1,14 +1,14 @@
 ---
 title: "Observabilidad en Senasa"
-date: 2017-05-12
+date: 3
 page_header_bg: "images/banner/banner1.jpg.webp"
-description: "Caso de éxito que relata la implementación de una plataforma de
-monitoreo y alertas en Senasa."
+description: "Implementación de una plataforma de observabilidad para Senasa,
+con monitoreo y alertas."
 images: 
-  - "images/portfolio/monitoring2.webp"
+  - "images/clients/senasa.jpg.webp"
 customer:
   name: "Senasa"
-  logo: "images/clients/senasa.jpg.webp"
+  logo: "images/clients/senasa-no-name.webp"
   url: "https://www.senasa.gob.ar"
 buttons:
   label : "Quiero esto"

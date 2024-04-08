@@ -1,6 +1,6 @@
 ---
-title: "Implementación de DevOps en Veritran"
-date: 2017-09-01
+title: "Implementación de DevOps"
+date: 4
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 # clients

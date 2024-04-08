@@ -28,7 +28,7 @@ solution: "We designed and implemented a scalable and highly available
 infrastructure in AWS, which guaranteed the service availability, while
 achieving a cost reduction of 72%."
 # save as draft
-draft: false
+draft: true
 ---
 
 As we had a short time to implement the solution, we assembled a five people

@@ -1,6 +1,6 @@
 ---
-title: "Reducción de costos en Circular Lab"
-date: 2021-03-01
+title: "Reducción de costos"
+date: 2
 # page header background image
 page_header_bg: "images/banner/banner1.jpg.webp"
 description: "Caso de éxito que explica de qué forma Circular Lab logró reducir
