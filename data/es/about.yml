@@ -35,13 +35,21 @@ why_work_with_us:
   title: "Beneficios de trabajar en Mikroways"
   benefits:
     - benefit: "Trabaja 100% remoto"
+      icon: "/images/icons/remote.svg"
     - benefit: "Días adicionales de vacaciones"
+      icon: "/images/icons/holidays.svg"
     - benefit: "Incremento trimestral de salario"
+      icon: "/images/icons/salary.svg"
     - benefit: "Servicio de medicina privada"
+      icon: "/images/icons/health.svg"
     - benefit: "Clases de inglés"
+      icon: "/images/icons/english.svg"
     - benefit: "Certificaciones pagas"
+      icon: "/images/icons/certifications.svg"
     - benefit: "Capacitaciones internas permanentes"
+      icon: "/images/icons/training.svg"
     - benefit: "Flexibilidad horaria"
+      icon: "/images/icons/schedule.svg"
 value_proposition:
   title: "Nuestra propuesta de valor"
   description:

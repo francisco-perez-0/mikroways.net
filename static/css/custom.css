@@ -1479,7 +1479,7 @@ nav#TableOfContents ul li {
 .cont-service-benefits {
   padding-top: 5em;
   padding-bottom: 5em;
-  background: var(--blue-mw-dark);
+  background-image: url("/images/benefits-bg.svg");
 }
 
 div.cont-service-benefits div.row {
@@ -1495,7 +1495,7 @@ div.cont-service-benefits div.row {
 }
 
 div.cont-service-benefits img {
-  height: 1em;
+  height: 2.5em;
 }
 
 div.cont-service-benefits p {

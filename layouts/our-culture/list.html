@@ -46,10 +46,10 @@
 {{ with $data.about.why_work_with_us }}
 <div class="container-fluid text-center cont-service-benefits">
   <h2>{{ .title }}</h2>
-  <div class="row text-left">
+  <div class="row text-left justify-content-center">
     {{ range .benefits }}
-    <div class="col-sm-6 col-md-4 d-flex align-items-center pt-4">
-      <img src="/images/tilde-2.svg">
+    <div class="col-sm-4 d-flex align-items-center pt-4 ml-1 mr-1">
+      <img src="{{ .icon }}">
       <p>{{ .benefit }}</p>
     </div>
     {{ end }}

@@ -35,13 +35,21 @@ why_work_with_us:
   title: "Benefits of working at Mikroways"
   benefits:
     - benefit: "Work 100% remotely"
+      icon: "/images/icons/remote.svg"
     - benefit: "Extended holidays"
+      icon: "/images/icons/holidays.svg"
     - benefit: "Increase in salary every three months"
+      icon: "/images/icons/salary.svg"
     - benefit: "Private health insurance"
+      icon: "/images/icons/health.svg"
     - benefit: "English classes"
+      icon: "/images/icons/english.svg"
     - benefit: "IT certifications paid by the company"
+      icon: "/images/icons/certifications.svg"
     - benefit: "Continuous training"
+      icon: "/images/icons/training.svg"
     - benefit: "Flexible working schedule"
+      icon: "/images/icons/schedule.svg"
 value_proposition:
   title: "Our value proposition"
   description:
