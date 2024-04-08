@@ -1924,3 +1924,33 @@ div.dt-service-list {
     margin-right: 1em;
   }
 }
+
+div.st-deck {
+  border: 1px solid #084B8F;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 2em 2.3em;
+}
+
+div.st-deck-img {
+  height: 100px;
+}
+
+div.st-deck img {
+  max-width: 80%;
+}
+
+div.st-deck-body {
+  border-top: 1px solid #7B9EC0;
+  margin-top: 1.3em;
+  padding-top: 1em;
+}
+
+div.st-deck-body h5 {
+  color: #00376D;
+  font-weight: 700;
+}
+
+div.st-deck-body p {
+  color: var(--main-font-color);
+}
