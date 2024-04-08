@@ -1897,3 +1897,30 @@ div.about-full-desc p {
   font-weight: 900;
   line-height: 2em;
 }
+
+div.ps-service-list,
+div.dt-service-list {
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+@media (min-width: 768px) {
+  div.ps-service.service-desc,
+  div.dt-service.service-desc {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  div.ps-service-list,
+  div.dt-service-list {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  p.dt-gen-desc {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
