@@ -1954,3 +1954,10 @@ div.st-deck-body h5 {
 div.st-deck-body p {
   color: var(--main-font-color);
 }
+
+@media (max-width: 768px) {
+  div.st-deck-row {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}

@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div class="row d-flex justify-content-center mb-5">
+<div class="row d-flex justify-content-center mb-5 st-deck-row">
   {{ range (where site.RegularPages "Section" "portfolio") }}
   <div class="col-sm-4 col-md-3 st-deck">
     <a class="st-deck-img" href="{{ .RelPermalink }}"><img src="{{ .Params.customer.logo | absURL }}" alt="{{ .Params.customer.name }}"></a>
