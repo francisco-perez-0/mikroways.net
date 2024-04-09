@@ -4,7 +4,7 @@ front:
   subtitle: |
     Lleva a tu compañía al siguiente nivel con soluciones de IT personalizadas.  
     Conoce a nuestro equipo de especialistas en ingeniería de plataformas y transformación digital.
-  bg_image: "images/homepage.jpg"
+  bg_image: "images/homepage.webp"
   buttons:
   - label: "Hablemos"
     style: "solid"
