@@ -47,8 +47,6 @@ link = "css/asciinema-player.css"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-[[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
@@ -60,8 +58,6 @@ link = "plugins/owl/owl.carousel.js"
 link = "plugins/jquery.prettyPhoto.js"
 [[params.plugins.js]]
 link = "plugins/flex-slider/jquery.flexslider.js"
-#[[params.plugins.js]]
-#link = "plugins/cd-hero/cd-hero.js"
 [[params.plugins.js]]
 link = "plugins/isotope.js"
 [[params.plugins.js]]
@@ -76,8 +72,6 @@ link = "plugins/jquery.counterup.min.js"
 link = "plugins/waypoints.min.js"
 [[params.plugins.js]]
 link = "js/contactformlambda.js"
-[[params.plugins.js]]
-link = "js/newsletter.js"
 [[params.plugins.js]]
 link = "https://kit.fontawesome.com/4e9fd50276.js"
 [[params.plugins.js]]
