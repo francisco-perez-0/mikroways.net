@@ -2,7 +2,7 @@
 workflow:
   title: "How we do it"
   subtitle: "Our approach"
-  image: "images/services/circle.png"
+  image: "images/services/circle-en.webp"
   steps:
     - name: "Discovery"
       description: "We determine the initial state and set goals"

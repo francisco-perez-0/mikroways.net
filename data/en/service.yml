@@ -33,7 +33,7 @@ services:
         id: "cloud-native-architecture"
         name: "Cloud Native Architecture"
         description: "To obtain all of the benefits of the cloud, the applications and infrastructure need to be created for it. We design workloads capable of taking full advantage of the cloud."
-        bg_image: "/images/slider/cloud.jpg.webp"
+        bg_image: "/images/services/cloud-native.webp"
         button:
         page:
           description: |
@@ -69,34 +69,8 @@ services:
         id: "business-continuity"
         name: "Business Continuity"
         description: "The continuity of your business is more important than anything else. That is why we make sure that you have at all times an actionable, tested, updated and effective disaster recovery plan, with minimal to no manual intervention."
-        bg_image: "/images/services/time.jpg"
+        bg_image: "/images/services/business-continuity.webp"
         button:
-    pillars:
-      title: "Fundamental Pillars"
-      items:
-      - name: "Continuous Integration & Deployment"
-        description: "Continuous Deployment for Innovation: CI/CD not only accelerates delivery speed but also fosters constant innovation by providing an automated and repeatable workflow. The ability to deploy changes quickly and securely enables our teams to respond agilely to market demands and continuously enhance their products."
-        icon: "fa-solid fa-infinity"
-
-      - name: "Cloud Computing & Virtualization"
-        description: "Operational Efficiency: By migrating to the cloud and leveraging virtualization, we help businesses reduce operational costs while improving efficiency. Virtualization allows the execution of multiple operating systems on a single physical server, optimizing hardware and energy utilization. Our team has extensive expertise in architecture creation and daily infrastructure management."
-        icon: "fa-solid fa-server"
-
-      - name: "Containers & Orchestration"
-        description: "Portability and Consistency: Containers encapsulate applications and their dependencies, providing portability across development, testing, and production environments. Orchestration, such as Kubernetes, in which we are experts, facilitates efficient container management, ensuring their consistent and scalable deployment."
-        icon: "fa-solid fa-cubes"
-
-      - name: "Business Continuity"
-        description: "Business Resilience: Backup and disaster recovery services ensure business continuity by protecting crucial data against losses. We design and implement a specialized architecture for regular backups, and disaster recovery plans allow for swift restoration in the event of interruptions or data losses."
-        icon: "fa-solid fa-business-time"
-
-      - name: "Observability"
-        description: "Observability involves real-time data collection and analysis to understand system performance, allowing early identification of issues, thus improving responsiveness and service quality. This facilitates informed decision-making and continuous improvement. Our expertise focuses on integrating various data sources to provide a comprehensive picture of the health and performance of your technological environment. We use the latest tools and technologies to visualize data effectively, identify patterns, and provide actionable insights."
-        icon: "fa-solid fa-magnifying-glass-chart"
-
-      - name: "Software Architecture & Engineering"
-        description: "Scalable Design: Software architecture focuses on creating robust and scalable systems. We emphasize designing an architecture that allows for modular growth and adaptability as business needs evolve. Sustainable Development: Here, we focus on software engineering and building solutions that are durable and maintainable. Adopting practices such as agile development and test automation ensures continuous quality and responsiveness to changes in the business environment."
-        icon: "fa-solid fa-circle-nodes"
     technologies:
       - name: "AWS"
         logo: "images/tech/aws.png"
@@ -139,18 +113,18 @@ services:
         description: |
           Our goal is to focus on digital strategy, integration, and comprehensive transformation, including the ability to demonstrate the viability and value of secure and efficient business solutions. At Mikroways, we offer a complementary portfolio to the industry, leveraging cross-sector best practices, and aspire to be the top choice for our clients in identifying, designing, accelerating, and scaling transformation opportunities.  
           We lead transformation conversations and programs, as well as strategic design of digital businesses, operating models, products, and services. 
-        bg_image: "/images/slider/cloud.jpg.webp"
+        bg_image: "/images/services/digital-transformation/strategy.webp"
       b:
         id: "insights"
         name: "Insights"
         description: |
           Data is a fundamental asset in your organization, allowing optimization of operations or gaining competitive advantages. Investment in digital maturity, data credibility, and integration into organizational processes are essential elements for success. To achieve this, it is necessary to make accurate technological decisions that help meet drivers and achieve expected results.  
           Mikroways offers a data-centric approach and robust governance to assist you in identifying and supporting relevant use cases with appropriate solutions for differentiated data management, while leveraging artificial intelligence and machine learning for intelligent and optimized processes.
-        bg_image: "/images/services/infrastructure.png"
+        bg_image: "/images/services/digital-transformation/insights.webp"
       c:
         id: "experience"
         name: "Experience"
-        bg_image: "/images/services/containers.png"
+        bg_image: "/images/services/digital-transformation/experience.webp"
         description: |
           Products and services are nowadays more complex, involving multiple touchpoints, processes, people, and technologies. They are conceived, developed, and managed by multifunctional teams both internal and external to the business, often with different ideas, agendas, constraints, and priorities influencing the final experience. At Mikroways, our role is to manage this complexity, generating value from conception to operation for both the business and the customer, and ensuring the success, adoption, and usage of products and services.
       d:
@@ -159,33 +133,33 @@ services:
         description: |
           To achieve sustainable transformation and reach the potential of technological investments and sustainability goals, organizations must rely on robust, stable, and efficient processes.  
           Our team of process professionals brings extensive experience and skills combining process mining and business process management. We have specialized skills and work closely with our automation and change management experts to achieve sustainable results.
-        bg_image: "/images/services/cicd.webp"
+        bg_image: "/images/services/digital-transformation/processes.webp"
       e:
         id: "process-automation"
         name: "Process automation"
         description: |
           At Mikroways, we offer support in designing, building, and managing your automation capability. We have experts who can assist you in developing your strategy; take cautious first steps; design your operating model; or scale automation.
           Our experts possess essential digital transformation consulting skills to help you discover and prioritize your best opportunities; improve process performance through simplification, and demonstrate the practical application of the latest technologies to expand your automation to more complex use cases.
-        bg_image: "/images/portfolio/monitoring.jpg.webp"
+        bg_image: "/images/services/digital-transformation/automation.webp"
       f:
         id: "change-management"
         name: "Organizational change management"
         description: |
           We engage with people to empower and enable them throughout the digital transformation journey, ultimately helping the organization succeed in a new (hybrid) work environment.
-        bg_image: "/images/services/time.jpg"
+        bg_image: "/images/services/digital-transformation/change.webp"
       g:
         id: "tech-strategy"
         name: "Technology Strategy and Innovation"
         description: |
           The IT team has transformed into an essential strategic and innovation partner, proactively driving digitally-enabled products, services, and business models. All while addressing the transformational challenges of complex IT legacy.
           Optimize what you've achieved in operations, services, applications, and architectures, or enhance your capabilities with an innovation partner like Mikroways. We offer effective best practices to help clients master their IT digital transformations. Discover how we can help you deliver tangible future-proof business outcomes.
-        bg_image: "/images/services/time.jpg"
+        bg_image: "/images/services/digital-transformation/innovation.webp"
       h:
         id: "business-continuity"
         name: "Accelerate your digital innovation"
         description: |
           We create highly effective multifunctional squads that adopt an agile approach to accelerate the delivery of prototypes or minimum viable solutions (MVPs) aligned with business objectives.
-        bg_image: "/images/services/time.jpg"
+        bg_image: "/images/services/digital-transformation/accelerate.webp"
     cta:
       title: "Do you have a project?"
       subtitle: "Let's discuss your opportunities"
@@ -207,7 +181,7 @@ services:
       a:
         id: "managed-services"
         name: "Managed Services"
-        bg_image: "/images/services/ps-bg.png"
+        bg_image: "/images/services/ps/managed-services.webp"
         description: "Managed services are an essential part of our proposal to provide a comprehensive solution. With this service, we aim to free our clients from the complex task of managing their infrastructure and its components, by taking responsibility for its operation. We focus on the following points:"
         benefits:
           - item: "Reactive and proactive maintenance"
@@ -218,7 +192,7 @@ services:
       b:
         id: "consultancy"
         name: "Consultancy"
-        bg_image: "/images/services/ps-bg.png"
+        bg_image: "/images/services/ps/consultancy.webp"
         description: "With our consulting service, we not only provide timely advice but also adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments, we identify optimization opportunities and maximize operational performance. Our consultancy service is characterized by:"
         benefits:
           - item: "Continuous assistance"
@@ -229,7 +203,7 @@ services:
       c: 
         id: "ctoaas"
         name: "CTO as a service"
-        bg_image: "/images/services/ps-bg.png"
+        bg_image: "/images/services/ps/ctoaas.webp"
         description: "It's a comprehensive solution for your company's technological needs, without the need to hire a full-time Chief Technology Officer (CTO). Our team of experts becomes your virtual CTO, providing strategic technological leadership and managing all facets of your digital infrastructure. Gain the following benefits:"
         benefits:
           - item: "Customized technological strategy"
