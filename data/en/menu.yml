@@ -18,7 +18,7 @@ menu:
 
       - id: "transformation"
         name: "Digital Transformation"
-        image: "images/services/circle.png"
+        image: "images/services/home-dt.svg"
         url: "digital-transformation"
         short: "Guides businesses in leveraging technology to innovate, streamline processes, and enhance customer experiences."
         full: "We lead the adoption of innovative technologies and optimize processes to enhance the efficiency and competitiveness of your company. From identifying opportunities to ongoing management, we work closely to design strategies aligned with your goals. Specializing in process optimization, we leverage advanced tools to maximize productivity and accelerate Time to Market."
@@ -28,7 +28,7 @@ menu:
 
       - id: "profservices"
         name: "Professional services"
-        image: "images/services/circle.png"
+        image: "images/services/home-ps.svg"
         url: "professional-services"
         short: "Expert advice and solutions for optimizing technology usage and addressing business challenges."
         full: "Not only do we provide timely advice, but we also become your committed long-term strategic partner. We adopt a proactive approach to continuously drive improvements and efficiency in your business. Through regular assessments and evaluations, we identify optimization opportunities and maximize operational performance."
@@ -38,7 +38,7 @@ menu:
 
       - id: "cybersecurity"
         name: "Cybersecurity"
-        image: "images/services/circle.png"
+        image: "images/services/home-cybersecurity.svg"
         url: "cybersecurity"
         short: "Expertise in safeguarding digital assets, mitigating risks, and ensuring data protection against cyber threats."
         full: "We offer cutting-edge security solutions. As IT consulting specialists, we excel in providing comprehensive protection for your infrastructure, ensuring the confidentiality and integrity of your data in a constantly evolving digital world."

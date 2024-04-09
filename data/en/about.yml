@@ -4,7 +4,6 @@ about: "We specialize in productive IT services, and our mission is to build bri
 title: "We are Mikroways"
 subtitle: "We provide IT solutions for a better world"
 page_header: "We are experts in designing, deploying and managing IT services in production"
-bg_image: "/images/about/about.webp"
 we_section_title: "You can rely on us"
 who_we_are:
   title: "who we are"
@@ -90,7 +89,6 @@ our_culture:
   title: "We are Mikroways"
   subtitle: "We provide IT solutions for a better world"
   page_header: "Join a team in which you and your ideas would be valued"
-  bg_image: "/images/team.webp"
   description:
     - item: "At Mikroways, we believe that ideas have the potential to make the world a better place to live, and that the world is filled with individuals and organizations with great ideas that we wish to see born and flourish. We also believe that, in the world we live in, technology is crucial to realizing those ideas. However, adopting the right technology and adapting it to specific needs can be highly complex for organizations."
     - item: "Therefore, we have set ourselves the mission of building bridges, using the right technology, that allows our clients to conquer and materialize their ideas."

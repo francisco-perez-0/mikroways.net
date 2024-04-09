@@ -38,11 +38,17 @@ div.frontpage {
   margin: 0;
 }
 
-div.bg-image {
+div.bg-image,
+div.bg-image-generic {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 700px;
+}
+
+div.bg-image-generic {
+  background-image: url(../images/benefits-bg.svg);
+  max-height: 500px;
 }
 
 div.bg-image::before {

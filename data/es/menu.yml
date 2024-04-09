@@ -18,7 +18,7 @@ menu:
 
       - id: "transformation"
         name: "Transformación digital"
-        image: "images/services/circle.png"
+        image: "images/services/home-dt.svg"
         url: "digital-transformation"
         short: "Apalancarse en la tecnología para innovar, optimizar procesos y mejorar la experiencia de los clientes."
         full: "Lideramos la adopción de tecnologías innovadoras y optimizamos procesos para mejorar la eficiencia y competitividad de su empresa. Desde la identificación de oportunidades hasta la gestión continua, trabajamos en estrecha colaboración para diseñar estrategias alineadas con sus objetivos. Especializados en la optimización de procesos, aprovechamos herramientas avanzadas para maximizar la productividad y acelerar el time-to-market."
@@ -28,7 +28,7 @@ menu:
 
       - id: "profservices"
         name: "Servicios profesionales"
-        image: "images/services/circle.png"
+        image: "images/services/home-ps.svg"
         url: "professional-services"
         short: "Soluciones para optimizar el uso de la tecnología y resolver desafíos de negocio."
         full: "Desde Mikroways buscamos no sólo ofrecer asesoramiento, sino convertimos en su socio estratégico, comprometidos a largo plazo con el éxito de su compañía. Para ello, adoptamos un enfoque proactivo que permita impulsar mejoras continuas y aumentar la eficiencia en su negocio. A través de evaluaciones y análisis regulares, identificamos oportunidades de optimización y maximizamos el rendimiento operativo."
@@ -38,7 +38,7 @@ menu:
 
       - id: "cybersecurity"
         name: "Ciberseguridad"
-        image: "images/services/circle.png"
+        image: "images/services/home-cybersecurity.svg"
         url: "cybersecurity"
         short: "Expertos en proteger activos digitales, mitigando riesgos y asegurando la protección de datos contra ciberataques."
         full: "Ofrecemos soluciones de seguridad de vanguardia. Como especialistas en consultoría de TI, destacamos en proporcionar protección integral para su infraestructura, garantizando la confidencialidad y la integridad de sus datos en un mundo digital en constante evolución."

@@ -15,7 +15,7 @@ buttons:
   style : "solid"
   link : "contact"
 # filter types
-featured: ["platform", "transformation"]
+featured: ["platform"]
 types: ["devsecops", "ci/cd", "public cloud", "cloud migration"]
 # used technologies
 tech: ["Kubernetes", "Docker", "AWS", "Gitlab CI", "Jenkins", "GIT"]

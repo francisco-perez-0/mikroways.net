@@ -4,7 +4,6 @@ about: "Somos especialistas en servicios de IT productivos y nuestra misión es 
 title: "Somos Mikroways"
 subtitle: "Brindamos soluciones de IT para un mundo mejor"
 page_header: "Somos expertos diseñando, desplegando y gestionando servicios de IT en producción"
-bg_image: "/images/about/about.webp"
 we_section_title: "Puedes confiar en nosotros"
 who_we_are:
   title: "Quiénes somos"
@@ -90,7 +89,6 @@ our_culture:
   title: "Somos Mikroways"
   subtitle: "Brindamos soluciones de IT para un mundo mejor"
   page_header: "Forma parte de un equipo donde tu persona y tus ideas serán apreciadas"
-  bg_image: "/images/team.webp"
   description:
     - item: "En Mikroways creemos que las ideas tienen el potencial de hacer del mundo un mejor lugar para vivir y que el mundo está lleno de personas y organizaciones con grandes ideas, que deseamos ver nacer y florecer. Creemos también que, en el mundo en el que vivimos, la tecnología es determinante para hacer realidad esas ideas. No obstante, adoptar la tecnología adecuada y adaptarla a las necesidades específicas puede resultar altamente complejo para las organizaciones."
     - item: "Por ello, nos hemos propuesto la misión de construir puentes, usando la tecnología adecuada, que les permita a nuestros clientes conquistar y materializar sus ideas."
