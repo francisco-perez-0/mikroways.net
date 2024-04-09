@@ -7,7 +7,7 @@ workflow:
     - name: "Discovery"
       description: "We determine the initial state and set goals"
     - name: "Solution design"
-      description: "We plan the transformation project and design the solution"
+      description: "We plan the transformation and design the solution"
     - name: "Execution"
       description: "we implement the solution according to the design"
     - name: "Operation & optimization"

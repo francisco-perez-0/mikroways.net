@@ -5,7 +5,7 @@ services:
       Cloud & Platform  
       Engineering
     parent: "Services"
-    description: "We design and automate platforms tailored to your needs, obtaining predictable and repeatable environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
+    description: "We design and automate platforms tailored to your needs, obtaining predictable and reproducible environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
     bg_image: "images/services/pe-bg.png"
     cta:
       title: "Do you have a project?"
@@ -21,7 +21,7 @@ services:
       - benefit: "Accelerates software development"
       - benefit: "Reduces operational complexity"
       - benefit: "Ensures business continuity"
-      - benefit: "Empower developers with autonomy"
+      - benefit: "Empowers developer autonomy"
       - benefit: "Reduces time to market"
       - benefit: "Improves customer service"
       - benefit: "Avoids provider lock-in"
@@ -62,13 +62,13 @@ services:
       e:
         id: "monitoring-and-observability"
         name: "Monitoring & Observability"
-        description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance their overall quality."
+        description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance overall quality."
         bg_image: "/images/portfolio/monitoring.jpg.webp"
         button:
       f:
         id: "business-continuity"
         name: "Business Continuity"
-        description: "The continuity of your business is more important than anything else. That is why we make sure that you have at all times an actionable, tested, updated and effective disaster recovery plan, with minimal to no manual intervention."
+        description: "The continuity of your business is more important than anything else. That is why we make sure that you have an actionable, tested, updated and effective disaster recovery plan at all times, with minimal to no manual intervention."
         bg_image: "/images/services/business-continuity.webp"
         button:
     technologies:
@@ -112,13 +112,13 @@ services:
         name: "Vision and digital strategy"
         description: |
           Our goal is to focus on digital strategy, integration, and comprehensive transformation, including the ability to demonstrate the viability and value of secure and efficient business solutions. At Mikroways, we offer a complementary portfolio to the industry, leveraging cross-sector best practices, and aspire to be the top choice for our clients in identifying, designing, accelerating, and scaling transformation opportunities.  
-          We lead transformation conversations and programs, as well as strategic design of digital businesses, operating models, products, and services. 
+          We lead in conversations and programs on digital transformation, as well as strategic design of digital businesses, operating models, products, and services. 
         bg_image: "/images/services/digital-transformation/strategy.webp"
       b:
         id: "insights"
         name: "Insights"
         description: |
-          Data is a fundamental asset in your organization, allowing optimization of operations or gaining competitive advantages. Investment in digital maturity, data credibility, and integration into organizational processes are essential elements for success. To achieve this, it is necessary to make accurate technological decisions that help meet drivers and achieve expected results.  
+          Data is a fundamental asset in your organization, allowing for the optimization of operations and offering competitive advantage. Investment in digital maturity, data credibility, and integration into organizational processes are essential elements for success. To achieve this, it is necessary to make accurate technological decisions that help meet drivers and achieve expected results.  
           Mikroways offers a data-centric approach and robust governance to assist you in identifying and supporting relevant use cases with appropriate solutions for differentiated data management, while leveraging artificial intelligence and machine learning for intelligent and optimized processes.
         bg_image: "/images/services/digital-transformation/insights.webp"
       c:
@@ -132,7 +132,7 @@ services:
         name: "Excellence in processes"
         description: |
           To achieve sustainable transformation and reach the potential of technological investments and sustainability goals, organizations must rely on robust, stable, and efficient processes.  
-          Our team of process professionals brings extensive experience and skills combining process mining and business process management. We have specialized skills and work closely with our automation and change management experts to achieve sustainable results.
+          Our team of professionals brings extensive experience and skills combining process mining and business process management. We have specialized skills and work closely with our automation and change management experts to achieve sustainable results.
         bg_image: "/images/services/digital-transformation/processes.webp"
       e:
         id: "process-automation"
@@ -151,14 +151,14 @@ services:
         id: "tech-strategy"
         name: "Technology Strategy and Innovation"
         description: |
-          The IT team has transformed into an essential strategic and innovation partner, proactively driving digitally-enabled products, services, and business models. All while addressing the transformational challenges of complex IT legacy.
+          IT teams have transformed into an essential strategic and innovation partner, proactively driving digitally-enabled products, services, and business models. All while addressing the transformational challenges of complex IT legacy.
           Optimize what you've achieved in operations, services, applications, and architectures, or enhance your capabilities with an innovation partner like Mikroways. We offer effective best practices to help clients master their IT digital transformations. Discover how we can help you deliver tangible future-proof business outcomes.
         bg_image: "/images/services/digital-transformation/innovation.webp"
       h:
         id: "business-continuity"
         name: "Accelerate your digital innovation"
         description: |
-          We create highly effective multifunctional squads that adopt an agile approach to accelerate the delivery of prototypes or minimum viable solutions (MVPs) aligned with business objectives.
+          We create highly effective multifunctional teams that adopt an agile approach to accelerate the delivery of prototypes or minimum viable solutions (MVPs) aligned with business objectives.
         bg_image: "/images/services/digital-transformation/accelerate.webp"
     cta:
       title: "Do you have a project?"
@@ -174,7 +174,7 @@ services:
     name: |
       Professional Services
     parent: "Services"
-    description: "We have designed our line of professional services, honoring our commitment to adapting to our clients' specific needs and always providing the best possible solution for each case. In that regard, we adopt a proactive approach to continuously drive improvements and efficiency in your business by applying our knowledge and expertise to your particular situation."
+    description: "Our line of professional services honors our commitment to adapt to our clients' specific needs and always provide the best possible solution for each case. In that regard, we adopt a proactive approach to continuously drive improvements and efficiency in your business by applying our knowledge and expertise to your particular situation."
     bg_image: "/images/services/ps-bg.png"
     components_heading: "Our professional services"
     components:
@@ -185,7 +185,7 @@ services:
         description: "Managed services are an essential part of our proposal to provide a comprehensive solution. With this service, we aim to free our clients from the complex task of managing their infrastructure and its components, by taking responsibility for its operation. We focus on the following points:"
         benefits:
           - item: "Reactive and proactive maintenance"
-          - item: "Continuous services monitoring"
+          - item: "Continuous service monitoring"
           - item: "Periodic capacity analysis"
           - item: "Generation of documentation"
           - item: "Improvements suggestions"
@@ -197,7 +197,7 @@ services:
         benefits:
           - item: "Continuous assistance"
           - item: "Dynamic assessments"
-          - item: "Improvements' implementation"
+          - item: "Implementation of improvements"
           - item: "Flexibility and adaptability"
           - item: "Continuous monitoring"
       c: 
@@ -207,7 +207,7 @@ services:
         description: "It's a comprehensive solution for your company's technological needs, without the need to hire a full-time Chief Technology Officer (CTO). Our team of experts becomes your virtual CTO, providing strategic technological leadership and managing all facets of your digital infrastructure. Gain the following benefits:"
         benefits:
           - item: "Customized technological strategy"
-          - item: "Costs optimization"
+          - item: "Cost optimization"
           - item: "Comprehensive management"
           - item: "Flexibility and scalability"
           - item: "Focus on core business"
@@ -230,7 +230,7 @@ services:
     catalog:
       title: "Service line"
       items:
-        - title: "Penetration test"
+        - title: "Penetration testing"
           description: "At Mikroways, we conduct penetration tests to simulate real-world cyberattacks on your systems. By doing this, we identify vulnerabilities that malicious hackers could exploit. Our goal is to help you strengthen your defenses by finding and fixing these weaknesses before they can be exploited by real attackers."
           icon: "fa-solid fa-unlock"
         - title: "Security assessment"

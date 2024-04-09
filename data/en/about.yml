@@ -19,8 +19,8 @@ our_values:
   description: "Our values are at the very core of who we are, we live and work by them."
   icon: "fa-solid fa-heart"
   values:
-    - value: "Honor our commitments"
-      description: "We commit with always seeking the truth, with the given word, with our job and the results we seek, with our customers and with our colleagues."
+    - value: "Honoring our commitments"
+      description: "We commit to seek the truth and honor our commitments, both in our work and in the results we seek, and to keep our word with customers and colleagues."
     - value: "Curiosity"
       description: "We innovate because we are passionate about learning, discovering and defining new ways of doing things."
     - value: "Empathy"

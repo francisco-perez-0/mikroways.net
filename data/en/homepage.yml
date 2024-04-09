@@ -21,7 +21,7 @@ front:
 feature:
   enable : true
   feature_item:
-    - name : "Increase your services availability"
+    - name : "Increase your service availability"
       icon : "fa-solid fa-calendar-check"
       content : "Do you experience outages or crashes in your systems or services often? We can help you put those problems behind you."
 
@@ -35,7 +35,7 @@ feature:
 
     - name : "Easily replicate environments"
       icon : "fa-solid fa-clone"
-      content : "Doing a test takes too long? The system works in development but not in production? It doesn't have to be that way."
+      content : "Is testing taking too long? The system works in development but not in production? It doesn't have to be that way."
 
     - name : "Improve your collaborators' performances"
       icon : "fa-solid fa-arrow-trend-up"
