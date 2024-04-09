@@ -13,7 +13,7 @@
       <div class="col-md-3 col-sm-12 footer-widget">
         {{ range first $first_column_items .menu_items }}
         <div class="col-md-12 footer-menu-top">
-          <a {{ if not .has_children }}href="{{ .url }}"{{ end }}>{{ .name }}</a>
+          <a {{ if not .has_children }}href="{{ .url | relLangURL }}"{{ end }}>{{ .name }}</a>
         </div>
         {{ if .has_children }}
         {{ range $c_index,$c_element := .children }}
@@ -28,7 +28,7 @@
       <div class="col-md-3 col-sm-12 footer-widget">
         {{ range last (math.Sub (len .menu_items) $first_column_items) .menu_items }}
         <div class="col-md-12 footer-menu-top">
-          <a {{ if not .has_children }}href="{{ .url }}"{{ end }}>{{ .name }}</a>
+          <a {{ if not .has_children }}href="{{ .url | relLangURL }}"{{ end }}>{{ .name }}</a>
         </div>
         {{ if .has_children }}
         {{ range $c_index,$c_element := .children }}

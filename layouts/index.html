@@ -14,7 +14,7 @@
       <h2>{{ .title | markdownify }}</h2>
       <h3>{{ .subtitle | markdownify }}</h3>
       {{ range .buttons }}
-      <a href="{{ .link }}" class="btn btn-primary {{ .style }}">{{ .label }}</a>
+      <a href="{{ .link | relLangURL }}" class="btn btn-primary {{ .style }}">{{ .label }}</a>
       {{ end }}
     </div>
   </div>
