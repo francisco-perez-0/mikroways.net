@@ -81,7 +81,7 @@ link = "js/megamenu.js"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/logo.webp"
 white_logo = "images/logo-blanco.png"
 home = "Home"
 # Meta data

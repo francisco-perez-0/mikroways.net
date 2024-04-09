@@ -8,7 +8,7 @@ menu:
       children:
       - id: "platform"
         name: "Cloud & Platform Engineering"
-        image: "images/services/platform-engineering.png"
+        image: "images/services/platform-engineering.webp"
         url: "platform-engineering"
         short: "Diseñar, construir y mantener plataformas tecnológicas escalables y confiables."
         full: "Nos enfocamos en implementar y mantener Plataformas de Desarrollo Interno (IDP), que le dan al equipo de desarrollo la capacidad de autoservicio, lo que optimiza los costos, simplifica la gestión y genera un aumento significativo en la confiabilidad operativa."

@@ -8,7 +8,7 @@ menu:
       children:
       - id: "platform"
         name: "Cloud & Platform Engineering"
-        image: "images/services/platform-engineering.png"
+        image: "images/services/platform-engineering.webp"
         url: "platform-engineering"
         short: "Design, build, and maintain scalable and reliable technology frameworks for various applications."
         full: "We focus our efforts on implementing and maintaining Internal Development Platforms (IDP). These IDPs enhance the self-service capabilities of the development team, achieving cost optimization, a reduction in management complexities, and a significant increase in operational reliability"

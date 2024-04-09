@@ -4,7 +4,7 @@ front:
   subtitle: |
     Take your company to the next level with tailored IT solutions.  
     Meet our specialists in platform engineering and digital transformation.
-  bg_image: "images/homepage.jpg"
+  bg_image: "images/homepage.webp"
   buttons:
   - label: "Let's talk"
     style: "solid"
