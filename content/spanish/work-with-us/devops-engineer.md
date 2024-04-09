@@ -1,10 +1,9 @@
 ---
-title: "Digital Marketing Specialist"
-schedule: "Part time"
+title: "DevOps Engineer Trainee"
+schedule: "Full time"
 location: "Remote"
 summary: "Integra el equipo de Mikroways encargado del delivery del servicio a
 los clientes."
-draft: true
 ---
 
 # Resumen del puesto
@@ -72,5 +71,4 @@ públicas y privadas, como AWS y Openstack.
 * Uso de expresiones regulares.
 * Bases de datos relacional: uso básico de MySQL o PostgreSQL desde la consola.
 * Markups: conocer y saber utilizar los formatos JSON, YAML, XML y Markdown.
-
 

@@ -7,7 +7,7 @@ page_header_bg: "images/banner/banner1.jpg.webp"
 images: 
   - "images/clients/bluedraft.svg"
 customer:
-  name: "INTA"
+  name: "Bluedraft"
   logo: "images/clients/bluedraft.svg"
   url: "https://www.bluedraft.com.ar"
 buttons:

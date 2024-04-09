@@ -2,73 +2,72 @@
 title: "DevOps Engineer Trainee"
 schedule: "Full time"
 location: "Remote"
-summary: "Integra el equipo de Mikroways encargado del delivery del servicio a
-los clientes."
+summary: "Join the team at Mikroways responsible for delivering the service to
+our customers."
 ---
 
-# Resumen del puesto
+# Summary
 
-Por la naturaleza de la empresa, un DevOps Engineer en Mikroways enfrenta nuevos
-desafíos de forma cotidiana, lo que requiere una gran capacidad de aprendizaje,
-creatividad y una actitud proactiva.
+Due to the company's DNA, a DevOps Engineer at Mikroways faces new challenges on
+a daily basis, requiring a great capacity for learning, creativity, and a
+proactive attitude.
 
-La persona que se incorpore en esta posición formará parte del equipo de
-Mikroways encargado del delivery del servicio a los clientes. En tal rol,
-colaborará en el desarrollo de soluciones innovadoras basadas en DevOps y usando
-herramientas como Docker, Kubernetes, Ansible, Terraform y trabajando con nubes
-públicas y privadas, como AWS y Openstack.
+The person joining this position will be part of the Mikroways team responsible
+for delivering services to clients. In this role, they will collaborate in the
+development of innovative solutions based on DevOps principles and using tools
+such as Docker, Kubernetes, Ansible, Terraform, and working with public and
+private clouds, such as AWS and OpenStack.
 
-## Funciones
+## Responsibilities
 
-* Empaquetar aplicaciones en contenedores.
-* Instalar y gestionar orquestadores de contenedores.
-* Configurar pipelines de integración, entrega y despliegue continuos.
-* Desplegar aplicaciones en los orquestadores usando pipelines de CI/CD.
-* Automatizar la creación de servidores, redes, almacenamiento, etc.
-* Implementar servicios en nubes públicas y privadas.
-* Configurar monitoreo de aplicaciones y servidores.
-* Atender requerimientos de los clientes.
+* Packaging applications into containers.
+* Installing and managing container orchestrators.
+* Configuring continuous integration, delivery, and deployment pipelines.
+* Deploying applications on orchestrators using CI/CD pipelines.
+* Automating the creation of servers, networks, storage, etc.
+* Deploying services on public and private clouds.
+* Configuring application and server monitoring.
+* Addressing client requirements.
 
-## Aptitudes personales
+## Personal aptitudes
 
-* **Capacidad de aprendizaje**: el trabajo requiere aprender constantemente
-  nuevas herramientas y tecnologías."
-* **Resolución de problemas**: para el desarrollo de nuestras soluciones es
-  importante poder comprender la esencia de cada problema, generar las posibles
-  alternativas de resolución e implementar la más conveniente, según las
-  necesidades específicas del proyecto."
-* **Proactividad**: generar, proponer e implementar ideas y soluciones por
-  motivación propia.
-* **Buena capacidad de comunicación**: para la interacción con los clientes y
-  con el propio equipo, es importante poder comunicarse claramente, tanto de
-  forma oral como escrita.
-* **Trabajo en equipo**: nuestro trabajo es complejo y por ello conformamos
-  equipos que permitan potenciar las capacidades y conocimientos de todos.
-* **Capacidad de organización y cumplimiento de los compromisos asumidos**:
-  disponer de horarios flexibles y trabajar de forma remota no puede afectar el
-  cumplimiento de los compromisos con los clientes ni con el equipo, lo que
-  requiere una buena capacidad de organización y asumir la responsabilidad
-  necesaria.
-* **Trabajo bajo presión**: si bien no es lo habitual y las buenas prácticas que
-  adoptamos y promovemos apuntan a evitar los inconvenientes, trabajar con
-  servicios en producción implica que, a veces, se deba resolver problemas con
-  la presión de solucionarlos lo antes posible.
+* **Learning Capacity**: The job requires constantly learning new tools and
+  technologies.
+* **Problem Solving**: For the development of our solutions, it's important to
+  be able to understand the essence of each problem, generate possible
+  resolution alternatives, and implement the most suitable one according to the
+  specific project needs.
+* **Proactivity**: Generating, proposing, and implementing ideas and solutions
+  on one's own initiative.
+* **Good Communication Skills**: For interaction with clients and the team
+  itself, it's important to communicate clearly, both orally and in writing.
+* **Teamwork**: Our work is complex, and therefore we form teams that allow us
+  to enhance everyone's capabilities and knowledge.
+* **Organizational Skills and Commitment to Agreements**: Having flexible
+  schedules and working remotely should not affect meeting commitments with
+  clients or the team, which requires good organizational skills and assuming
+  the necessary responsibility.
+* **Working Under Pressure**: Although it's not the norm and the best practices
+  we adopt and promote aim to avoid issues, working with production services
+  implies that sometimes problems must be resolved under the pressure of fixing
+  them as soon as possible.
 
-## Conocimientos profesionales
+## Professional knowledge
 
-* Comprensión de textos y videos en Inglés. Capacidad de comunicación oral y
-  escrita es un plus importante.
-* Al menos dos lenguajes de programación: Python, Javascript, PHP, Java, etc.
-* Al menos un framework de desarrollo.
-* Redes: esquemas de direccionamiento del modelo TCP/IP, conceptos de
-  subnetting, tablas de ruteo, NAT, DNS, HTTP.
-* Uso de GIT básico: clone, pull, push, branches. Resolver conflictos. Utilizar
-  los flujos de GitHub y Gitlab basados en Pull y Merge Requests
-  respectivamente.
-* Instalación de sistemas operativos Linux, manejo de la consola para la
-  administración y configuración del sistema. Shell scripting.
-* Uso de variables de entorno.
-* Uso de expresiones regulares.
-* Bases de datos relacional: uso básico de MySQL o PostgreSQL desde la consola.
-* Markups: conocer y saber utilizar los formatos JSON, YAML, XML y Markdown.
-
+* Understanding texts and videos in English. Oral and written communication
+  skills are a significant plus.
+* Proficiency in at least two programming languages: Python, JavaScript, PHP,
+  Java, etc.
+* Familiarity with at least one development framework.
+* Networking: TCP/IP model addressing schemes, subnetting concepts, routing
+  tables, NAT, DNS, HTTP.
+* Basic usage of GIT: clone, pull, push, branches. Resolving conflicts.
+  Utilizing GitHub and GitLab workflows based on Pull and Merge Requests
+  respectively.
+* Installation of Linux operating systems, console management for system
+  administration and configuration. Shell scripting.
+* Usage of environment variables.
+* Understanding and usage of regular expressions.
+* Relational databases: Basic usage of MySQL or PostgreSQL from the console.
+* Markups: Understanding and ability to use JSON, YAML, XML, and Markdown
+  formats.

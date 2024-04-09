@@ -1,7 +1,7 @@
 ---
-title: "Work with us!"
+title: "¡Trabajá con nosotros!"
 # meta description
-description: "Come work with us at Mikroways!"
+description: "¡Vení a trabajar a Mikroways!"
 # save as draft
 draft: false
 ---

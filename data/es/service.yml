@@ -16,7 +16,7 @@ services:
           internal_link : "contact"
         - label: "Programa una reunión"
           style: "solid-wb"
-          calendly_url: "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
     benefits:
       - benefit: "Acelera el desarrollo de software"
       - benefit: "Reduce la complejidad operacional"
@@ -169,7 +169,7 @@ services:
           internal_link : "contact"
         - label: "Programa una reunión"
           style: "solid-wb"
-          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
   professional_services:
     name: |
       Servicios Profesionales
@@ -220,7 +220,7 @@ services:
           internal_link : "contact"
         - label: "Programa una reunión"
           style: "solid-wb"
-          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
   cybersecurity:
     name: |
       Ciberseguridad
@@ -257,4 +257,4 @@ services:
           internal_link : "contact"
         - label: "Programa una reunión"
           style: "solid-wb"
-          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/reunion-15-minutos-mikroways"
+          calendly_url:  "https://calendly.com/luciano-rodriguez-mikroways/15-minutes-call-mikroways"
