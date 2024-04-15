@@ -8,6 +8,10 @@
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
+  {{ with .Params.redirect_url }}
+  <meta http-equiv="refresh" content="0; url={{ . }}">
+  {{ end }}
+
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
   <link rel="stylesheet" href="{{ .link | absURL }}" async>
