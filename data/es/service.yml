@@ -181,7 +181,7 @@ services:
       a:
         id: "managed-services"
         name: "Servicios gestionados"
-        bg_image: "/images/services/ps-bg.png"
+        bg_image: "/images/services/ps/managed-services.webp"
         description: "Los servicios gestionados son una parte esencial de nuestra propuesta para proporcionar una solución integral. Con este servicio, nuestro objetivo es liberar a nuestros clientes de la compleja tarea de gestionar su infraestructura y sus componentes, asumiendo la responsabilidad de su operación. Nos enfocamos en los siguientes puntos:"
         benefits:
           - item: "Mantenimiento proactivo y reactivo"
@@ -192,7 +192,7 @@ services:
       b:
         id: "consultancy"
         name: "Consultoría"
-        bg_image: "/images/services/ps-bg.png"
+        bg_image: "/images/services/ps/consultancy.webp"
         description: "En nuestro servicio de consultoría no sólo proporcionamos asesoramiento puntual, sino que adoptamos un enfoque proactivo para impulsar continuamente mejoras y eficiencia en tu negocio. A través de evaluaciones periódicas, identificamos oportunidades de optimización y maximizamos el rendimiento operativo. Nuestra consultoría se caracteriza por:"
         benefits:
           - item: "Asesoramiento continuo"
@@ -203,7 +203,7 @@ services:
       c: 
         id: "ctoaas"
         name: "CTO como servicio"
-        bg_image: "/images/services/ps-bg.png"
+        bg_image: "/images/services/ps/ctoaas.webp"
         description: "Es la solución integral para las necesidades tecnológicas de tu empresa, sin la necesidad de contratar un Director de Tecnología o CTO a tiempo completo. Nuestro equipo de expertos se convierte en tu CTO virtual, brindando liderazgo estratégico en tecnología y gestionando todas las facetas de tu infraestructura digital. Apaláncate en Mikroways y obtén los siguientes beneficios:"
         benefits:
           - item: "Estrategia tecnológica personalizada"
