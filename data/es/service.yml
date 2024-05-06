@@ -33,14 +33,92 @@ services:
         id: "cloud-native-architecture"
         name: "Arquitectura Cloud Native"
         description: "Para obtener todos los beneficios de la nube, las aplicaciones y la infraestructura deben ser creadas para ella. Diseñamos cargas de trabajo capaces de aprovechar al máximo la nube."
+        overview: "En Mikroways nos especializamos en ofrecer soluciones integrales en contenerización y orquestación de contenedores, así como en prácticas DevOps para optimizar el desarrollo, despliegue y operación de aplicaciones en entornos cloud y locales. Desde la evaluación y modernización de aplicaciones hasta la implementación y gestión de clústeres Kubernetes, proporcionamos servicios personalizados que permiten a las organizaciones aprovechar al máximo las ventajas de la contenerización y la orquestación."
         bg_image: "/images/services/cloud-native.webp"
-        button:
+        button: "Ver más"
         page:
           description: |
-            Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.  
-            These techniques enable loosely coupled systems that are resilient, manageable, and observable. Combined with robust automation, they allow engineers to make high-impact changes frequently and predictably with minimal toil ([CNCF](https://github.com/cncf/toc/blob/main/DEFINITION.md)).
-          principles:
-          model:
+            La arquitectura nativa de la nube se refiere a un enfoque de diseño de software que aprovecha al máximo las capacidades y servicios ofrecidos por las plataformas de computación en la nube. Se basa en los principios de escalabilidad, resiliencia, flexibilidad y automatización para desarrollar y desplegar aplicaciones de manera eficiente en entornos cloud.
+          components:
+            a:
+              id: "microservices"
+              name: "Microservicios"
+              bg_image: "/images/services/cloud-native/microservices.webp"
+              description: "En lugar de desarrollar aplicaciones monolíticas, la arquitectura nativa de la nube promueve la descomposición de las aplicaciones en servicios pequeños e independientes conocidos como microservicios. Cada microservicio se encarga de una función específica y se comunica con otros servicios a través de APIs (interfaces de programación de aplicaciones)."
+            b:
+              id: "containers"
+              name: "Contenedores"
+              bg_image: "/images/services/cloud-native/cont.webp"
+              description: "Los contenedores son una forma de empaquetar y distribuir aplicaciones junto con todas sus dependencias. Utilizan tecnologías como Docker para garantizar que una aplicación se ejecute de manera consistente en diferentes entornos, ya sea en desarrollo, pruebas o producción."
+            c:
+              id: "orchestration"
+              name: "Orquestación de contenedores"
+              bg_image: "/images/services/cloud-native/cont-orch.webp"
+              description: "La orquestación de contenedores se refiere a la gestión automatizada de contenedores a gran escala. Herramientas como Kubernetes son ampliamente utilizadas para automatizar tareas como el despliegue, escalado, y la gestión de la disponibilidad de contenedores en un entorno cloud."
+            d:
+              id: "infrastructure-as-code"
+              name: "Infraestructura como código (IaC)"
+              bg_image: "/images/services/cloud-native/iac.webp"
+              description: "La infraestructura como código es una práctica que implica definir la infraestructura de la aplicación utilizando código. Esto permite la creación y gestión automatizada de recursos de infraestructura, lo que facilita la implementación y mantenimiento de entornos cloud."
+            e:
+              id: "devops"
+              name: "DevOps"
+              bg_image: "/images/services/cloud-native/devops.webp"
+              description: "La cultura DevOps se centra en la colaboración entre equipos de desarrollo y operaciones para mejorar la entrega continua de software. En el contexto de la arquitectura nativa de la nube, DevOps implica la automatización de procesos de desarrollo, pruebas y despliegue para garantizar una entrega rápida y confiable de aplicaciones."
+          benefits:
+            title: "Beneficios"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "scalability"
+                icon: "fa-solid fa-maximize"
+                title: "Escalabilidad"
+                description: "Permite escalar aplicaciones de manera rápida y eficiente para satisfacer las demandas cambiantes de los usuarios, ya sea aumentando o disminuyendo los recursos de manera automática."
+              b: 
+                id: "resiliency"
+                icon: "fa-solid fa-house-medical-circle-check"
+                title: "Resiliencia"
+                description: "La arquitectura nativa de la nube fomenta la resiliencia al diseñar aplicaciones para que sean tolerantes a fallos y capaces de recuperarse automáticamente de eventos adversos."
+              c:
+                id: "agility"
+                icon: "fa-solid fa-gauge-high"
+                title: "Agilidad"
+                description: "Facilita el desarrollo ágil y la entrega continua de software, lo que permite a las organizaciones adaptarse rápidamente a los cambios en el mercado y a las necesidades de los usuarios."
+              d:
+                id: "efficiency"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Eficiencia"
+                description: "Reduce el tiempo y los costos asociados con el despliegue y gestión de aplicaciones al aprovechar la automatización y la escalabilidad de la nube."
+              e:
+                id: "portability"
+                icon: "fa-solid fa-recycle"
+                title: "Portabilidad"
+                description: "Permite ejecutar aplicaciones de manera consistente en diferentes entornos cloud y locales, lo que brinda mayor flexibilidad y opciones a las organizaciones."
+          services:
+            a:
+              id: "app-modernization"
+              icon: "fa-solid fa-circle-up"
+              title: "Modernización de aplicaciones legadas"
+              description:
+                - item: "Revisión y análisis de la arquitectura actual de las aplicaciones."
+                - item: "Desarrollamos estrategias para migrar aplicaciones monolíticas a una arquitectura basada en la nube."
+                - item: "Implementaciones de contenedores y orquestación de contenedores para mejorar la escalabilidad y la disponibilidad de las aplicaciones."
+            b:
+              id: "cloud-native-apps-design"
+              icon: "fa-solid fa-cloud-arrow-up"
+              title: "Diseño de Aplicaciones Nativas de la Nube"
+              description:
+                - item: "Diseñamos e implementamos aplicaciones utilizando arquitectura cloud-native."
+                - item: "Utilizamos tecnologías de vanguardia como Kubernetes (en la cual somos expertos) y servicios de contenedores gestionados para desplegar y gestionar aplicaciones de manera eficiente."
+                - item: "Integramos prácticas DevOps para automatizar y agilizar procesos de desarrollo, pruebas y despliegue, garantizando una entrega continua y confiable de software."
+            c:
+              id: "training-consultancy"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Consultoría y Capacitación"
+              description:
+                - item: "Asesoramiento personalizado sobre estrategias de adopción de arquitectura nativa de la nube."
+                - item: "Capacitación y formación en tecnologías y mejores prácticas cloud-native para equipos de desarrollo y operaciones."
+                - item: "Soporte continuo y acompañamiento durante todo el ciclo de vida del proyecto para garantizar el éxito en la implementación y operación de soluciones cloud."
       b:
         id: "infrastructure-provisioning"
         name: "Provisión de infraestructura"

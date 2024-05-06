@@ -6,45 +6,54 @@
 
 <!-- Slider start -->
 {{ with $data.service.services.platform.components.a }}
-{{ partial "service-page-header.html" . }}
+<section id="about" class="p-0">
+{{ partial "page-header-bgimage.html" . }}
+</section>
 
-<section id="service">
-  <div class="container pt-5">
-    <div class="col-sm-12 text-center text-uppercase pillars pt-3">
+<section id="service" style="background: #f6fafe;">
+  <div class="container pt-3">
+    <div class="col-sm-12 text-center pillars">
       <h2>{{ .name }}</h2>
     </div>
+    <div class="row justify-content-center pt-4">
+    <div class="col-sm-9">
       <p>{{ .page.description | markdownify }}</p>
-    <div class="row">
-      {{ $index := 1 }}
-      {{ range .pillars.items }}
-      <div class="col-md-1 pillars pt-5">
-        <i class="{{ .icon }}"></i>
       </div>
-      <div class="col-sm-12 col-md-5 pillars pt-5 pr-5">
-        <div class="pb-3 d-flex">
-          </i><h4 class="number">0{{ $index }}</h4><h4>&nbsp;{{ .name }}</h4>
-        </div>
-        <p>{{ .description }}</p>
-      </div>
-      {{ $index = math.Sum $index 1 }}
-      {{ end }}
     </div>
+    {{ range .page.components }}
+    <div id="{{ .id }}" class="d-none d-md-block container pt-5 mt-5 mb-5 border" style="padding: 0 4em; border-radius: 16px; box-shadow: 0 0 15px 0 rgba(0,0,0,0.2); background: white;">
+      <div class="row">
+        <div class="col-sm-3">
+          <img style="max-width: 100%; max-height: unset; box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.3); border-radius: 16px; padding: 0;" src="{{ .bg_image }}">
+        </div>
+        <div class="col-sm-9">
+          <h3 style="color: var(--blue-mw-dark); font-weight: 900;">{{ .name }}</h3>
+          <p>{{ .description | markdownify }}</p>
+          <ul class="mb-5">
+          {{ range .benefits }}
+          <li>{{ .item }}</li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{ end }}
   </div>
 </section>
 
-<section class="cta">
-  <div class="container">
-      <div class="col-md-12 text-center">
-        <h2>{{ .cta.question }}</h2>
-        <h3>{{ .cta.answer }}</h3>
-        <p>
-          {{ range .cta.buttons }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-primary {{.style}}">{{ .label }}</a>
-          {{ end }}
-        </p>
-      </div>
-  </div>
-</section>
+{{ with $data.service.services.platform.components.a.page }}
+{{ partial "services-benefits.html" (dict "img_position" "left" "benefits" .benefits) }}
+{{ end }}
+
+{{ partial "services-overview-strip.html" . }}
+
+{{ with $data.service.services.platform.components.a.page }}
+{{ partial "services-block.html" . }}
+{{ end }}
+
+{{ with $data.service.services.platform.cta }}
+{{ partial "cta.html" . }}
+{{ end }}
 
 {{ end }}
 {{ end }}
