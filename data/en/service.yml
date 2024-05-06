@@ -6,7 +6,7 @@ services:
       Engineering
     parent: "Services"
     description: "We design and automate platforms tailored to your needs, obtaining predictable and reproducible environments in which your software and services can be efficiently and consistently deployed. It covers development, maintenance, and production operation, with a focus on customer service, automation, and security."
-    bg_image: "images/services/pe-bg.png"
+    bg_image: "images/services/pe-bg.webp"
     cta:
       title: "Do you have a project?"
       subtitle: "Let's discuss your opportunities"
@@ -122,12 +122,12 @@ services:
         id: "infrastructure-provisioning"
         name: "Infrastructure provisioning"
         description: "Creating, replicating, updating, and managing IT infrastructure in an automated manner provides essential flexibility and velocity to any business."
-        bg_image: "/images/services/infrastructure.png"
+        bg_image: "/images/services/infrastructure.webp"
         button:
       c:
         id: "containerization-and-orchestration"
         name: "Containerization & Orchestration"
-        bg_image: "/images/services/containers.png"
+        bg_image: "/images/services/containers.webp"
         description: "Containers encapsulate applications and their dependencies, providing portability across different environments, while orchestration, such as Kubernetes, facilitates efficient container management, ensuring their consistent and scalable deployment."
         button: "See more"
         page:
@@ -277,7 +277,7 @@ services:
       - item: "In today's dynamic business world, Digital Transformation is more than a necessity: it is an essential strategy for survival and long-term success. At Mikroways, we understand the complexity of this process and offer a comprehensive Digital Transformation service designed to propel your company to the digital forefront."
       - item: "Our current world is hyperconnected; change is super-accelerated; artificial intelligence is omnipresent; and decisions are increasingly data-driven."
       - item: "What if you could accelerate practical innovation in your business? Mikroways' digital transformation team will help you inspire new ideas and drive practical innovation."
-    bg_image: "images/services/dt-bg.png"
+    bg_image: "images/services/dt-bg.webp"
     components_heading: "Our approach"
     components:
       a:
@@ -348,7 +348,7 @@ services:
       Professional Services
     parent: "Services"
     description: "Our line of professional services honors our commitment to adapt to our clients' specific needs and always provide the best possible solution for each case. In that regard, we adopt a proactive approach to continuously drive improvements and efficiency in your business by applying our knowledge and expertise to your particular situation."
-    bg_image: "/images/services/ps-bg.png"
+    bg_image: "/images/services/ps-bg.webp"
     components_heading: "Our professional services"
     components:
       a:
@@ -399,7 +399,7 @@ services:
       Cybersecurity
     parent: "Services"
     description: "Cybersecurity is an unavoidable priority in the digital age, where threats constantly evolve. At Mikroways, we understand the importance of protecting your digital assets and data. Thus, our security service line is designed to provide robust and proactive defense against cyber threats."
-    bg_image: "images/services/cybersecurity-bg.png"
+    bg_image: "images/services/cybersecurity-bg.webp"
     catalog:
       title: "Service line"
       items:
