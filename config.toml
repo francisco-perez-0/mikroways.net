@@ -128,6 +128,15 @@ map_latitude = "-34.91179"
 map_longitude = "-57.95820"
 map_marker = "images/marker.png"
   
+# HubSpot
+[params.hub_spot]
+url  = "//js.hs-scripts.com/45476202.js"
+
+# Linkedin
+[params.linkedin]
+partner_id = "6063204"
+
+
 ############################# social site ########################
 [[params.social]]
 name = "linkedin"
