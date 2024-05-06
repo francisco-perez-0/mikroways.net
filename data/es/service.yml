@@ -33,12 +33,12 @@ services:
         id: "cloud-native-architecture"
         name: "Arquitectura Cloud Native"
         description: "Para obtener todos los beneficios de la nube, las aplicaciones y la infraestructura deben ser creadas para ella. Diseñamos cargas de trabajo capaces de aprovechar al máximo la nube."
-        overview: "En Mikroways nos especializamos en ofrecer soluciones integrales en contenerización y orquestación de contenedores, así como en prácticas DevOps para optimizar el desarrollo, despliegue y operación de aplicaciones en entornos cloud y locales. Desde la evaluación y modernización de aplicaciones hasta la implementación y gestión de clústeres Kubernetes, proporcionamos servicios personalizados que permiten a las organizaciones aprovechar al máximo las ventajas de la contenerización y la orquestación."
         bg_image: "/images/services/cloud-native.webp"
         button: "Ver más"
         page:
           description: |
             La arquitectura nativa de la nube se refiere a un enfoque de diseño de software que aprovecha al máximo las capacidades y servicios ofrecidos por las plataformas de computación en la nube. Se basa en los principios de escalabilidad, resiliencia, flexibilidad y automatización para desarrollar y desplegar aplicaciones de manera eficiente en entornos cloud.
+          overview: "En Mikroways nos especializamos en ofrecer soluciones integrales en contenerización y orquestación de contenedores, así como en prácticas DevOps para optimizar el desarrollo, despliegue y operación de aplicaciones en entornos cloud y locales. Desde la evaluación y modernización de aplicaciones hasta la implementación y gestión de clústeres Kubernetes, proporcionamos servicios personalizados que permiten a las organizaciones aprovechar al máximo las ventajas de la contenerización y la orquestación."
           components:
             a:
               id: "microservices"
@@ -130,7 +130,103 @@ services:
         name: "Contenerización y orquestación"
         bg_image: "/images/services/containers.png"
         description: "Los contenedores encapsulan aplicaciones y sus dependencias, proporcionando portabilidad entre diferentes entornos, mientras que la orquestación, con Kubernetes, facilita la gestión eficiente de contenedores, asegurando su despliegue consistente y escalable."
-        button:
+        button: "Ver más"
+        page:
+          overview: "En Mikroways nos especializamos en ofrecer soluciones integrales en contenerización y orquestación de contenedores, así como en prácticas DevOps para optimizar el desarrollo, despliegue y operación de aplicaciones en entornos cloud y locales. Desde la evaluación y modernización de aplicaciones hasta la implementación y gestión de clústeres Kubernetes, proporcionamos servicios personalizados que permiten a las organizaciones aprovechar al máximo las ventajas de la contenerización y la orquestación."
+          components:
+            a:
+              id: "containerization"
+              name: "Contenerización"
+              bg_image: "/images/services/cloud-native/microservices.webp"
+              description: "La contenerización es un enfoque de virtualización a nivel de sistema operativo que permite empaquetar una aplicación y todas sus dependencias en un contenedor ligero y portátil. Cada contenedor funciona de manera independiente y aísla la aplicación del entorno de ejecución, lo que garantiza consistencia y portabilidad en diferentes entornos."
+            b:
+              id: "orchestration"
+              name: "Orquestación"
+              bg_image: "/images/services/cloud-native/cont.webp"
+              description: "La orquestación de contenedores se refiere a la gestión automatizada de contenedores a gran escala. Cuando tienes múltiples contenedores ejecutándose en diferentes hosts, es necesario coordinar su despliegue, escalamiento, monitoreo y recuperación en caso de fallos. Es aquí donde entran en juego las herramientas de orquestación, como Kubernetes."
+          benefits_cont:
+            title: "Beneficios de la contenerización"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "portability"
+                icon: "fa-solid fa-recycle"
+                title: "Portabilidad"
+                description: "Los contenedores son independientes del entorno de ejecución, lo que significa que una vez creados, pueden ejecutarse en cualquier lugar que tenga soporte para Docker u otra plataforma de contenedores."
+              b: 
+                id: "consistency"
+                icon: "fa-solid fa-house-medical-circle-check"
+                title: "Consistencia"
+                description: "Al empaquetar la aplicación y sus dependencias juntas, se garantiza que la aplicación se ejecute de la misma manera en diferentes entornos, desde el desarrollo hasta la producción."
+              c:
+                id: "efficiency"
+                icon: "fa-solid fa-gauge-high"
+                title: "Eficiencia de recursos"
+                description: "Los contenedores comparten recursos del sistema operativo subyacente, lo que los hace más eficientes en términos de uso de recursos en comparación con las máquinas virtuales."
+              d:
+                id: "quick-deployment"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Rápido despliegue"
+                description: "Los contenedores se pueden iniciar y detener rápidamente, lo que agiliza el proceso de despliegue y escalado de aplicaciones."
+              e:
+                id: "isolation"
+                icon: "fa-solid fa-maximize"
+                title: "Aislamiento"
+                description: "Cada contenedor proporciona un grado de aislamiento para la aplicación, lo que mejora la seguridad y facilita la gestión de dependencias."
+          benefits_orch:
+            title: "Beneficios de la orquestación"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "scalability"
+                icon: "fa-solid fa-recycle"
+                title: "Escalabilidad"
+                description: "Kubernetes facilita el escalamiento automático de aplicaciones en función de la carga de trabajo, lo que garantiza un rendimiento óptimo en todo momento."
+              b: 
+                id: "high-availability"
+                icon: "fa-solid fa-house-medical-circle-check"
+                title: "Alta disponibilidad"
+                description: "Kubernetes maneja la distribución de la carga de trabajo entre múltiples instancias de una aplicación, asegurando una alta disponibilidad y tolerancia a fallos."
+              c:
+                id: "deployment"
+                icon: "fa-solid fa-gauge-high"
+                title: "Despliegue declarativo"
+                description: "La definición de la infraestructura como código permite un despliegue consistente y reproducible de la aplicación en diferentes entornos."
+              d:
+                id: "autohealing"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Monitoreo y autosanado"
+                description: "Kubernetes monitorea constantemente el estado de las aplicaciones y los nodos, y puede realizar acciones de autosanación automáticamente en caso de fallos."
+              e:
+                id: "resource-mgmt"
+                icon: "fa-solid fa-maximize"
+                title: "Gestión de los recursos"
+                description: "Kubernetes gestiona eficientemente los recursos de CPU y memoria, asignándoles dinámicamente según las necesidades de las aplicaciones."
+          services:
+            a:
+              id: "cont-strategies"
+              icon: "fa-solid fa-circle-up"
+              title: "Implementación de Estrategias de Contenerización"
+              description:
+                - item: "Evaluación de las aplicaciones existentes para identificar aquellas que se beneficiarían de la contenerización."
+                - item: "Desarrollo de estrategias y hojas de ruta para la contenerización gradual de aplicaciones críticas para el negocio."
+                - item: "Diseño e implementación de Dockerfiles y Docker Compose para empaquetar aplicaciones en contenedores de manera eficiente y segura."
+            b:
+              id: "kubernetes-mgmt"
+              icon: "fa-solid fa-cloud-arrow-up"
+              title: "Despliegue y Gestión de Clústeres Kubernetes"
+              description:
+                - item: "Implementación de clústeres Kubernetes en entornos locales o en la nube pública."
+                - item: "Configuración y optimización de clústeres Kubernetes para maximizar la escalabilidad, disponibilidad y seguridad."
+                - item: "Despliegue de aplicaciones en clústeres Kubernetes utilizando herramientas como Helm para gestionar paquetes de aplicaciones."
+            c:
+              id: "processes-automation"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Automatización de Procesos con DevOps"
+              description:
+                - item: "Integración de prácticas DevOps en el ciclo de vida de desarrollo y despliegue de aplicaciones."
+                - item: "Automatización de pipelines de CI/CD (Integración Continua/Entrega Continua) para garantizar la entrega rápida y confiable de software."
+                - item: "Implementación de monitoreo y alertas para supervisar el rendimiento y la salud de las aplicaciones y la infraestructura de contenedores."
       d:
         id: "continuous-integration-and-deployment"
         name: "Integración y despliegue continuos"

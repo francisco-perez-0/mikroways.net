@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid pb-4" style="background-color: {{ .background }};">
   <div class="col-sm-12 text-center text-uppercase pillars pt-5 pb-5">
     <h2>{{ .benefits.title }}</h2>
   </div>
@@ -20,7 +20,7 @@
     {{ end }}
     {{ $count = add $count 1 }}
     {{ end }}
-    <div class="col-sm-10 col-md-4 col-lg-3" style="border: 2px solid #c6c6c6; border-radius: 28px; margin: 0 1em 2em 1em; padding-left: 2em; padding-top: 2em; padding-bottom: 1em;">
+    <div class="col-sm-10 col-md-4 col-lg-3" style="background: white; border: 2px solid #c6c6c6; border-radius: 28px; margin: 0 1em 2em 1em; padding-left: 2em; padding-top: 2em; padding-bottom: 1em;">
         <i class="{{ .icon }}" style="font-size: 2em; color: #52B04F; border: 1px solid #fafafa; background: #e5f1df; padding: 0.5em; border-radius: 16px;"></i>
         <h4 style="color: black; padding-top: 0.5em; padding-bottom: 0.5em;">{{ .title }}</h4>
         <p style="line-height: 1.5em; color: var(--main-font-color);">{{ .description }}</p>

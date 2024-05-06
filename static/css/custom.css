@@ -1974,3 +1974,19 @@ h2.culture-header {
     padding: 2em 2em;
   }
 }
+
+div.cont-and-orch {
+  border-radius: 16px;
+  padding: 2em;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+  border-bottom: 16px solid black;
+  margin: 3rem 2rem;
+} 
+
+div#containerization {
+  border-color: var(--blue-mw-primary);
+}
+
+div#orchestration {
+  border-color: var(--green-mw-primary);
+}
