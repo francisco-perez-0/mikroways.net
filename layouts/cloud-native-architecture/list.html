@@ -21,12 +21,12 @@
       </div>
     </div>
     {{ range .page.components }}
-    <div id="{{ .id }}" class="d-none d-md-block container pt-5 mt-5 mb-5 border" style="padding: 0 4em; border-radius: 16px; box-shadow: 0 0 15px 0 rgba(0,0,0,0.2); background: white;">
+    <div id="{{ .id }}" class="container pt-5 mt-5 mb-5 border" style="padding: 0 4em; border-radius: 16px; box-shadow: 0 0 15px 0 rgba(0,0,0,0.2); background: white;">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="d-none d-md-block col-md-3">
           <img style="max-width: 100%; max-height: unset; box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.3); border-radius: 16px; padding: 0;" src="{{ .bg_image }}">
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-12 col-md-9">
           <h3 style="color: var(--blue-mw-dark); font-weight: 900;">{{ .name }}</h3>
           <p>{{ .description | markdownify }}</p>
           <ul class="mb-5">
