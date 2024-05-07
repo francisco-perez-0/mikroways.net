@@ -3,6 +3,7 @@
 {{- partial "head.html" . -}}
 
 <body>
+  {{- partial "google_tag_manager.html" . -}}
   {{- partial "header.html" . -}}
   {{- block "main" . }}{{- end }}
   {{- partial "footer.html" . -}}

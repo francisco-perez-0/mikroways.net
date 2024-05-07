@@ -32,17 +32,27 @@
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
 
+  {{ with .Site.Params.google_tag_manager }}
+  {{ "<!-- Google Tag Manager -->" | safeHTML }}
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{ .id }}');</script>
+  {{ "<!-- End Google Tag Manager -->" | safeHTML }}
+  {{ end }}
+
   {{ template "_internal/google_analytics.html" . }}
   {{ template "_internal/opengraph.html" . }}
 
-  {{ "<!-- Start of HubSpot Embed Code -->" | safeHTML }}
   {{ with .Site.Params.hub_spot.url }}
+  {{ "<!-- Start of HubSpot Embed Code -->" | safeHTML }}
   <script type="text/javascript" id="hs-script-loader" async defer src="{{ . | safeURL }}"></script>
-  {{ end }}
   {{ "<!-- End of HubSpot Embed Code -->" | safeHTML }}
+  {{ end }}
   
-  {{ "<!-- Start of Linkedin Embed Code -->" | safeHTML }}
   {{ with .Site.Params.linkedin }}
+  {{ "<!-- Start of Linkedin Embed Code -->" | safeHTML }}
   <script type="text/javascript">
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push("{{ .partner_id | safeURL }}");
@@ -60,8 +70,8 @@
   <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid={{ .partner_id | safeURL }}&fmt=gif" >
   </noscript>
-  {{ end }}
   {{ "<!-- End of Linkedin Embed Code -->" | safeHTML }}
+  {{ end }}
 
   {{ with .Params.extra_head }}
   {{ "<!-- Start of extra head config -->" | safeHTML }}
