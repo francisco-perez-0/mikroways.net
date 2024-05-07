@@ -139,12 +139,12 @@ services:
                 description: "El aprovisionamiento de infraestructura permite escalar los recursos según las necesidades del negocio, garantizando que se puedan satisfacer los picos de demanda sin interrupciones en el servicio."
               b: 
                 id: "agility"
-                icon: "fa-solid fa-house-medical-circle-check"
-                title: "Resiliencia"
+                icon: "fa-solid fa-gauge-high"
+                title: "Agilidad"
                 description: "Al utilizar herramientas y técnicas de automatización, el aprovisionamiento de infraestructura permite desplegar y configurar nuevos recursos de manera rápida y consistente, acelerando el tiempo de comercialización de nuevos productos y servicios."
               c:
                 id: "flexibility"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-sliders"
                 title: "Flexibilidad"
                 description: "La infraestructura puede ser aprovisionada en entornos locales o en la nube, lo que proporciona flexibilidad para adaptarse a los requisitos de carga de trabajo y presupuesto de la organización."
               d:
@@ -155,21 +155,21 @@ services:
           services:
             a:
               id: "infra-design"
-              icon: "fa-solid fa-circle-up"
+              icon: "fa-solid fa-cubes"
               title: "Diseño e Implementación de Infraestructura"
               description:
                 - item: "Evaluación de requisitos de carga de trabajo y diseño de arquitecturas de infraestructura escalables y resilientes."
                 - item: "Implementación de infraestructura en entornos locales o en la nube, utilizando herramientas como AWS, Azure, Google Cloud Platform, o soluciones de infraestructura híbrida."
             b:
               id: "provisioning-automation"
-              icon: "fa-solid fa-cloud-arrow-up"
+              icon: "fa-solid fa-gears"
               title: "Automatización del aprovisionamiento"
               description:
                 - item: "Desarrollo de scripts y plantillas de infraestructura como código para automatizar el aprovisionamiento de recursos y la configuración de sistemas."
                 - item: "Implementación de herramientas de automatización como Terraform, Ansible, o Chef para gestionar y mantener la infraestructura de manera eficiente."
             c:
               id: "infra-mgmt-and-monitoring"
-              icon: "fa-solid fa-hand-holding-hand"
+              icon: "fa-solid fa-magnifying-glass-chart"
               title: "Gestión y Monitoreo de Infraestructura"
               description:
                 - item: "Configuración de herramientas de monitoreo para supervisar el rendimiento y la salud de la infraestructura, y generar alertas en caso de problemas."
@@ -212,22 +212,22 @@ services:
                 description: "Los contenedores son independientes del entorno de ejecución, lo que significa que una vez creados, pueden ejecutarse en cualquier lugar que tenga soporte para Docker u otra plataforma de contenedores."
               b: 
                 id: "consistency"
-                icon: "fa-solid fa-house-medical-circle-check"
+                icon: "fa-regular fa-clone"
                 title: "Consistencia"
                 description: "Al empaquetar la aplicación y sus dependencias juntas, se garantiza que la aplicación se ejecute de la misma manera en diferentes entornos, desde el desarrollo hasta la producción."
               c:
                 id: "efficiency"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-money-bill-transfer"
                 title: "Eficiencia de recursos"
                 description: "Los contenedores comparten recursos del sistema operativo subyacente, lo que los hace más eficientes en términos de uso de recursos en comparación con las máquinas virtuales."
               d:
                 id: "quick-deployment"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-solid fa-gauge-high"
                 title: "Rápido despliegue"
                 description: "Los contenedores se pueden iniciar y detener rápidamente, lo que agiliza el proceso de despliegue y escalado de aplicaciones."
               e:
                 id: "isolation"
-                icon: "fa-solid fa-maximize"
+                icon: "fa-solid fa-layer-group"
                 title: "Aislamiento"
                 description: "Cada contenedor proporciona un grado de aislamiento para la aplicación, lo que mejora la seguridad y facilita la gestión de dependencias."
           benefits_orch:
@@ -236,33 +236,33 @@ services:
             benefits:
               a:
                 id: "scalability"
-                icon: "fa-solid fa-recycle"
+                icon: "fa-solid fa-maximize"
                 title: "Escalabilidad"
                 description: "Kubernetes facilita el escalamiento automático de aplicaciones en función de la carga de trabajo, lo que garantiza un rendimiento óptimo en todo momento."
               b: 
                 id: "high-availability"
-                icon: "fa-solid fa-house-medical-circle-check"
+                icon: "fa-solid fa-coins"
                 title: "Alta disponibilidad"
                 description: "Kubernetes maneja la distribución de la carga de trabajo entre múltiples instancias de una aplicación, asegurando una alta disponibilidad y tolerancia a fallos."
               c:
                 id: "deployment"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-list-check"
                 title: "Despliegue declarativo"
                 description: "La definición de la infraestructura como código permite un despliegue consistente y reproducible de la aplicación en diferentes entornos."
               d:
                 id: "autohealing"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-solid fa-house-medical-circle-check"
                 title: "Monitoreo y autosanado"
                 description: "Kubernetes monitorea constantemente el estado de las aplicaciones y los nodos, y puede realizar acciones de autosanación automáticamente en caso de fallos."
               e:
                 id: "resource-mgmt"
-                icon: "fa-solid fa-maximize"
+                icon: "fa-solid fa-users-gear"
                 title: "Gestión de los recursos"
                 description: "Kubernetes gestiona eficientemente los recursos de CPU y memoria, asignándoles dinámicamente según las necesidades de las aplicaciones."
           services:
             a:
               id: "cont-strategies"
-              icon: "fa-solid fa-circle-up"
+              icon: "fa-brands fa-docker"
               title: "Implementación de Estrategias de Contenerización"
               description:
                 - item: "Evaluación de las aplicaciones existentes para identificar aquellas que se beneficiarían de la contenerización."
@@ -270,7 +270,7 @@ services:
                 - item: "Diseño e implementación de Dockerfiles y Docker Compose para empaquetar aplicaciones en contenedores de manera eficiente y segura."
             b:
               id: "kubernetes-mgmt"
-              icon: "fa-solid fa-cloud-arrow-up"
+              icon: "fa-solid fa-laptop-code"
               title: "Despliegue y Gestión de Clústeres Kubernetes"
               description:
                 - item: "Implementación de clústeres Kubernetes en entornos locales o en la nube pública."
@@ -278,7 +278,7 @@ services:
                 - item: "Despliegue de aplicaciones en clústeres Kubernetes utilizando herramientas como Helm para gestionar paquetes de aplicaciones."
             c:
               id: "processes-automation"
-              icon: "fa-solid fa-hand-holding-hand"
+              icon: "fa-solid fa-arrows-spin"
               title: "Automatización de Procesos con DevOps"
               description:
                 - item: "Integración de prácticas DevOps en el ciclo de vida de desarrollo y despliegue de aplicaciones."

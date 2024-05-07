@@ -138,12 +138,12 @@ services:
                 description: "Infrastructure provisioning enables scaling resources according to business needs, ensuring that peak demand can be met without interruptions in service."
               b: 
                 id: "agility"
-                icon: "fa-solid fa-house-medical-circle-check"
-                title: "Resiliency"
+                icon: "fa-solid fa-gauge-high"
+                title: "Agility"
                 description: "By using automation tools and techniques, infrastructure provisioning allows for the quick and consistent deployment and configuration of new resources, speeding up the time to market for new products and services."
               c:
                 id: "flexibility"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-sliders"
                 title: "Flexibility"
                 description: "Infrastructure can be provisioned in on-premises environments or in the cloud, providing flexibility to adapt to the organization's workload requirements and budget."
               d:
@@ -154,21 +154,21 @@ services:
           services:
             a:
               id: "infra-design"
-              icon: "fa-solid fa-circle-up"
+              icon: "fa-solid fa-cubes"
               title: "Infrastructure design & implementation"
               description:
                 - item: "Assessment of workload requirements and design of scalable and resilient infrastructure architectures."
                 - item: "Implementation of infrastructure in on-premises or cloud environments, using tools such as AWS, Azure, Google Cloud Platform, or hybrid infrastructure solutions."
             b:
               id: "provisioning-automation"
-              icon: "fa-solid fa-cloud-arrow-up"
+              icon: "fa-solid fa-gears"
               title: "Provisioning automation"
               description:
                 - item: "Development of infrastructure-as-code scripts and templates to automate resource provisioning and system configuration."
                 - item: "Implementation of automation tools such as Terraform, Ansible, or Chef to manage and maintain infrastructure efficiently."
             c:
               id: "infra-mgmt-and-monitoring"
-              icon: "fa-solid fa-hand-holding-hand"
+              icon: "fa-solid fa-magnifying-glass-chart"
               title: "Infrastructure management and monitoring"
               description:
                 - item: "Configuration of monitoring tools to monitor the performance and health of the infrastructure and generate alerts in case of issues."
@@ -211,22 +211,22 @@ services:
                 description: "Containers are independent of the execution environment, which means that once created, they can run anywhere that supports Docker or another container platform."
               b: 
                 id: "consistency"
-                icon: "fa-solid fa-house-medical-circle-check"
+                icon: "fa-regular fa-clone"
                 title: "Consistency"
                 description: "By packaging the application and its dependencies together, it ensures that the application runs the same way in different environments, from development to production."
               c:
                 id: "efficiency"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-money-bill-transfer"
                 title: "Efficiency"
                 description: "Containers share resources from the underlying operating system, making them more efficient in terms of resource usage compared to virtual machines."
               d:
                 id: "quick-deployment"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-solid fa-gauge-high"
                 title: "Quick deployment"
                 description: "Containers can be started and stopped quickly, speeding up the process of deploying and scaling applications."
               e:
                 id: "isolation"
-                icon: "fa-solid fa-maximize"
+                icon: "fa-solid fa-layer-group"
                 title: "Isolation"
                 description: "Each container provides a level of isolation for the application, improving security and simplifying dependency management."
           benefits_orch:
@@ -240,12 +240,12 @@ services:
                 description: "Kubernetes enables automatic scaling of applications based on workload, ensuring optimal performance at all times."
               b: 
                 id: "high-availability"
-                icon: "fa-solid fa-house-medical-circle-check"
+                icon: "fa-solid fa-coins"
                 title: "High availability"
                 description: "Kubernetes manages workload distribution among multiple instances of an application, ensuring high availability and fault tolerance."
               c:
                 id: "deployment"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-list-check"
                 title: "Declarative deployment"
                 description: "The definition of infrastructure as code allows for consistent and reproducible deployment of the application across different environments."
               d:
@@ -255,13 +255,13 @@ services:
                 description: "Kubernetes constantly monitors the state of applications and nodes, and can automatically take self-healing actions in case of failures."
               e:
                 id: "resource-mgmt"
-                icon: "fa-solid fa-maximize"
+                icon: "fa-solid fa-users-gear"
                 title: "Resource management"
                 description: "Kubernetes efficiently manages CPU and memory resources, dynamically allocating them according to the needs of the applications."
           services:
             a:
               id: "cont-strategies"
-              icon: "fa-solid fa-circle-up"
+              icon: "fa-brands fa-docker"
               title: "Containerization strategies implementation"
               description:
                 - item: "Evaluation of existing applications to identify those that would benefit from containerization."
@@ -269,7 +269,7 @@ services:
                 - item: "Design and implementation of Dockerfiles and Docker Compose to package applications into containers efficiently and securely."
             b:
               id: "kubernetes-mgmt"
-              icon: "fa-solid fa-cloud-arrow-up"
+              icon: "fa-solid fa-laptop-code"
               title: "Deployment and management of Kubernetes clusters"
               description:
                 - item: "Implementation of Kubernetes clusters in on-premises or public cloud environments."
@@ -277,7 +277,7 @@ services:
                 - item: "Deployment of applications on Kubernetes clusters using tools like Helm to manage application packages."
             c:
               id: "processes-automation"
-              icon: "fa-solid fa-hand-holding-hand"
+              icon: "fa-solid fa-arrows-spin"
               title: "Processes automation with DevOps"
               description:
                 - item: "Integration of DevOps practices into the application development and deployment lifecycle."
