@@ -1990,3 +1990,20 @@ div#containerization {
 div#orchestration {
   border-color: var(--green-mw-primary);
 }
+
+.triangle-background {
+  background-color: #F6FAFE;
+  position: relative;
+}
+
+.triangle-background::before {
+  content: "";
+  background-image: url(/images/triangle.png);
+  background-size: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.03;
+}

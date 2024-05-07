@@ -123,7 +123,64 @@ services:
         name: "Infrastructure provisioning"
         description: "Creating, replicating, updating, and managing IT infrastructure in an automated manner provides essential flexibility and velocity to any business."
         bg_image: "/images/services/infrastructure.webp"
-        button:
+        button: "See more"
+        page:
+          description: |
+            Infrastructure provisioning refers to the process of preparing and configuring the technological resources needed to support the operation of systems and applications. This includes servers, networks, storage, and any other components necessary to run workloads efficiently and securely.
+          benefits:
+            title: "Benefits"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "scalability"
+                icon: "fa-solid fa-maximize"
+                title: "Scalability"
+                description: "Infrastructure provisioning enables scaling resources according to business needs, ensuring that peak demand can be met without interruptions in service."
+              b: 
+                id: "agility"
+                icon: "fa-solid fa-house-medical-circle-check"
+                title: "Resiliency"
+                description: "By using automation tools and techniques, infrastructure provisioning allows for the quick and consistent deployment and configuration of new resources, speeding up the time to market for new products and services."
+              c:
+                id: "flexibility"
+                icon: "fa-solid fa-gauge-high"
+                title: "Flexibility"
+                description: "Infrastructure can be provisioned in on-premises environments or in the cloud, providing flexibility to adapt to the organization's workload requirements and budget."
+              d:
+                id: "cost-effiency"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Cost efficiency"
+                description: "By using cloud resources, you only pay for what you use, which can reduce operational costs compared to acquiring and maintaining physical infrastructure."
+          services:
+            a:
+              id: "infra-design"
+              icon: "fa-solid fa-circle-up"
+              title: "Infrastructure design & implementation"
+              description:
+                - item: "Assessment of workload requirements and design of scalable and resilient infrastructure architectures."
+                - item: "Implementation of infrastructure in on-premises or cloud environments, using tools such as AWS, Azure, Google Cloud Platform, or hybrid infrastructure solutions."
+            b:
+              id: "provisioning-automation"
+              icon: "fa-solid fa-cloud-arrow-up"
+              title: "Provisioning automation"
+              description:
+                - item: "Development of infrastructure-as-code scripts and templates to automate resource provisioning and system configuration."
+                - item: "Implementation of automation tools such as Terraform, Ansible, or Chef to manage and maintain infrastructure efficiently."
+            c:
+              id: "infra-mgmt-and-monitoring"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Infrastructure management and monitoring"
+              description:
+                - item: "Configuration of monitoring tools to monitor the performance and health of the infrastructure and generate alerts in case of issues."
+                - item: "Implementation of cost management policies to optimize resource usage and reduce unnecessary expenses."
+            d:
+              id: "training-and-consultancy"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Training & Consultancy"
+              description:
+                - item: "Advice on best practices for infrastructure provisioning and how to effectively implement them in your organization."
+                - item: "Training and education on infrastructure as code tools and automation techniques for operations and development teams."
+                - item: "Continuous support and guidance throughout the implementation and maintenance process to ensure optimal performance and scalability according to business needs."
       c:
         id: "containerization-and-orchestration"
         name: "Containerization & Orchestration"

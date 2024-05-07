@@ -121,10 +121,67 @@ services:
                 - item: "Soporte continuo y acompañamiento durante todo el ciclo de vida del proyecto para garantizar el éxito en la implementación y operación de soluciones cloud."
       b:
         id: "infrastructure-provisioning"
-        name: "Provisión de infraestructura"
+        name: "Aprovisionamiento de infraestructura"
         description: "Crear, replicar, actualizar y gestionar la infraestructura de TI de manera automatizada proporciona flexibilidad y velocidad esenciales a cualquier negocio."
         bg_image: "/images/services/infrastructure.webp"
-        button:
+        button: "Ver más"
+        page:
+          description: |
+            El aprovisionamiento de infraestructura se refiere al proceso de preparación y configuración de recursos tecnológicos necesarios para admitir la operación de sistemas y aplicaciones. Esto incluye servidores, redes, almacenamiento y cualquier otro componente necesario para ejecutar las cargas de trabajo de manera eficiente y segura.
+          benefits:
+            title: "Beneficios"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "scalability"
+                icon: "fa-solid fa-maximize"
+                title: "Escalabilidad"
+                description: "El aprovisionamiento de infraestructura permite escalar los recursos según las necesidades del negocio, garantizando que se puedan satisfacer los picos de demanda sin interrupciones en el servicio."
+              b: 
+                id: "agility"
+                icon: "fa-solid fa-house-medical-circle-check"
+                title: "Resiliencia"
+                description: "Al utilizar herramientas y técnicas de automatización, el aprovisionamiento de infraestructura permite desplegar y configurar nuevos recursos de manera rápida y consistente, acelerando el tiempo de comercialización de nuevos productos y servicios."
+              c:
+                id: "flexibility"
+                icon: "fa-solid fa-gauge-high"
+                title: "Flexibilidad"
+                description: "La infraestructura puede ser aprovisionada en entornos locales o en la nube, lo que proporciona flexibilidad para adaptarse a los requisitos de carga de trabajo y presupuesto de la organización."
+              d:
+                id: "cost-effiency"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Eficiencia de costos"
+                description: "Al utilizar recursos en la nube, se paga solo por lo que se utiliza, lo que puede reducir los costos operativos en comparación con la adquisición y mantenimiento de infraestructura física."
+          services:
+            a:
+              id: "infra-design"
+              icon: "fa-solid fa-circle-up"
+              title: "Diseño e Implementación de Infraestructura"
+              description:
+                - item: "Evaluación de requisitos de carga de trabajo y diseño de arquitecturas de infraestructura escalables y resilientes."
+                - item: "Implementación de infraestructura en entornos locales o en la nube, utilizando herramientas como AWS, Azure, Google Cloud Platform, o soluciones de infraestructura híbrida."
+            b:
+              id: "provisioning-automation"
+              icon: "fa-solid fa-cloud-arrow-up"
+              title: "Automatización del aprovisionamiento"
+              description:
+                - item: "Desarrollo de scripts y plantillas de infraestructura como código para automatizar el aprovisionamiento de recursos y la configuración de sistemas."
+                - item: "Implementación de herramientas de automatización como Terraform, Ansible, o Chef para gestionar y mantener la infraestructura de manera eficiente."
+            c:
+              id: "infra-mgmt-and-monitoring"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Gestión y Monitoreo de Infraestructura"
+              description:
+                - item: "Configuración de herramientas de monitoreo para supervisar el rendimiento y la salud de la infraestructura, y generar alertas en caso de problemas."
+                - item: "Implementación de políticas de gestión de costos para optimizar el uso de recursos y reducir los gastos innecesarios."
+            d:
+              id: "training-and-consultancy"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Consultoría y Capacitación"
+              description:
+                - item: "Asesoramiento sobre las mejores prácticas de aprovisionamiento de infraestructura y cómo implementarlas de manera efectiva en tu organización."
+                - item: "Capacitación y formación en herramientas y técnicas de infraestructura como código y automatización para equipos de operaciones y desarrollo."
+                - item: "Soporte continuo y acompañamiento durante todo el proceso de implementación y mantenimiento de infraestructura para garantizar un rendimiento óptimo y una escalabilidad adecuada según las necesidades del negocio."
       c:
         id: "containerization-and-orchestration"
         name: "Contenerización y orquestación"
