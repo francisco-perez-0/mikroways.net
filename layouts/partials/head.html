@@ -61,5 +61,11 @@
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid={{ .partner_id | safeURL }}&fmt=gif" >
   </noscript>
   {{ end }}
-  {{ "<!-- End of Linkedin Embed Code -->" | safeHTML }}  
+  {{ "<!-- End of Linkedin Embed Code -->" | safeHTML }}
+
+  {{ with .Params.extra_head }}
+  {{ "<!-- Start of extra head config -->" | safeHTML }}
+  {{ . | safeHTML }}
+  {{ "<!-- End of extra head config -->" | safeHTML }}
+  {{ end }}
 </head>
