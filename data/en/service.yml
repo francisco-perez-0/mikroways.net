@@ -288,19 +288,192 @@ services:
         name: "Continuous Integration & Deployment"
         description: "Automating software deployment significantly reduces time-to-market and enhances the productivity of the IT team."
         bg_image: "/images/services/cicd.webp"
-        button:
+        button: "See more"
+        page:
+          description: "Continuous Integration (CI) and Continuous Delivery (CD) are key practices in software development that automate the process of integrating, testing, and delivering code."
+          components:
+            a:
+              id: "cont-int"
+              name: "Continuous integration (CI)"
+              description: "It refers to the practice of regularly merging code changes into a shared repository, followed by automatically running unit and integration tests to verify the code integrity."
+            b:
+              id: "cont-del"
+              name: "Continuous delivery (CD)"
+              description: "Extend CI by automating the delivery of tested code to production or pre-production environments. This involves automating additional tests, such as acceptance testing and performance testing, followed by automated deployment to production environments."
+          benefits:
+            title: "Benefits of applying CI/CD"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "rapid-feedback"
+                icon: "fa-solid fa-recycle"
+                title: "Rapid feedback"
+                description: "It allows for early detection and correction of errors in the development cycle, leading to a faster and more efficient development cycle."
+              b: 
+                id: "software-quality"
+                icon: "fa-regular fa-clone"
+                title: "Software quality"
+                description: "Test automation ensures that the delivered code is of high quality and free of errors, improving customer satisfaction and confidence in the product."
+              c:
+                id: "reliable-deployment"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Reliable deployment"
+                description: "Automated continuous delivery ensures that software updates are consistently and reliably deployed in production environments, reducing the risk of human errors."
+              d:
+                id: "quick-deployment"
+                icon: "fa-solid fa-gauge-high"
+                title: "Colaboration & visibility"
+                description: "It facilitates collaboration between development, testing, and operations teams by providing a transparent and automated process for software development and deployment."
+          services:
+            a:
+              id: "pipelines-implementation"
+              icon: "fa-brands fa-docker"
+              title: "CI/CD pipelines implementation"
+              description:
+                - item: "Design and implementation of custom CI/CD pipelines tailored to the specific needs of your company and projects."
+                - item: "Integration of CI/CD tools such as Jenkins, GitLab CI/CD, CircleCI, or GitHub Actions to automate the process of integration, testing, and deployment."
+            b:
+              id: "test-automation"
+              icon: "fa-solid fa-laptop-code"
+              title: "Test automation"
+              description:
+                - item: "Development of automated testing suites (unit, integration, functional, etc.) to ensure software quality at every stage of the development cycle."
+                - item: "Integration of automated testing tools such as Selenium, JUnit, or PyTest into the CI/CD pipelines."
+            c:
+              id: "iac-mgmt"
+              icon: "fa-solid fa-arrows-spin"
+              title: "Infrastructure as Code management"
+              description:
+                - item: "Implementation of Infrastructure as Code (IaC) practices to automate the creation and management of development, testing, and production environments."
+                - item: "Utilization of tools like Terraform, AWS CloudFormation, or Azure Resource Manager to define infrastructure declaratively."
       e:
         id: "monitoring-and-observability"
         name: "Monitoring & Observability"
         description: "Obtaining real-time insights into applications and services to minimize issue resolution time and enhance overall quality."
         bg_image: "/images/portfolio/monitoring.jpg.webp"
-        button:
+        button: "See more"
+        page:
+          description: "Monitoring and observability are essential practices in the development and operation of computer systems, especially in cloud environments."
+          components:
+            a:
+              id: "monitoring"
+              name: "Monitoring"
+              description: "It refers to the process of monitoring the status and performance of systems, applications, services, and infrastructure resources. This involves collecting metrics and logs about resource usage, application performance, and system health to detect and respond to potential issues."
+            b:
+              id: "observability"
+              name: "Observability"
+              description: "It refers to the ability to understand, analyze, and debug complex systems through the collection and visualization of data. Observability focuses on obtaining useful information from monitoring data, enabling operations and development teams to better understand system behavior and make informed decisions."
+          benefits:
+            title: "Monitoring and observability benefits"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "problem-detection"
+                icon: "fa-solid fa-recycle"
+                title: "Early problem detection"
+                description: "Continuous monitoring allows for the detection of performance issues or failures in real-time, enabling teams to respond quickly and minimize downtime."
+              b: 
+                id: "performance-optimization"
+                icon: "fa-regular fa-clone"
+                title: "Performance optimization"
+                description: "The collection and analysis of monitoring data help identify bottlenecks and areas for improvement in the system, enabling the optimization of application performance and infrastructure."
+              c:
+                id: "informed-decisions"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Informed decision-making"
+                description: "Observability provides detailed insights into system behavior, helping teams better understand the root causes of issues and make informed decisions to improve the system."
+              d:
+                id: "user-experience"
+                icon: "fa-solid fa-gauge-high"
+                title: "User experience improvement"
+                description: "By proactively detecting and fixing issues, a smoother and more reliable user experience is ensured, leading to increased customer satisfaction."
+              e:
+                id: "compliance"
+                icon: "fa-solid fa-gauge-high"
+                title: "SLA compliance"
+                description: "Continuous monitoring ensures that systems meet the established service level agreements, ensuring high availability and performance of services."
+          services:
+            a:
+              id: "solutions-implementation"
+              icon: "fa-brands fa-docker"
+              title: "Monitoring and observability solutions"
+              description:
+                - item: "Design and implementation of customized monitoring systems tailored to the specific needs of your company and applications."
+                - item: "Implementation of monitoring tools such as Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), or cloud provider monitoring solutions like AWS CloudWatch or Azure Monitor."
+            b:
+              id: "alerts-setup"
+              icon: "fa-solid fa-laptop-code"
+              title: "Notifications and alerts"
+              description:
+                - item: "Configuration of alerts and notifications to receive immediate notifications about performance issues or system failures."
+                - item: "Definition of custom alert thresholds and escalation policies to ensure a rapid response to critical issues."
+            c:
+              id: "performance-optimization"
+              icon: "fa-solid fa-arrows-spin"
+              title: "Performance analysis and optimization"
+              description:
+                - item: "Detailed analysis of monitoring data to identify bottlenecks and areas for improvement in application performance and infrastructure."
+                - item: "Implementation of adjustments and optimizations based on data to improve system performance and efficiency."
       f:
         id: "business-continuity"
         name: "Business Continuity"
         description: "The continuity of your business is more important than anything else. That is why we make sure that you have an actionable, tested, updated and effective disaster recovery plan at all times, with minimal to no manual intervention."
         bg_image: "/images/services/business-continuity.webp"
-        button:
+        button: "See more"
+        page:
+          description: "It is important for an organization to maintain its critical operations and functions during and after a disruptive event, such as infrastructure failures, cyberattacks, or any other crisis situation. The goal is to minimize the impact on the business and ensure the quick and efficient recovery of operations."
+          benefits:
+            title: "Benefits"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "resiliency"
+                icon: "fa-solid fa-maximize"
+                title: "Business resiliency"
+                description: "Business continuity ensures that an organization can withstand and quickly recover from adverse events, minimizing the impact on its operations and customers."
+              b: 
+                id: "inactivity-reduction"
+                icon: "fa-solid fa-gauge-high"
+                title: "Reduced downtime"
+                description: "Having well-defined plans and procedures to manage crisis situations significantly reduces downtime and minimizes financial losses."
+              c:
+                id: "brand-protection"
+                icon: "fa-solid fa-sliders"
+                title: "Brand reputation protection"
+                description: "The ability to maintain business continuity even in times of crisis demonstrates the reliability and commitment of the organization to its customers and stakeholders, thereby protecting its brand reputation."
+              d:
+                id: "compliance"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Compliance"
+                description: "Implementing business continuity plans can help meet regulatory and compliance requirements related to risk management and data protection."
+          services:
+            a:
+              id: "drp"
+              icon: "fa-solid fa-cubes"
+              title: "Business continuity plan"
+              description:
+                - item: "Evaluación de riesgos y vulnerabilidades para identificar amenazas potenciales y sus impactos en las operaciones del negocio."
+                - item: "Diseño e implementación de planes de continuidad del negocio adaptados a las necesidades y requisitos específicos de tu organización."
+            b:
+              id: "impact-analysis"
+              icon: "fa-solid fa-gears"
+              title: "Business impact analysis"
+              description:
+                - item: "Conducting business impact analysis to identify critical processes and functions and determine their recovery time objectives and fault tolerance requirements."
+            c:
+              id: "recovery-solutions"
+              icon: "fa-solid fa-magnifying-glass-chart"
+              title: "Backup and recovery solutions"
+              description:
+                - item: "Development and implementation of data backup and recovery strategies to ensure availability and integrity of critical business information."
+                - item: "Configuration of automated backup systems and disaster recovery solutions (DRP) to ensure quick recovery of data and systems in case of failure."
+            d:
+              id: "drp-testing"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Business continuity tests"
+              description:
+                - item: "Planning and execution of drills and business continuity exercises to test the effectiveness of crisis plans and procedures."
+                - item: "Identification of areas for improvement and updating of business continuity plans based on exercise results."
     technologies:
       - name: "AWS"
         logo: "images/tech/aws.png"

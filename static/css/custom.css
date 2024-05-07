@@ -1983,11 +1983,15 @@ div.cont-and-orch {
   margin: 3rem 2rem;
 } 
 
-div#containerization {
+div#containerization,
+div#cont-int,
+div#monitoring {
   border-color: var(--blue-mw-primary);
 }
 
-div#orchestration {
+div#orchestration,
+div#cont-del,
+div#observability {
   border-color: var(--green-mw-primary);
 }
 

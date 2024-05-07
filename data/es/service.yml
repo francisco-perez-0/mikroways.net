@@ -121,7 +121,7 @@ services:
                 - item: "Soporte continuo y acompañamiento durante todo el ciclo de vida del proyecto para garantizar el éxito en la implementación y operación de soluciones cloud."
       b:
         id: "infrastructure-provisioning"
-        name: "Aprovisionamiento de infraestructura"
+        name: "Provisión de infraestructura"
         description: "Crear, replicar, actualizar y gestionar la infraestructura de TI de manera automatizada proporciona flexibilidad y velocidad esenciales a cualquier negocio."
         bg_image: "/images/services/infrastructure.webp"
         button: "Ver más"
@@ -289,19 +289,192 @@ services:
         name: "Integración y despliegue continuos"
         description: "La automatización del despliegue de software reduce significativamente el tiempo de llegada al mercado y mejora la productividad del equipo de TI."
         bg_image: "/images/services/cicd.webp"
-        button:
+        button: "Ver más"
+        page:
+          description: "La Integración Continua (CI) y la Entrega Continua (CD) son prácticas clave en el desarrollo de software que automatizan el proceso de integración, pruebas y entrega de código."
+          components:
+            a:
+              id: "cont-int"
+              name: "Integración continua (CI)"
+              description: "Se refiere a la práctica de fusionar cambios de código en un repositorio compartido de forma regular, seguido de la ejecución automática de pruebas unitarias y de integración para verificar la integridad del código."
+            b:
+              id: "cont-del"
+              name: "Entrega continua (CD)"
+              description: "Extiende la CI al automatizar la entrega de código probado a entornos de producción o de preproducción. Esto implica la automatización de pruebas adicionales, como pruebas de aceptación y pruebas de desempeño, seguidas de la implementación automatizada en entornos de producción."
+          benefits:
+            title: "Beneficios de aplicar CI/CD"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "rapid-feedback"
+                icon: "fa-solid fa-recycle"
+                title: "Rápida retroalimentación"
+                description: "Permite detectar y corregir errores de manera temprana en el ciclo de desarrollo, lo que conduce a un ciclo de desarrollo más rápido y eficiente."
+              b: 
+                id: "software-quality"
+                icon: "fa-regular fa-clone"
+                title: "Calidad del software"
+                description: "La automatización de pruebas garantiza que el código entregado sea de alta calidad y esté libre de errores, lo que mejora la satisfacción del cliente y la confianza en el producto."
+              c:
+                id: "reliable-deployment"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Despliegue confiable"
+                description: "La entrega continua automatizada garantiza que las actualizaciones de software se desplieguen de manera consistente y confiable en entornos de producción, reduciendo el riesgo de errores humanos."
+              d:
+                id: "quick-deployment"
+                icon: "fa-solid fa-gauge-high"
+                title: "Colaboración y visibilidad"
+                description: "Facilita la colaboración entre equipos de desarrollo, pruebas y operaciones al proporcionar un proceso transparente y automatizado para el desarrollo y despliegue de software."
+          services:
+            a:
+              id: "pipelines-implementation"
+              icon: "fa-brands fa-docker"
+              title: "Implementación de Pipelines de CI/CD"
+              description:
+                - item: "Diseño e implementación de pipelines de CI/CD personalizados que se ajusten a las necesidades específicas de tu empresa y proyectos."
+                - item: "Integración de herramientas de CI/CD como Jenkins, GitLab CI/CD, CircleCI, o GitHub Actions para automatizar el proceso de integración, pruebas y despliegue."
+            b:
+              id: "test-automation"
+              icon: "fa-solid fa-laptop-code"
+              title: "Automatización de pruebas"
+              description:
+                - item: "Desarrollo de suites de pruebas automatizadas (unitarias, de integración, funcionales, etc.) para garantizar la calidad del software en cada etapa del ciclo de desarrollo."
+                - item: "Integración de herramientas de pruebas automatizadas como Selenium, JUnit, o PyTest en los pipelines de CI/CD."
+            c:
+              id: "iac-mgmt"
+              icon: "fa-solid fa-arrows-spin"
+              title: "Gestión de infraestructura como código"
+              description:
+                - item: "Implementación de prácticas de Infraestructura como Código (IaC) para automatizar la creación y gestión de entornos de desarrollo, pruebas y producción."
+                - item: "Utilización de herramientas como Terraform, AWS CloudFormation o Azure Resource Manager para definir la infraestructura de manera declarativa."
       e:
         id: "monitoring-and-observability"
         name: "Monitoreo y observabilidad"
         description: "Obtener información en tiempo real sobre aplicaciones y servicios permite minimizar el tiempo de resolución de problemas y mejorar su calidad general."
         bg_image: "/images/portfolio/monitoring.jpg.webp"
-        button:
+        button: "Ver más"
+        page:
+          description: "El monitoreo y la observabilidad son prácticas esenciales en el desarrollo y operación de sistemas informáticos, especialmente en entornos de nube."
+          components:
+            a:
+              id: "monitoring"
+              name: "Monitoreo"
+              description: "Se refiere al proceso de supervisar el estado y el rendimiento de los sistemas, aplicaciones, servicios y recursos de infraestructura. Esto implica recopilar métricas y registros sobre el uso de recursos, el rendimiento de las aplicaciones y la salud del sistema para detectar y responder a problemas potenciales."
+            b:
+              id: "observability"
+              name: "Observabilidad"
+              description: "Se refiere a la capacidad de comprender, analizar y depurar sistemas complejos a través de la recopilación y visualización de datos. La observabilidad se centra en obtener información útil a partir de datos de monitoreo, lo que permite a los equipos de operaciones y desarrollo comprender mejor el comportamiento del sistema y tomar decisiones informadas."
+          benefits:
+            title: "Beneficios del monitoreo y la observabilidad"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "problem-detection"
+                icon: "fa-solid fa-recycle"
+                title: "Detección temprana de problemas"
+                description: "El monitoreo continuo permite detectar problemas de rendimiento o fallas en tiempo real, lo que permite a los equipos responder rápidamente y minimizar el tiempo de inactividad."
+              b: 
+                id: "performance-optimization"
+                icon: "fa-regular fa-clone"
+                title: "Optimización del rendimiento"
+                description: "La recopilación y análisis de datos de monitoreo ayuda a identificar cuellos de botella y puntos de mejora en el sistema, lo que permite optimizar el rendimiento de las aplicaciones y la infraestructura."
+              c:
+                id: "informed-decisions"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Toma de decisiones informadas"
+                description: "La observabilidad proporciona insights detallados sobre el comportamiento del sistema, lo que ayuda a los equipos a comprender mejor las causas raíz de los problemas y a tomar decisiones informadas para mejorar el sistema."
+              d:
+                id: "user-experience"
+                icon: "fa-solid fa-gauge-high"
+                title: "Mejora en la experiencia del usuario"
+                description: "Al detectar y corregir problemas de manera proactiva, se garantiza una experiencia de usuario más fluida y confiable, lo que aumenta la satisfacción del cliente."
+              e:
+                id: "compliance"
+                icon: "fa-solid fa-gauge-high"
+                title: "Cumplimiento de SLAs"
+                description: "El monitoreo constante garantiza que los sistemas cumplan con los acuerdos de nivel de servicio establecidos, lo que garantiza una alta disponibilidad y rendimiento de los servicios."
+          services:
+            a:
+              id: "solutions-implementation"
+              icon: "fa-brands fa-docker"
+              title: "Soluciones de monitoreo y observabilidad"
+              description:
+                - item: "Diseño e implementación de sistemas de monitoreo personalizados que se adapten a las necesidades específicas de tu empresa y aplicaciones."
+                - item: "Implementación de herramientas de monitoreo como Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), o soluciones de monitoreo de proveedores de nube como AWS CloudWatch o Azure Monitor."
+            b:
+              id: "alerts-setup"
+              icon: "fa-solid fa-laptop-code"
+              title: "Alertas y notificaciones"
+              description:
+                - item: "Configuración de alertas y notificaciones para recibir notificaciones inmediatas sobre problemas de rendimiento o fallas del sistema."
+                - item: "Definición de umbrales de alerta personalizados y políticas de escalación para garantizar una respuesta rápida a problemas críticos."
+            c:
+              id: "performance-optimization"
+              icon: "fa-solid fa-arrows-spin"
+              title: "Análisis y optimización del rendimiento"
+              description:
+                - item: "Análisis detallado de datos de monitoreo para identificar cuellos de botella y áreas de mejora en el rendimiento de las aplicaciones y la infraestructura."
+                - item: "Implementación de ajustes y optimizaciones basadas en datos para mejorar el rendimiento y la eficiencia del sistema."
       f:
         id: "business-continuity"
         name: "Continuidad del negocio"
         description: "La continuidad de tu negocio es más importante que cualquier otra cosa. Por eso nos aseguramos de que siempre tengas un plan de recuperación ante desastres accionable, probado, actualizado y efectivo, con mínima o ninguna intervención manual."
         bg_image: "/images/services/business-continuity.webp"
-        button:
+        button: "Ver más"
+        page:
+          description: "Es importante para una organización mantener sus operaciones y funciones críticas durante y después de un evento disruptivo, como fallos de infraestructura, ciberataques o cualquier otra situación de crisis. El objetivo es minimizar el impacto en el negocio y garantizar la recuperación rápida y eficiente de las operaciones."
+          benefits:
+            title: "Beneficios"
+            image: "/images/services/cloud-native.webp"
+            benefits:
+              a:
+                id: "resiliency"
+                icon: "fa-solid fa-maximize"
+                title: "Resiliencia empresarial"
+                description: "La continuidad del negocio garantiza que una organización pueda resistir y recuperarse rápidamente de eventos adversos, minimizando el impacto en sus operaciones y clientes."
+              b: 
+                id: "inactivity-reduction"
+                icon: "fa-solid fa-gauge-high"
+                title: "Reducción del Tiempo de Inactividad"
+                description: "Al contar con planes y procedimientos bien definidos para gestionar situaciones de crisis, se reduce significativamente el tiempo de inactividad y se minimizan las pérdidas financieras."
+              c:
+                id: "brand-protection"
+                icon: "fa-solid fa-sliders"
+                title: "Protección de la reputación de marca"
+                description: "La capacidad de mantener la continuidad de las operaciones incluso en tiempos de crisis demuestra la fiabilidad y el compromiso de la organización con sus clientes y partes interesadas, protegiendo así su reputación de marca."
+              d:
+                id: "compliance"
+                icon: "fa-solid fa-money-bill-transfer"
+                title: "Cumplimiento normativo"
+                description: "La implementación de planes de continuidad del negocio puede ayudar a cumplir con los requisitos normativos y regulatorios relacionados con la gestión de riesgos y la protección de datos."
+          services:
+            a:
+              id: "drp"
+              icon: "fa-solid fa-cubes"
+              title: "Planes de continuidad del negocio"
+              description:
+                - item: "Evaluación de riesgos y vulnerabilidades para identificar amenazas potenciales y sus impactos en las operaciones del negocio."
+                - item: "Diseño e implementación de planes de continuidad del negocio adaptados a las necesidades y requisitos específicos de tu organización."
+            b:
+              id: "impact-analysis"
+              icon: "fa-solid fa-gears"
+              title: "Análisis de impacto en el negocio"
+              description:
+                - item: "Realización de análisis de impacto en el negocio para identificar los procesos y funciones críticas y determinar sus requisitos de tiempo de recuperación y tolerancia a fallos."
+            c:
+              id: "recovery-solutions"
+              icon: "fa-solid fa-magnifying-glass-chart"
+              title: "Soluciones de respaldo y recuperación"
+              description:
+                - item: "Desarrollo e implementación de estrategias de respaldo y recuperación de datos para garantizar la disponibilidad e integridad de la información crítica del negocio."
+                - item: "Configuración de sistemas de respaldo automatizados y soluciones de recuperación ante desastres (DRP) para garantizar la recuperación rápida de datos y sistemas en caso de fallo."
+            d:
+              id: "drp-testing"
+              icon: "fa-solid fa-hand-holding-hand"
+              title: "Simulacros y ejercicios de continuidad del negocio"
+              description:
+                - item: "Planificación y ejecución de simulacros y ejercicios de continuidad del negocio para probar la efectividad de los planes y procedimientos de crisis."
+                - item: "Identificación de áreas de mejora y actualización de los planes de continuidad del negocio en función de los resultados de los ejercicios."
     technologies:
       - name: "AWS"
         logo: "images/tech/aws.png"
