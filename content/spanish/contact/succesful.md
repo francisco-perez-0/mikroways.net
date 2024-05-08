@@ -9,7 +9,7 @@ extra_head: |
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-16547760790');
+  gtag('event', 'conversion_event_page_view', {});
   </script>
 ---
