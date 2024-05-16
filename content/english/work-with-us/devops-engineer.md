@@ -15,8 +15,8 @@ proactive attitude.
 The person joining this position will be part of the Mikroways team responsible
 for delivering services to clients. In this role, they will collaborate in the
 development of innovative solutions based on DevOps principles and using tools
-such as Docker, Kubernetes, Ansible, Terraform, and working with public and
-private clouds, such as AWS and OpenStack.
+such as Docker, Kubernetes, Ansible, Terraform, and working with public such as
+AWS, GCP, Azure. Also we work with private clouds like OpenStack.
 
 ## Responsibilities
 
