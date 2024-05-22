@@ -67,7 +67,7 @@ services:
               description: "La cultura DevOps se centra en la colaboración entre equipos de desarrollo y operaciones para mejorar la entrega continua de software. En el contexto de la arquitectura nativa de la nube, DevOps implica la automatización de procesos de desarrollo, pruebas y despliegue para garantizar una entrega rápida y confiable de aplicaciones."
           benefits:
             title: "Beneficios"
-            image: "/images/services/cloud-native.webp"
+            image: "/images/services/benefits-cloud-native.webp"
             benefits:
               a:
                 id: "scalability"
@@ -425,7 +425,6 @@ services:
           description: "Es importante para una organización mantener sus operaciones y funciones críticas durante y después de un evento disruptivo, como fallos de infraestructura, ciberataques o cualquier otra situación de crisis. El objetivo es minimizar el impacto en el negocio y garantizar la recuperación rápida y eficiente de las operaciones."
           benefits:
             title: "Beneficios"
-            image: "/images/services/cloud-native.webp"
             benefits:
               a:
                 id: "resiliency"
