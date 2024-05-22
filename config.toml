@@ -73,7 +73,7 @@ link = "plugins/waypoints.min.js"
 [[params.plugins.js]]
 link = "js/contactformlambda.js"
 [[params.plugins.js]]
-link = "https://kit.fontawesome.com/4e9fd50276.js"
+link = "https://kit.fontawesome.com/b4a4fb980a.js"
 [[params.plugins.js]]
 link = "js/asciinema-player.js"
 [[params.plugins.js]]

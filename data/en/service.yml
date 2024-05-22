@@ -36,7 +36,7 @@ services:
         bg_image: "/images/services/cloud-native.webp"
         button: "See more"
         page:
-          overview: "At Mikroways, we specialize in providing comprehensive solutions in containerization and container orchestration, as well as DevOps practices to optimize the development, deployment, and operation of applications in cloud and on-premises environments. From assessing and modernizing applications to implementing and managing Kubernetes clusters, we offer customized services that enable organizations to fully leverage the benefits of containerization and orchestration."
+          overview: "At Mikroways, we specialize in providing comprehensive solutions in containerization and container orchestration, as well as DevOps practices to optimize the development, deployment, and operation of applications in both cloud and on-premise environments. From assessing and modernizing applications to implementing and managing Kubernetes clusters, we offer customized services that enable organizations to fully leverage the benefits of containerization and orchestration."
           description: "Cloud-native architecture refers to a software design approach that maximizes the capabilities and services offered by cloud computing platforms. It is based on principles of scalability, resilience, flexibility, and automation to efficiently develop and deploy applications in cloud environments."
           components:
             a:
@@ -72,7 +72,7 @@ services:
                 id: "scalability"
                 icon: "fa-solid fa-maximize"
                 title: "Scalability"
-                description: "It allows applications to scale quickly and efficiently to meet changing user demands, either by increasing or decreasing resources automatically."
+                description: "Allows applications to scale quickly and efficiently to meet changing user demands, either by increasing or decreasing resources automatically."
               b: 
                 id: "resiliency"
                 icon: "fa-solid fa-house-medical-circle-check"
@@ -82,17 +82,17 @@ services:
                 id: "agility"
                 icon: "fa-solid fa-gauge-high"
                 title: "Agility"
-                description: "It facilitates agile development and continuous delivery of software, allowing organizations to quickly adapt to changes in the market and user needs."
+                description: "Facilitates agile development and continuous delivery of software, allowing organizations to quickly adapt to changes in the market and user needs."
               d:
                 id: "efficiency"
                 icon: "fa-solid fa-money-bill-transfer"
                 title: "Efficiency"
-                description: "It reduces the time and costs associated with deploying and managing applications by leveraging cloud automation and scalability."
+                description: "Reduces the time and costs associated with deploying and managing applications by leveraging cloud automation and scalability."
               e:
                 id: "portability"
                 icon: "fa-solid fa-recycle"
                 title: "Portability"
-                description: "It allows running applications consistently across different cloud and on-premises environments, providing greater flexibility and options for organizations."
+                description: "Allows running applications consistently across different cloud and on-premises environments, providing greater flexibility and options for organizations."
           services:
             a:
               id: "app-modernization"
@@ -105,7 +105,7 @@ services:
             b:
               id: "cloud-native-apps-design"
               icon: "fa-solid fa-cloud-arrow-up"
-              title: "Cloud native application desing"
+              title: "Cloud native application design"
               description:
                 - item: "We design and implement applications using cloud-native architecture."
                 - item: "We utilize cutting-edge technologies like Kubernetes (in which we are experts) and managed container services to deploy and manage applications efficiently."
@@ -158,7 +158,7 @@ services:
               title: "Infrastructure design & implementation"
               description:
                 - item: "Assessment of workload requirements and design of scalable and resilient infrastructure architectures."
-                - item: "Implementation of infrastructure in on-premises or cloud environments, using tools such as AWS, Azure, Google Cloud Platform, or hybrid infrastructure solutions."
+                - item: "Implementation of infrastructure using on-premise or cloud environments, via tools such as AWS, Azure, Google Cloud Platform, or hybrid infrastructure solutions."
             b:
               id: "provisioning-automation"
               icon: "fa-solid fa-gears"
@@ -188,13 +188,13 @@ services:
         description: "Containers encapsulate applications and their dependencies, providing portability across different environments, while orchestration, such as Kubernetes, facilitates efficient container management, ensuring their consistent and scalable deployment."
         button: "See more"
         page:
-          overview: "At Mikroways, we specialize in providing comprehensive solutions in containerization and container orchestration, as well as DevOps practices to optimize the development, deployment, and operation of applications in both cloud and on-premises environments. From assessing and modernizing applications to implementing and managing Kubernetes clusters, we offer customized services that enable organizations to fully leverage the benefits of containerization and orchestration."
+          overview: "At Mikroways, we specialize in providing comprehensive solutions in containerization and container orchestration, as well as DevOps practices to optimize the development, deployment, and operation of applications in cloud and on-premise environments. From assessing and modernizing applications to implementing and managing Kubernetes clusters, we offer customized services that enable organizations to fully leverage the benefits of containerization and orchestration."
           components:
             a:
               id: "containerization"
               name: "Containerization"
               bg_image: "/images/services/cloud-native/microservices.webp"
-              description: "Containerization is an operating system-level virtualization approach that allows packaging an application and all its dependencies into a lightweight and portable container. Each container operates independently and isolates the application from the runtime environment, ensuring consistency and portability across different environments."
+              description: "Containerization is an operating system-level virtualization approach that allows packaging an application and all its dependencies into a lightweight and portable container. Each container operates independently, which isolates the application from the runtime environment, ensuring consistency and portability across different environments."
             b:
               id: "orchestration"
               name: "Orchestration"
@@ -202,13 +202,13 @@ services:
               description: "Container orchestration refers to the automated management of containers at scale. When you have multiple containers running on different hosts, it's necessary to coordinate their deployment, scaling, monitoring, and recovery in case of failures. This is where orchestration tools like Kubernetes come into play."
           benefits_cont:
             title: "Benefits of containerization"
-            image: "/images/services/cloud-native.webp"
+            image: "/images/services/benefits-containers.webp"
             benefits:
               a:
                 id: "portability"
                 icon: "fa-solid fa-recycle"
                 title: "Portability"
-                description: "Containers are independent of the execution environment, which means that once created, they can run anywhere that supports Docker or another container platform."
+                description: "Containers are independent of the execution environment, which means that once created, they can run anywhere that supports Docker or other container platforms."
               b: 
                 id: "consistency"
                 icon: "fa-regular fa-clone"
@@ -231,7 +231,7 @@ services:
                 description: "Each container provides a level of isolation for the application, improving security and simplifying dependency management."
           benefits_orch:
             title: "Benefits of orchestration"
-            image: "/images/services/cloud-native.webp"
+            image: "/images/services/benefits-orch.webp"
             benefits:
               a:
                 id: "scalability"
@@ -262,7 +262,7 @@ services:
             a:
               id: "cont-strategies"
               icon: "fa-brands fa-docker"
-              title: "Containerization strategies implementation"
+              title: "Implementation of containerization strategies"
               description:
                 - item: "Evaluation of existing applications to identify those that would benefit from containerization."
                 - item: "Development of strategies and roadmaps for the gradual containerization of critical business applications."
@@ -278,7 +278,7 @@ services:
             c:
               id: "processes-automation"
               icon: "fa-solid fa-arrows-spin"
-              title: "Processes automation with DevOps"
+              title: "Process automation with DevOps"
               description:
                 - item: "Integration of DevOps practices into the application development and deployment lifecycle."
                 - item: "Automation of CI/CD (Continuous Integration/Continuous Deployment) pipelines to ensure fast and reliable software delivery."
@@ -306,43 +306,43 @@ services:
             benefits:
               a:
                 id: "rapid-feedback"
-                icon: "fa-solid fa-recycle"
+                icon: "fa-solid fa-people-arrows"
                 title: "Rapid feedback"
                 description: "It allows for early detection and correction of errors in the development cycle, leading to a faster and more efficient development cycle."
               b: 
                 id: "software-quality"
-                icon: "fa-regular fa-clone"
+                icon: "fa-solid fa-medal"
                 title: "Software quality"
                 description: "Test automation ensures that the delivered code is of high quality and free of errors, improving customer satisfaction and confidence in the product."
               c:
                 id: "reliable-deployment"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-solid fa-binary-circle-check"
                 title: "Reliable deployment"
                 description: "Automated continuous delivery ensures that software updates are consistently and reliably deployed in production environments, reducing the risk of human errors."
               d:
                 id: "quick-deployment"
-                icon: "fa-solid fa-gauge-high"
-                title: "Colaboration & visibility"
-                description: "It facilitates collaboration between development, testing, and operations teams by providing a transparent and automated process for software development and deployment."
+                icon: "fa-solid fa-screen-users"
+                title: "Collaboration & visibility"
+                description: "Facilitates collaboration between development, testing, and operations teams by providing a transparent and automated process for software development and deployment."
           services:
             a:
               id: "pipelines-implementation"
-              icon: "fa-brands fa-docker"
-              title: "CI/CD pipelines implementation"
+              icon: "fa-sharp fa-solid fa-webhook"
+              title: "CI/CD pipeline implementation"
               description:
                 - item: "Design and implementation of custom CI/CD pipelines tailored to the specific needs of your company and projects."
                 - item: "Integration of CI/CD tools such as Jenkins, GitLab CI/CD, CircleCI, or GitHub Actions to automate the process of integration, testing, and deployment."
             b:
               id: "test-automation"
-              icon: "fa-solid fa-laptop-code"
-              title: "Test automation"
+              icon: "fa-solid fa-laptop-binary"
+              title: "Automation for tests"
               description:
                 - item: "Development of automated testing suites (unit, integration, functional, etc.) to ensure software quality at every stage of the development cycle."
                 - item: "Integration of automated testing tools such as Selenium, JUnit, or PyTest into the CI/CD pipelines."
             c:
               id: "iac-mgmt"
-              icon: "fa-solid fa-arrows-spin"
-              title: "Infrastructure as Code management"
+              icon: "fa-solid fa-gear-code"
+              title: "Management of Infrastructure as Code"
               description:
                 - item: "Implementation of Infrastructure as Code (IaC) practices to automate the creation and management of development, testing, and production environments."
                 - item: "Utilization of tools like Terraform, AWS CloudFormation, or Azure Resource Manager to define infrastructure declaratively."
@@ -358,58 +358,58 @@ services:
             a:
               id: "monitoring"
               name: "Monitoring"
-              description: "It refers to the process of monitoring the status and performance of systems, applications, services, and infrastructure resources. This involves collecting metrics and logs about resource usage, application performance, and system health to detect and respond to potential issues."
+              description: "Refers to the process of monitoring the status and performance of systems, applications, services, and infrastructure resources. This involves collecting metrics and logs about resource usage, application performance, and system health to detect and respond to potential issues."
             b:
               id: "observability"
               name: "Observability"
-              description: "It refers to the ability to understand, analyze, and debug complex systems through the collection and visualization of data. Observability focuses on obtaining useful information from monitoring data, enabling operations and development teams to better understand system behavior and make informed decisions."
+              description: "Refers to the ability to understand, analyze, and debug complex systems through the collection and visualization of data. Observability focuses on obtaining useful information from monitoring data, which enables operations and development teams to better understand system behavior and make informed decisions."
           benefits:
             title: "Monitoring and observability benefits"
-            image: "/images/services/cloud-native.webp"
+            image: "/images/services/benefits-monitoring.webp"
             benefits:
               a:
                 id: "problem-detection"
-                icon: "fa-solid fa-recycle"
+                icon: "fa-solid fa-sensor-triangle-exclamation"
                 title: "Early problem detection"
                 description: "Continuous monitoring allows for the detection of performance issues or failures in real-time, enabling teams to respond quickly and minimize downtime."
               b: 
                 id: "performance-optimization"
-                icon: "fa-regular fa-clone"
+                icon: "fa-solid fa-microchip"
                 title: "Performance optimization"
-                description: "The collection and analysis of monitoring data help identify bottlenecks and areas for improvement in the system, enabling the optimization of application performance and infrastructure."
+                description: "The collection and analysis of monitoring data helps to identify bottlenecks and areas for improvement in the system, enabling the optimization of application performance and infrastructure."
               c:
                 id: "informed-decisions"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-sharp fa-solid fa-brain-arrow-curved-right"
                 title: "Informed decision-making"
                 description: "Observability provides detailed insights into system behavior, helping teams better understand the root causes of issues and make informed decisions to improve the system."
               d:
                 id: "user-experience"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-face-smile"
                 title: "User experience improvement"
                 description: "By proactively detecting and fixing issues, a smoother and more reliable user experience is ensured, leading to increased customer satisfaction."
               e:
                 id: "compliance"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-signature"
                 title: "SLA compliance"
-                description: "Continuous monitoring ensures that systems meet the established service level agreements, ensuring high availability and performance of services."
+                description: "Continuous monitoring ensures that systems meet the established service level agreements, ensuring high availability and performance."
           services:
             a:
               id: "solutions-implementation"
-              icon: "fa-brands fa-docker"
+              icon: "fa-solid fa-eye"
               title: "Monitoring and observability solutions"
               description:
                 - item: "Design and implementation of customized monitoring systems tailored to the specific needs of your company and applications."
                 - item: "Implementation of monitoring tools such as Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), or cloud provider monitoring solutions like AWS CloudWatch or Azure Monitor."
             b:
               id: "alerts-setup"
-              icon: "fa-solid fa-laptop-code"
+              icon: "fa-solid fa-bell-on"
               title: "Notifications and alerts"
               description:
                 - item: "Configuration of alerts and notifications to receive immediate notifications about performance issues or system failures."
                 - item: "Definition of custom alert thresholds and escalation policies to ensure a rapid response to critical issues."
             c:
               id: "performance-optimization"
-              icon: "fa-solid fa-arrows-spin"
+              icon: "fa-solid fa-crosshairs"
               title: "Performance analysis and optimization"
               description:
                 - item: "Detailed analysis of monitoring data to identify bottlenecks and areas for improvement in application performance and infrastructure."
@@ -421,59 +421,59 @@ services:
         bg_image: "/images/services/business-continuity.webp"
         button: "See more"
         page:
-          description: "It is important for an organization to maintain its critical operations and functions during and after a disruptive event, such as infrastructure failures, cyberattacks, or any other crisis situation. The goal is to minimize the impact on the business and ensure the quick and efficient recovery of operations."
+          description: "It is important for an organization to maintain its critical operations and functions during and after disruptive events, such as infrastructure failures, cyberattacks, or any other crisis situation. The goal is to minimize the impact on the business and ensure quick and efficient recovery of operations."
           benefits:
             title: "Benefits"
             image: "/images/services/cloud-native.webp"
             benefits:
               a:
                 id: "resiliency"
-                icon: "fa-solid fa-maximize"
+                icon: "fa-solid fa-display-chart-up-circle-dollar"
                 title: "Business resiliency"
-                description: "Business continuity ensures that an organization can withstand and quickly recover from adverse events, minimizing the impact on its operations and customers."
+                description: "Business continuity ensures that an organization can withstand and quickly recover from adverse events, thus minimizing the impact on its operations and customers."
               b: 
                 id: "inactivity-reduction"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-stopwatch-20"
                 title: "Reduced downtime"
                 description: "Having well-defined plans and procedures to manage crisis situations significantly reduces downtime and minimizes financial losses."
               c:
                 id: "brand-protection"
-                icon: "fa-solid fa-sliders"
+                icon: "fa-solid fa-building-shield"
                 title: "Brand reputation protection"
                 description: "The ability to maintain business continuity even in times of crisis demonstrates the reliability and commitment of the organization to its customers and stakeholders, thereby protecting its brand reputation."
               d:
                 id: "compliance"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-solid fa-badge-check"
                 title: "Compliance"
                 description: "Implementing business continuity plans can help meet regulatory and compliance requirements related to risk management and data protection."
           services:
             a:
               id: "drp"
-              icon: "fa-solid fa-cubes"
+              icon: "fa-solid fa-memo-circle-check"
               title: "Business continuity plan"
               description:
-                - item: "Evaluación de riesgos y vulnerabilidades para identificar amenazas potenciales y sus impactos en las operaciones del negocio."
-                - item: "Diseño e implementación de planes de continuidad del negocio adaptados a las necesidades y requisitos específicos de tu organización."
+                - item: "Risk and vulnerability assessment to identify potential threats and their impacts on business operations."
+                - item: "Design and implementation of business continuity plans tailored to the specific needs and requirements of your organization."
             b:
               id: "impact-analysis"
-              icon: "fa-solid fa-gears"
+              icon: "fa-solid fa-radar"
               title: "Business impact analysis"
               description:
-                - item: "Conducting business impact analysis to identify critical processes and functions and determine their recovery time objectives and fault tolerance requirements."
+                - item: "Conducting a business impact analysis to identify critical processes and functions and determine their recovery time objectives and fault tolerance requirements."
             c:
               id: "recovery-solutions"
-              icon: "fa-solid fa-magnifying-glass-chart"
+              icon: "fa-solid fa-vault"
               title: "Backup and recovery solutions"
               description:
                 - item: "Development and implementation of data backup and recovery strategies to ensure availability and integrity of critical business information."
-                - item: "Configuration of automated backup systems and disaster recovery solutions (DRP) to ensure quick recovery of data and systems in case of failure."
+                - item: "The configuration of automated backup systems and disaster recovery solutions (DRP) to ensure quick recovery of data and systems in case of failure."
             d:
               id: "drp-testing"
-              icon: "fa-solid fa-hand-holding-hand"
+              icon: "fa-solid fa-building-circle-check"
               title: "Business continuity tests"
               description:
                 - item: "Planning and execution of drills and business continuity exercises to test the effectiveness of crisis plans and procedures."
-                - item: "Identification of areas for improvement and updating of business continuity plans based on exercise results."
+                - item: "The identification of areas for improvement and updating of business continuity plans based on exercise results."
     technologies:
       - name: "AWS"
         logo: "images/tech/aws.png"

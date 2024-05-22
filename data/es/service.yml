@@ -203,7 +203,7 @@ services:
               description: "La orquestación de contenedores se refiere a la gestión automatizada de contenedores a gran escala. Cuando tienes múltiples contenedores ejecutándose en diferentes hosts, es necesario coordinar su despliegue, escalamiento, monitoreo y recuperación en caso de fallos. Es aquí donde entran en juego las herramientas de orquestación, como Kubernetes."
           benefits_cont:
             title: "Beneficios de la contenerización"
-            image: "/images/services/cloud-native.webp"
+            image: "/images/services/benefits-containers.webp"
             benefits:
               a:
                 id: "portability"
@@ -232,7 +232,7 @@ services:
                 description: "Cada contenedor proporciona un grado de aislamiento para la aplicación, lo que mejora la seguridad y facilita la gestión de dependencias."
           benefits_orch:
             title: "Beneficios de la orquestación"
-            image: "/images/services/cloud-native.webp"
+            image: "/images/services/benefits-orch.webp"
             benefits:
               a:
                 id: "scalability"
@@ -307,42 +307,42 @@ services:
             benefits:
               a:
                 id: "rapid-feedback"
-                icon: "fa-solid fa-recycle"
+                icon: "fa-solid fa-people-arrows"
                 title: "Rápida retroalimentación"
                 description: "Permite detectar y corregir errores de manera temprana en el ciclo de desarrollo, lo que conduce a un ciclo de desarrollo más rápido y eficiente."
               b: 
                 id: "software-quality"
-                icon: "fa-regular fa-clone"
+                icon: "fa-solid fa-medal"
                 title: "Calidad del software"
                 description: "La automatización de pruebas garantiza que el código entregado sea de alta calidad y esté libre de errores, lo que mejora la satisfacción del cliente y la confianza en el producto."
               c:
                 id: "reliable-deployment"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-solid fa-binary-circle-check"
                 title: "Despliegue confiable"
                 description: "La entrega continua automatizada garantiza que las actualizaciones de software se desplieguen de manera consistente y confiable en entornos de producción, reduciendo el riesgo de errores humanos."
               d:
-                id: "quick-deployment"
-                icon: "fa-solid fa-gauge-high"
+                id: "colab-and-visib"
+                icon: "fa-solid fa-screen-users"
                 title: "Colaboración y visibilidad"
                 description: "Facilita la colaboración entre equipos de desarrollo, pruebas y operaciones al proporcionar un proceso transparente y automatizado para el desarrollo y despliegue de software."
           services:
             a:
               id: "pipelines-implementation"
-              icon: "fa-brands fa-docker"
+              icon: "fa-sharp fa-solid fa-webhook"
               title: "Implementación de Pipelines de CI/CD"
               description:
                 - item: "Diseño e implementación de pipelines de CI/CD personalizados que se ajusten a las necesidades específicas de tu empresa y proyectos."
                 - item: "Integración de herramientas de CI/CD como Jenkins, GitLab CI/CD, CircleCI, o GitHub Actions para automatizar el proceso de integración, pruebas y despliegue."
             b:
               id: "test-automation"
-              icon: "fa-solid fa-laptop-code"
+              icon: "fa-solid fa-laptop-binary"
               title: "Automatización de pruebas"
               description:
                 - item: "Desarrollo de suites de pruebas automatizadas (unitarias, de integración, funcionales, etc.) para garantizar la calidad del software en cada etapa del ciclo de desarrollo."
                 - item: "Integración de herramientas de pruebas automatizadas como Selenium, JUnit, o PyTest en los pipelines de CI/CD."
             c:
               id: "iac-mgmt"
-              icon: "fa-solid fa-arrows-spin"
+              icon: "fa-solid fa-gear-code"
               title: "Gestión de infraestructura como código"
               description:
                 - item: "Implementación de prácticas de Infraestructura como Código (IaC) para automatizar la creación y gestión de entornos de desarrollo, pruebas y producción."
@@ -366,51 +366,51 @@ services:
               description: "Se refiere a la capacidad de comprender, analizar y depurar sistemas complejos a través de la recopilación y visualización de datos. La observabilidad se centra en obtener información útil a partir de datos de monitoreo, lo que permite a los equipos de operaciones y desarrollo comprender mejor el comportamiento del sistema y tomar decisiones informadas."
           benefits:
             title: "Beneficios del monitoreo y la observabilidad"
-            image: "/images/services/cloud-native.webp"
+            image: "/images/services/benefits-monitoring.webp"
             benefits:
               a:
                 id: "problem-detection"
-                icon: "fa-solid fa-recycle"
+                icon: "fa-solid fa-sensor-triangle-exclamation"
                 title: "Detección temprana de problemas"
                 description: "El monitoreo continuo permite detectar problemas de rendimiento o fallas en tiempo real, lo que permite a los equipos responder rápidamente y minimizar el tiempo de inactividad."
               b: 
                 id: "performance-optimization"
-                icon: "fa-regular fa-clone"
+                icon: "fa-solid fa-microchip"
                 title: "Optimización del rendimiento"
                 description: "La recopilación y análisis de datos de monitoreo ayuda a identificar cuellos de botella y puntos de mejora en el sistema, lo que permite optimizar el rendimiento de las aplicaciones y la infraestructura."
               c:
                 id: "informed-decisions"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-sharp fa-solid fa-brain-arrow-curved-right"
                 title: "Toma de decisiones informadas"
                 description: "La observabilidad proporciona insights detallados sobre el comportamiento del sistema, lo que ayuda a los equipos a comprender mejor las causas raíz de los problemas y a tomar decisiones informadas para mejorar el sistema."
               d:
                 id: "user-experience"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-face-smile"
                 title: "Mejora en la experiencia del usuario"
                 description: "Al detectar y corregir problemas de manera proactiva, se garantiza una experiencia de usuario más fluida y confiable, lo que aumenta la satisfacción del cliente."
               e:
                 id: "compliance"
-                icon: "fa-solid fa-gauge-high"
+                icon: "fa-solid fa-signature"
                 title: "Cumplimiento de SLAs"
                 description: "El monitoreo constante garantiza que los sistemas cumplan con los acuerdos de nivel de servicio establecidos, lo que garantiza una alta disponibilidad y rendimiento de los servicios."
           services:
             a:
               id: "solutions-implementation"
-              icon: "fa-brands fa-docker"
+              icon: "fa-solid fa-eye"
               title: "Soluciones de monitoreo y observabilidad"
               description:
                 - item: "Diseño e implementación de sistemas de monitoreo personalizados que se adapten a las necesidades específicas de tu empresa y aplicaciones."
                 - item: "Implementación de herramientas de monitoreo como Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), o soluciones de monitoreo de proveedores de nube como AWS CloudWatch o Azure Monitor."
             b:
               id: "alerts-setup"
-              icon: "fa-solid fa-laptop-code"
+              icon: "fa-solid fa-bell-on"
               title: "Alertas y notificaciones"
               description:
                 - item: "Configuración de alertas y notificaciones para recibir notificaciones inmediatas sobre problemas de rendimiento o fallas del sistema."
                 - item: "Definición de umbrales de alerta personalizados y políticas de escalación para garantizar una respuesta rápida a problemas críticos."
             c:
               id: "performance-optimization"
-              icon: "fa-solid fa-arrows-spin"
+              icon: "fa-solid fa-crosshairs"
               title: "Análisis y optimización del rendimiento"
               description:
                 - item: "Análisis detallado de datos de monitoreo para identificar cuellos de botella y áreas de mejora en el rendimiento de las aplicaciones y la infraestructura."
@@ -429,48 +429,48 @@ services:
             benefits:
               a:
                 id: "resiliency"
-                icon: "fa-solid fa-maximize"
+                icon: "fa-solid fa-display-chart-up-circle-dollar"
                 title: "Resiliencia empresarial"
                 description: "La continuidad del negocio garantiza que una organización pueda resistir y recuperarse rápidamente de eventos adversos, minimizando el impacto en sus operaciones y clientes."
               b: 
                 id: "inactivity-reduction"
-                icon: "fa-solid fa-gauge-high"
-                title: "Reducción del Tiempo de Inactividad"
+                icon: "fa-solid fa-stopwatch-20"
+                title: "Menor tiempo de inactividad"
                 description: "Al contar con planes y procedimientos bien definidos para gestionar situaciones de crisis, se reduce significativamente el tiempo de inactividad y se minimizan las pérdidas financieras."
               c:
                 id: "brand-protection"
-                icon: "fa-solid fa-sliders"
-                title: "Protección de la reputación de marca"
+                icon: "fa-solid fa-building-shield"
+                title: "Reputación de marca"
                 description: "La capacidad de mantener la continuidad de las operaciones incluso en tiempos de crisis demuestra la fiabilidad y el compromiso de la organización con sus clientes y partes interesadas, protegiendo así su reputación de marca."
               d:
                 id: "compliance"
-                icon: "fa-solid fa-money-bill-transfer"
+                icon: "fa-solid fa-badge-check"
                 title: "Cumplimiento normativo"
                 description: "La implementación de planes de continuidad del negocio puede ayudar a cumplir con los requisitos normativos y regulatorios relacionados con la gestión de riesgos y la protección de datos."
           services:
             a:
               id: "drp"
-              icon: "fa-solid fa-cubes"
+              icon: "fa-solid fa-memo-circle-check"
               title: "Planes de continuidad del negocio"
               description:
                 - item: "Evaluación de riesgos y vulnerabilidades para identificar amenazas potenciales y sus impactos en las operaciones del negocio."
                 - item: "Diseño e implementación de planes de continuidad del negocio adaptados a las necesidades y requisitos específicos de tu organización."
             b:
               id: "impact-analysis"
-              icon: "fa-solid fa-gears"
+              icon: "fa-solid fa-radar"
               title: "Análisis de impacto en el negocio"
               description:
                 - item: "Realización de análisis de impacto en el negocio para identificar los procesos y funciones críticas y determinar sus requisitos de tiempo de recuperación y tolerancia a fallos."
             c:
               id: "recovery-solutions"
-              icon: "fa-solid fa-magnifying-glass-chart"
+              icon: "fa-solid fa-vault"
               title: "Soluciones de respaldo y recuperación"
               description:
                 - item: "Desarrollo e implementación de estrategias de respaldo y recuperación de datos para garantizar la disponibilidad e integridad de la información crítica del negocio."
                 - item: "Configuración de sistemas de respaldo automatizados y soluciones de recuperación ante desastres (DRP) para garantizar la recuperación rápida de datos y sistemas en caso de fallo."
             d:
               id: "drp-testing"
-              icon: "fa-solid fa-hand-holding-hand"
+              icon: "fa-solid fa-building-circle-check"
               title: "Simulacros y ejercicios de continuidad del negocio"
               description:
                 - item: "Planificación y ejecución de simulacros y ejercicios de continuidad del negocio para probar la efectividad de los planes y procedimientos de crisis."
