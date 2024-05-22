@@ -16,7 +16,8 @@ La persona que se incorpore en esta posición formará parte del equipo de
 Mikroways encargado del delivery del servicio a los clientes. En tal rol,
 colaborará en el desarrollo de soluciones innovadoras basadas en DevOps y usando
 herramientas como Docker, Kubernetes, Ansible, Terraform y trabajando con nubes
-públicas y privadas, como AWS y Openstack.
+públicas como AWS, GCP, Azure; nubes privadas como OpenStack entre otras y
+entornos de nube híbridos
 
 ## Funciones
 

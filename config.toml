@@ -136,6 +136,10 @@ url  = "//js.hs-scripts.com/45476202.js"
 [params.linkedin]
 partner_id = "6063204"
 
+# Google tag manager
+[params.google_tag_manager]
+id = "GTM-TZL29LZV"
+
 
 ############################# social site ########################
 [[params.social]]

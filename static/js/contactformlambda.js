@@ -7,6 +7,7 @@ $(document).ready( function() {
       } else {
         $("#error").delay(500).fadeIn("slow");
       }
+      window.location.replace('/contact/succesful/');
     });
   });
 });
