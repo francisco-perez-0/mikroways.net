@@ -1846,6 +1846,11 @@ div.about-full-desc p {
   display: block;
 }
 
+.aws-logo {
+  max-width: 160px;
+  display: block;
+}
+
 @media (max-width: 992px) {
   .gptw-logo {
     max-height: 200px;

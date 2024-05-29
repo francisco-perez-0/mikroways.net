@@ -72,6 +72,12 @@ funfact_item:
   - name : "Projects"
     icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
     count : "200"
+partners:
+  aws:
+    image: "/images/partners/aws.png"
+    statement: "We are AWS partner select!"
+    description:
+      - item: "We are proud to announce that we are partners of AWS, a global leader in cloud computing services, enabling us to offer innovative, scalable, and secure solutions that meet the technological needs of our clients. By collaborating with AWS, we ensure access to the most advanced infrastructure and services on the market, backed by a team with diverse certifications that guarantee the knowledge and experience necessary to maximize the value of AWS services for your business."
 gptw:
   id: "gptw"
   title: "We are a great place to work"

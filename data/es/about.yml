@@ -72,6 +72,12 @@ funfact_item:
   - name : "Proyectos"
     icon : "fa-suitcase" # fontawesome icon pack 4.7 | https://fontawesome.com/v4.7.0/icons/
     count : "200"
+partners:
+  aws:
+    image: "/images/partners/aws.png"
+    statement: "Partner Select de AWS"
+    description:
+      - item: "Nos enorgullece anunciar que somos partners de AWS, líder mundial en servicios de computación en la nube, lo que nos capacita para ofrecer soluciones innovadoras, escalables y seguras que satisfacen las necesidades tecnológicas de nuestros clientes. Al colaborar con AWS, garantizamos el acceso a la infraestructura y servicios más avanzados del mercado, respaldados por un equipo con diversas certificaciones que aseguran el conocimiento y la experiencia necesarios para maximizar el valor de los servicios de AWS para su negocio."
 gptw:
   id: "gptw"
   title: "Somos un gran lugar para trabajar"
