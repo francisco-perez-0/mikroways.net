@@ -1,6 +1,6 @@
 ---
 title: "DevOps Engineer Trainee"
-schedule: "Full time"
+schedule: "Part time"
 location: "Remote"
 summary: "Integra el equipo de Mikroways encargado del delivery del servicio a
 los clientes."
@@ -17,7 +17,19 @@ Mikroways encargado del delivery del servicio a los clientes. En tal rol,
 colaborará en el desarrollo de soluciones innovadoras basadas en DevOps y usando
 herramientas como Docker, Kubernetes, Ansible, Terraform y trabajando con nubes
 públicas como AWS, GCP, Azure; nubes privadas como OpenStack entre otras y
-entornos de nube híbridos
+entornos de nube híbridos.
+
+El puesto de DevOps Engineer Trainee inicia con un período de formación durante
+el cual la persona adquiere los conocimientos necesarios para poder desempeñarse
+como DevOps. En este período, la persona debe completar una serie de actividades
+que replican situaciones del trabajo cotidiano, con el objetivo de obtener los
+conocimientos mínimos que permitan garantizar las soluciones entregadas a los
+clientes. Por tal motivo, mientras se mantiene como trainee no ejecuta proyectos
+de cliente.
+
+Una vez completada la etapa de trainee, que dura de 2 a 3 meses, la persona pasa
+a ser DevOps Engineer Junior, integrándose a trabajar en los proyectos de
+clientes.
 
 ## Funciones
 
@@ -28,7 +40,6 @@ entornos de nube híbridos
 * Automatizar la creación de servidores, redes, almacenamiento, etc.
 * Implementar servicios en nubes públicas y privadas.
 * Configurar monitoreo de aplicaciones y servidores.
-* Atender requerimientos de los clientes.
 
 ## Aptitudes personales
 
@@ -57,8 +68,6 @@ entornos de nube híbridos
 
 ## Conocimientos profesionales
 
-* Comprensión de textos y videos en Inglés. Capacidad de comunicación oral y
-  escrita es un plus importante.
 * Al menos dos lenguajes de programación: Python, Javascript, PHP, Java, etc.
 * Al menos un framework de desarrollo.
 * Redes: esquemas de direccionamiento del modelo TCP/IP, conceptos de
@@ -72,4 +81,5 @@ entornos de nube híbridos
 * Uso de expresiones regulares.
 * Bases de datos relacional: uso básico de MySQL o PostgreSQL desde la consola.
 * Markups: conocer y saber utilizar los formatos JSON, YAML, XML y Markdown.
-
+* Comprensión de textos y videos en Inglés. Capacidad de comunicación oral y
+  escrita es un plus importante.
