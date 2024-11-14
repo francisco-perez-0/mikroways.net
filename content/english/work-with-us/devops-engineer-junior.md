@@ -1,5 +1,5 @@
 ---
-title: "DevOps Engineer Trainee"
+title: "DevOps Engineer Junior"
 schedule: "Full time"
 location: "Remote"
 summary: "Join the team at Mikroways responsible for delivering the service to
@@ -27,7 +27,8 @@ AWS, GCP, Azure. Also we work with private clouds like OpenStack.
 * Automating the creation of servers, networks, storage, etc.
 * Deploying services on public and private clouds.
 * Configuring application and server monitoring.
-* Addressing client requirements.
+* Address client requirements and provide support to development teams for
+  better integration of their projects.
 
 ## Personal aptitudes
 
@@ -54,8 +55,9 @@ AWS, GCP, Azure. Also we work with private clouds like OpenStack.
 
 ## Professional knowledge
 
-* Understanding texts and videos in English. Oral and written communication
-  skills are a significant plus.
+* Basic knowledge of CI/CD tools (Jenkins, GitLab CI, GitHub Actions, etc.).
+* Basic knowledge of containers (Docker; Kubernetes is a plus).
+* Basic experience in scripting (Bash, Python, or similar).
 * Proficiency in at least two programming languages: Python, JavaScript, PHP,
   Java, etc.
 * Familiarity with at least one development framework.
@@ -71,3 +73,5 @@ AWS, GCP, Azure. Also we work with private clouds like OpenStack.
 * Relational databases: Basic usage of MySQL or PostgreSQL from the console.
 * Markups: Understanding and ability to use JSON, YAML, XML, and Markdown
   formats.
+* Understanding texts and videos in English. Oral and written communication
+  skills are a significant plus.
