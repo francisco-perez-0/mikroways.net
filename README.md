@@ -1,4 +1,4 @@
-#GL pages
+#GH pages
 
 # Mikroways' website
 
